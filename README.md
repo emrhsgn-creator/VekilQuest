@@ -1,5 +1,7 @@
 # VekilQuest
 
+**→ [emrhsgn-creator.github.io/VekilQuest](https://emrhsgn-creator.github.io/VekilQuest/)**
+
 Marka vekilliği sınavına hazırlık için soru çözme, **konu analizi** ve **eksik tespiti** uygulaması.
 Çıkmış sınav sorularını yükler, konularına göre çözer, hangi konuda ne kadar hâkim olduğunu
 ölçülü biçimde görürsün.
@@ -85,9 +87,15 @@ ve anahtar ifadelere bağlıdır; içe aktarılan sorular bu iki sinyalle otomat
 ## Yayınlama
 
 `main` dalına her push'ta GitHub Actions derleyip GitHub Pages'e yayınlar
-(`.github/workflows/deploy.yml`). Deponun **Settings → Pages → Source** ayarını
-“GitHub Actions” yapman yeterli. `vite.config.ts` içinde `base: './'` olduğu için uygulama hem
-kök dizinde hem `/<repo>/` alt yolunda çalışır.
+(`.github/workflows/deploy.yml`): testler ve tip denetimi geçmeden yayın yapılmaz.
+Yayın adresi [emrhsgn-creator.github.io/VekilQuest](https://emrhsgn-creator.github.io/VekilQuest/).
+
+`vite.config.ts` içinde `base: './'` olduğu için uygulama hem kök dizinde hem `/<repo>/`
+alt yolunda çalışır; yönlendirme `HashRouter` ile yapıldığından statik sunumda sunucu
+yapılandırması gerekmez.
+
+Uygulama tamamen istemci tarafında çalıştığı için yayınlanan sayfa yalnızca kodu barındırır;
+soruların ve çözüm geçmişinin hiçbiri sunucuya gitmez.
 
 ## Veri güvenliği
 
