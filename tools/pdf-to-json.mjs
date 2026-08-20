@@ -18,7 +18,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { sorulariAyristir, cevapAnahtariAyristir, iptalEdilenler, birlestir } from '../src/lib/parse.mjs';
+import { belgeyiAyristir } from '../src/lib/parse.mjs';
 
 function argumanlar(argv) {
   const cikti = {};
@@ -70,8 +70,9 @@ if (!arg.kitapcik || arg.yardim) {
 Marka Vekilliği soru bankası dönüştürücü
 
   --kitapcik <dosya>       Soru kitapçığı PDF/TXT  (zorunlu)
-  --anahtar  <dosya>       Cevap anahtarı PDF/TXT
-  --yil      <2024>        Sınav yılı
+  --anahtar  <dosya>       Cevap anahtarı PDF/TXT — anahtar kitapçığın içindeyse
+                           gerekmez, otomatik bulunur
+  --yil      <2021>        Sınav yılı
   --kitapcik-turu <A|B>    Kitapçık türü
   --oturum   <1>           Aynı yılda birden fazla oturum varsa
   --cikti    <dosya.json>  Çıktı yolu
@@ -89,45 +90,49 @@ const kitapcikTuru = arg['kitapcik-turu'];
 
 console.log(`Kitapçık okunuyor: ${arg.kitapcik}`);
 const kitapcikMetni = await pdfMetni(arg.kitapcik);
-const { sorular, uyarilar } = sorulariAyristir(kitapcikMetni);
 
-let anahtar = new Map();
-let iptaller = new Set();
+let anahtarMetni = '';
 if (arg.anahtar) {
   if (!existsSync(arg.anahtar)) {
     console.error(`Bulunamadı: ${arg.anahtar}`);
     process.exit(1);
   }
   console.log(`Cevap anahtarı okunuyor: ${arg.anahtar}`);
-  const anahtarMetni = await pdfMetni(arg.anahtar);
-  anahtar = cevapAnahtariAyristir(anahtarMetni);
-  iptaller = iptalEdilenler(anahtarMetni);
+  anahtarMetni = await pdfMetni(arg.anahtar);
 }
 
-const { sorular: birlesik, rapor } = birlestir(sorular, anahtar, iptaller);
+const { sorular: ayristirilan, uyarilar, rapor } = belgeyiAyristir(kitapcikMetni, anahtarMetni);
 
 const kaynak = [
   'TÜRKPATENT',
   yil ?? '',
-  'Marka Vekilliği',
+  'Genel Yeterlik Sınavı',
   kitapcikTuru ? `(${kitapcikTuru})` : '',
 ].filter(Boolean).join(' ');
 
-const banka = birlesik.map((s) => ({
-  id: `tp-${yil ?? 'x'}${arg.oturum ? '-' + arg.oturum : ''}-${kitapcikTuru ?? 'x'}-${s.no}`,
-  no: s.no,
+const simdi = Date.now();
+const banka = ayristirilan.map((s) => ({
+  // Kimlik bölümü de içerir: bölümlü kitapçıklarda numaralar tekrar ediyor.
+  id: [
+    'tp', yil ?? 'x', arg.oturum, kitapcikTuru ?? 'x',
+    s.bolum ? s.bolum.toLocaleLowerCase('tr') : (s.kitapcikNo ? `k${s.kitapcikNo}` : null),
+    s.yerelNo,
+  ].filter(Boolean).join('-'),
+  no: s.yerelNo,
   yil,
   oturum: arg.oturum,
   kitapcik: kitapcikTuru,
+  bolum: s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : undefined),
   kaynak,
   metin: s.metin,
   secenekler: s.secenekler,
   cevap: s.cevap,
   iptal: s.iptal,
-  eklenme: Date.now(),
+  eklenme: simdi,
 }));
 
-const ciktiYolu = arg.cikti ?? path.join('data', 'sorular', `${yil ?? 'bilinmeyen'}-marka-${kitapcikTuru ?? 'x'}.json`);
+const ciktiYolu = arg.cikti
+  ?? path.join('data', 'sorular', `${yil ?? 'bilinmeyen'}-genel-${kitapcikTuru ?? 'x'}.json`);
 await mkdir(path.dirname(ciktiYolu), { recursive: true });
 await writeFile(ciktiYolu, JSON.stringify({ surum: 1, kaynak, sorular: banka }, null, 2), 'utf8');
 

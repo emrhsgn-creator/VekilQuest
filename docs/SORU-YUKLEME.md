@@ -9,8 +9,8 @@ Bu belgeleri indirip aşağıdaki iki yoldan biriyle uygulamaya aktarabilirsin.
 ## Yol 1 — Uygulamadan (tek sınav için en pratik)
 
 1. **İçe aktar** ekranını aç.
-2. Soru kitapçığı PDF'ini sol kutuya, cevap anahtarını sağ kutuya sürükle.
-   (Cevap anahtarı isteğe bağlıdır; olmadan sorular “cevapsız” kaydedilir ve denemede çıkmaz.)
+2. Soru kitapçığı PDF'ini sol kutuya sürükle. **Cevap anahtarı çoğu kitapçığın son sayfasında
+   yer alır ve otomatik bulunur** — ayrı bir dosyaysa sağ kutuya yükle.
 3. Sınav yılı ve kitapçık türünü gir. Dosya adında yıl geçiyorsa otomatik doldurulur.
 4. **Ayrıştır ve önizle**.
 5. Önizleme ekranında raporu oku:
@@ -28,9 +28,8 @@ PDF'leri `data/ham/` klasörüne koy (bu klasör `.gitignore`'da, depoya girmez)
 
 ```bash
 node tools/pdf-to-json.mjs \
-  --kitapcik data/ham/2024-marka-A.pdf \
-  --anahtar  data/ham/2024-marka-A-cevap.pdf \
-  --yil 2024 \
+  --kitapcik data/ham/2021-genel-A.pdf \
+  --yil 2021 \
   --kitapcik-turu A
 ```
 
@@ -39,7 +38,7 @@ Parametreler:
 | Parametre | Açıklama |
 |---|---|
 | `--kitapcik` | Soru kitapçığı PDF veya TXT (zorunlu) |
-| `--anahtar` | Cevap anahtarı PDF veya TXT |
+| `--anahtar` | Cevap anahtarı PDF veya TXT — kitapçığın içindeyse gerekmez |
 | `--yil` | Sınav yılı, ör. `2024` |
 | `--kitapcik-turu` | `A` veya `B` |
 | `--oturum` | Aynı yılda birden fazla oturum varsa |
@@ -97,3 +96,40 @@ soruları yeniden değerlendirir.
 
 Bir konu sürekli yanlış eşleşiyorsa `src/data/topics.ts` içindeki `anahtar` dizisine ayırt edici
 bir ifade eklemek kalıcı çözümdür.
+
+---
+
+## Genel Yeterlik kitapçıklarının yapısı
+
+2017 ve sonrasındaki kitapçıklar tek dosyada iki sınav taşıyor:
+
+| Bölüm | Soru | Numaralandırma | İçerik |
+|---|---|---|---|
+| 1. kitapçık | 60 | 1–60 | Patent ve faydalı model |
+| 2. kitapçık | 40 | 61–100 (bazı yıllarda 1–40) | Marka, coğrafi işaret, tasarım |
+| Cevap anahtarı | — | 1–100 | Kitapçığın son sayfası |
+
+2015 kitapçığı bunun yerine `PATENT SORULARI` / `MARKA SORULARI` / `ORTAK SORULAR` başlıklarıyla
+üçe ayrılmış; her bölüm 1'den yeniden numaralanıyor ve cevap anahtarı üç paralel sütun hâlinde.
+Ayrıştırıcı iki düzeni de tanır.
+
+Dikkat: bölüm başlıkları **sayfa üstbilgisi** olarak basıldığı için bölümün ortasında beliriyor,
+başında değil. Bu yüzden bölüm sınırı başlıktan değil, numaralandırmanın 1'e dönmesinden anlaşılır.
+
+## Marka kapsamı
+
+Kitapçıkların yarısından fazlası patent sorusu. Uygulama bunları bankada tutar ama
+**Ayarlar → “Yalnızca marka vekilliği kapsamındaki soruları çalış”** açıkken çalışma, deneme,
+tekrar ve analiz ekranlarının dışında bırakır. Patent bölümündeki sorular otomatik olarak
+“Patent ve Faydalı Model” alanına atanır; bir soruyu yanlış yerde görürsen Soru Bankası
+ekranından düzeltebilirsin.
+
+## Telif
+
+Kitapçıkların kapağında şu ibare var: *“Hangi amaçla olursa olsun, testlerin tamamının veya bir
+kısmının Türk Patent ve Marka Kurumunun yazılı izni olmadan kopya edilmesi, fotoğrafının
+çekilmesi, herhangi bir yolla çoğaltılması, yayınlanması ya da kullanılması yasaktır.”*
+
+Bu nedenle `data/ham/` ve `data/sorular/` klasörleri `.gitignore` içindedir; ne ham PDF'ler ne de
+ayrıştırılmış soru metinleri depoya girer. Soru bankan yalnızca kendi tarayıcının IndexedDB'sinde
+durur ve Ayarlar ekranından aldığın yedek dosyasıyla taşınır.

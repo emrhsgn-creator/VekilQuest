@@ -4,7 +4,8 @@ import {
 } from 'react';
 import { oku, yaz, yerelOku, yerelYaz } from './lib/db';
 import { kaliteNotu, kartiGuncelle, yeniKart } from './lib/srs';
-import { siniflandir } from './lib/classify';
+import { topluSiniflandir } from './lib/classify';
+import { kapsamDisiMi } from './data/topics';
 import {
   VARSAYILAN_AYARLAR,
   type Ayarlar, type Cevaplama, type Seans, type Soru, type TekrarKarti, type Yedek,
@@ -43,7 +44,7 @@ type Islemler = {
   hepsiniSil: () => void;
 };
 
-const Baglam = createContext<(Durum & Islemler) | null>(null);
+const Baglam = createContext<(Durum & Islemler & { tumSorular: Soru[] }) | null>(null);
 
 export function StoreSaglayici({ children }: { children: ReactNode }) {
   const [durum, setDurum] = useState<Durum>({
@@ -124,10 +125,14 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
     tumSorulariSiniflandir() {
       let sayac = 0;
       setDurum((d) => {
+        // Bölüm duyarlı toplu atama: patent bölümündeki sorular marka
+        // konularına, marka bölümündekiler patent konularına düşmesin.
+        const sonuclar = topluSiniflandir(d.sorular);
         const sorular = d.sorular.map((s) => {
+          // Elle atanmış konular korunur.
           if (s.topicId && (s.topicGuven ?? 0) >= 0.9) return s;
-          const sonuc = siniflandir(s.metin, s.secenekler.map((o) => o.metin));
-          if (!sonuc.topicId) return s;
+          const sonuc = sonuclar.get(s.id);
+          if (!sonuc?.topicId) return s;
           sayac += 1;
           return { ...s, topicId: sonuc.topicId, topicGuven: sonuc.guven, smkMaddeleri: sonuc.maddeler };
         });
@@ -249,7 +254,19 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
     },
   }), [kalicilastir, durum.sorular, durum.cevaplamalar, durum.seanslar, durum.tekrarKartlari, durum.ayarlar]);
 
-  const deger = useMemo(() => ({ ...durum, ...islemler }), [durum, islemler]);
+  // `sorular` kapsam ayarına göre süzülmüş listedir; ekranların çoğu bunu
+  // kullanır. Soru bankası, yedekleme ve içe aktarma `tumSorular` ile çalışır.
+  const kapsamdaki = useMemo(
+    () => (durum.ayarlar.sadeceMarkaKapsami
+      ? durum.sorular.filter((s) => !kapsamDisiMi(s.topicId))
+      : durum.sorular),
+    [durum.sorular, durum.ayarlar.sadeceMarkaKapsami],
+  );
+
+  const deger = useMemo(
+    () => ({ ...durum, sorular: kapsamdaki, tumSorular: durum.sorular, ...islemler }),
+    [durum, kapsamdaki, islemler],
+  );
   return <Baglam.Provider value={deger}>{children}</Baglam.Provider>;
 }
 

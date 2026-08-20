@@ -9,12 +9,14 @@ export type Filtre = {
   areaId: string;
   topicId: string;
   yil: string;
+  /** Kitapçık bölümü: "MARKA", "ORTAK", "2. kitapçık" gibi. */
+  bolum: string;
   durum: 'hepsi' | 'cozulmemis' | 'yanlis' | 'isaretli' | 'cevapsiz';
   siralama: 'karisik' | 'sirali' | 'zayifOnce';
 };
 
 export const BOS_FILTRE: Filtre = {
-  arama: '', areaId: '', topicId: '', yil: '', durum: 'hepsi', siralama: 'karisik',
+  arama: '', areaId: '', topicId: '', yil: '', bolum: '', durum: 'hepsi', siralama: 'karisik',
 };
 
 export function filtrele(sorular: Soru[], cevaplamalar: Cevaplama[], filtre: Filtre): Soru[] {
@@ -37,6 +39,7 @@ export function filtrele(sorular: Soru[], cevaplamalar: Cevaplama[], filtre: Fil
       if (konu?.areaId !== filtre.areaId) return false;
     }
     if (filtre.yil && String(s.yil ?? '') !== filtre.yil) return false;
+    if (filtre.bolum && s.bolum !== filtre.bolum) return false;
 
     switch (filtre.durum) {
       case 'cozulmemis': if (cozulmus.has(s.id)) return false; break;
@@ -90,6 +93,10 @@ export function zayifOnceSec(
   }));
   puanli.sort((a, b) => b.puan - a.puan);
   return puanli.slice(0, adet).map((p) => p.soru);
+}
+
+export function bolumler(sorular: Soru[]): string[] {
+  return [...new Set(sorular.map((s) => s.bolum).filter((b): b is string => !!b))].sort();
 }
 
 export function yillar(sorular: Soru[]): number[] {

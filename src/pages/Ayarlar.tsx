@@ -6,7 +6,7 @@ import type { Yedek } from '../types';
 export default function Ayarlar() {
   const {
     ayarlar, ayarlariGuncelle, yedekAl, yedekYukle,
-    ilerlemeyiSifirla, hepsiniSil, sorular, cevaplamalar, seanslar,
+    ilerlemeyiSifirla, hepsiniSil, tumSorular: sorular, cevaplamalar, seanslar,
   } = useStore();
 
   const [onay, setOnay] = useState<'ilerleme' | 'hepsi' | null>(null);
@@ -87,6 +87,16 @@ export default function Ayarlar() {
                    onChange={(e) => ayarlariGuncelle({ anindaGeriBildirim: e.target.checked })} />
             Konu çalışmasında her sorudan sonra doğru cevabı göster
           </label>
+          <label className="satir" style={{ gap: 9, fontWeight: 500, marginBottom: 6 }}>
+            <input type="checkbox" style={{ width: 'auto' }} checked={ayarlar.sadeceMarkaKapsami}
+                   onChange={(e) => ayarlariGuncelle({ sadeceMarkaKapsami: e.target.checked })} />
+            Yalnızca marka vekilliği kapsamındaki soruları çalış
+          </label>
+          <p className="minik" style={{ marginTop: 0, marginBottom: 12 }}>
+            Genel Yeterlik kitapçıkları patent sorularını da içerir. Bu seçenek açıkken patent
+            soruları çalışma, deneme ve analiz ekranlarının dışında tutulur; soru bankasında
+            görünmeye devam eder.
+          </p>
           <div className="alan">
             <label htmlFor="a-tema">Tema</label>
             <select id="a-tema" value={ayarlar.tema} style={{ maxWidth: 220 }}

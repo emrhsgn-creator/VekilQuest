@@ -10,6 +10,8 @@ export type Soru = {
   oturum?: string;
   /** Kitapçık türü (A / B). */
   kitapcik?: string;
+  /** Kitapçık içindeki bölüm: "MARKA", "ORTAK", "2. kitapçık" gibi. */
+  bolum?: string;
   /** Sorunun geldiği kaynak: "TÜRKPATENT 2024 Marka Vekilliği (A)", "Elle eklendi" vb. */
   kaynak: string;
   metin: string;
@@ -78,6 +80,12 @@ export type Ayarlar = {
   gunlukHedef: number;
   sinavTarihi?: string;
   anindaGeriBildirim: boolean;
+  /**
+   * Genel Yeterlik kitapçıkları patent sorularını da içeriyor. Açıkken patent
+   * soruları çalışma, deneme ve analiz ekranlarının dışında tutulur; soru
+   * bankasında görünmeye devam eder.
+   */
+  sadeceMarkaKapsami: boolean;
   secenekleriKaristir: boolean;
   tema: 'sistem' | 'acik' | 'koyu';
 };
@@ -98,6 +106,7 @@ export const VARSAYILAN_AYARLAR: Ayarlar = {
   gecmeNotu: 70,
   gunlukHedef: 30,
   anindaGeriBildirim: true,
+  sadeceMarkaKapsami: true,
   secenekleriKaristir: false,
   tema: 'sistem',
 };

@@ -1,20 +1,17 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
 import { useStore } from '../store';
 import { Kart } from '../components/ui';
-import { siniflandir } from '../lib/classify';
+import { siniflandir, topluSiniflandir } from '../lib/classify';
 import { pdfMetniCikar, pdfMi } from '../lib/pdf';
 import { TOPICS, TOPIC_BY_ID } from '../data/topics';
 import { kisalt } from '../lib/metin';
 import type { Soru, Yedek } from '../types';
-import {
-  birlestir, cevapAnahtariAyristir, iptalEdilenler, sorulariAyristir,
-  type AyristirmaRaporu, type HamSoru,
-} from '../lib/parse.mjs';
+import { belgeyiAyristir, type AyristirmaRaporu, type HamSoru } from '../lib/parse.mjs';
 
 type Adim = 'yukle' | 'onizle';
 
 export default function IceAktar() {
-  const { soruEkle, sorular, yedekYukle } = useStore();
+  const { soruEkle, tumSorular: sorular, yedekYukle } = useStore();
 
   const [adim, setAdim] = useState<Adim>('yukle');
   const [kitapcikMetni, setKitapcikMetni] = useState('');
@@ -48,31 +45,44 @@ export default function IceAktar() {
   }, [yil]);
 
   const ayristir = () => {
-    const { sorular: cikan, uyarilar: uyari } = sorulariAyristir(kitapcikMetni);
-    const anahtar = anahtarMetni ? cevapAnahtariAyristir(anahtarMetni) : new Map<number, string>();
-    const iptaller = anahtarMetni ? iptalEdilenler(anahtarMetni) : new Set<number>();
-    const { sorular: birlesik, rapor: r } = birlestir(cikan, anahtar, iptaller);
-    setAyristirilan(birlesik);
+    // Cevap anahtarı çoğu kitapçığın son sayfasında yer alıyor; ayrı dosya
+    // verilmediyse belge içinden otomatik bulunur.
+    const { sorular: cikan, uyarilar: uyari, rapor: r } = belgeyiAyristir(kitapcikMetni, anahtarMetni);
+    setAyristirilan(cikan);
     setRapor(r);
     setUyarilar(uyari);
     setAdim('onizle');
   };
 
   const kaydet = () => {
-    const kaynak = ['TÜRKPATENT', yil, 'Marka Vekilliği', kitapcikTuru ? `(${kitapcikTuru})` : '']
+    const kaynak = ['TÜRKPATENT', yil, 'Genel Yeterlik Sınavı', kitapcikTuru ? `(${kitapcikTuru})` : '']
       .filter(Boolean).join(' ');
     const simdi = Date.now();
 
-    const yeniSorular: Soru[] = ayristirilan
-      .filter((s) => s.metin && s.secenekler.length >= 2)
+    const uygun = ayristirilan.filter((s) => s.metin && s.secenekler.length >= 2);
+    const kimlikli = uygun.map((s) => ({
+      id: String(s.sira),
+      metin: s.metin,
+      secenekler: s.secenekler,
+      yil: yil ? Number(yil) : undefined,
+      bolum: s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : undefined),
+    }));
+    const siniflar = topluSiniflandir(kimlikli);
+
+    const yeniSorular: Soru[] = uygun
       .map((s) => {
-        const sonuc = siniflandir(s.metin, s.secenekler.map((o) => o.metin));
+        const sonuc = siniflar.get(String(s.sira)) ?? siniflandir(s.metin, s.secenekler.map((o) => o.metin));
+        const bolum = s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : undefined);
         return {
-          id: `tp-${yil || 'x'}${oturum ? `-${oturum}` : ''}-${kitapcikTuru || 'x'}-${s.no}`,
-          no: s.no,
+          // Kimlik bölümü de içerir: bölümlü kitapçıklarda numaralar tekrarlanır.
+          id: ['tp', yil || 'x', oturum, kitapcikTuru || 'x',
+               bolum?.toLocaleLowerCase('tr').replace(/[^a-zçğıöşü0-9]+/g, ''), s.yerelNo]
+            .filter(Boolean).join('-'),
+          no: s.yerelNo,
           yil: yil ? Number(yil) : undefined,
           oturum: oturum || undefined,
           kitapcik: kitapcikTuru || undefined,
+          bolum,
           kaynak,
           metin: s.metin,
           secenekler: s.secenekler,
@@ -118,11 +128,20 @@ export default function IceAktar() {
       const gelen: Soru[] = Array.isArray(veri) ? veri : veri.sorular;
       if (!Array.isArray(gelen)) throw new Error('Dosyada "sorular" dizisi bulunamadı.');
       const simdi = Date.now();
-      soruEkle(gelen.map((s) => {
-        const sonuc = s.topicId ? null : siniflandir(s.metin ?? '', (s.secenekler ?? []).map((o) => o.metin));
+      const kimlikli = gelen.map((s, i) => ({
+        id: s.id ?? `js-${simdi}-${i}`,
+        metin: s.metin ?? '',
+        secenekler: s.secenekler ?? [],
+        yil: s.yil,
+        bolum: s.bolum,
+      }));
+      const siniflar = topluSiniflandir(kimlikli);
+      soruEkle(gelen.map((s, i) => {
+        const kimlik = kimlikli[i].id;
+        const sonuc = s.topicId ? null : siniflar.get(kimlik);
         return {
           ...s,
-          id: s.id ?? `js-${simdi}-${Math.random().toString(36).slice(2, 8)}`,
+          id: kimlik,
           kaynak: s.kaynak ?? veri.kaynak ?? 'JSON içe aktarma',
           eklenme: s.eklenme ?? simdi,
           topicId: s.topicId ?? sonuc?.topicId,
@@ -163,7 +182,7 @@ export default function IceAktar() {
 
       <div className="yigin">
         <Kart baslik="1 · Sınav dosyalarını yükle"
-              not="PDF veya düz metin (.txt) kabul edilir. PDF taranmış görüntüyse metin çıkmaz; o durumda kitapçıktan kopyaladığın metni aşağıya yapıştırabilirsin.">
+              not="PDF veya düz metin (.txt) kabul edilir. Cevap anahtarı çoğu kitapçığın son sayfasında yer alır ve otomatik bulunur; ayrı dosyaysa sağdaki kutuya yükle.">
           <div className="izgara izgara-2">
             <BirakmaAlani etiket="Soru kitapçığı" dolu={!!kitapcikMetni}
                           onDosya={(d) => dosyaOku(d, 'kitapcik')} />
@@ -341,8 +360,9 @@ function Onizleme({
               <span className="olcut-deger" style={{ color: rapor.cevapsiz ? 'var(--uyari)' : undefined }}>{rapor.cevapsiz}</span>
             </div>
             <div className="kart olcut">
-              <span className="olcut-etiket">İptal edilmiş</span>
-              <span className="olcut-deger">{rapor.iptal}</span>
+              <span className="olcut-etiket">Bölüm</span>
+              <span className="olcut-deger">{rapor.bolumler.length}</span>
+              <span className="olcut-alt">{rapor.bolumler.join(' · ') || '—'}</span>
             </div>
           </div>
         )}
@@ -379,7 +399,10 @@ function Onizleme({
               return (
                 <div key={indeks} className={`onizleme-satir ${sorunlu(s) ? 'sorunlu' : ''}`}>
                   <div className="satir aralikli">
-                    <strong style={{ fontSize: '.82rem' }}>{s.no}. soru</strong>
+                    <strong style={{ fontSize: '.82rem' }}>
+                      {s.bolum ? `${s.bolum} · ` : s.kitapcikNo ? `${s.kitapcikNo}. kitapçık · ` : ''}
+                      {s.yerelNo}. soru
+                    </strong>
                     <div className="satir">
                       {s.iptal && <span className="rozet uyari">iptal</span>}
                       <label htmlFor={`c-${indeks}`} style={{ margin: 0 }}>Cevap</label>

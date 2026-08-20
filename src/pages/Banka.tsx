@@ -9,7 +9,7 @@ import { siniflandir } from '../lib/classify';
 import type { Soru } from '../types';
 
 export default function Banka() {
-  const { sorular, cevaplamalar, soruGuncelle, soruSil, soruEkle, tumSorulariSiniflandir } = useStore();
+  const { tumSorular: sorular, cevaplamalar, soruGuncelle, soruSil, soruEkle, tumSorulariSiniflandir } = useStore();
   const [filtre, setFiltre] = useState<Filtre>(BOS_FILTRE);
   const [duzenlenen, setDuzenlenen] = useState<Soru | null>(null);
   const [bilgi, setBilgi] = useState('');

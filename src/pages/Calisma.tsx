@@ -136,6 +136,7 @@ function filtreOzeti(f: Filtre): string {
   if (f.topicId) parcalar.push(TOPICS.find((t) => t.id === f.topicId)?.ad ?? '');
   else if (f.areaId) parcalar.push(AREAS.find((a) => a.id === f.areaId)?.ad ?? '');
   if (f.yil) parcalar.push(`${f.yil} sınavı`);
+  if (f.bolum) parcalar.push(f.bolum);
   if (f.durum === 'yanlis') parcalar.push('yanlış yaptıklarım');
   if (f.durum === 'cozulmemis') parcalar.push('hiç çözmediklerim');
   if (f.durum === 'isaretli') parcalar.push('işaretlediklerim');

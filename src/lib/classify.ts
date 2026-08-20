@@ -12,7 +12,7 @@
  * "gözden geçirilmeli" olarak işaretlenir; kullanıcı tek tıkla düzeltebilir.
  */
 
-import { TOPICS, type Topic } from '../data/topics';
+import { AREAS, TOPICS, type Topic } from '../data/topics';
 import { SMK_BY_NO } from '../data/smk';
 import { normalize } from './metin';
 
@@ -49,13 +49,32 @@ export type Siniflandirma = {
   adaylar: { topicId: string; skor: number }[];
 };
 
-export function siniflandir(soruMetni: string, secenekMetinleri: string[] = []): Siniflandirma {
+/**
+ * Aday konuları belirli bir alan kümesiyle sınırlar.
+ * `patent`  : yalnızca patent konuları
+ * `markaVb` : patent dışındaki tüm konular
+ */
+export type AlanKisiti = 'patent' | 'markaVb' | undefined;
+
+function kisitliMi(topicId: string, kisit: AlanKisiti): boolean {
+  if (!kisit) return true;
+  const konu = TOPICS.find((t) => t.id === topicId);
+  const patentMi = konu?.areaId === 'patent';
+  return kisit === 'patent' ? patentMi : !patentMi;
+}
+
+export function siniflandir(
+  soruMetni: string,
+  secenekMetinleri: string[] = [],
+  kisit: AlanKisiti = undefined,
+): Siniflandirma {
   const hamMetin = [soruMetni, ...secenekMetinleri].join(' \n ');
   const metin = ' ' + normalize(hamMetin) + ' ';
   const maddeler = smkMaddeleriniBul(hamMetin);
 
   const skorlar = new Map<string, number>();
   const ekle = (topicId: string, puan: number) => {
+    if (!kisitliMi(topicId, kisit)) return;
     skorlar.set(topicId, (skorlar.get(topicId) ?? 0) + puan);
   };
 
@@ -102,4 +121,102 @@ export function siniflandir(soruMetni: string, secenekMetinleri: string[] = []):
 export function konuOner(metin: string): Topic | undefined {
   const sonuc = siniflandir(metin);
   return TOPICS.find((t) => t.id === sonuc.topicId);
+}
+
+/* ─────────────────────────── bölüm duyarlı toplu atama ───────────────────── */
+
+export type SiniflandirilabilirSoru = {
+  id: string;
+  metin: string;
+  secenekler: { metin: string }[];
+  yil?: number;
+  bolum?: string;
+};
+
+/**
+ * Bir soru kümesini, kitapçık bölümlerini de hesaba katarak sınıflandırır.
+ *
+ * Genel Yeterlik kitapçıkları patent ve marka sorularını ayrı bölümlerde
+ * taşıyor ("PATENT SORULARI" / "MARKA SORULARI", ya da 1. ve 2. kitapçık).
+ * Bölüm bilgisi, tek tek anahtar kelimelerden çok daha güçlü bir sinyal:
+ * patent bölümündeki bir soru marka konusuna atanmamalı.
+ *
+ * Hangi bölümün patent olduğunu sabit kabul etmiyoruz — bölümün kendi
+ * içeriğinden ölçüyoruz. Önce kısıtsız bir geçiş yapılıyor, sonra her bölümün
+ * patent oranına bakılıp bölüm baskın çıktıysa o kümedeki sorular ilgili alana
+ * kısıtlanarak yeniden sınıflandırılıyor. Böylece kural, düzeni farklı olan
+ * gelecekteki kitapçıklarda da kendini ayarlıyor.
+ */
+export function topluSiniflandir<T extends SiniflandirilabilirSoru>(
+  sorular: T[],
+): Map<string, Siniflandirma> {
+  const patentTopicIdleri = new Set(TOPICS.filter((t) => t.areaId === 'patent').map((t) => t.id));
+  const metinler = new Map(sorular.map((s) => [s.id, [s.metin, ...s.secenekler.map((o) => o.metin)]] as const));
+
+  // 1. geçiş — kısıtsız
+  const ilk = new Map<string, Siniflandirma>();
+  for (const soru of sorular) {
+    const [metin, ...secenekler] = metinler.get(soru.id)!;
+    ilk.set(soru.id, siniflandir(metin, secenekler));
+  }
+
+  // Bölüm anahtarı: aynı yılın aynı bölümü tek küme.
+  const kumeAnahtari = (s: T) => `${s.yil ?? '?'}|${s.bolum ?? '?'}`;
+  const kumeler = new Map<string, T[]>();
+  for (const soru of sorular) {
+    const k = kumeAnahtari(soru);
+    if (!kumeler.has(k)) kumeler.set(k, []);
+    kumeler.get(k)!.push(soru);
+  }
+
+  // 2. geçiş — bölümün baskın alanını ölçüp kısıtlı yeniden sınıflandırma.
+  //
+  // Eşikler gerçek kitapçıklardan ölçüldü: patent bölümlerinin ham patent
+  // oranı 0,57–0,88, marka bölümlerinin 0,00–0,08 bandında. Arada kalan
+  // "ORTAK" bölümü 0,40 civarında çıkıyor ve kısıtlanmamalı — bu yüzden
+  // patent kararı mutlak eşiğe değil, aynı yılın bölümleri arasındaki
+  // sıralamaya bağlanıyor: yalnızca yılın en yüksek oranlı bölümü, o da 0,5'i
+  // aşıyorsa patent kabul edilir.
+  const oranlar = new Map<string, number>();
+  for (const [anahtar, kume] of kumeler) {
+    if (kume.length < 5) continue;
+    const atanan = kume.filter((s) => ilk.get(s.id)?.topicId);
+    if (atanan.length < kume.length * 0.4) continue;
+    const patentSayisi = atanan.filter((s) => patentTopicIdleri.has(ilk.get(s.id)!.topicId!)).length;
+    oranlar.set(anahtar, patentSayisi / atanan.length);
+  }
+
+  // Yıl başına en yüksek patent oranlı bölüm
+  const yilinEnYuksegi = new Map<string, string>();
+  for (const [anahtar, oran] of oranlar) {
+    const yil = anahtar.split('|')[0];
+    const mevcut = yilinEnYuksegi.get(yil);
+    if (!mevcut || oran > oranlar.get(mevcut)!) yilinEnYuksegi.set(yil, anahtar);
+  }
+
+  const sonuc = new Map(ilk);
+  for (const [anahtar, oran] of oranlar) {
+    const yil = anahtar.split('|')[0];
+    const enYuksekMi = yilinEnYuksegi.get(yil) === anahtar;
+    const kisit: AlanKisiti = enYuksekMi && oran >= 0.5 ? 'patent' : oran < 0.15 ? 'markaVb' : undefined;
+    if (!kisit) continue;
+
+    for (const soru of kumeler.get(anahtar)!) {
+      const [metin, ...secenekler] = metinler.get(soru.id)!;
+      const yeni = siniflandir(metin, secenekler, kisit);
+      // Patent bölümünde hiçbir konuya oturmayan soru, marka analizini
+      // bozmaması için toplama konusuna yazılır.
+      if (!yeni.topicId && kisit === 'patent') {
+        sonuc.set(soru.id, { ...yeni, topicId: 'patent-genel', guven: 0.2 });
+      } else {
+        sonuc.set(soru.id, yeni);
+      }
+    }
+  }
+  return sonuc;
+}
+
+/** Alan kimliğinden okunabilir ad — arayüz mesajları için. */
+export function alanAdi(areaId: string): string {
+  return AREAS.find((a) => a.id === areaId)?.ad ?? areaId;
 }

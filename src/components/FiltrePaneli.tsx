@@ -1,7 +1,7 @@
 import { AREAS, TOPICS } from '../data/topics';
 import type { Filtre } from '../lib/sec';
 import type { Soru } from '../types';
-import { yillar } from '../lib/sec';
+import { bolumler, yillar } from '../lib/sec';
 
 export function FiltrePaneli({
   filtre, onDegis, sorular, siralamaGoster = true,
@@ -43,6 +43,15 @@ export function FiltrePaneli({
           {yillar(sorular).map((y) => <option key={y} value={String(y)}>{y}</option>)}
         </select>
       </div>
+      {bolumler(sorular).length > 1 && (
+        <div style={{ flex: '0 1 150px' }}>
+          <label htmlFor="f-bolum">Kitapçık bölümü</label>
+          <select id="f-bolum" value={filtre.bolum} onChange={(e) => guncelle({ bolum: e.target.value })}>
+            <option value="">Tümü</option>
+            {bolumler(sorular).map((b) => <option key={b} value={b}>{b}</option>)}
+          </select>
+        </div>
+      )}
       <div style={{ flex: '0 1 150px' }}>
         <label htmlFor="f-durum">Durum</label>
         <select id="f-durum" value={filtre.durum}

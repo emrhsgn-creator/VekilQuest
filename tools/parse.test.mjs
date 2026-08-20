@@ -1,12 +1,16 @@
 /**
- * Ayrıştırıcı testleri: node --test tools/parse.test.mjs
- * Tarayıcıya ihtiyaç duymaz; kitapçık düzeni değiştiğinde ilk uyarı buradan gelir.
+ * Ayrıştırıcı testleri: npm test
+ *
+ * Tarayıcıya ihtiyaç duymaz. Buradaki durumların çoğu gerçek TÜRKPATENT
+ * kitapçıklarında karşılaşılan tuzaklardan çıkarıldı; kitapçık düzeni
+ * değiştiğinde ilk uyarı buradan gelir.
  */
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  sorulariAyristir, cevapAnahtariAyristir, iptalEdilenler, birlestir, metniTemizle,
+  sorulariAyristir, cevapAnahtariAyristir, iptalEdilenler, birlestir,
+  metniTemizle, belgeyiAyristir, katla, beyanEdilenSoruSayisi,
 } from '../src/lib/parse.mjs';
 
 const KITAPCIK = `
@@ -39,6 +43,12 @@ D) Altı ay
 E) Bir yıl
 `;
 
+test('Türkçe katlama büyük İ ve ı harflerini eşitler', () => {
+  // JS'in regex `i` bayrağı İ (U+0130) ile i'yi eşleştirmediği için gerekli.
+  assert.equal(katla('SORU KİTAPÇIĞI'), 'soru kitapcigi');
+  assert.equal(katla('AÇIKLAMALAR'), 'aciklamalar');
+});
+
 test('sayfa başlığı ve altlığı temizlenir', () => {
   const temiz = metniTemizle(KITAPCIK);
   assert.ok(!temiz.includes('SORU KİTAPÇIĞI'));
@@ -64,12 +74,96 @@ test('tek satırda dizilmiş seçenekler ayrıştırılır', () => {
   assert.deepEqual(sorular[1].secenekler.map((o) => o.metin), ['5', '7', '10', '15', '20']);
 });
 
+test('sayfa başlığındaki "(A)" seçenek sanılmaz', () => {
+  // Gerçek kitapçıklarda "… SORU KİTAPÇIĞI (A)" satırı her sayfanın üstünde
+  // basılı; bu (A) seçenek işareti sayılırsa sonraki sorunun gövdesi yutuluyor.
+  const metin = `
+1. İlk soru nedir?
+A) Bir B) İki C) Üç D) Dört E) Beş
+PATENT VE MARKA VEKİLLİĞİ GENEL YETERLİK SINAVI 1. SORU KİTAPÇIĞI (A)
+2. İkinci soru nedir?
+A) Altı B) Yedi C) Sekiz D) Dokuz E) On
+`;
+  const { sorular } = sorulariAyristir(metin);
+  assert.equal(sorular.length, 2);
+  assert.equal(sorular[1].metin, 'İkinci soru nedir?');
+  assert.equal(sorular[1].secenekler[0].metin, 'Altı');
+});
+
+test('soru gövdesindeki alt maddeler yeni soru sayılmaz', () => {
+  // "1. Keşifler / 2. Hayvan yetiştirme usulleri" gibi listeler soru
+  // numarasıyla aynı biçimde ama gövdenin parçası.
+  const metin = `
+7- 1. Keşifler
+2. Hayvan yetiştirme usulleri
+3. Tedavi usulleri
+Yukarıdakilerden hangisi buluş niteliğinde değildir?
+A) Yalnız 1 B) Yalnız 2 C) 1 ve 2 D) 1 ve 3 E) 2 ve 3
+8- İkinci soru nedir?
+A) Bir B) İki C) Üç D) Dört E) Beş
+`;
+  const { sorular } = sorulariAyristir(metin);
+  assert.equal(sorular.length, 2);
+  assert.deepEqual(sorular.map((s) => s.no), [7, 8]);
+});
+
+test('numarasız seçenek bloğu numaralandırmayı kaydırmaz', () => {
+  // Gövdesi görsel olan sorularda yalnızca seçenekler metne düşüyor. Bunlar
+  // soru sayılırsa sonraki bütün cevaplar bir kayar.
+  const metin = `
+10. Onuncu soru nedir?
+A) Bir B) İki C) Üç D) Dört E) Beş
+A) EPO B) TÜRKPATENT C) WIPO D) EUIPO E) Hiçbiri
+11. On birinci soru nedir?
+A) Alt B) Üst C) Yan D) Ön E) Arka
+`;
+  const { sorular, uyarilar } = sorulariAyristir(metin);
+  assert.deepEqual(sorular.map((s) => s.no), [10, 11]);
+  assert.ok(uyarilar.some((u) => u.includes('numarasız seçenek bloğu')));
+});
+
+test('kapaktaki AÇIKLAMALAR maddeleri soru sayılmaz', () => {
+  const metin = `
+AÇIKLAMALAR
+1. Soru kitapçığının sayfalarının eksik olup olmadığını kontrol ediniz.
+2. Cevap kağıdında doldurmanız gereken alanlar bulunmaktadır.
+4. Bu kitapçıkta 2 soru bulunmaktadır. Toplam cevaplama süresi 90 dakikadır.
+KISALTMALAR
+6769 sayılı SMK : 6769 sayılı Sınai Mülkiyet Kanunu
+1. Gerçek ilk soru nedir?
+A) Bir B) İki C) Üç D) Dört E) Beş
+2. Gerçek ikinci soru nedir?
+A) Altı B) Yedi C) Sekiz D) Dokuz E) On
+`;
+  const { sorular } = sorulariAyristir(metin);
+  assert.equal(sorular.length, 2);
+  assert.equal(sorular[0].metin, 'Gerçek ilk soru nedir?');
+  assert.equal(beyanEdilenSoruSayisi(metin), 2);
+});
+
 test('cevap anahtarı farklı biçimlerde okunur', () => {
   for (const ham of ['1-C  2-C  3-B', '1. C\n2. C\n3. B', '1) C 2) C 3) B', '1 C | 2 C | 3 B']) {
     const anahtar = cevapAnahtariAyristir(ham);
-    assert.equal(anahtar.get(1), 'C', ham);
-    assert.equal(anahtar.get(3), 'B', ham);
+    assert.equal(anahtar.tekil.get(1), 'C', ham);
+    assert.equal(anahtar.tekil.get(3), 'B', ham);
   }
+});
+
+test('çok sütunlu ama sürekli numaralı anahtar tek haritada birleşir', () => {
+  const anahtar = cevapAnahtariAyristir('1- D 21- C 41- B\n2- B 22- B 42- A');
+  assert.equal(anahtar.tekil.get(21), 'C');
+  assert.equal(anahtar.tekil.get(42), 'A');
+  assert.equal(anahtar.sutunlar.length, 0);
+});
+
+test('bölüm başına numaralanan paralel sütunlar ayrılır', () => {
+  // 2015 kitapçığı: PATENT / MARKA / ORTAK için üç paralel sütun, her biri
+  // 1'den başlıyor. Tek haritaya sıkıştırılırsa iki bölümün cevabı kaybolur.
+  const anahtar = cevapAnahtariAyristir('1 C 1 A 1 E\n2 A 2 B 2 D');
+  assert.equal(anahtar.sutunlar.length, 3);
+  assert.equal(anahtar.sutunlar[0].get(1), 'C');
+  assert.equal(anahtar.sutunlar[1].get(1), 'A');
+  assert.equal(anahtar.sutunlar[2].get(2), 'D');
 });
 
 test('iptal edilen sorular tespit edilir', () => {
@@ -78,13 +172,57 @@ test('iptal edilen sorular tespit edilir', () => {
   assert.ok(!iptaller.has(1));
 });
 
-test('birleştirme raporu tutarlıdır', () => {
-  const { sorular } = sorulariAyristir(KITAPCIK);
-  const { sorular: birlesik, rapor } = birlestir(sorular, cevapAnahtariAyristir('1-C 2-C 3-B'));
+test('belgeyiAyristir kitapçık içindeki anahtarı bulup eşler', () => {
+  const belge = `${KITAPCIK}
+MARKA VEKİLLİĞİ SINAVI CEVAP ANAHTARI (A)
+1- C 2- C 3- B
+`;
+  const { sorular, rapor } = belgeyiAyristir(belge);
   assert.equal(rapor.toplam, 3);
   assert.equal(rapor.cevapliEslesen, 3);
-  assert.equal(rapor.cevapsiz, 0);
-  assert.equal(birlesik[2].cevap, 'B');
+  assert.equal(sorular[0].cevap, 'C');
+  assert.equal(sorular[2].cevap, 'B');
+});
+
+test('ikinci kitapçık numaralandırmaya devam ediyorsa kaydırma uygulanmaz', () => {
+  const belge = `
+AÇIKLAMALAR
+KISALTMALAR
+1. Birinci kitapçığın sorusu nedir?
+A) Bir B) İki C) Üç D) Dört E) Beş
+AÇIKLAMALAR
+KISALTMALAR
+61. İkinci kitapçığın sorusu nedir?
+A) Altı B) Yedi C) Sekiz D) Dokuz E) On
+CEVAP ANAHTARI
+1- A 61- D
+`;
+  const { sorular } = belgeyiAyristir(belge);
+  assert.equal(sorular.length, 2);
+  assert.equal(sorular[1].anahtarNo, 61);
+  assert.equal(sorular[1].cevap, 'D');
+});
+
+test('ikinci kitapçık 1\'den başlıyorsa anahtar numarası kaydırılır', () => {
+  const belge = `
+AÇIKLAMALAR
+KISALTMALAR
+1. Birinci kitapçığın birinci sorusu nedir?
+A) Bir B) İki C) Üç D) Dört E) Beş
+2. Birinci kitapçığın ikinci sorusu nedir?
+A) Bir B) İki C) Üç D) Dört E) Beş
+AÇIKLAMALAR
+KISALTMALAR
+1. İkinci kitapçığın sorusu nedir?
+A) Altı B) Yedi C) Sekiz D) Dokuz E) On
+CEVAP ANAHTARI
+1- A 2- B 3- E
+`;
+  const { sorular } = belgeyiAyristir(belge);
+  assert.equal(sorular.length, 3);
+  assert.equal(sorular[2].yerelNo, 1);
+  assert.equal(sorular[2].anahtarNo, 3);
+  assert.equal(sorular[2].cevap, 'E');
 });
 
 test('seçeneklerde bulunmayan cevap harfi yok sayılır', () => {

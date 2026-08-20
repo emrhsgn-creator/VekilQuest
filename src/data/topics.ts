@@ -17,6 +17,14 @@ export type Area = {
   kisa: string;
   /** Grafiklerde kullanılan seri rengi; index.css'te açık/koyu tema için ayrı ayrı tanımlı. */
   renk: string;
+  /**
+   * Marka vekilliği sınavının kapsamı dışında kalan alan.
+   *
+   * Genel Yeterlik kitapçıkları patent ve marka sorularını birlikte taşıyor.
+   * Patent soruları bankada dursun (isteyen çalışır) ama marka hazırlığının
+   * istatistiklerini bozmasın diye ayarlardan varsayılan olarak elenir.
+   */
+  kapsamDisi?: boolean;
 };
 
 export type Topic = {
@@ -38,6 +46,7 @@ export const AREAS: Area[] = [
   { id: 'yonetmelik', ad: 'Uygulama Yönetmeliği ve Usul', kisa: 'Yönetmelik', renk: 'var(--seri-7)' },
   { id: 'temel', ad: 'Temel Hukuk', kisa: 'Temel Hukuk', renk: 'var(--seri-8)' },
   { id: 'uygulama', ad: 'Kurum Uygulaması ve İçtihat', kisa: 'İçtihat', renk: 'var(--seri-9)' },
+  { id: 'patent', ad: 'Patent ve Faydalı Model', kisa: 'Patent', renk: 'var(--seri-7)', kapsamDisi: true },
 ];
 
 export const TOPICS: Topic[] = [
@@ -280,7 +289,66 @@ export const TOPICS: Topic[] = [
   },
 ];
 
+// ───────────────────────────── PATENT (kapsam dışı) ─────────────────────────
+// Genel Yeterlik kitapçıklarının 1. bölümü patent sorularından oluşuyor.
+// Bu sorular marka vekilliği sınavının kapsamında değil; yine de doğru
+// sınıflandırılsınlar ki "Sınıflandırılmamış" yığınına düşüp analizi
+// bulandırmasınlar.
+TOPICS.push(
+  {
+    id: 'patent-patentlenebilirlik', areaId: 'patent', ad: 'Patentlenebilirlik şartları ve istisnalar', madde: 'SMK m.82-84', agirlik: 3,
+    anahtar: ['patentlenebilir buluş', 'buluş basamağı', 'sanayiye uygulanabilir', 'tekniğin bilinen durumu', 'buluş niteliğinde olmayan', 'keşif', 'tedavi usulleri', 'bitki çeşitleri', 'patentlenebilirliğin istisnaları', 'yenilik değerlendirmesi', 'buluşa patent verilmesini etkilemeyen açıklamalar', 'teşhis yöntemleri', 'mikrobiyolojik işlem', 'hayvan ırkları', 'insan klonlama', 'bilgisayar programı buluş', 'estetik niteliği bulunan mahsuller'],
+  },
+  {
+    id: 'patent-basvuru', areaId: 'patent', ad: 'Patent başvurusu, tarifname ve istemler', madde: 'SMK m.90-94', agirlik: 3,
+    anahtar: ['tarifname', 'istemler', 'istem', 'özet', 'buluş bütünlüğü', 'bölünmüş başvuru', 'başvuru tarihinin kesinleşmesi', 'patent başvurusu unsurları', 'dizi listesi', 'biyolojik materyal', 'resimler patent', 'buluşun açıklanması', 'tarifname takımı', 'istem bağımlı', 'bağımsız istem', 'patent başvurusu'],
+  },
+  {
+    id: 'patent-arastirma-inceleme', areaId: 'patent', ad: 'Araştırma, inceleme ve patentin verilmesi', madde: 'SMK m.95-101', agirlik: 3,
+    anahtar: ['araştırma raporu', 'inceleme raporu', 'araştırma talebi', 'inceleme talebi', 'patentin verilmesi', 'başvurunun yayımlanması', 'erken yayım', 'yıllık ücret', 'incelemesiz patent', 'sistem tercihi', 'şeklî inceleme patent', 'olumsuz araştırma raporu', 'patent bülteni'],
+  },
+  {
+    id: 'patent-itiraz', areaId: 'patent', ad: 'Patentte itiraz ve Kurum kararlarına itiraz', madde: 'SMK m.99-100', agirlik: 2,
+    anahtar: ['patent itiraz altı ay', 'patente itiraz', 'incelemesiz patent', 'üçüncü kişilerin görüşü patent', 'patent karara itiraz', 'patentin verilmesi kararına itiraz'],
+  },
+  {
+    id: 'patent-hak-sahipligi', areaId: 'patent', ad: 'Patentte hak sahipliği ve çalışan buluşları', madde: 'SMK m.109-122', agirlik: 2,
+    anahtar: ['hizmet buluşu', 'serbest buluş', 'buluş bildirimi', 'işverenin hak talebi', 'çalışan buluşu bedel', 'yükseköğretim kurumlarında buluş', 'patent isteme hakkı', 'buluş sahibi', 'patentin gaspı', 'kamu destekli proje buluş', 'önalım hakkı'],
+  },
+  {
+    id: 'patent-lisans-zorunlu', areaId: 'patent', ad: 'Patentte lisans ve zorunlu lisans', madde: 'SMK m.125-137', agirlik: 2,
+    anahtar: ['zorunlu lisans', 'kullanılmama zorunlu lisans', 'bağımlılık zorunlu lisans', 'kamu yararı lisans', 'lisans verme teklifi', 'patent lisans', 'ek patent', 'gizli patent'],
+  },
+  {
+    id: 'patent-faydali-model', areaId: 'patent', ad: 'Faydalı model', madde: 'SMK m.142-145', agirlik: 3,
+    anahtar: ['faydalı model', 'faydalı model ile korunabilir', 'çifte koruma', 'faydalı modelin hükümsüzlüğü', 'dönüştürme faydalı model', 'faydalı model belge'],
+  },
+  {
+    id: 'patent-uluslararasi', areaId: 'patent', ad: 'PCT, EPC ve uluslararası patent sistemi', agirlik: 2,
+    anahtar: ['pct', 'ulusal aşama', 'epo', 'avrupa patenti', 'epc', 'uluslararası araştırma raporu', 'ipc', 'uluslararası patent sınıflandırması', 'strazburg', 'avrupa patent sözleşmesi', 'ulusal aşamaya giriş', 'wipo patent'],
+  },
+  {
+    // Toplama konusu: patent bölümündeki ama daha özel bir konuya oturmayan
+    // sorular "Sınıflandırılmamış" yığınına düşüp marka analizini bozmasın.
+    id: 'patent-genel', areaId: 'patent', ad: 'Patent — diğer', madde: 'SMK 4. Kitap', agirlik: 1,
+    anahtar: ['patent', 'buluş', 'faydalı model', 'istem', 'tarifname', 'buluş sahibi', 'patent vekili', '551 sayılı'],
+  },
+  {
+    id: 'patent-tecavuz', areaId: 'patent', ad: 'Patent hakkına tecavüz ve hükümsüzlük', madde: 'SMK m.138-141', agirlik: 2,
+    anahtar: ['patent hükümsüzlük', 'patent tecavüz', 'dolaylı kullanım', 'ispat yükünün yer değiştirmesi', 'usul patenti', 'patent hakkına tecavüz'],
+  },
+);
+
 export const TOPIC_BY_ID = new Map(TOPICS.map((t) => [t.id, t]));
+
+/** Marka vekilliği sınavının kapsamı dışındaki konu kimlikleri. */
+export const KAPSAM_DISI_TOPIC_IDLERI = new Set(
+  TOPICS.filter((t) => AREAS.find((a) => a.id === t.areaId)?.kapsamDisi).map((t) => t.id),
+);
+
+export function kapsamDisiMi(topicId: string | undefined): boolean {
+  return !!topicId && KAPSAM_DISI_TOPIC_IDLERI.has(topicId);
+}
 export const AREA_BY_ID = new Map(AREAS.map((a) => [a.id, a]));
 
 export function topicAd(id: string | undefined): string {
