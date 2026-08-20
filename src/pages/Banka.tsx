@@ -3,7 +3,7 @@ import { useStore } from '../store';
 import { BosDurum, Kart, Kip } from '../components/ui';
 import { FiltrePaneli } from '../components/FiltrePaneli';
 import { BOS_FILTRE, filtrele, type Filtre } from '../lib/sec';
-import { TOPICS, TOPIC_BY_ID, areaOf } from '../data/topics';
+import { TOPICS, TOPIC_BY_ID, areaOf, kapsamDisiMi } from '../data/topics';
 import { kisalt } from '../lib/metin';
 import { siniflandir } from '../lib/classify';
 import type { Soru } from '../types';
@@ -24,6 +24,7 @@ export default function Banka() {
   );
   const gorunen = liste.slice(sayfa * SAYFA_BOYU, (sayfa + 1) * SAYFA_BOYU);
 
+  const kapsamDisi = sorular.filter((s) => kapsamDisiMi(s.topicId));
   const siniflandirilmamis = sorular.filter((s) => !s.topicId).length;
   const dusukGuven = sorular.filter((s) => s.topicId && (s.topicGuven ?? 1) < 0.4).length;
   const cevapsiz = sorular.filter((s) => !s.cevap && !s.iptal).length;
@@ -93,6 +94,23 @@ export default function Banka() {
                   Otomatik sınıflandır
                 </button>
               )}
+            </div>
+          </div>
+        )}
+
+        {kapsamDisi.length > 0 && (
+          <div className="bilgi-kutusu uyari">
+            <div className="satir aralikli">
+              <span>
+                Bankada marka vekilliği kapsamı dışında <strong>{kapsamDisi.length} patent sorusu</strong> var.
+                Bunlar çalışma ve analiz ekranlarında zaten görünmüyor; tamamen kaldırabilirsin.
+              </span>
+              <button className="dugme kucuk tehlike" onClick={() => {
+                soruSil(kapsamDisi.map((s) => s.id));
+                setBilgi(`${kapsamDisi.length} patent sorusu bankadan silindi.`);
+              }}>
+                Patent sorularını sil
+              </button>
             </div>
           </div>
         )}

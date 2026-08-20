@@ -118,11 +118,19 @@ başında değil. Bu yüzden bölüm sınırı başlıktan değil, numaralandır
 
 ## Marka kapsamı
 
-Kitapçıkların yarısından fazlası patent sorusu. Uygulama bunları bankada tutar ama
-**Ayarlar → “Yalnızca marka vekilliği kapsamındaki soruları çalış”** açıkken çalışma, deneme,
-tekrar ve analiz ekranlarının dışında bırakır. Patent bölümündeki sorular otomatik olarak
-“Patent ve Faydalı Model” alanına atanır; bir soruyu yanlış yerde görürsen Soru Bankası
-ekranından düzeltebilirsin.
+Kitapçıkların yarısından fazlası patent sorusu ve bunlar **hiç içe aktarılmaz.** İçe aktarma
+ekranındaki *“Patent sorularını alma”* kutusu varsayılan olarak işaretlidir; terminal aracında
+aynı davranış `--kapsam marka` (varsayılan) ile gelir.
+
+Kapsam kararı bölüm bazında verilir, tek tek sorulara göre değil. Böylece:
+
+- Patent bölümündeki bir marka sorusu yanlışlıkla elenmez — bölümün tamamı elenir ya da kalır.
+- 2015'in karma **ORTAK** bölümü korunur; o sorular marka adayının da kapsamındadır.
+
+Hepsini istiyorsan onay kutusunu kaldır ya da `--kapsam hepsi` ver. Bankaya sonradan patent
+sorusu girdiyse Soru Bankası ekranındaki **“Patent sorularını sil”** düğmesiyle temizleyebilirsin.
+Ayrıca **Ayarlar → “Yalnızca marka vekilliği kapsamındaki soruları çalış”** ikinci bir güvence
+olarak durur.
 
 ## Telif
 

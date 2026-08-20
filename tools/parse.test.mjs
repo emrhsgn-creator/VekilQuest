@@ -10,7 +10,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   sorulariAyristir, cevapAnahtariAyristir, iptalEdilenler, birlestir,
-  metniTemizle, belgeyiAyristir, katla, beyanEdilenSoruSayisi,
+  metniTemizle, belgeyiAyristir, katla, beyanEdilenSoruSayisi, bolumKapsamlari,
 } from '../src/lib/parse.mjs';
 
 const KITAPCIK = `
@@ -235,4 +235,28 @@ test('boş metin çöküşe yol açmaz', () => {
   const { sorular, uyarilar } = sorulariAyristir('');
   assert.equal(sorular.length, 0);
   assert.equal(uyarilar.length, 1);
+});
+
+test('bölüm kapsamı patent ve marka bölümlerini ayırır', () => {
+  const soru = (bolum, metin) => ({ bolum, metin, secenekler: [{ metin: '' }] });
+  const kapsam = bolumKapsamlari([
+    soru('1. kitapçık', 'Patent başvurusunun tarifname ve istemleri buluş bütünlüğü taşımalıdır.'),
+    soru('1. kitapçık', 'Faydalı model başvurusunda araştırma raporu talebi ve buluş basamağı.'),
+    soru('1. kitapçık', 'PCT ulusal aşamaya giriş ve EPO nezdindeki patent işlemleri.'),
+    soru('2. kitapçık', 'Marka tescilinde mutlak ret nedenleri ve ayırt edici nitelik.'),
+    soru('2. kitapçık', 'Coğrafi işaret başvurusunda menşe adı ile mahreç işareti ayrımı.'),
+    soru('2. kitapçık', 'Madrid Protokolü kapsamında uluslararası marka tescili.'),
+  ]);
+  assert.equal(kapsam.get('1. kitapçık'), 'patent');
+  assert.equal(kapsam.get('2. kitapçık'), 'marka');
+});
+
+test('karma bölüm patent sayılıp elenmez', () => {
+  // 2015 kitapçığının "ORTAK" bölümü her iki alandan da soru taşır; marka
+  // adayının kapsamındadır, bu yüzden "patent" etiketi almamalı.
+  const kapsam = bolumKapsamlari([
+    { bolum: 'ORTAK', metin: 'Marka hakkına tecavüz halinde patent ve marka vekilinin sorumluluğu.', secenekler: [{ metin: '' }] },
+    { bolum: 'ORTAK', metin: 'Sınai mülkiyet hakkında lisans sözleşmesi; marka ve patent için ortak hükümler.', secenekler: [{ metin: '' }] },
+  ]);
+  assert.notEqual(kapsam.get('ORTAK'), 'patent');
 });

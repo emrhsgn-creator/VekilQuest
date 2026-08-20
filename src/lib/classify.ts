@@ -149,6 +149,13 @@ export type SiniflandirilabilirSoru = {
  */
 export function topluSiniflandir<T extends SiniflandirilabilirSoru>(
   sorular: T[],
+  /**
+   * Bölüm kapsamları önceden ölçüldüyse (bkz. parse.mjs `bolumKapsamlari`)
+   * kapsam kararı buradan alınır. Böylece kapsam için tek bir otorite olur:
+   * marka bölümündeki bir soru — "ORTAK" gibi karma bir bölümde olsa bile —
+   * patent konusuna atanıp çalışma ekranlarından gizlenmez.
+   */
+  bolumKapsami?: Map<string, 'patent' | 'marka' | 'karma'>,
 ): Map<string, Siniflandirma> {
   const patentTopicIdleri = new Set(TOPICS.filter((t) => t.areaId === 'patent').map((t) => t.id));
   const metinler = new Map(sorular.map((s) => [s.id, [s.metin, ...s.secenekler.map((o) => o.metin)]] as const));
@@ -195,13 +202,24 @@ export function topluSiniflandir<T extends SiniflandirilabilirSoru>(
   }
 
   const sonuc = new Map(ilk);
-  for (const [anahtar, oran] of oranlar) {
-    const yil = anahtar.split('|')[0];
-    const enYuksekMi = yilinEnYuksegi.get(yil) === anahtar;
-    const kisit: AlanKisiti = enYuksekMi && oran >= 0.5 ? 'patent' : oran < 0.15 ? 'markaVb' : undefined;
+  const anahtarlar = bolumKapsami ? [...kumeler.keys()] : [...oranlar.keys()];
+
+  for (const anahtar of anahtarlar) {
+    let kisit: AlanKisiti;
+    if (bolumKapsami) {
+      // Dışarıdan gelen kapsam ölçümü belirleyici.
+      const bolumAdi = anahtar.split('|')[1];
+      kisit = bolumKapsami.get(bolumAdi) === 'patent' ? 'patent' : 'markaVb';
+    } else {
+      const oran = oranlar.get(anahtar);
+      if (oran === undefined) continue;
+      const yil = anahtar.split('|')[0];
+      const enYuksekMi = yilinEnYuksegi.get(yil) === anahtar;
+      kisit = enYuksekMi && oran >= 0.5 ? 'patent' : oran < 0.15 ? 'markaVb' : undefined;
+    }
     if (!kisit) continue;
 
-    for (const soru of kumeler.get(anahtar)!) {
+    for (const soru of kumeler.get(anahtar) ?? []) {
       const [metin, ...secenekler] = metinler.get(soru.id)!;
       const yeni = siniflandir(metin, secenekler, kisit);
       // Patent bölümünde hiçbir konuya oturmayan soru, marka analizini

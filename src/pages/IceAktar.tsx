@@ -6,7 +6,7 @@ import { pdfMetniCikar, pdfMi } from '../lib/pdf';
 import { TOPICS, TOPIC_BY_ID } from '../data/topics';
 import { kisalt } from '../lib/metin';
 import type { Soru, Yedek } from '../types';
-import { belgeyiAyristir, type AyristirmaRaporu, type HamSoru } from '../lib/parse.mjs';
+import { belgeyiAyristir, bolumKapsamlari, type AyristirmaRaporu, type HamSoru } from '../lib/parse.mjs';
 
 type Adim = 'yukle' | 'onizle';
 
@@ -20,6 +20,7 @@ export default function IceAktar() {
   const [yil, setYil] = useState('');
   const [kitapcikTuru, setKitapcikTuru] = useState('A');
   const [oturum, setOturum] = useState('');
+  const [patentiAtla, setPatentiAtla] = useState(true);
   const [ayristirilan, setAyristirilan] = useState<HamSoru[]>([]);
   const [rapor, setRapor] = useState<AyristirmaRaporu | null>(null);
   const [uyarilar, setUyarilar] = useState<string[]>([]);
@@ -59,7 +60,17 @@ export default function IceAktar() {
       .filter(Boolean).join(' ');
     const simdi = Date.now();
 
-    const uygun = ayristirilan.filter((s) => s.metin && s.secenekler.length >= 2);
+    const bolumAdi = (s: HamSoru) =>
+      s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : 'tümü');
+    const kapsamlar = bolumKapsamlari(ayristirilan);
+
+    const uygun = ayristirilan
+      .filter((s) => s.metin && s.secenekler.length >= 2)
+      // Genel Yeterlik kitapçığının patent bölümü marka vekilliği kapsamı
+      // dışında; karar tek tek sorulara değil bölümün tamamına bakılarak
+      // verilir, böylece yanlış sınıflandırılan bir marka sorusu elenmez.
+      .filter((s) => !patentiAtla || kapsamlar.get(bolumAdi(s)) !== 'patent');
+    const elenen = ayristirilan.length - uygun.length;
     const kimlikli = uygun.map((s) => ({
       id: String(s.sira),
       metin: s.metin,
@@ -67,7 +78,7 @@ export default function IceAktar() {
       yil: yil ? Number(yil) : undefined,
       bolum: s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : undefined),
     }));
-    const siniflar = topluSiniflandir(kimlikli);
+    const siniflar = topluSiniflandir(kimlikli, kapsamlar);
 
     const yeniSorular: Soru[] = uygun
       .map((s) => {
@@ -96,7 +107,10 @@ export default function IceAktar() {
       });
 
     soruEkle(yeniSorular);
-    setDurum(`${yeniSorular.length} soru bankaya eklendi.`);
+    setDurum(
+      `${yeniSorular.length} soru bankaya eklendi.` +
+      (elenen > 0 ? ` ${elenen} patent sorusu kapsam dışı olduğu için alınmadı.` : ''),
+    );
     setAdim('yukle');
     setKitapcikMetni('');
     setAnahtarMetni('');
@@ -128,15 +142,22 @@ export default function IceAktar() {
       const gelen: Soru[] = Array.isArray(veri) ? veri : veri.sorular;
       if (!Array.isArray(gelen)) throw new Error('Dosyada "sorular" dizisi bulunamadı.');
       const simdi = Date.now();
-      const kimlikli = gelen.map((s, i) => ({
+      const kapsamlar = bolumKapsamlari(
+        gelen.map((s) => ({ bolum: s.bolum, metin: s.metin ?? '', secenekler: s.secenekler ?? [] })),
+      );
+      const suzulmus = patentiAtla
+        ? gelen.filter((s) => kapsamlar.get(s.bolum ?? 'tümü') !== 'patent')
+        : gelen;
+      const elenen = gelen.length - suzulmus.length;
+      const kimlikli = suzulmus.map((s, i) => ({
         id: s.id ?? `js-${simdi}-${i}`,
         metin: s.metin ?? '',
         secenekler: s.secenekler ?? [],
         yil: s.yil,
         bolum: s.bolum,
       }));
-      const siniflar = topluSiniflandir(kimlikli);
-      soruEkle(gelen.map((s, i) => {
+      const siniflar = topluSiniflandir(kimlikli, kapsamlar);
+      soruEkle(suzulmus.map((s, i) => {
         const kimlik = kimlikli[i].id;
         const sonuc = s.topicId ? null : siniflar.get(kimlik);
         return {
@@ -149,7 +170,10 @@ export default function IceAktar() {
           smkMaddeleri: s.smkMaddeleri ?? sonuc?.maddeler,
         };
       }));
-      setDurum(`${gelen.length} soru JSON'dan içe aktarıldı.`);
+      setDurum(
+        `${suzulmus.length} soru JSON'dan içe aktarıldı.` +
+        (elenen > 0 ? ` ${elenen} patent sorusu kapsam dışı olduğu için alınmadı.` : ''),
+      );
     } catch (hata) {
       setDurum(`JSON okunamadı: ${(hata as Error).message}`);
     }
@@ -227,6 +251,15 @@ export default function IceAktar() {
                      onChange={(e) => setOturum(e.target.value)} />
             </div>
           </div>
+          <label className="satir" style={{ gap: 9, fontWeight: 500, marginBottom: 12 }}>
+            <input type="checkbox" style={{ width: 'auto' }} checked={patentiAtla}
+                   onChange={(e) => setPatentiAtla(e.target.checked)} />
+            Patent sorularını alma (marka vekilliği kapsamı dışı)
+          </label>
+          <p className="minik" style={{ marginTop: -6 }}>
+            Genel Yeterlik kitapçıklarının bir bölümü patent, diğeri marka sorularından oluşur.
+            Bu seçenek açıkken patent bölümü hiç içe aktarılmaz.
+          </p>
           <button className="dugme birincil buyuk" onClick={ayristir} disabled={!kitapcikMetni.trim()}>
             Ayrıştır ve önizle
           </button>

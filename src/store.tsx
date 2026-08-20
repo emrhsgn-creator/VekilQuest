@@ -5,6 +5,7 @@ import {
 import { oku, yaz, yerelOku, yerelYaz } from './lib/db';
 import { kaliteNotu, kartiGuncelle, yeniKart } from './lib/srs';
 import { topluSiniflandir } from './lib/classify';
+import { bolumKapsamlari } from './lib/parse.mjs';
 import { kapsamDisiMi } from './data/topics';
 import {
   VARSAYILAN_AYARLAR,
@@ -127,7 +128,7 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
       setDurum((d) => {
         // Bölüm duyarlı toplu atama: patent bölümündeki sorular marka
         // konularına, marka bölümündekiler patent konularına düşmesin.
-        const sonuclar = topluSiniflandir(d.sorular);
+        const sonuclar = topluSiniflandir(d.sorular, bolumKapsamlari(d.sorular));
         const sorular = d.sorular.map((s) => {
           // Elle atanmış konular korunur.
           if (s.topicId && (s.topicGuven ?? 0) >= 0.9) return s;

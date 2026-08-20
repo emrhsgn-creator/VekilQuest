@@ -81,9 +81,9 @@ export type Ayarlar = {
   sinavTarihi?: string;
   anindaGeriBildirim: boolean;
   /**
-   * Genel Yeterlik kitapçıkları patent sorularını da içeriyor. Açıkken patent
-   * soruları çalışma, deneme ve analiz ekranlarının dışında tutulur; soru
-   * bankasında görünmeye devam eder.
+   * Patent bölümü zaten içe aktarılmıyor; bu ayar ikinci bir güvence. Elle
+   * eklenmiş ya da başka kaynaktan gelmiş patent soruları da çalışma, deneme
+   * ve analiz ekranlarının dışında tutulur.
    */
   sadeceMarkaKapsami: boolean;
   secenekleriKaristir: boolean;

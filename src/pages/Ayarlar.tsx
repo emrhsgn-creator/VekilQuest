@@ -93,9 +93,9 @@ export default function Ayarlar() {
             Yalnızca marka vekilliği kapsamındaki soruları çalış
           </label>
           <p className="minik" style={{ marginTop: 0, marginBottom: 12 }}>
-            Genel Yeterlik kitapçıkları patent sorularını da içerir. Bu seçenek açıkken patent
-            soruları çalışma, deneme ve analiz ekranlarının dışında tutulur; soru bankasında
-            görünmeye devam eder.
+            Genel Yeterlik kitapçıklarının patent bölümü zaten içe aktarılmıyor. Bu seçenek ikinci
+            bir güvence: elle eklenen ya da başka bir kaynaktan gelen patent soruları da çalışma,
+            deneme ve analiz ekranlarının dışında tutulur.
           </p>
           <div className="alan">
             <label htmlFor="a-tema">Tema</label>

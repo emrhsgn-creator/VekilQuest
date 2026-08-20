@@ -585,3 +585,72 @@ export function birlestir(sorular, anahtar, iptaller = new Set()) {
     },
   };
 }
+
+/* ─────────────────────────── bölüm kapsamı (marka / patent) ─────────────── */
+
+/**
+ * Genel Yeterlik kitapçıkları patent ve marka sorularını ayrı bölümlerde
+ * taşıyor. Marka vekilliğine hazırlanan biri için patent bölümü tümüyle
+ * kapsam dışı; bu yüzden içe aktarmadan önce hangi bölümün ne olduğunu
+ * bilmemiz gerekiyor.
+ *
+ * Karar tek tek sorulara değil bölümün tamamına bakılarak veriliyor: tek bir
+ * sorunun içinde "patent" kelimesinin geçmesi onu patent sorusu yapmaz, ama
+ * kırk sorunun tamamında geçiyorsa bölüm patent bölümüdür. Ayrıca eşik mutlak
+ * değil oransal — "ORTAK" gibi karma bölümler ikisine de yakın çıkar ve
+ * elenmez.
+ *
+ * Bu, taksonomiye bağlı olmayan hafif bir ölçüm (src/lib/classify.ts'teki
+ * ayrıntılı sınıflandırmadan bağımsız), çünkü terminal aracının da buna
+ * ihtiyacı var.
+ */
+const PATENT_IZLERI = [
+  'patent', 'buluş', 'faydalı model', 'istem', 'tarifname', 'buluş basamağı',
+  'araştırma raporu', 'inceleme raporu', 'pct', 'epo', 'avrupa patenti',
+  'ipc', 'rüçhan belgesi', 'tekniğin bilinen durumu', 'hizmet buluşu',
+  'zorunlu lisans', '551 sayılı',
+];
+
+const MARKA_IZLERI = [
+  'marka', 'coğrafi işaret', 'menşe adı', 'mahreç işareti', 'geleneksel ürün',
+  'tasarım', 'nice', 'nis anlaşması', 'muvafakat', 'yayıma itiraz',
+  'mutlak ret', 'nispi ret', 'madrid', 'tanınmış', '556 sayılı', '555 sayılı',
+  'ayırt edici', 'sınıflandırma', 'tescilli marka',
+];
+
+function izSayisi(metin, izler) {
+  const k = katla(metin);
+  let toplam = 0;
+  for (const iz of izler) {
+    const desen = katla(iz);
+    let konum = k.indexOf(desen);
+    while (konum !== -1) { toplam += 1; konum = k.indexOf(desen, konum + desen.length); }
+  }
+  return toplam;
+}
+
+/**
+ * Soruları bölümlerine göre gruplayıp her bölümün kapsamını belirler.
+ * @param {{bolum?: string, kitapcikNo?: number, metin: string, secenekler: {metin:string}[]}[]} sorular
+ * @returns {Map<string, 'patent'|'marka'|'karma'>} bölüm adı -> kapsam
+ */
+export function bolumKapsamlari(sorular) {
+  const kumeler = new Map();
+  for (const soru of sorular) {
+    const ad = soru.bolum ?? (soru.kitapcikNo ? `${soru.kitapcikNo}. kitapçık` : 'tümü');
+    if (!kumeler.has(ad)) kumeler.set(ad, []);
+    kumeler.get(ad).push(soru);
+  }
+
+  const sonuc = new Map();
+  for (const [ad, liste] of kumeler) {
+    const metin = liste.map((s) => `${s.metin} ${s.secenekler.map((o) => o.metin).join(' ')}`).join(' \n ');
+    const patent = izSayisi(metin, PATENT_IZLERI);
+    const marka = izSayisi(metin, MARKA_IZLERI);
+    // Belirgin baskınlık aranıyor: karma bölümler ("ORTAK") elenmesin.
+    if (patent > marka * 2) sonuc.set(ad, 'patent');
+    else if (marka > patent * 2) sonuc.set(ad, 'marka');
+    else sonuc.set(ad, 'karma');
+  }
+  return sonuc;
+}

@@ -57,3 +57,8 @@ export function birlestir(
   anahtar: Map<number, string> | CevapAnahtari,
   iptaller?: Set<number>,
 ): { sorular: HamSoru[]; rapor: Omit<AyristirmaRaporu, 'gorselIcerikli' | 'bolumler'> };
+
+/** Bölüm adı -> kapsam. "patent" bölümleri marka vekilliği kapsamı dışıdır. */
+export function bolumKapsamlari(
+  sorular: { bolum?: string; kitapcikNo?: number; metin: string; secenekler: { metin: string }[] }[],
+): Map<string, 'patent' | 'marka' | 'karma'>;

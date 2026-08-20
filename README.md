@@ -20,7 +20,7 @@ cihazından çıkmaz.
 | **Deneme sınavı** | Süreli, geri bildirimsiz, soru paletli gerçek sınav simülasyonu; deneme geçmişi ve ortalaması |
 | **Tekrar** | SM-2 türevi aralıklı tekrar; ısrarla yanlış yapılanlar ve işaretlediklerin |
 | **Analiz** | Konu bazlı hâkimiyet, sınav ağırlığı, zaman/yıl eğilimi, hata ve süre analizi |
-| **Kapsam filtresi** | Genel Yeterlik kitapçıkları patent sorularını da taşır; ayarlardan patent soruları çalışma ve analiz dışında tutulur |
+| **Kapsam filtresi** | Genel Yeterlik kitapçıklarının patent bölümü içe aktarılmaz; yalnızca marka, coğrafi işaret ve ortak sorular bankaya girer |
 | **Çalışma planı** | Sınav tarihine göre günlük program, tempo uyarısı, kalan iş hesabı |
 | **Soru bankası** | Arama, düzenleme, elle soru ekleme, otomatik konu sınıflandırma, JSON dışa aktarma |
 | **İçe aktar** | PDF/metin ayrıştırma, önizleme ve düzeltme, JSON ve yedek yükleme |
@@ -86,8 +86,32 @@ Kitapçık düzeni yıldan yıla değişiyor ve naif bir “satır başındaki n
 | Cevap anahtarı bazen 5 sütun sürekli (1-100), bazen bölüm başına paralel (2015) | Numaralar benzersizse tek harita, tekrar ediyorsa sütun-bölüm eşlemesi |
 | Gövdesi görsel olan sorulardan artakalan seçenek blokları | Numarası olmayan bloklar soru sayılmaz — yoksa **sonraki bütün cevaplar kayar** |
 
-Ölçülen sonuç (2015, 2017, 2019, 2021 A kitapçıkları): **370 soru, 370'inin cevabı eşleşti,
-doğrulayıcıda 0 sorun.** 2017 ve 2021 kitapçıkları tek uyarı bile üretmeden 100/100 çıkıyor.
+Ölçülen sonuç (2015, 2017, 2019, 2021 A kitapçıkları): **370 soru ayrıştırıldı, 370'inin cevabı
+eşleşti, doğrulayıcıda 0 sorun.** 2017 ve 2021 kitapçıkları tek uyarı bile üretmeden 100/100
+çıkıyor. Bunların **166'sı marka vekilliği kapsamında**; patent bölümleri içe aktarılmaz.
+
+### Marka kapsamı
+
+Genel Yeterlik kitapçıkları iki sınav taşır: bir bölüm patent, diğeri marka / coğrafi işaret /
+tasarım. Marka vekilliğine hazırlanan biri için patent bölümü kapsam dışıdır ve **hiç içe
+aktarılmaz.**
+
+Karar tek tek sorulara değil bölümün tamamına bakılarak verilir (`bolumKapsamlari`): tek bir
+soruda "patent" kelimesinin geçmesi onu patent sorusu yapmaz, ama kırk sorunun tamamında
+geçiyorsa bölüm patent bölümüdür. Eşik oransal olduğu için 2015'in karma **ORTAK** bölümü
+elenmez — o sorular marka adayının da kapsamındadır.
+
+| Yıl | Bölüm | Soru | Sonuç |
+|---|---|---|---|
+| 2015 | PATENT | 25 | elendi |
+| 2015 | MARKA · ORTAK | 25 · 23 | alındı |
+| 2017 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
+| 2019 | 1. kitapçık · 2. kitapçık | 59 · 38 | elendi · alındı |
+| 2021 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
+
+Hepsini yine de istersen: içe aktarma ekranındaki onay kutusunu kapat ya da
+`node tools/pdf-to-json.mjs … --kapsam hepsi`. Bankaya patent sorusu girdiyse Soru Bankası
+ekranındaki “Patent sorularını sil” düğmesiyle temizleyebilirsin.
 
 ## Analiz nasıl hesaplanıyor
 

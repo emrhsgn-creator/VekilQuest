@@ -18,7 +18,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { belgeyiAyristir } from '../src/lib/parse.mjs';
+import { belgeyiAyristir, bolumKapsamlari } from '../src/lib/parse.mjs';
 
 function argumanlar(argv) {
   const cikti = {};
@@ -75,6 +75,8 @@ Marka Vekilliği soru bankası dönüştürücü
   --yil      <2021>        Sınav yılı
   --kitapcik-turu <A|B>    Kitapçık türü
   --oturum   <1>           Aynı yılda birden fazla oturum varsa
+  --kapsam   <marka|hepsi> Varsayılan "marka": Genel Yeterlik kitapçığının
+                           patent bölümü çıktıya alınmaz
   --cikti    <dosya.json>  Çıktı yolu
 `);
   process.exit(arg.kitapcik ? 0 : 1);
@@ -101,7 +103,18 @@ if (arg.anahtar) {
   anahtarMetni = await pdfMetni(arg.anahtar);
 }
 
-const { sorular: ayristirilan, uyarilar, rapor } = belgeyiAyristir(kitapcikMetni, anahtarMetni);
+const { sorular: tumSorular, uyarilar, rapor } = belgeyiAyristir(kitapcikMetni, anahtarMetni);
+
+// Genel Yeterlik kitapçıkları patent ve marka sorularını ayrı bölümlerde
+// taşıyor. Varsayılan davranış, marka vekilliği kapsamı dışındaki patent
+// bölümünü hiç çıktıya almamak.
+const bolumAdi = (s) => s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : 'tümü');
+const kapsamlar = bolumKapsamlari(tumSorular);
+const hepsiniAl = arg.kapsam === 'hepsi';
+const ayristirilan = hepsiniAl
+  ? tumSorular
+  : tumSorular.filter((s) => kapsamlar.get(bolumAdi(s)) !== 'patent');
+const elenen = tumSorular.length - ayristirilan.length;
 
 const kaynak = [
   'TÜRKPATENT',
@@ -137,7 +150,16 @@ await mkdir(path.dirname(ciktiYolu), { recursive: true });
 await writeFile(ciktiYolu, JSON.stringify({ surum: 1, kaynak, sorular: banka }, null, 2), 'utf8');
 
 console.log(`\nYazıldı: ${ciktiYolu}`);
-console.table(rapor);
+console.table({ ...rapor, yazilan: ayristirilan.length, elenenPatent: elenen });
+console.log('\nBölüm kapsamları:');
+for (const [ad, kapsam] of kapsamlar) {
+  const adet = tumSorular.filter((s) => bolumAdi(s) === ad).length;
+  const durum = kapsam === 'patent' && !hepsiniAl ? 'ELENDİ' : 'alındı';
+  console.log(`  ${ad.padEnd(16)} ${kapsam.padEnd(7)} ${String(adet).padStart(3)} soru  →  ${durum}`);
+}
+if (elenen > 0) {
+  console.log(`\n${elenen} patent sorusu çıktıya alınmadı. Hepsini istiyorsan: --kapsam hepsi`);
+}
 if (uyarilar.length) {
   console.log('\nUyarılar:');
   for (const u of uyarilar.slice(0, 20)) console.log('  •', u);
