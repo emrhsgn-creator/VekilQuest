@@ -1,0 +1,25 @@
+name: Kontrol
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Tip denetimi
+        run: npx tsc -b
+      - name: Testler
+        run: npm test
+      - name: Soru bankası doğrulama
+        run: node tools/validate-bank.mjs data/sorular || true
+      - name: Derleme
+        run: npm run build

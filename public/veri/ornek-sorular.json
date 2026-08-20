@@ -1,0 +1,1291 @@
+{
+  "surum": 1,
+  "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+  "aciklama": "Bu sorular resmî TÜRKPATENT sınav sorusu DEĞİLDİR. Uygulamanın boş açılmaması ve konu analizinin denenebilmesi için mevzuata dayanılarak yazılmış hazırlık sorularıdır. Gerçek çıkmış soruları İçe Aktar ekranından yükleyebilirsin.",
+  "sorular": [
+    {
+      "id": "ornek-1",
+      "no": 1,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "6769 sayılı Sınai Mülkiyet Kanunu uyarınca marka tescilinden doğan koruma süresi ve yenileme dönemleri aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Tescil tarihinden itibaren 7 yıl, yedişer yıllık dönemler hâlinde"
+        },
+        {
+          "harf": "B",
+          "metin": "Başvuru tarihinden itibaren 10 yıl, onar yıllık dönemler hâlinde"
+        },
+        {
+          "harf": "C",
+          "metin": "Tescil tarihinden itibaren 10 yıl, beşer yıllık dönemler hâlinde"
+        },
+        {
+          "harf": "D",
+          "metin": "Başvuru tarihinden itibaren 5 yıl, beşer yıllık dönemler hâlinde"
+        },
+        {
+          "harf": "E",
+          "metin": "Yayım tarihinden itibaren 10 yıl, onar yıllık dönemler hâlinde"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-tescil-yenileme",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        23
+      ],
+      "aciklama": "SMK m.23/1: Tescilli markanın koruma süresi başvuru tarihinden itibaren on yıldır. Bu süre, onar yıllık dönemler hâlinde yenilenir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-2",
+      "no": 2,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Marka başvurusunun Bültende yayımlanmasından sonra üçüncü kişilerin yayıma itiraz süresi ne kadardır?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Yayım tarihinden itibaren bir ay"
+        },
+        {
+          "harf": "B",
+          "metin": "Yayım tarihinden itibaren iki ay"
+        },
+        {
+          "harf": "C",
+          "metin": "Yayım tarihinden itibaren üç ay"
+        },
+        {
+          "harf": "D",
+          "metin": "Yayım tarihinden itibaren altı ay"
+        },
+        {
+          "harf": "E",
+          "metin": "Tescil tarihine kadar süre sınırı yoktur"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-gorus-itiraz",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        18
+      ],
+      "aciklama": "SMK m.18/2: Yayıma itiraz, yayım tarihinden itibaren iki ay içinde yapılır.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-3",
+      "no": 3,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Kurum kararlarına karşı karara itiraz süresi ve itirazı inceleyecek birim aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Bir ay – Markalar Dairesi Başkanlığı"
+        },
+        {
+          "harf": "B",
+          "metin": "İki ay – Yeniden İnceleme ve Değerlendirme Kurulu"
+        },
+        {
+          "harf": "C",
+          "metin": "Üç ay – Yönetim Kurulu"
+        },
+        {
+          "harf": "D",
+          "metin": "İki ay – Markalar Dairesi Başkanlığı"
+        },
+        {
+          "harf": "E",
+          "metin": "Altı ay – Yeniden İnceleme ve Değerlendirme Kurulu"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-karara-itiraz",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        20,
+        21
+      ],
+      "aciklama": "SMK m.20: Kurum kararlarına karşı, kararın bildiriminden itibaren iki ay içinde itiraz edilir; itirazlar Yeniden İnceleme ve Değerlendirme Kurulu tarafından incelenir (m.21).",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-4",
+      "no": 4,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Aşağıdakilerden hangisi SMK m.5'te düzenlenen mutlak ret nedenlerinden biri DEĞİLDİR?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Herhangi bir ayırt edici niteliğe sahip olmayan işaretler"
+        },
+        {
+          "harf": "B",
+          "metin": "Ticaret alanında cins, çeşit, vasıf belirten işaretler"
+        },
+        {
+          "harf": "C",
+          "metin": "Tescil başvurusu yapılan markanın, önceki tarihli bir marka ile karıştırılma ihtimali bulunması"
+        },
+        {
+          "harf": "D",
+          "metin": "Mal veya hizmetin niteliği, kalitesi veya coğrafi kaynağı konusunda halkı yanıltacak işaretler"
+        },
+        {
+          "harf": "E",
+          "metin": "Kamu düzenine veya genel ahlaka aykırı işaretler"
+        }
+      ],
+      "cevap": "C",
+      "topicId": "marka-mutlak-ret",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        5,
+        6
+      ],
+      "aciklama": "Karıştırılma ihtimali SMK m.6/1'de düzenlenen bir nispi ret nedenidir ve ancak itiraz üzerine incelenir. Diğer seçenekler m.5 kapsamındaki mutlak ret nedenleridir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-5",
+      "no": 5,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Tescilli markanın haklı bir sebep olmaksızın Türkiye'de ciddi biçimde kullanılmaması hâlinde iptal talebinde bulunulabilmesi için gereken süre nedir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Tescil tarihinden itibaren üç yıl"
+        },
+        {
+          "harf": "B",
+          "metin": "Tescil tarihinden itibaren beş yıl"
+        },
+        {
+          "harf": "C",
+          "metin": "Başvuru tarihinden itibaren beş yıl"
+        },
+        {
+          "harf": "D",
+          "metin": "Tescil tarihinden itibaren yedi yıl"
+        },
+        {
+          "harf": "E",
+          "metin": "Yayım tarihinden itibaren beş yıl"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-kullanim",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        9,
+        26
+      ],
+      "aciklama": "SMK m.9/1: Tescil tarihinden itibaren beş yıl içinde haklı bir sebep olmadan kullanılmayan ya da kullanımına beş yıl kesintisiz ara verilen marka iptal edilir (m.26/1-a).",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-6",
+      "no": 6,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Marka hükümsüzlüğü davasında sessiz kalma yoluyla hak kaybı bakımından öngörülen süre ve istisnası aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Üç yıl – kötüniyet hâli istisnadır"
+        },
+        {
+          "harf": "B",
+          "metin": "Beş yıl – kötüniyet hâli istisnadır"
+        },
+        {
+          "harf": "C",
+          "metin": "Beş yıl – istisna yoktur"
+        },
+        {
+          "harf": "D",
+          "metin": "On yıl – tanınmış marka hâli istisnadır"
+        },
+        {
+          "harf": "E",
+          "metin": "İki yıl – kötüniyet hâli istisnadır"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-hukumsuzluk",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        25
+      ],
+      "aciklama": "SMK m.25/6: Marka sahibi, sonraki tarihli bir markanın kullanıldığını bildiği veya bilmesi gerektiği hâlde beş yıl boyunca sessiz kalmışsa hükümsüzlük ileri süremez; sonraki tarihli marka tescilinde kötüniyet varsa bu kural uygulanmaz.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-7",
+      "no": 7,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Markanın devri bakımından SMK'da aranan şekil şartı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Adi yazılı şekil yeterlidir"
+        },
+        {
+          "harf": "B",
+          "metin": "Yazılı şekilde yapılması ve tarafların imzalarının noterce onaylanması"
+        },
+        {
+          "harf": "C",
+          "metin": "Resmî şekilde yapılması"
+        },
+        {
+          "harf": "D",
+          "metin": "Sicile kayıt geçerlilik şartıdır"
+        },
+        {
+          "harf": "E",
+          "metin": "Herhangi bir şekil şartı aranmaz"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-lisans-devir",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        148
+      ],
+      "aciklama": "SMK m.148/4: Sınai mülkiyet hakkının devri yazılı şekilde yapılır ve devir sözleşmesi taraflarca imzalanır; imzaların noter tarafından onaylanması geçerlilik şartıdır.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-8",
+      "no": 8,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Rüçhan hakkı bakımından marka başvuruları için Paris Sözleşmesi ve SMK'da öngörülen süre nedir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Üç ay"
+        },
+        {
+          "harf": "B",
+          "metin": "Altı ay"
+        },
+        {
+          "harf": "C",
+          "metin": "On iki ay"
+        },
+        {
+          "harf": "D",
+          "metin": "On sekiz ay"
+        },
+        {
+          "harf": "E",
+          "metin": "İki yıl"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-ruchan",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        12
+      ],
+      "aciklama": "SMK m.12/1: Paris Sözleşmesine taraf ülkelerden birinde yapılan usulüne uygun marka başvurusundan itibaren altı ay içinde Türkiye'de aynı marka için başvuru yapan kişi rüçhan hakkından yararlanır.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-9",
+      "no": 9,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Madrid Protokolü kapsamında uluslararası tescilin esas başvuruya bağımlılık süresi ve bu süre içindeki iptalin sonucu aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Üç yıl – uluslararası tescil etkilenmez"
+        },
+        {
+          "harf": "B",
+          "metin": "Beş yıl – uluslararası tescil de iptal edilir (merkezi saldırı)"
+        },
+        {
+          "harf": "C",
+          "metin": "Beş yıl – yalnızca menşe ülkedeki tescil iptal edilir"
+        },
+        {
+          "harf": "D",
+          "metin": "On yıl – uluslararası tescil de iptal edilir"
+        },
+        {
+          "harf": "E",
+          "metin": "Bağımlılık süresi yoktur"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-madrid",
+      "topicGuven": 1,
+      "smkMaddeleri": [],
+      "aciklama": "Madrid Protokolü m.6: Uluslararası tescil, tescil tarihinden itibaren beş yıl süreyle esas başvuru veya tescile bağımlıdır. Bu süre içinde esas başvurunun düşmesi hâlinde uluslararası tescil de aynı ölçüde hükümsüz kalır; buna merkezi saldırı denir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-10",
+      "no": 10,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Aşağıdakilerden hangisi garanti markası ile ortak marka arasındaki temel farkı doğru biçimde ifade eder?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Garanti markası yalnızca hizmetler için, ortak marka yalnızca mallar için tescil edilir"
+        },
+        {
+          "harf": "B",
+          "metin": "Garanti markası marka sahibinin kontrolü altında birçok işletme tarafından o işletmelerin ortak özelliklerini garanti etmek üzere kullanılır; ortak marka ise bir gruba dâhil işletmeler tarafından kullanılır"
+        },
+        {
+          "harf": "C",
+          "metin": "Garanti markası devredilemez, ortak marka devredilebilir"
+        },
+        {
+          "harf": "D",
+          "metin": "Garanti markası için teknik şartname aranmaz, ortak marka için aranır"
+        },
+        {
+          "harf": "E",
+          "metin": "Aralarında hukuki bir fark yoktur"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-garanti-ortak",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        31,
+        32
+      ],
+      "aciklama": "SMK m.31: Garanti markası, marka sahibinin kontrolü altında birçok işletme tarafından o işletmelerin ortak özelliklerini, üretim usullerini, coğrafi menşelerini ve kalitesini garanti etmeye yarar. Ortak marka ise üretim, ticaret veya hizmet işletmelerinden oluşan bir grup tarafından kullanılır. Her ikisi için de teknik şartname zorunludur (m.32).",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-11",
+      "no": 11,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Menşe adı ile mahreç işareti arasındaki ayrım bakımından aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Menşe adında üretimin en az bir aşaması, mahreç işaretinde tüm aşamaları belirlenen coğrafi alanda gerçekleşir"
+        },
+        {
+          "harf": "B",
+          "metin": "Menşe adında tüm üretim aşamaları, mahreç işaretinde ise üretim aşamalarından en az biri belirlenen coğrafi alanda gerçekleşir"
+        },
+        {
+          "harf": "C",
+          "metin": "İkisi arasında üretim yeri bakımından fark yoktur; fark koruma süresindedir"
+        },
+        {
+          "harf": "D",
+          "metin": "Menşe adı yalnızca tarım ürünleri için, mahreç işareti yalnızca el sanatları için kullanılır"
+        },
+        {
+          "harf": "E",
+          "metin": "Mahreç işareti tescile tabi değildir"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "ci-turler",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        34
+      ],
+      "aciklama": "SMK m.34: Menşe adında ürünün tüm üretim, işleme ve diğer işlemlerinin belirlenmiş coğrafi alan sınırları içinde gerçekleşmesi gerekir. Mahreç işaretinde ise üretim, işleme veya diğer işlemlerden en az birinin belirlenmiş coğrafi alan içinde gerçekleşmesi yeterlidir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-12",
+      "no": 12,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Coğrafi işaret ve geleneksel ürün adı başvurularının Bültende yayımından sonra itiraz süresi ne kadardır?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Bir ay"
+        },
+        {
+          "harf": "B",
+          "metin": "İki ay"
+        },
+        {
+          "harf": "C",
+          "metin": "Üç ay"
+        },
+        {
+          "harf": "D",
+          "metin": "Altı ay"
+        },
+        {
+          "harf": "E",
+          "metin": "On iki ay"
+        }
+      ],
+      "cevap": "C",
+      "topicId": "ci-basvuru",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        38,
+        40
+      ],
+      "aciklama": "SMK m.40/1: Coğrafi işaret veya geleneksel ürün adı başvurusuna, yayım tarihinden itibaren üç ay içinde itiraz edilebilir. (Markada bu süre iki aydır — sınavda sık karıştırılan bir ayrımdır.)",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-13",
+      "no": 13,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Tescilli tasarımın koruma süresi ve azami süre aşağıdakilerden hangisinde doğru verilmiştir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Başvuru tarihinden itibaren 5 yıl; beşer yıllık yenilemelerle toplam 25 yıl"
+        },
+        {
+          "harf": "B",
+          "metin": "Tescil tarihinden itibaren 10 yıl; onar yıllık yenilemelerle toplam 20 yıl"
+        },
+        {
+          "harf": "C",
+          "metin": "Başvuru tarihinden itibaren 3 yıl; üçer yıllık yenilemelerle toplam 15 yıl"
+        },
+        {
+          "harf": "D",
+          "metin": "Başvuru tarihinden itibaren 5 yıl; yenilenemez"
+        },
+        {
+          "harf": "E",
+          "metin": "Tescil tarihinden itibaren 25 yıl; yenileme gerekmez"
+        }
+      ],
+      "cevap": "A",
+      "topicId": "tasarim-sure-yenileme",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        69
+      ],
+      "aciklama": "SMK m.69/1: Tescilli tasarımın koruma süresi başvuru tarihinden itibaren beş yıldır. Bu süre beşer yıllık dönemler hâlinde yenilenmek suretiyle toplam yirmi beş yıla kadar uzatılabilir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-14",
+      "no": 14,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Tescilsiz tasarımlara sağlanan koruma süresi ve başlangıcı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Başvuru tarihinden itibaren üç yıl"
+        },
+        {
+          "harf": "B",
+          "metin": "Kamuya ilk sunulduğu tarihten itibaren üç yıl"
+        },
+        {
+          "harf": "C",
+          "metin": "Kamuya ilk sunulduğu tarihten itibaren beş yıl"
+        },
+        {
+          "harf": "D",
+          "metin": "Tasarımın yaratıldığı tarihten itibaren bir yıl"
+        },
+        {
+          "harf": "E",
+          "metin": "Tescilsiz tasarım korunmaz"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "tasarim-kavram",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        55,
+        59
+      ],
+      "aciklama": "SMK m.55/4: Tescilsiz tasarımlara, kamuya ilk sunulduğu tarihten itibaren üç yıl süreyle koruma sağlanır ve koruma yalnızca kopyalanmaya karşıdır (m.59/5).",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-15",
+      "no": 15,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Tasarım başvurusunda yayımın ertelenmesi talep edilebilecek azami süre nedir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "6 ay"
+        },
+        {
+          "harf": "B",
+          "metin": "12 ay"
+        },
+        {
+          "harf": "C",
+          "metin": "18 ay"
+        },
+        {
+          "harf": "D",
+          "metin": "30 ay"
+        },
+        {
+          "harf": "E",
+          "metin": "36 ay"
+        }
+      ],
+      "cevap": "D",
+      "topicId": "tasarim-inceleme-tescil",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        66
+      ],
+      "aciklama": "SMK m.66/1: Başvuru sahibi, başvuruyla birlikte tasarımın yayımının başvuru tarihinden veya rüçhan talebi varsa rüçhan tarihinden itibaren otuz ay süreyle ertelenmesini talep edebilir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085494
+    },
+    {
+      "id": "ornek-16",
+      "no": 16,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Tasarımın yeniliği değerlendirilirken, tasarımcının kendisinin başvuru tarihinden önce yaptığı açıklamalar bakımından tanınan süre nedir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "6 ay"
+        },
+        {
+          "harf": "B",
+          "metin": "12 ay"
+        },
+        {
+          "harf": "C",
+          "metin": "18 ay"
+        },
+        {
+          "harf": "D",
+          "metin": "24 ay"
+        },
+        {
+          "harf": "E",
+          "metin": "Böyle bir süre tanınmaz"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "tasarim-kamuya-sunma",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        56,
+        57
+      ],
+      "aciklama": "SMK m.57/2: Başvuru veya rüçhan tarihinden önceki on iki ay içinde tasarımcı, halefi veya bunların izniyle üçüncü kişi tarafından yapılan açıklamalar yenilik ve ayırt edicilik değerlendirmesinde dikkate alınmaz.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-17",
+      "no": 17,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Sınai mülkiyet hakkına tecavüz iddiasına dayalı davalarda görevli mahkeme aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Asliye ticaret mahkemesi"
+        },
+        {
+          "harf": "B",
+          "metin": "Fikrî ve sınai haklar hukuk mahkemesi"
+        },
+        {
+          "harf": "C",
+          "metin": "Sulh hukuk mahkemesi"
+        },
+        {
+          "harf": "D",
+          "metin": "Asliye hukuk mahkemesi"
+        },
+        {
+          "harf": "E",
+          "metin": "İdare mahkemesi"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "ortak-dava-mahkeme",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        156
+      ],
+      "aciklama": "SMK m.156/1: Bu Kanunda öngörülen davalarda görevli mahkeme, fikrî ve sınai haklar hukuk mahkemesi ile fikrî ve sınai haklar ceza mahkemesidir. Bu mahkemelerin kurulmadığı yerlerde asliye hukuk ve asliye ceza mahkemeleri bu sıfatla görevlidir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-18",
+      "no": 18,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "SMK m.151 uyarınca yoksun kalınan kazancın hesaplanmasında hak sahibinin seçebileceği yöntemlerden biri aşağıdakilerden hangisi DEĞİLDİR?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Sınai mülkiyet hakkına tecavüz edilmeseydi hak sahibinin elde edebileceği muhtemel gelir"
+        },
+        {
+          "harf": "B",
+          "metin": "Mütecavizin elde ettiği net kazanç"
+        },
+        {
+          "harf": "C",
+          "metin": "Sınai mülkiyet hakkına tecavüz edenin lisans alarak hakkı kullanmış olması hâlinde ödemesi gereken lisans bedeli"
+        },
+        {
+          "harf": "D",
+          "metin": "Mütecavizin ciro üzerinden hesaplanan brüt hasılatının tamamı"
+        },
+        {
+          "harf": "E",
+          "metin": "Hiçbiri; üç yöntem de kanunda sayılmıştır"
+        }
+      ],
+      "cevap": "D",
+      "topicId": "ortak-talepler-tazminat",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        150,
+        151
+      ],
+      "aciklama": "SMK m.151/2: Yoksun kalınan kazanç, hak sahibinin seçimine bağlı olarak üç değerlendirme usulünden biriyle hesaplanır: muhtemel gelir, mütecavizin net kazancı veya lisans bedeli. Brüt hasılatın tamamı bir hesap yöntemi olarak öngörülmemiştir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-19",
+      "no": 19,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Hakkın tüketilmesi ilkesi bakımından SMK m.152 aşağıdakilerden hangisini öngörür?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Ürünlerin dünyanın herhangi bir yerinde piyasaya sunulmasıyla hak tükenir"
+        },
+        {
+          "harf": "B",
+          "metin": "Sınai mülkiyet hakkı korumasına konu ürünlerin hak sahibi veya onun izniyle üçüncü kişilerce Türkiye'de piyasaya sunulmasından sonra bu ürünlerle ilgili fiiller hakkın kapsamı dışında kalır"
+        },
+        {
+          "harf": "C",
+          "metin": "Hak hiçbir hâlde tükenmez"
+        },
+        {
+          "harf": "D",
+          "metin": "Hak yalnızca ihracat hâlinde tükenir"
+        },
+        {
+          "harf": "E",
+          "metin": "Hakkın tüketilmesi yalnızca patentler için geçerlidir"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "ortak-tuketilme",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        152
+      ],
+      "aciklama": "SMK m.152/1: Ürünlerin hak sahibi veya onun izniyle üçüncü kişiler tarafından piyasaya sunulmasından sonra, bu ürünlerle ilgili fiiller hakkın kapsamı dışında kalır. Kanun ülkesel (ulusal) tükenme ilkesini benimsemiştir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-20",
+      "no": 20,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Yerleşim yeri yurt dışında bulunan kişilerin Kurum nezdindeki işlemleri bakımından aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Diledikleri gibi kendileri işlem yapabilirler"
+        },
+        {
+          "harf": "B",
+          "metin": "Yalnızca avukat aracılığıyla işlem yapabilirler"
+        },
+        {
+          "harf": "C",
+          "metin": "Ancak marka veya patent vekilleri tarafından temsil edilirler"
+        },
+        {
+          "harf": "D",
+          "metin": "Kurum başkanının izniyle kendileri işlem yapabilirler"
+        },
+        {
+          "harf": "E",
+          "metin": "Türkiye'de bir adres göstermeleri yeterlidir"
+        }
+      ],
+      "cevap": "C",
+      "topicId": "vekil-vekaletname",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        160
+      ],
+      "aciklama": "SMK m.160/3: Yerleşim yeri yurt dışında bulunan kişiler, Kurum nezdindeki işlemlerde ancak marka vekilleri veya patent vekilleri tarafından temsil edilir. Bu kişiler bakımından vekille temsil zorunludur.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-21",
+      "no": 21,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Aşağıdakilerden hangisi SMK m.6 kapsamındaki nispi ret nedenlerinden biridir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Markanın ayırt edici niteliğe sahip olmaması"
+        },
+        {
+          "harf": "B",
+          "metin": "Tescil başvurusunun kötüniyetle yapılmış olması"
+        },
+        {
+          "harf": "C",
+          "metin": "Markanın kamu düzenine aykırı olması"
+        },
+        {
+          "harf": "D",
+          "metin": "Markanın dinî değerleri içermesi"
+        },
+        {
+          "harf": "E",
+          "metin": "Markanın Paris Sözleşmesi 2'nci mükerrer 6'ncı madde kapsamındaki devlet armasını içermesi"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-nispi-ret",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        5,
+        6
+      ],
+      "aciklama": "SMK m.6/9: Kötüniyetle yapılan marka başvuruları itiraz üzerine reddedilir; bu bir nispi ret nedenidir. Diğer seçenekler m.5'teki mutlak ret nedenleridir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-22",
+      "no": 22,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Yayıma itiraz sürecinde başvuru sahibinin, itiraz gerekçesi markanın kullanıldığına ilişkin delil sunulmasını talep edebilmesi (kullanım ispatı) hangi şarta bağlıdır?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "İtiraz gerekçesi markanın Türkiye'de en az üç yıldır tescilli olmasına"
+        },
+        {
+          "harf": "B",
+          "metin": "İtiraz gerekçesi markanın başvuru veya rüçhan tarihinde Türkiye'de en az beş yıldır tescilli olmasına"
+        },
+        {
+          "harf": "C",
+          "metin": "İtiraz sahibinin tanınmış marka sahibi olmasına"
+        },
+        {
+          "harf": "D",
+          "metin": "Kurumun re'sen talep etmesine"
+        },
+        {
+          "harf": "E",
+          "metin": "Böyle bir talep hakkı yoktur"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-kullanim",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        19,
+        9
+      ],
+      "aciklama": "SMK m.19/2: İtiraz gerekçesi marka, itiraza konu başvurunun başvuru veya rüçhan tarihinde Türkiye'de en az beş yıldır tescilli ise, başvuru sahibinin talebi üzerine itiraz sahibinden kullanım ispatı istenir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-23",
+      "no": 23,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Marka hakkına tecavüz suçları bakımından aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Suçlar re'sen soruşturulur"
+        },
+        {
+          "harf": "B",
+          "metin": "Suçların soruşturulması ve kovuşturulması şikâyete bağlıdır"
+        },
+        {
+          "harf": "C",
+          "metin": "Suçlar yalnızca tüzel kişiler hakkında uygulanır"
+        },
+        {
+          "harf": "D",
+          "metin": "Suçlarda etkin pişmanlık hükümleri uygulanmaz"
+        },
+        {
+          "harf": "E",
+          "metin": "Suçlar için yalnızca adli para cezası öngörülmüştür"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-tecavuz",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        29,
+        30
+      ],
+      "aciklama": "SMK m.30/7: Bu maddede yer alan suçların soruşturulması ve kovuşturulması şikâyete bağlıdır. Ayrıca m.30/6'da etkin pişmanlık benzeri bir düzenleme yer alır ve suçlar için hapis cezası da öngörülmüştür.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-24",
+      "no": 24,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Markanın kullanılmaması nedeniyle iptal taleplerini incelemeye yetkili merci, 10.01.2024 tarihinden itibaren aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Fikrî ve sınai haklar hukuk mahkemesi"
+        },
+        {
+          "harf": "B",
+          "metin": "Türk Patent ve Marka Kurumu"
+        },
+        {
+          "harf": "C",
+          "metin": "Yeniden İnceleme ve Değerlendirme Kurulu dışındaki daireler değil, yalnızca mahkeme"
+        },
+        {
+          "harf": "D",
+          "metin": "Ticaret Bakanlığı"
+        },
+        {
+          "harf": "E",
+          "metin": "Rekabet Kurumu"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-iptal",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        25,
+        26
+      ],
+      "aciklama": "SMK m.26 ve geçici m.4 uyarınca iptal talepleri, Kanunun yürürlüğünden yedi yıl sonra (10.01.2024) Türk Patent ve Marka Kurumu tarafından incelenmeye başlanmıştır. Hükümsüzlük ise mahkeme yetkisindedir (m.25).",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-25",
+      "no": 25,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Marka başvurusunun bölünmesi bakımından SMK aşağıdakilerden hangisini öngörür?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Başvuru hiçbir aşamada bölünemez"
+        },
+        {
+          "harf": "B",
+          "metin": "Başvuru, tescil edilene kadar başvuru sahibinin talebi üzerine bölünebilir"
+        },
+        {
+          "harf": "C",
+          "metin": "Yalnızca yayıma itiraz süresi içinde bölünebilir"
+        },
+        {
+          "harf": "D",
+          "metin": "Tescilden sonra da serbestçe bölünebilir"
+        },
+        {
+          "harf": "E",
+          "metin": "Bölünme yalnızca Kurumun re'sen kararıyla mümkündür"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-basvuru",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        11
+      ],
+      "aciklama": "SMK m.11/3: Başvuru, tescil edilene kadar başvuru sahibinin talebi üzerine mal veya hizmetler bakımından bölünebilir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-26",
+      "no": 26,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Aşağıdaki uluslararası düzenlemelerden hangisi mal ve hizmetlerin sınıflandırılmasına ilişkindir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Viyana Anlaşması"
+        },
+        {
+          "harf": "B",
+          "metin": "Locarno Anlaşması"
+        },
+        {
+          "harf": "C",
+          "metin": "Nice Anlaşması"
+        },
+        {
+          "harf": "D",
+          "metin": "Strazburg Anlaşması"
+        },
+        {
+          "harf": "E",
+          "metin": "Lahey Anlaşması"
+        }
+      ],
+      "cevap": "C",
+      "topicId": "ulus-siniflandirma",
+      "topicGuven": 1,
+      "smkMaddeleri": [],
+      "aciklama": "Nice Anlaşması markaların tescilinde mal ve hizmetlerin sınıflandırılmasına ilişkindir. Viyana markaların şekil unsurlarını, Locarno tasarımları, Strazburg patentleri (IPC), Lahey ise tasarımların uluslararası tescilini düzenler.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-27",
+      "no": 27,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Paris Sözleşmesi'nin 2'nci mükerrer 6'ncı (6bis) maddesi aşağıdakilerden hangisini düzenler?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Rüçhan hakkını"
+        },
+        {
+          "harf": "B",
+          "metin": "Tanınmış markaların korunmasını"
+        },
+        {
+          "harf": "C",
+          "metin": "Sergi rüçhanını"
+        },
+        {
+          "harf": "D",
+          "metin": "Milli muamele ilkesini"
+        },
+        {
+          "harf": "E",
+          "metin": "Ticaret unvanının korunmasını"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "ulus-paris",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        6
+      ],
+      "aciklama": "Paris Sözleşmesi m.6bis, birlik ülkelerinde tanınmış sayılan markaların, tescilli olup olmadığına bakılmaksızın korunmasını düzenler. Bu hüküm SMK m.6/4'e yansımıştır.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-28",
+      "no": 28,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Türk Ticaret Kanunu'na göre haksız rekabete ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Haksız rekabetin varlığı için kusur şarttır"
+        },
+        {
+          "harf": "B",
+          "metin": "Haksız rekabet hükümlerinin amacı, bütün katılanların yararına dürüst ve bozulmamış rekabetin sağlanmasıdır"
+        },
+        {
+          "harf": "C",
+          "metin": "Haksız rekabet yalnızca tacirler arasında söz konusu olur"
+        },
+        {
+          "harf": "D",
+          "metin": "Haksız rekabet davaları yalnızca ceza mahkemesinde görülür"
+        },
+        {
+          "harf": "E",
+          "metin": "Haksız rekabette zamanaşımı söz konusu değildir"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "temel-haksiz-rekabet",
+      "topicGuven": 1,
+      "smkMaddeleri": [],
+      "aciklama": "TTK m.54/1: Haksız rekabete ilişkin hükümlerin amacı, bütün katılanların menfaatine, dürüst ve bozulmamış rekabetin sağlanmasıdır. Tazminat dışındaki davalarda kusur aranmaz ve haksız rekabet tacir olmayanlar bakımından da uygulanabilir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-29",
+      "no": 29,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Türk Borçlar Kanunu'na göre vekâlet sözleşmesinin sona ermesi bakımından aşağıdakilerden hangisi doğrudur?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Vekâlet yalnızca sözleşmede öngörülen sürenin dolmasıyla sona erer"
+        },
+        {
+          "harf": "B",
+          "metin": "Vekâlet veren ve vekil, her zaman sözleşmeyi tek taraflı olarak sona erdirebilir; ancak uygun olmayan zamanda sona erdiren diğerinin zararını gidermekle yükümlüdür"
+        },
+        {
+          "harf": "C",
+          "metin": "Vekâleti yalnızca vekâlet veren sona erdirebilir"
+        },
+        {
+          "harf": "D",
+          "metin": "Vekâlet hiçbir hâlde tek taraflı sona erdirilemez"
+        },
+        {
+          "harf": "E",
+          "metin": "Vekilin ölümü vekâleti sona erdirmez"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "temel-borclar",
+      "topicGuven": 1,
+      "smkMaddeleri": [],
+      "aciklama": "TBK m.512: Vekâlet veren ve vekil, her zaman sözleşmeyi tek taraflı olarak sona erdirebilir. Ancak uygun olmayan zamanda sözleşmeyi sona erdiren taraf, diğerinin bundan doğan zararını gidermekle yükümlüdür.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-30",
+      "no": 30,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Sınai mülkiyet hakkının ihlalinden doğan özel hukuka ilişkin taleplerde zamanaşımı bakımından SMK m.157 hangi düzenlemeye atıf yapar?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Türk Ticaret Kanunu'nun zamanaşımı hükümlerine"
+        },
+        {
+          "harf": "B",
+          "metin": "Türk Borçlar Kanunu'nun zamanaşımına ilişkin hükümlerine"
+        },
+        {
+          "harf": "C",
+          "metin": "Türk Medeni Kanunu'nun zamanaşımı hükümlerine"
+        },
+        {
+          "harf": "D",
+          "metin": "Hukuk Muhakemeleri Kanunu'nun hükümlerine"
+        },
+        {
+          "harf": "E",
+          "metin": "Türk Ceza Kanunu'nun dava zamanaşımı hükümlerine"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "ortak-dava-mahkeme",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        157
+      ],
+      "aciklama": "SMK m.157: Sınai mülkiyet hakkının ihlalinden doğan özel hukuka ilişkin taleplerde, 6098 sayılı Türk Borçlar Kanunu'nun zamanaşımına ilişkin hükümleri uygulanır.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-31",
+      "no": 31,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Üçüncü kişilerin marka başvurusuna ilişkin görüş bildirmesi bakımından SMK m.17 aşağıdakilerden hangisini öngörür?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Görüş bildiren kişi işlemlere taraf olur"
+        },
+        {
+          "harf": "B",
+          "metin": "Görüşler yalnızca nispi ret nedenlerine dayanabilir"
+        },
+        {
+          "harf": "C",
+          "metin": "Görüşler mutlak ret nedenlerine dayanabilir ve görüş sahibi Kurum nezdindeki işlemlere taraf olmaz"
+        },
+        {
+          "harf": "D",
+          "metin": "Görüş bildirmek için ücret ödenmesi zorunludur"
+        },
+        {
+          "harf": "E",
+          "metin": "Görüş bildirme süresi yayımdan itibaren iki aydır"
+        }
+      ],
+      "cevap": "C",
+      "topicId": "marka-gorus-itiraz",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        17
+      ],
+      "aciklama": "SMK m.17: Marka başvurusunun m.5/1'in (ç) bendi hariç mutlak ret nedenleri kapsamında tescil edilmemesi gerektiğini ileri süren üçüncü kişiler görüş sunabilir; ancak bu kişiler Kurum nezdindeki işlemlere taraf olamaz.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    },
+    {
+      "id": "ornek-32",
+      "no": 32,
+      "kaynak": "Uygulama örnek soruları (mevzuat temelli)",
+      "metin": "Marka yenileme talebinin süresinde yapılmaması hâlinde tanınan ek süre ve şartı aşağıdakilerden hangisidir?",
+      "secenekler": [
+        {
+          "harf": "A",
+          "metin": "Ek süre yoktur; marka doğrudan sona erer"
+        },
+        {
+          "harf": "B",
+          "metin": "Koruma süresinin bittiği tarihten itibaren altı ay içinde ek ücret ödenerek yenileme yapılabilir"
+        },
+        {
+          "harf": "C",
+          "metin": "Bir yıl içinde ücretsiz olarak yenileme yapılabilir"
+        },
+        {
+          "harf": "D",
+          "metin": "Üç ay içinde Kurumun izniyle yenileme yapılabilir"
+        },
+        {
+          "harf": "E",
+          "metin": "İki yıl içinde mahkeme kararıyla yenileme yapılabilir"
+        }
+      ],
+      "cevap": "B",
+      "topicId": "marka-tescil-yenileme",
+      "topicGuven": 1,
+      "smkMaddeleri": [
+        23
+      ],
+      "aciklama": "SMK m.23/2-3: Yenileme talebi koruma süresinin sona erdiği tarihten önceki altı ay içinde yapılır; bu sürede yapılmazsa, koruma süresinin sona erdiği tarihten itibaren altı aylık süre içinde ek ücret ödenerek de yapılabilir.",
+      "zorluk": 2,
+      "etiketler": [
+        "örnek"
+      ],
+      "eklenme": 1787242085495
+    }
+  ]
+}

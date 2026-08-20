@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Ham sınav PDF'leri repoya girmesin (telif/boyut).
+# Ayrıştırılmış JSON çıktıları data/sorular/ içinde tutulur.
+data/ham/*
+!data/ham/.gitkeep
+tsconfig.tsbuildinfo
