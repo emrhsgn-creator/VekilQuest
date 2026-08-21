@@ -23,7 +23,7 @@ cihazından çıkmaz.
 | **Kapsam filtresi** | Genel Yeterlik kitapçıklarının patent bölümü içe aktarılmaz; yalnızca marka, coğrafi işaret ve ortak sorular bankaya girer |
 | **Çalışma planı** | Sınav tarihine göre günlük program, tempo uyarısı, kalan iş hesabı |
 | **Soru bankası** | Arama, düzenleme, elle soru ekleme, otomatik konu sınıflandırma, JSON dışa aktarma |
-| **İçe aktar** | PDF/metin ayrıştırma, önizleme ve düzeltme, JSON ve yedek yükleme |
+| **İçe aktar** | PDF/metin ayrıştırma, önizleme ve düzeltme, JSON ve yedek yükleme; gömülü bankayı yeniden yükleme |
 | **Mevzuat** | Sınav kapsamındaki 101 SMK maddesi, konu eşleşmeleri ve kaynak bağlantıları |
 
 ## Hızlı başlangıç
@@ -33,16 +33,17 @@ npm install
 npm run dev      # http://localhost:5173
 ```
 
-Uygulama açıldığında **İçe aktar → “Örnek soruları yükle”** ile 32 soruluk bir set yükleyip
-tüm ekranları hemen deneyebilirsin. Bu sorular resmî sınav sorusu değildir; mevzuata dayanılarak
-yazılmış hazırlık sorularıdır ve gerçek kitapçıkları yükledikten sonra silebilirsin.
+Uygulama **ilk açılışta 166 soruluk bankayı kendisi yükler** — siteye giren hiç kimsenin elle
+içe aktarma yapması gerekmez. Banka yalnızca boşken yüklenir, yani kendi eklediğin sorular ya da
+çözüm geçmişin hiçbir zaman ezilmez.
 
 Diğer komutlar:
 
 ```bash
-npm test          # ayrıştırıcı testleri
-npm run build     # dist/ üretir
-npx tsc -b        # tip denetimi
+npm test           # ayrıştırıcı testleri
+npm run build      # dist/ üretir
+npx tsc -b         # tip denetimi
+npm run banka:uret # data/sorular/*.json -> public/veri/soru-bankasi.json
 ```
 
 ## Çıkmış soruları yükleme
@@ -64,11 +65,23 @@ genellikle kitapçığın son sayfasında yer alır ve ayrıştırıcı onu kend
 
 Ayrıntılar ve sorun giderme: **[docs/SORU-YUKLEME.md](docs/SORU-YUKLEME.md)**
 
-> **Soru metinleri bu depoda yok ve olmamalı.** Kitapçıkların kapağında şu ibare var:
-> *“Hangi amaçla olursa olsun, testlerin tamamının veya bir kısmının Türk Patent ve Marka
-> Kurumunun yazılı izni olmadan kopya edilmesi … çoğaltılması, yayınlanması ya da kullanılması
-> yasaktır.”* Bu yüzden hem `data/ham/` hem `data/sorular/` `.gitignore` içinde. Soru bankan
-> yalnızca kendi tarayıcında durur.
+### Soru bankası ve telif
+
+Uygulamayla birlikte **166 soruluk bir banka dağıtılıyor** (`public/veri/soru-bankasi.json`),
+TÜRKPATENT'in kendi sitesinde yayımladığı Genel Yeterlik Sınavı kitapçıklarından ayrıştırılmış.
+Amaç kişisel sınav hazırlığı; soruların hakları Türk Patent ve Marka Kurumuna aittir.
+
+Kitapçıkların kapağında şu ibare bulunuyor: *“Hangi amaçla olursa olsun, testlerin tamamının veya
+bir kısmının Türk Patent ve Marka Kurumunun yazılı izni olmadan kopya edilmesi … çoğaltılması,
+yayınlanması ya da kullanılması yasaktır.”* Bankayı depoya dahil etmek bilinçli bir tercihtir ve
+tek dosyayı silmekle geri alınabilir:
+
+```bash
+rm public/veri/soru-bankasi.json   # uygulama boş bankayla açılır, içe aktarma çalışmaya devam eder
+```
+
+Ham PDF'ler (`data/ham/`) ve ara çıktılar (`data/sorular/`) depoya girmez; bunlar
+`npm run banka:uret` ile yeniden üretilebilir.
 
 ### Ayrıştırıcı ne yapıyor
 

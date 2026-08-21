@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
-import { useStore } from '../store';
+import { gomuluBankaDamgasiniYaz, gomuluBankayiGetir, useStore } from '../store';
 import { Kart } from '../components/ui';
 import { siniflandir, topluSiniflandir } from '../lib/classify';
 import { pdfMetniCikar, pdfMi } from '../lib/pdf';
@@ -118,17 +118,16 @@ export default function IceAktar() {
     setRapor(null);
   };
 
-  const ornekYukle = async () => {
-    setDurum('Örnek sorular yükleniyor…');
-    try {
-      const yanit = await fetch(`${import.meta.env.BASE_URL}veri/ornek-sorular.json`);
-      const veri = await yanit.json();
-      const simdi = Date.now();
-      soruEkle((veri.sorular as Soru[]).map((s) => ({ ...s, eklenme: s.eklenme ?? simdi })));
-      setDurum(`${veri.sorular.length} örnek soru eklendi. Bunlar resmî sınav sorusu değil; gerçek kitapçıkları yükledikten sonra Soru Bankası ekranından silebilirsin.`);
-    } catch (hata) {
-      setDurum(`Örnek sorular yüklenemedi: ${(hata as Error).message}`);
+  const gomuluYukle = async () => {
+    setDurum('Uygulamayla gelen soru bankası yükleniyor…');
+    const { sorular: gelen, damga } = await gomuluBankayiGetir();
+    if (gelen.length === 0) {
+      setDurum('Gömülü soru bankası okunamadı.');
+      return;
     }
+    soruEkle(gelen);
+    gomuluBankaDamgasiniYaz(damga);
+    setDurum(`${gelen.length} soru yüklendi. Zaten bankada olanlar güncellendi, çözüm geçmişin korundu.`);
   };
 
   const jsonYukle = async (dosya: File) => {
@@ -266,12 +265,12 @@ export default function IceAktar() {
         </Kart>
 
         <Kart baslik="JSON ile içe aktar"
-              not="Daha önce dışa aktardığın soru bankası, tam yedek dosyası ya da uygulamayla gelen örnek set.">
+              not="Daha önce dışa aktardığın soru bankası ya da tam yedek dosyası. Uygulamayla gelen banka ilk açılışta zaten yüklenir.">
           <div className="satir">
             <input ref={jsonGiris} type="file" accept=".json,application/json" style={{ display: 'none' }}
                    onChange={(e) => { const d = e.target.files?.[0]; if (d) void jsonYukle(d); e.target.value = ''; }} />
             <button className="dugme" onClick={() => jsonGiris.current?.click()}>JSON dosyası seç</button>
-            <button className="dugme" onClick={ornekYukle}>Örnek soruları yükle (32 soru · resmî değil)</button>
+            <button className="dugme" onClick={gomuluYukle}>Uygulamayla gelen bankayı yeniden yükle</button>
             <span className="minik">Bankada şu an {sorular.length} soru var.</span>
           </div>
         </Kart>

@@ -18,7 +18,11 @@ const ANAHTAR = {
   seanslar: 'seanslar',
   tekrar: 'tekrarKartlari',
   ayarlar: 'mv.ayarlar',
+  bankaDamgasi: 'mv.bankaDamgasi',
 } as const;
+
+/** Uygulamayla birlikte dağıtılan soru bankası (tools/soru-bankasi-uret.mjs üretir). */
+const GOMULU_BANKA = 'veri/soru-bankasi.json';
 
 type Durum = {
   hazir: boolean;
@@ -76,7 +80,24 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
         oku<TekrarKarti[]>(ANAHTAR.tekrar, []),
       ]);
       if (iptal) return;
-      setDurum((d) => ({ ...d, hazir: true, sorular, cevaplamalar, seanslar, tekrarKartlari }));
+
+      // İlk açılışta gömülü soru bankasını yükle: siteye giren herkesin elle
+      // içe aktarma yapması gerekmesin. Yalnızca banka boşken çalışır, yani
+      // kullanıcının kendi eklediği sorular hiçbir zaman ezilmez.
+      let baslangicSorulari = sorular;
+      if (sorular.length === 0) {
+        const gelen = await gomuluBankayiGetir();
+        if (gelen.sorular.length > 0) {
+          baslangicSorulari = gelen.sorular;
+          void yaz(ANAHTAR.sorular, gelen.sorular);
+          yerelYaz(ANAHTAR.bankaDamgasi, gelen.damga);
+        }
+      }
+      if (iptal) return;
+
+      setDurum((d) => ({
+        ...d, hazir: true, sorular: baslangicSorulari, cevaplamalar, seanslar, tekrarKartlari,
+      }));
     })();
     return () => { iptal = true; };
   }, []);
@@ -269,6 +290,35 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
     [durum, kapsamdaki, islemler],
   );
   return <Baglam.Provider value={deger}>{children}</Baglam.Provider>;
+}
+
+/**
+ * Gömülü soru bankasını okur. Dosya yoksa ya da bozuksa sessizce boş döner —
+ * uygulama yine de açılmalı, kullanıcı kendi sorularını yükleyebilir.
+ */
+export async function gomuluBankayiGetir(): Promise<{ sorular: Soru[]; damga: string }> {
+  try {
+    const yanit = await fetch(`${import.meta.env.BASE_URL}${GOMULU_BANKA}`);
+    if (!yanit.ok) return { sorular: [], damga: '' };
+    const veri = await yanit.json();
+    const simdi = Date.now();
+    const sorular: Soru[] = (veri.sorular ?? []).map((s: Soru) => ({
+      ...s,
+      eklenme: s.eklenme ?? simdi,
+    }));
+    return { sorular, damga: String(veri.damga ?? '') };
+  } catch {
+    return { sorular: [], damga: '' };
+  }
+}
+
+/** Kullanıcının cihazındaki gömülü banka sürümü. */
+export function gomuluBankaDamgasi(): string {
+  return yerelOku<string>(ANAHTAR.bankaDamgasi, '');
+}
+
+export function gomuluBankaDamgasiniYaz(damga: string): void {
+  yerelYaz(ANAHTAR.bankaDamgasi, damga);
 }
 
 export function useStore() {

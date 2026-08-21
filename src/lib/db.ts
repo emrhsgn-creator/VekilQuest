@@ -61,7 +61,12 @@ export async function sil(anahtar: string): Promise<void> {
 export function yerelOku<T>(anahtar: string, varsayilan: T): T {
   try {
     const ham = localStorage.getItem(anahtar);
-    return ham ? ({ ...varsayilan, ...JSON.parse(ham) } as T) : varsayilan;
+    if (!ham) return varsayilan;
+    const deger = JSON.parse(ham);
+    // Nesnelerde varsayılanla birleştir (yeni ayar alanları eklendiğinde eski
+    // kayıtlar bozulmasın); string/sayı/dizi gibi değerlerde olduğu gibi dön.
+    const nesneMi = (x: unknown) => typeof x === 'object' && x !== null && !Array.isArray(x);
+    return nesneMi(varsayilan) && nesneMi(deger) ? ({ ...varsayilan, ...deger } as T) : (deger as T);
   } catch {
     return varsayilan;
   }

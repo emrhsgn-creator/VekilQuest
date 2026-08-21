@@ -8,14 +8,10 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 
-# Sınav soruları depoya girmez.
+# Ham PDF'ler ve ara çıktılar depoya girmez (boyut ve tekrar üretilebilirlik).
 #
-# TÜRKPATENT kitapçıklarının kapağında şu ibare var: "Hangi amaçla olursa olsun,
-# testlerin tamamının veya bir kısmının Türk Patent ve Marka Kurumunun yazılı
-# izni olmadan kopya edilmesi, ... çoğaltılması, yayınlanması ya da kullanılması
-# yasaktır." Bu yüzden ne ham PDF'ler ne de ayrıştırılmış soru metinleri herkese
-# açık depoya konur. Soru bankası yalnızca kendi tarayıcında (IndexedDB) durur;
-# JSON çıktısını "İçe aktar" ekranından yüklersin.
+# Uygulamayla dağıtılan soru bankası bunlardan üretilir ve public/veri/
+# altında BİLEREK depoya dahil edilir; bkz. README "Soru bankası ve telif".
 data/ham/*
 !data/ham/.gitkeep
 data/sorular/*

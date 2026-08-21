@@ -125,6 +125,11 @@ export default function Ayarlar() {
             </table>
           </div>
 
+          <p className="minik">
+            Uygulamayla gelen soru bankası, TÜRKPATENT tarafından yayımlanan Patent ve Marka
+            Vekilliği Genel Yeterlik Sınavı kitapçıklarından ayrıştırılmıştır ve kişisel sınav
+            hazırlığı amaçlıdır. Soruların hakları Türk Patent ve Marka Kurumuna aittir.
+          </p>
           <div className="satir">
             <button className="dugme birincil" onClick={yedekIndir}>Yedek indir</button>
             <input ref={dosyaGiris} type="file" accept=".json" style={{ display: 'none' }}

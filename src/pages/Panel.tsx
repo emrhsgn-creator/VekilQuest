@@ -20,10 +20,6 @@ export default function Panel() {
     return vadesiGelenler(tekrarKartlari).filter((k) => mevcut.has(k.soruId)).length;
   }, [tekrarKartlari, sorular]);
 
-  // Bankada yalnızca uygulamayla gelen örnek sorular varsa bunu açıkça söyle:
-  // gerçek çıkmış sorularla karıştırılması analizin anlamını bozuyor.
-  const yalnizOrnek = sorular.length > 0 && sorular.every((s) => s.etiketler?.includes('örnek'));
-
   const kalanGun = ayarlar.sinavTarihi
     ? Math.ceil((new Date(ayarlar.sinavTarihi).getTime() - Date.now()) / 86_400_000)
     : null;
@@ -39,7 +35,7 @@ export default function Panel() {
         </div>
         <BosDurum
           baslik="Önce soru bankasını doldur"
-          aciklama="TÜRKPATENT soru kitapçığı ve cevap anahtarı PDF'lerini içe aktar; uygulama soruları ayrıştırıp konulara otomatik yerleştirsin. JSON yedeği yükleyebilir veya elle soru da ekleyebilirsin."
+          aciklama="Uygulamayla gelen soru bankası yüklenemedi. İçe aktarma ekranından yeniden deneyebilir, kendi PDF'lerini ayrıştırabilir ya da JSON yedeği yükleyebilirsin."
           eylemYazi="İçe aktarma ekranını aç"
           eylemYol="/ice-aktar"
         />
@@ -91,19 +87,6 @@ export default function Panel() {
           <Olcut etiket="Çalışma serisi" deger={`${genel.serisi} gün`}
                  alt={vadeSayisi > 0 ? `${vadeSayisi} soru tekrara hazır` : 'Tekrar kuyruğu boş'} />
         </div>
-
-        {yalnizOrnek && (
-          <div className="bilgi-kutusu uyari">
-            <div className="satir aralikli">
-              <span>
-                Bankadaki <strong>{sorular.length} sorunun tamamı örnek soru</strong> — resmî çıkmış
-                sınav sorusu değil, mevzuata dayanılarak yazılmış hazırlık sorularıdır. Buradaki
-                konu analizi gerçek sınav dağılımını yansıtmaz.
-              </span>
-              <Link className="dugme kucuk birincil" to="/ice-aktar">Gerçek soruları yükle</Link>
-            </div>
-          </div>
-        )}
 
         {vadeSayisi > 0 && (
           <div className="bilgi-kutusu">

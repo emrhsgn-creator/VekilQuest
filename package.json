@@ -11,7 +11,8 @@
     "typecheck": "tsc -b --noEmit false --emitDeclarationOnly false",
     "soru:ice-aktar": "node tools/pdf-to-json.mjs",
     "soru:dogrula": "node tools/validate-bank.mjs",
-    "test": "node --test tools/*.test.mjs"
+    "test": "node --test tools/*.test.mjs",
+    "banka:uret": "node tools/soru-bankasi-uret.mjs"
   },
   "dependencies": {
     "pdfjs-dist": "^5.4.149",

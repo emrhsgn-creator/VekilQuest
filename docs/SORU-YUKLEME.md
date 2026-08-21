@@ -1,5 +1,8 @@
 # Çıkmış soruları uygulamaya yükleme
 
+> Uygulama ilk açılışta 166 soruluk bankayı kendisi yükler; aşağıdakiler **yeni sınavlar eklemek**
+> ya da bankayı kendin üretmek istediğinde gerekir.
+
 TÜRKPATENT, marka vekilliği sınavının soru kitapçıklarını ve cevap anahtarlarını
 [turkpatent.gov.tr/duyurular](https://www.turkpatent.gov.tr/duyurular) adresinde yayımlıyor.
 Bu belgeleri indirip aşağıdaki iki yoldan biriyle uygulamaya aktarabilirsin.
@@ -141,3 +144,24 @@ kısmının Türk Patent ve Marka Kurumunun yazılı izni olmadan kopya edilmesi
 Bu nedenle `data/ham/` ve `data/sorular/` klasörleri `.gitignore` içindedir; ne ham PDF'ler ne de
 ayrıştırılmış soru metinleri depoya girer. Soru bankan yalnızca kendi tarayıcının IndexedDB'sinde
 durur ve Ayarlar ekranından aldığın yedek dosyasıyla taşınır.
+
+---
+
+## Bankayı uygulamaya gömme
+
+`data/sorular/*.json` dosyalarını uygulamayla dağıtılan tek bankaya çevirmek için:
+
+```bash
+npm run banka:uret
+```
+
+Bu komut dosyaları birleştirir, konuları derleme zamanında atar ve
+`public/veri/soru-bankasi.json` dosyasını yazar. Uygulama ilk açılışta bu dosyayı okuyup
+IndexedDB'ye alır; **yalnızca banka boşken**, yani mevcut soruların ve çözüm geçmişin ezilmez.
+
+Betik, kaynak dosyalarda patent bölümü bulursa hata verip durur — kapsam dışı soruların
+yanlışlıkla dağıtılmasını önlemek için.
+
+Bankayı sonradan büyütürsen (yeni yıllar eklersen) `damga` alanı değişir; kullanıcılar
+**İçe aktar → “Uygulamayla gelen bankayı yeniden yükle”** ile güncelleyebilir. Bu işlem mevcut
+soruları günceller, çözüm geçmişini korur.
