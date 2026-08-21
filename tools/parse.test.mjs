@@ -11,6 +11,7 @@ import assert from 'node:assert/strict';
 import {
   sorulariAyristir, cevapAnahtariAyristir, iptalEdilenler, birlestir,
   metniTemizle, belgeyiAyristir, katla, beyanEdilenSoruSayisi, bolumKapsamlari,
+  cozumluBankaAyristir,
 } from '../src/lib/parse.mjs';
 
 const KITAPCIK = `
@@ -259,4 +260,75 @@ test('karma bölüm patent sayılıp elenmez', () => {
     { bolum: 'ORTAK', metin: 'Sınai mülkiyet hakkında lisans sözleşmesi; marka ve patent için ortak hükümler.', secenekler: [{ metin: '' }] },
   ]);
   assert.notEqual(kapsam.get('ORTAK'), 'patent');
+});
+
+/* ───────────── çözümlü soru bankası (yayınevi kitapları) ───────────── */
+
+const COZUMLU = `
+MARKA VE PATENT VEKİLLİĞİ SINAVI
+TAMAMI ÇÖZÜMLÜ SORU BANKASI
+MARKA SORULARI
+1. Türkiye'de marka başvuruları hangi kuruma yapılır?
+A) Ticaret Bakanlığı
+B) Türk Patent ve Marka Kurumu
+C) Sanayi Bakanlığı
+D) Adalet Bakanlığı
+E) Dışişleri Bakanlığı
+2. Marka koruma süresi kaç yıldır?
+A) 5
+B) 7
+C) 10
+D) 15
+E) 20
+
+COĞRAFİ İŞARET SORULARI
+1. Menşe adında üretimin kaç aşaması belirlenen alanda gerçekleşir?
+A) Yalnız biri
+B) En az ikisi
+C) Tamamı
+D) Yarısı
+E) Hiçbiri
+
+MARKA SORU CEVAPLARI
+1. Türkiye'de marka başvuruları Türk Patent ve Marka Kurumuna yapılır.
+Bu kapsamda sorunun doğru cevabı (b) şıkkı olacaktır.
+CEVAP: B
+2. SMK m. 23 uyarınca koruma süresi başvuru tarihinden itibaren on yıldır.
+CEVAP: C
+
+COĞRAFİ İŞARET CEVAPLARI
+1. SMK m. 34 uyarınca menşe adında tüm üretim aşamaları belirlenmiş coğrafi
+alan sınırları içinde gerçekleşir.
+CEVAP: C
+`;
+
+test('çözümlü banka: soru ve cevap bölümleri adlarına göre eşleşir', () => {
+  const { sorular, rapor } = cozumluBankaAyristir(COZUMLU);
+  assert.equal(rapor.toplam, 3);
+  assert.equal(rapor.cevapliEslesen, 3);
+  assert.deepEqual(rapor.bolumler, ['MARKA', 'COĞRAFİ İŞARET']);
+  assert.equal(sorular[0].cevap, 'B');
+  assert.equal(sorular[1].cevap, 'C');
+  assert.equal(sorular[2].bolum, 'COĞRAFİ İŞARET');
+  assert.equal(sorular[2].cevap, 'C');
+});
+
+test('çözümlü banka: gerekçe açıklama olarak alınır', () => {
+  const { sorular, rapor } = cozumluBankaAyristir(COZUMLU);
+  assert.equal(rapor.aciklamali, 3);
+  assert.match(sorular[0].aciklama, /Türk Patent ve Marka Kurumuna yapılır/);
+  assert.ok(!sorular[0].aciklama.includes('CEVAP'));
+});
+
+test('çözümlü banka: gerekçe içindeki madde numaraları soru sayılmaz', () => {
+  // "SMK m. 23 uyarınca" ifadesi çift arayan bir ayrıştırıcıda (23, U) gibi
+  // görünür; numaralandırma süreklilikle korunuyor.
+  const { sorular } = cozumluBankaAyristir(COZUMLU);
+  assert.deepEqual(sorular.filter((s) => s.bolum === 'MARKA').map((s) => s.yerelNo), [1, 2]);
+});
+
+test('çözümlü banka: bölüm adı özgün yazımıyla korunur', () => {
+  const { sorular } = cozumluBankaAyristir(COZUMLU);
+  // Eşleştirme katlanmış adla yapılır ama gösterim özgün metinden gelir.
+  assert.equal(sorular[2].bolum, 'COĞRAFİ İŞARET');
 });

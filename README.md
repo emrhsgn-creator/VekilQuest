@@ -103,6 +103,15 @@ Kitapçık düzeni yıldan yıla değişiyor ve naif bir “satır başındaki n
 eşleşti, doğrulayıcıda 0 sorun.** 2017 ve 2021 kitapçıkları tek uyarı bile üretmeden 100/100
 çıkıyor. Bunların **166'sı marka vekilliği kapsamında**; patent bölümleri içe aktarılmaz.
 
+### Çözümlü soru bankaları
+
+Yayınevi kitaplarının düzeni farklıdır (`… SORULARI` / `… CEVAPLARI` başlıkları, düzyazı içinde
+`CEVAP: X` işaretleri, gerekçeli çözümler). `--tur cozumlu` bu düzeni ayrıştırır ve kitabın
+gerekçelerini soruların açıklama alanına yazar. Ayrıntı: [docs/SORU-YUKLEME.md](docs/SORU-YUKLEME.md).
+
+Ticari soru bankaları uygulamayla **dağıtılmaz**; üretilen JSON içe aktarma ekranından
+kendi tarayıcına yüklenir.
+
 ### Marka kapsamı
 
 Genel Yeterlik kitapçıkları iki sınav taşır: bir bölüm patent, diğeri marka / coğrafi işaret /

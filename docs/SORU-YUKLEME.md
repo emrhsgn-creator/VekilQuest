@@ -165,3 +165,41 @@ yanlışlıkla dağıtılmasını önlemek için.
 Bankayı sonradan büyütürsen (yeni yıllar eklersen) `damga` alanı değişir; kullanıcılar
 **İçe aktar → “Uygulamayla gelen bankayı yeniden yükle”** ile güncelleyebilir. Bu işlem mevcut
 soruları günceller, çözüm geçmişini korur.
+
+---
+
+## Çözümlü soru bankaları (yayınevi kitapları)
+
+Bu kitapların düzeni sınav kitapçıklarından farklıdır:
+
+```
+MARKA SORULARI
+1. Soru metni…
+A) … E) …
+
+MARKA SORU CEVAPLARI
+1. Gerekçeli çözüm metni…
+CEVAP: D
+```
+
+Cevaplar `1- D` çiftleri yerine düzyazı içinde `CEVAP: X` işaretleri hâlinde gelir. Çift arayan
+ayrıştırıcı bu metinde felakete yol açar: *"SMK m. 4 düzenlemesi"* ifadesi `(4, D)` çifti gibi
+görünür. Bu yüzden ayrı bir mod var:
+
+```bash
+node tools/pdf-to-json.mjs \
+  --kitapcik data/ham/soru-bankasi.pdf \
+  --anahtar  data/ham/cevap-anahtari.pdf \
+  --tur cozumlu \
+  --onek yb \
+  --kaynak "Tamamı Çözümlü Soru Bankası" \
+  --cikti data/sorular/yayinevi-1.json
+```
+
+Soru ve cevap bölümleri **adlarına göre** eşleştirilir (`MARKA SORULARI` ↔ `MARKA SORU
+CEVAPLARI`), yani soru ve cevap dosyaları ayrı ayrı ya da tek dosyada verilebilir. Kitabın
+gerekçeli çözümleri soruların **açıklama** alanına yazılır; çözüm ekranında doğru cevapla
+birlikte görünür.
+
+> Ticari soru bankaları `public/veri/` içine konmaz — telif nedeniyle uygulamayla dağıtılmaz.
+> Üretilen JSON'u **İçe aktar → JSON dosyası seç** ile kendi tarayıcına yüklersin.

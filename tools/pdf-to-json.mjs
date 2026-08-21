@@ -18,7 +18,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { belgeyiAyristir, bolumKapsamlari } from '../src/lib/parse.mjs';
+import { belgeyiAyristir, bolumKapsamlari, cozumluBankaAyristir, katla } from '../src/lib/parse.mjs';
 
 function argumanlar(argv) {
   const cikti = {};
@@ -77,6 +77,10 @@ Marka Vekilliği soru bankası dönüştürücü
   --oturum   <1>           Aynı yılda birden fazla oturum varsa
   --kapsam   <marka|hepsi> Varsayılan "marka": Genel Yeterlik kitapçığının
                            patent bölümü çıktıya alınmaz
+  --tur      <sinav|cozumlu>  "cozumlu": yayınevi soru bankası düzeni
+                           (… SORULARI / … CEVAPLARI başlıkları, "CEVAP: X"
+                           ve gerekçeli çözümler)
+  --kaynak   <metin>       Çıktıdaki kaynak adı (çözümlü bankalar için)
   --cikti    <dosya.json>  Çıktı yolu
 `);
   process.exit(arg.kitapcik ? 0 : 1);
@@ -103,7 +107,10 @@ if (arg.anahtar) {
   anahtarMetni = await pdfMetni(arg.anahtar);
 }
 
-const { sorular: tumSorular, uyarilar, rapor } = belgeyiAyristir(kitapcikMetni, anahtarMetni);
+const cozumluMu = arg.tur === 'cozumlu';
+const { sorular: tumSorular, uyarilar, rapor } = cozumluMu
+  ? cozumluBankaAyristir(`${kitapcikMetni}\n\n${anahtarMetni}`)
+  : belgeyiAyristir(kitapcikMetni, anahtarMetni);
 
 // Genel Yeterlik kitapçıkları patent ve marka sorularını ayrı bölümlerde
 // taşıyor. Varsayılan davranış, marka vekilliği kapsamı dışındaki patent
@@ -116,7 +123,7 @@ const ayristirilan = hepsiniAl
   : tumSorular.filter((s) => kapsamlar.get(bolumAdi(s)) !== 'patent');
 const elenen = tumSorular.length - ayristirilan.length;
 
-const kaynak = [
+const kaynak = arg.kaynak ?? [
   'TÜRKPATENT',
   yil ?? '',
   'Genel Yeterlik Sınavı',
@@ -126,11 +133,15 @@ const kaynak = [
 const simdi = Date.now();
 const banka = ayristirilan.map((s) => ({
   // Kimlik bölümü de içerir: bölümlü kitapçıklarda numaralar tekrar ediyor.
+  // Kimlik ASCII kalsın: Türkçe karakterler katlanıp sadeleştiriliyor.
   id: [
-    'tp', yil ?? 'x', arg.oturum, kitapcikTuru ?? 'x',
-    s.bolum ? s.bolum.toLocaleLowerCase('tr') : (s.kitapcikNo ? `k${s.kitapcikNo}` : null),
+    arg.onek ?? 'tp',
+    yil,
+    arg.oturum,
+    cozumluMu ? null : kitapcikTuru,
+    s.bolum ? katla(s.bolum).replace(/[^a-z0-9]+/g, '') : (s.kitapcikNo ? `k${s.kitapcikNo}` : null),
     s.yerelNo,
-  ].filter(Boolean).join('-'),
+  ].filter((p) => p !== undefined && p !== null && p !== '').join('-'),
   no: s.yerelNo,
   yil,
   oturum: arg.oturum,
@@ -140,6 +151,7 @@ const banka = ayristirilan.map((s) => ({
   metin: s.metin,
   secenekler: s.secenekler,
   cevap: s.cevap,
+  aciklama: s.aciklama,
   iptal: s.iptal,
   eklenme: simdi,
 }));

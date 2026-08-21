@@ -654,3 +654,147 @@ export function bolumKapsamlari(sorular) {
   }
   return sonuc;
 }
+
+/* ──────────────── çözümlü soru bankası (yayınevi kitapları) ─────────────── */
+
+/**
+ * Yayınevi soru bankalarının düzeni sınav kitapçıklarından farklı:
+ *
+ *   MARKA SORULARI
+ *   1. Soru metni…
+ *   A) … E) …
+ *
+ *   MARKA SORU CEVAPLARI
+ *   1. Gerekçeli çözüm metni…
+ *   CEVAP: D
+ *
+ * Cevap anahtarı "1- D" çiftleri yerine düzyazı içinde "CEVAP: X" işaretleri
+ * hâlinde geliyor. Çift arayan ayrıştırıcı bu metinde felakete yol açar:
+ * "SMK m. 4 düzenlemesi" ifadesi (4, D) çifti gibi görünür. Bu yüzden burada
+ * çözümler CEVAP işaretlerine göre çıkarılıyor — sorularda seçenek kümelerine
+ * göre yapılanın aynısı.
+ *
+ * Kazanç yalnızca cevap değil: her sorunun gerekçesi de metin olarak geliyor
+ * ve uygulamadaki açıklama alanını dolduruyor.
+ */
+
+const BOLUM_BASLIGI_COZUMLU = /^ *([a-zçğıöşü][a-zçğıöşü ]{3,60}?) +(sorulari|soru cevaplari|cevaplari) *$/gm;
+const CEVAP_ISARETI = /cevap *: *([a-e])(?![a-z])/g;
+
+/** Bir cevap bölümünü {no -> {harf, aciklama}} haritasına çevirir. */
+function cozumleriAyristir(bolumMetni) {
+  const katli = katlaHizali(bolumMetni);
+  CEVAP_ISARETI.lastIndex = 0;
+  const isaretler = [];
+  let e;
+  while ((e = CEVAP_ISARETI.exec(katli)) !== null) {
+    isaretler.push({
+      harf: e[1].toLocaleUpperCase('tr'),
+      bas: e.index,
+      son: e.index + e[0].length,
+    });
+  }
+
+  const adaylar = numaraAdaylari(bolumMetni);
+  const sonuc = new Map();
+  let sonNo = 0;
+
+  for (let k = 0; k < isaretler.length; k++) {
+    const isaret = isaretler[k];
+    const pencereBas = k === 0 ? 0 : isaretler[k - 1].son;
+    const penceredekiler = adaylar.filter((a) => a.bas >= pencereBas && a.bas < isaret.bas);
+
+    // Gerekçe metninde "1. maddesinde" gibi ifadeler numara adayı gibi
+    // görünebilir; süreklilik kuralı bunları eler.
+    const aday = penceredekiler.find((a) => a.no === sonNo + 1)
+      ?? penceredekiler.find((a) => a.no > sonNo && a.no <= sonNo + 6);
+
+    const no = aday ? aday.no : sonNo + 1;
+    sonNo = no;
+
+    const aciklama = bolumMetni
+      .slice(aday ? aday.govdeBas : pencereBas, isaret.bas)
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    if (!sonuc.has(no)) sonuc.set(no, { harf: isaret.harf, aciklama });
+  }
+  return sonuc;
+}
+
+/**
+ * Çözümlü soru bankasını ayrıştırır. Soru ve cevap bölümleri aynı belgede ya
+ * da ayrı dosyalarda olabilir; hepsi tek metin hâlinde verilebilir.
+ *
+ * @param {string} hamMetin
+ * @returns {{sorular: object[], uyarilar: string[], rapor: object}}
+ */
+export function cozumluBankaAyristir(hamMetin) {
+  const temiz = metniTemizle(hamMetin);
+  const katli = katlaHizali(temiz);
+
+  BOLUM_BASLIGI_COZUMLU.lastIndex = 0;
+  const basliklar = [];
+  let e;
+  while ((e = BOLUM_BASLIGI_COZUMLU.exec(katli)) !== null) {
+    // Eşleştirme katlanmış ad üzerinden (marka == MARKA), gösterim ise
+    // özgün metinden: "COĞRAFİ İŞARET…" düzgün görünsün.
+    const adBaslangici = e.index + e[0].indexOf(e[1]);
+    basliklar.push({
+      eslesmeAdi: e[1].trim(),
+      ad: temiz.slice(adBaslangici, adBaslangici + e[1].trim().length).trim(),
+      tur: e[2] === 'sorulari' ? 'soru' : 'cevap',
+      govdeBas: e.index + e[0].length,
+      bas: e.index,
+    });
+  }
+
+  const uyarilar = [];
+  if (basliklar.length === 0) {
+    return { sorular: [], uyarilar: ['Belgede "… SORULARI" / "… CEVAPLARI" başlıkları bulunamadı.'], rapor: {} };
+  }
+
+  const bolumler = basliklar.map((b, i) => ({
+    ...b,
+    metin: temiz.slice(b.govdeBas, basliklar[i + 1]?.bas ?? temiz.length),
+  }));
+
+  // Aynı adı taşıyan soru ve cevap bölümlerini eşleştir.
+  const sorular = [];
+  for (const bolum of bolumler.filter((b) => b.tur === 'soru')) {
+    const { sorular: cikan, uyarilar: uyari } = bolumdenSorular(bolum.metin);
+    uyarilar.push(...uyari.map((u) => `${bolum.ad}: ${u}`));
+
+    const cevapBolumu = bolumler.find((b) => b.tur === 'cevap' && b.eslesmeAdi === bolum.eslesmeAdi);
+    const cozumler = cevapBolumu ? cozumleriAyristir(cevapBolumu.metin) : new Map();
+    if (!cevapBolumu) uyarilar.push(`${bolum.ad}: cevap bölümü bulunamadı.`);
+
+    for (const soru of cikan) {
+      const cozum = cozumler.get(soru.no);
+      const gecerli = cozum && soru.secenekler.some((o) => o.harf === cozum.harf);
+      sorular.push({
+        ...soru,
+        yerelNo: soru.no,
+        anahtarNo: soru.no,
+        bolum: bolum.ad.toLocaleUpperCase('tr'),
+        cevap: gecerli ? cozum.harf : '',
+        aciklama: cozum?.aciklama || undefined,
+      });
+    }
+  }
+
+  sorular.forEach((s, i) => { s.sira = i + 1; });
+
+  return {
+    sorular,
+    uyarilar,
+    rapor: {
+      toplam: sorular.length,
+      cevapliEslesen: sorular.filter((s) => s.cevap).length,
+      cevapsiz: sorular.filter((s) => !s.cevap).length,
+      aciklamali: sorular.filter((s) => s.aciklama).length,
+      secenekEksik: sorular.filter((s) => s.secenekler.length < 4).length,
+      bolumler: [...new Set(sorular.map((s) => s.bolum))],
+    },
+  };
+}
