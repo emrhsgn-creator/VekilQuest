@@ -332,3 +332,26 @@ test('çözümlü banka: bölüm adı özgün yazımıyla korunur', () => {
   // Eşleştirme katlanmış adla yapılır ama gösterim özgün metinden gelir.
   assert.equal(sorular[2].bolum, 'COĞRAFİ İŞARET');
 });
+
+test('çözümlü banka: "CEVAPLAR" başlığı da tanınır', () => {
+  // Bazı bölümlerde başlık "TASARIM CEVAPLARI" değil "TASARIM CEVAPLAR";
+  // sondaki ünlü isteğe bağlı olmalı, yoksa cevap bölümü hiç eşleşmiyor.
+  const metin = `
+TASARIM SORULARI
+1. Tescilli tasarımın koruma süresi kaç yıldır?
+A) 3
+B) 5
+C) 10
+D) 15
+E) 25
+
+TASARIM CEVAPLAR
+1. SMK m. 69 uyarınca tescilli tasarımın koruma süresi beş yıldır.
+CEVAP: B
+`;
+  const { sorular, rapor } = cozumluBankaAyristir(metin);
+  assert.equal(rapor.toplam, 1);
+  assert.equal(rapor.cevapliEslesen, 1);
+  assert.equal(sorular[0].cevap, 'B');
+  assert.equal(sorular[0].bolum, 'TASARIM');
+});

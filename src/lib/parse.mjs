@@ -678,7 +678,10 @@ export function bolumKapsamlari(sorular) {
  * ve uygulamadaki açıklama alanını dolduruyor.
  */
 
-const BOLUM_BASLIGI_COZUMLU = /^ *([a-zçğıöşü][a-zçğıöşü ]{3,60}?) +(sorulari|soru cevaplari|cevaplari) *$/gm;
+// Başlıklar kitaptan kitaba küçük farklar gösteriyor: "TASARIM CEVAPLARI" da
+// oluyor "TASARIM CEVAPLAR" da. Sondaki ünlü isteğe bağlı.
+const BOLUM_BASLIGI_COZUMLU =
+  /^ *([a-zçğıöşü][a-zçğıöşü ]{3,60}?) +(sorulari?|soru cevaplari?|cevaplari?) *$/gm;
 const CEVAP_ISARETI = /cevap *: *([a-e])(?![a-z])/g;
 
 /** Bir cevap bölümünü {no -> {harf, aciklama}} haritasına çevirir. */
@@ -743,7 +746,7 @@ export function cozumluBankaAyristir(hamMetin) {
     basliklar.push({
       eslesmeAdi: e[1].trim(),
       ad: temiz.slice(adBaslangici, adBaslangici + e[1].trim().length).trim(),
-      tur: e[2] === 'sorulari' ? 'soru' : 'cevap',
+      tur: e[2].startsWith('sorular') ? 'soru' : 'cevap',
       govdeBas: e.index + e[0].length,
       bas: e.index,
     });
