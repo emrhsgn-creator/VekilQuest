@@ -147,6 +147,8 @@ const banka = ayristirilan.map((s) => ({
   oturum: arg.oturum,
   kitapcik: kitapcikTuru,
   bolum: s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : undefined),
+  // Çözümlü kitaplar soru bankası, sınav kitapçıkları çıkmış sorudur.
+  tur: cozumluMu ? 'banka' : 'cikmis',
   kaynak,
   metin: s.metin,
   secenekler: s.secenekler,

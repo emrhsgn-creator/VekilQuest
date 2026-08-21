@@ -14,6 +14,12 @@ export type Soru = {
   bolum?: string;
   /** Sorunun geldiği kaynak: "TÜRKPATENT 2024 Marka Vekilliği (A)", "Elle eklendi" vb. */
   kaynak: string;
+  /**
+   * "cikmis": gerçek sınavda sorulmuş, yılı belli soru.
+   * "banka":  soru bankası / hazırlık sorusu.
+   * Belirtilmemişse yıl bilgisinden türetilir (bkz. soruTuru).
+   */
+  tur?: 'cikmis' | 'banka';
   metin: string;
   secenekler: Secenek[];
   /** Doğru seçeneğin harfi. Boşsa soru "cevapsız" sayılır ve sınavda çıkmaz. */

@@ -94,6 +94,7 @@ export default function IceAktar() {
           oturum: oturum || undefined,
           kitapcik: kitapcikTuru || undefined,
           bolum,
+          tur: yil ? 'cikmis' : 'banka',
           kaynak,
           metin: s.metin,
           secenekler: s.secenekler,

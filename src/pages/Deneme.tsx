@@ -2,8 +2,11 @@ import { useMemo, useState } from 'react';
 import { useStore } from '../store';
 import { BosDurum, Kart, Olcut, sureBicim, tarihBicim } from '../components/ui';
 import { SeansCalistir } from '../components/SeansCalistir';
-import { yuzde } from '../components/Grafik';
-import { cozulebilir, karistir, yillar, zayifOnceSec } from '../lib/sec';
+import { BuyuklukListesi, yuzde } from '../components/Grafik';
+import { konuAdi } from '../lib/stats';
+import {
+  cikmisSorular, cozulebilir, gercekciDenemeSec, karistir, sinavKonuDagilimi, yillar, zayifOnceSec,
+} from '../lib/sec';
 import { konuIstatistikleri } from '../lib/stats';
 import type { Soru } from '../types';
 
@@ -20,6 +23,9 @@ export default function Deneme() {
   const havuz = useMemo(() => cozulebilir(sorular), [sorular]);
   const mevcutYillar = useMemo(() => yillar(havuz), [havuz]);
   const konular = useMemo(() => konuIstatistikleri(sorular, cevaplamalar), [sorular, cevaplamalar]);
+
+  // Gerçek sınavın konu dağılımı: çıkmış soruların sayımı. Tahmin değil, ölçüm.
+  const dagilim = useMemo(() => sinavKonuDagilimi(sorular), [sorular]);
 
   const gecmisDenemeler = useMemo(() => {
     const seansCevaplari = new Map<string, { toplam: number; dogru: number; sure: number }>();
@@ -71,7 +77,11 @@ export default function Deneme() {
       secilen = zayifOnceSec(havuz, oncelikler, soruSayisi);
       baslik = 'Zayıf konu ağırlıklı deneme';
     } else {
-      secilen = karistir(yilHavuzu).slice(0, soruSayisi);
+      // Karışık deneme, gerçek sınavın konu dağılımını taklit eder: saf
+      // rastgele seçim bankanın dağılımını yansıtır, sınavınkini değil.
+      secilen = dagilim.size > 0
+        ? gercekciDenemeSec(yilHavuzu, dagilim, soruSayisi)
+        : karistir(yilHavuzu).slice(0, soruSayisi);
       baslik = yil ? `${yil} soruları · karışık deneme` : 'Karışık deneme';
     }
     if (secilen.length > 0) setAktif({ sorular: secilen, baslik });
@@ -98,7 +108,7 @@ export default function Deneme() {
             <div className="satir">
               {([
                 ['gercek-sinav', 'Gerçek sınav (bir yılın tamamı)'],
-                ['karisik', 'Karışık deneme'],
+                ['karisik', 'Karışık deneme (sınav dağılımıyla)'],
                 ['zayif', 'Zayıf konu ağırlıklı'],
               ] as [Kaynak, string][]).map(([deger, etiket]) => (
                 <button key={deger} type="button"
@@ -142,6 +152,20 @@ export default function Deneme() {
             <div className="bilgi-kutusu uyari">Gerçek sınav modunda bir yıl seçmelisin.</div>
           )}
 
+          {kaynak === 'karisik' && dagilim.size > 0 && (
+            <div className="bilgi-kutusu" style={{ marginTop: 14 }}>
+              Sorular rastgele değil, <strong>çıkmış sınavların konu dağılımına göre</strong>
+              {' '}seçilir. Her konuya sınavdaki payı kadar yer ayrılır; bir konuda yeterli soru
+              yoksa açık kalan kontenjan havuzdan tamamlanır.
+            </div>
+          )}
+          {kaynak === 'karisik' && dagilim.size === 0 && (
+            <div className="bilgi-kutusu uyari" style={{ marginTop: 14 }}>
+              Bankada yılı belli çıkmış sınav sorusu yok; dağılım hesaplanamıyor, sorular
+              rastgele seçilecek.
+            </div>
+          )}
+
           <div className="satir aralikli" style={{ marginTop: 14 }}>
             <span className="minik">
               {secilecekSayi} soru · {sureDk} dakika · soru başına {Math.round((sureDk * 60) / Math.max(1, secilecekSayi))} saniye
@@ -152,6 +176,28 @@ export default function Deneme() {
             </button>
           </div>
         </Kart>
+
+        {kaynak === 'karisik' && dagilim.size > 0 && (
+          <Kart baslik="Sınavın konu dağılımı"
+                not={`${cikmisSorular(sorular).length} çıkmış sorunun sayımı. Denemedeki soru sayıları bu oranlara göre paylaştırılır.`}>
+            <BuyuklukListesi
+              maksSatir={10}
+              birim=" soru"
+              satirlar={[...dagilim]
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10)
+                .map(([topicId, oran]) => ({
+                  id: topicId,
+                  etiket: konuAdi(topicId),
+                  deger: Math.round(oran * soruSayisi * 10) / 10,
+                  altEtiket: `Sınavın %${(oran * 100).toFixed(1)}'i`,
+                }))}
+            />
+            <p className="minik" style={{ marginTop: 12, marginBottom: 0 }}>
+              Çubuk uzunluğu = {soruSayisi} soruluk bir denemede o konudan beklenen soru sayısı.
+            </p>
+          </Kart>
+        )}
 
         {gecmisDenemeler.length > 0 && (
           <>

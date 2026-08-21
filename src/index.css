@@ -480,3 +480,33 @@ details summary { color: var(--metin-2); }
 }
 .kaynak-bag:hover { border-color: var(--vurgu); background: var(--yuzey-2); text-decoration: none; }
 .kaynak-bag strong { font-size: .85rem; }
+
+/* ------------------------------------------- soru gezinme (Sorular sayfası) */
+.grup-basi {
+  display: flex; align-items: center; gap: 9px;
+  background: none; border: none; padding: 0; margin: 0;
+  font: inherit; color: inherit; cursor: pointer; text-align: left;
+  flex: 1; min-width: 0;
+}
+.grup-ok { color: var(--metin-3); font-size: .8rem; flex: none; }
+.grup-ad { font-weight: 650; font-size: .95rem; }
+.grup-basi:hover .grup-ad { color: var(--vurgu); }
+
+.alt-grup {
+  border: 1px solid var(--kenar); border-radius: var(--r-s);
+  padding: 11px 13px; background: var(--yuzey-2);
+}
+
+.soru-satir {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  padding: 8px 10px; border-radius: var(--r-s);
+  border: 1px solid var(--kenar); background: var(--yuzey);
+  font: inherit; font-size: .84rem; color: inherit;
+  cursor: pointer; text-align: left;
+}
+.soru-satir:hover { border-color: var(--vurgu); }
+.soru-satir-no {
+  flex: none; min-width: 66px; font-size: .74rem; color: var(--metin-3);
+  font-variant-numeric: tabular-nums;
+}
+.soru-satir-metin { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

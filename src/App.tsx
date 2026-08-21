@@ -4,6 +4,7 @@ import { useStore } from './store';
 import { vadesiGelenler } from './lib/srs';
 import Panel from './pages/Panel';
 import Calisma from './pages/Calisma';
+import Sorular from './pages/Sorular';
 import Deneme from './pages/Deneme';
 import Tekrar from './pages/Tekrar';
 import Analiz from './pages/Analiz';
@@ -39,6 +40,7 @@ export default function App() {
 
         <div className="yan-baslik">Çalış</div>
         <Bag yol="/" ad="Panel" />
+        <Bag yol="/sorular" ad="Sorular" />
         <Bag yol="/calisma" ad="Konu çalışması" />
         <Bag yol="/deneme" ad="Deneme sınavı" />
         <Bag yol="/tekrar" ad="Tekrar" rozet={vadeSayisi || undefined} />
@@ -58,6 +60,7 @@ export default function App() {
       <main className="icerik">
         <Routes>
           <Route path="/" element={<Panel />} />
+          <Route path="/sorular" element={<Sorular />} />
           <Route path="/calisma" element={<Calisma />} />
           <Route path="/deneme" element={<Deneme />} />
           <Route path="/tekrar" element={<Tekrar />} />

@@ -16,8 +16,9 @@ cihazından çıkmaz.
 | Bölüm | İşlevi |
 |---|---|
 | **Panel** | Günlük hedef, çalışma serisi, öncelikli konular, 30 günlük ısı takvimi |
+| **Sorular** | Çıkmış soruları yıl ve kitapçık bölümüne göre, bankanın tamamını konu ağacına göre gözden geçirme; her gruptan doğrudan çözme |
 | **Konu çalışması** | Konu / alan / yıl / durum filtresiyle soru seti kurup anında geri bildirimle çözme |
-| **Deneme sınavı** | Süreli, geri bildirimsiz, soru paletli gerçek sınav simülasyonu; deneme geçmişi ve ortalaması |
+| **Deneme sınavı** | Süreli, geri bildirimsiz, soru paletli gerçek sınav simülasyonu; karışık deneme gerçek sınavın konu dağılımını taklit eder |
 | **Tekrar** | SM-2 türevi aralıklı tekrar; ısrarla yanlış yapılanlar ve işaretlediklerin |
 | **Analiz** | Konu bazlı hâkimiyet, sınav ağırlığı, zaman/yıl eğilimi, hata ve süre analizi |
 | **Kapsam filtresi** | Genel Yeterlik kitapçıklarının patent bölümü içe aktarılmaz; yalnızca marka, coğrafi işaret ve ortak sorular bankaya girer |
@@ -134,6 +135,20 @@ elenmez — o sorular marka adayının da kapsamındadır.
 Hepsini yine de istersen: içe aktarma ekranındaki onay kutusunu kapat ya da
 `node tools/pdf-to-json.mjs … --kapsam hepsi`. Bankaya patent sorusu girdiyse Soru Bankası
 ekranındaki “Patent sorularını sil” düğmesiyle temizleyebilirsin.
+
+## Karışık deneme neden rastgele değil
+
+Saf rastgele seçim, **bankanın** konu dağılımını yansıtır — sınavınkini değil. Bankada tasarım
+sorusu bolsa denemeniz tasarım ağırlıklı çıkar, oysa gerçek sınavda o oran farklıdır.
+
+`gercekciDenemeSec` bunun yerine çıkmış soruları sayıp gerçek dağılımı çıkarır ve her konuya
+sınavdaki payı kadar kota ayırır. Kotalar en büyük kalan yöntemiyle tam sayıya yuvarlanır; bir
+konuda yeterli soru yoksa açık kalan kontenjan havuzdan tamamlanır, böylece set her hâlükârda
+istenen uzunlukta çıkar. Ölçülen dağılım deneme kurma ekranında görünür — 100 soruluk bir
+denemede mutlak ret nedenlerinden ~17,7, nispi ret nedenlerinden ~12,8 soru gelir.
+
+Bunun çalışması için bankada **yılı belli çıkmış sorular** bulunmalı. Sorular `tur` alanıyla
+ayrılır (`cikmis` / `banka`); alan yoksa yıl bilgisinden türetilir.
 
 ## Analiz nasıl hesaplanıyor
 
