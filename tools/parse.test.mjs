@@ -355,3 +355,27 @@ CEVAP: B
   assert.equal(sorular[0].cevap, 'B');
   assert.equal(sorular[0].bolum, 'TASARIM');
 });
+
+test('çözümlü banka: "SORULARIN CEVAPLARI" başlığı eşleşir', () => {
+  // "ORTAK SORULAR" karşısında "ORTAK SORULARIN CEVAPLARI" duruyor. Ada takılan
+  // bu ek atılmazsa bölüm adı "ortak sorularin" okunur ve eşleşme kaçar.
+  const metin = `
+ORTAK SORULAR
+1. Türk Medeni Kanunu'na göre hâkim, kanunda hüküm yoksa ne yapar?
+A) Karar vermekten kaçınır
+B) Örf ve âdet hukukuna göre karar verir
+C) Davayı reddeder
+D) Dosyayı Yargıtaya gönderir
+E) Bilirkişiye başvurur
+
+ORTAK SORULARIN CEVAPLARI
+1. TMK m. 1 uyarınca hâkim, kanunda uygulanabilir hüküm yoksa örf ve âdet
+hukukuna göre karar verir; karar vermekten kaçınamaz.
+CEVAP: B
+`;
+  const { sorular, rapor } = cozumluBankaAyristir(metin);
+  assert.equal(rapor.toplam, 1);
+  assert.equal(rapor.cevapliEslesen, 1);
+  assert.equal(sorular[0].bolum, 'ORTAK');
+  assert.equal(sorular[0].cevap, 'B');
+});

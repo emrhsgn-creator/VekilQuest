@@ -742,10 +742,16 @@ export function cozumluBankaAyristir(hamMetin) {
   while ((e = BOLUM_BASLIGI_COZUMLU.exec(katli)) !== null) {
     // Eşleştirme katlanmış ad üzerinden (marka == MARKA), gösterim ise
     // özgün metinden: "COĞRAFİ İŞARET…" düzgün görünsün.
+    //
+    // Başlık kalıbı bölümden bölüme değişiyor: "ORTAK SORULAR" karşısında
+    // "ORTAK SORULARIN CEVAPLARI" var. İkincisinde ad "ortak sorularin" gibi
+    // okunuyor ve eşleşme kaçıyor; ada takılan bu ekler eşleştirmeden önce
+    // atılıyor.
     const adBaslangici = e.index + e[0].indexOf(e[1]);
     basliklar.push({
-      eslesmeAdi: e[1].trim(),
-      ad: temiz.slice(adBaslangici, adBaslangici + e[1].trim().length).trim(),
+      eslesmeAdi: e[1].trim().replace(/ +(sorularin|sorular|soru)$/, '').trim(),
+      ad: temiz.slice(adBaslangici, adBaslangici + e[1].trim().length)
+        .trim().replace(/ +(SORULARIN|SORULAR|SORU)$/i, '').trim(),
       tur: e[2].startsWith('sorular') ? 'soru' : 'cevap',
       govdeBas: e.index + e[0].length,
       bas: e.index,
