@@ -271,7 +271,7 @@ export default function IceAktar() {
             <input ref={jsonGiris} type="file" accept=".json,application/json" style={{ display: 'none' }}
                    onChange={(e) => { const d = e.target.files?.[0]; if (d) void jsonYukle(d); e.target.value = ''; }} />
             <button className="dugme" onClick={() => jsonGiris.current?.click()}>JSON dosyası seç</button>
-            <button className="dugme" onClick={ornekYukle}>Örnek soruları yükle (32 soru)</button>
+            <button className="dugme" onClick={ornekYukle}>Örnek soruları yükle (32 soru · resmî değil)</button>
             <span className="minik">Bankada şu an {sorular.length} soru var.</span>
           </div>
         </Kart>
