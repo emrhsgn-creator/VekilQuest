@@ -1,6 +1,6 @@
 {
  "surum": 1,
- "damga": "2015-2017-2019-2021-166",
+ "damga": "2015-2017-2019-2021-301",
  "kaynak": "TÜRKPATENT Patent ve Marka Vekilliği Genel Yeterlik Sınavı — marka bölümleri",
  "aciklama": "TÜRKPATENT tarafından yayımlanan sınav kitapçıklarından ayrıştırılmıştır. Kişisel sınav hazırlığı amaçlıdır.",
  "yillar": [
@@ -6160,6 +6160,4519 @@
    "topicId": "marka-ruchan",
    "topicGuven": 0.34,
    "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a1",
+   "no": 1,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Aşağıdaki marka türlerinden hangisi, mevcut teknoloji itibarıyla sicilde gösterilemediğinden tescil edilemez?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pozisyon markası"
+    },
+    {
+     "harf": "B",
+     "metin": "Desen markası"
+    },
+    {
+     "harf": "C",
+     "metin": "Multimedya markası"
+    },
+    {
+     "harf": "D",
+     "metin": "Hareket markası"
+    },
+    {
+     "harf": "E",
+     "metin": "Koku markası"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Koku ve tat markaları; kimyasal formül, sözlü tarif, numune veya bunların kombinasyonuyla sicilde açık ve kesin biçimde gösterilemez. Diğer türlerin gösterim yöntemi Yönetmelik m.7'de düzenlenmiştir",
+   "topicId": "marka-isaret",
+   "topicGuven": 0.84,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a2",
+   "no": 2,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Ses markalarının sicilde gösterimi bakımından aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru formunda ses markası olduğu belirtilmelidir"
+    },
+    {
+     "harf": "B",
+     "metin": "Sesin elektronik kaydının sunulması zorunludur"
+    },
+    {
+     "harf": "C",
+     "metin": "Nota ile gösterim isteğe bağlıdır"
+    },
+    {
+     "harf": "D",
+     "metin": "Ses markası, sesle birlikte hareketli bir görüntü de içerebilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Sesle birlikte hareketli görüntü bulunması hâlinde marka multimedya markası olur"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Ses markası görüntü içeremez. Sesle birlikte hareketli görüntü varsa marka multimedya markası olur — bu nedenle (E) doğru bir ifadedir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a3",
+   "no": 3,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Üç boyutlu marka başvurularında marka örneği en fazla kaç farklı açıdan görünüm içerebilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "3"
+    },
+    {
+     "harf": "B",
+     "metin": "4"
+    },
+    {
+     "harf": "C",
+     "metin": "5"
+    },
+    {
+     "harf": "D",
+     "metin": "6"
+    },
+    {
+     "harf": "E",
+     "metin": "8"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Üç boyutlu markalarda en fazla 6 farklı açıdan görünüm sunulabilir; bunlar markanın bütünlüğünü bozmamalıdır",
+   "topicId": "marka-isaret",
+   "topicGuven": 0.34,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a4",
+   "no": 4,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "SMK m.5/1-a ile m.5/1-b arasındaki temel fark aşağıdakilerden hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "5/1-a resen, 5/1-b itiraz üzerine incelenir"
+    },
+    {
+     "harf": "B",
+     "metin": "5/1-a'daki ayırt edicilik soyut, 5/1-b'deki somuttur"
+    },
+    {
+     "harf": "C",
+     "metin": "5/1-a'ya karşı kullanım sonucu kazanılmış ayırt edicilik ileri sürülebilir"
+    },
+    {
+     "harf": "D",
+     "metin": "5/1-b yalnızca şekil markaları bakımından uygulanır"
+    },
+    {
+     "harf": "E",
+     "metin": "5/1-a yalnızca geleneksel olmayan markalar bakımından uygulanır"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "5/1-a'daki ayırt edicilik mal/hizmetten bağımsız soyut, 5/1-b'deki ise mal ve hizmete bağlı somut ayırt ediciliktir. Her iki bent de resen incelenir ve 5/1-a engeli kullanımla aşılamaz",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a5",
+   "no": 5,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Renk kombinasyonundan oluşan marka başvurularında aşağıdakilerden hangisi isteğe bağlıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Renklerin sistematik düzen içerecek şekilde gösterilmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Kurumca kabul edilen renk kodunun belirtilmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Başvuru formunda marka türünün belirtilmesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Renk örneğinin sunulması"
+    },
+    {
+     "harf": "E",
+     "metin": "Renklerin düzenine ilişkin tarifname sunulması"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Renk kombinasyonlarında sistematik düzen içeren örnek ve renk kodu zorunlu, tarifname isteğe bağlıdır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a6",
+   "no": 6,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Aşağıdaki başvurulardan hangisi kılavuza göre ayırt edici kabul edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Baklava Ustası — pastacılık ürünleri için"
+    },
+    {
+     "harf": "B",
+     "metin": "Ayakkabı Ustası — ayakkabılar için"
+    },
+    {
+     "harf": "C",
+     "metin": "Ateş Ustası — mangal kömürü için"
+    },
+    {
+     "harf": "D",
+     "metin": "Çömlek Ustası — çömlekler için"
+    },
+    {
+     "harf": "E",
+     "metin": "Pasta Ustası — pastalar için"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Gerçekte var olan bir meslek adını oluşturan \"… ustası\" kalıpları ayırt edici değildir (ayrıca 5/1-d). \"Ateş Ustası\" gibi hayali kombinasyonlar ayırt edici kabul edilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a7",
+   "no": 7,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "İki veya daha fazla harften oluşan işaretler bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak ayırt edicidir; coğrafi kaynak belirtenler istisnadır"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ayırt edici değildir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca stilize yazıldıklarında ayırt edicidir"
+    },
+    {
+     "harf": "D",
+     "metin": "Her hâlükârda 5/1-c kapsamında reddedilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Ancak üç ve daha fazla harf içeriyorsa ayırt edicidir"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "İki ve daha fazla harften oluşan işaretler kural olarak ayırt edicidir; istisna, coğrafi kaynak belirten harf gruplarıdır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a8",
+   "no": 8,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "\"44\" ibaresinin kayısılar, \"CH\" ibaresinin ise saatler bakımından ayırt edici bulunmamasının gerekçesi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Coğrafi kaynak belirtmeleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca iki karakterden oluşmaları"
+    },
+    {
+     "harf": "C",
+     "metin": "Ticaret alanında herkesçe kullanılmaları"
+    },
+    {
+     "harf": "D",
+     "metin": "Standart karakterle yazılmış olmaları"
+    },
+    {
+     "harf": "E",
+     "metin": "Belirli bir meslek grubunu ayırt etmeye yaramaları"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "\"44\" Malatya'nın plaka kodu, \"CH\" İsviçre'nin ülke kodudur; ilgili mallar bakımından coğrafi kaynak belirttikleri için ayırt edici bulunmamıştır",
+   "topicId": "marka-isaret",
+   "topicGuven": 0.69,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a9",
+   "no": 9,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Slogan markaları hakkında aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sloganlara diğer markalara göre daha katı bir ayırt edicilik kriteri uygulanır"
+    },
+    {
+     "harf": "B",
+     "metin": "Sloganlar hiçbir şekilde marka olarak tescil edilemez"
+    },
+    {
+     "harf": "C",
+     "metin": "Sloganlara daha katı kriter uygulanmaz; ancak kaynak gösterir algılanmaları daha zordur"
+    },
+    {
+     "harf": "D",
+     "metin": "Sloganlar yalnızca 41. sınıf hizmetler bakımından tescil edilebilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Sloganlar ancak kullanım sonucu ayırt edicilik kazanmışsa tescil edilebilir"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Sloganlara daha katı bir kriter uygulanmaz; ancak kaynak gösterir biçimde algılanmaları güçtür. Kelime oyunu, ironi, uyak gibi unsurlar ayırt edicilik sağlayabilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a10",
+   "no": 10,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Ambalajın üç boyutlu şeklinden oluşan bir başvuruda, ambalaj üzerinde açık, belirgin ve okunur bir ayırt edici ibare bulunması hâlinde aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru yine de 5/1-b'den reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Başvuru bütün olarak ilan edilir ve şeklin kendisi üzerinde münhasır hak doğar"
+    },
+    {
+     "harf": "C",
+     "metin": "Başvuru yalnızca kelime unsuru bakımından tescil edilir, şekil eşya listesinden çıkarılır"
+    },
+    {
+     "harf": "D",
+     "metin": "Başvuru bütün olarak ilan edilir; ancak tescil, şeklin kendisi üzerinde münhasır hak vermez"
+    },
+    {
+     "harf": "E",
+     "metin": "Başvuru 5/1-e kapsamında değerlendirilir"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Ambalaj üzerindeki açık, belirgin ve okunur ayırt edici ibare bütün olarak ilanı sağlar; ancak tescil şeklin kendisi üzerinde münhasır hak vermez",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a11",
+   "no": 11,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Yargıtay'ın \"Pendik\" kararının dayandığı ilke aşağıdakilerden hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tanınmış marka koruması"
+    },
+    {
+     "harf": "B",
+     "metin": "Münhasıran il, bölge veya maruf mahal adından oluşan başvuruların tekelleştirilememesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Coğrafi işaret koruması"
+    },
+    {
+     "harf": "D",
+     "metin": "Kötü niyetli başvuruların reddi"
+    },
+    {
+     "harf": "E",
+     "metin": "Kullanım sonucu ayırt edicilik kazanılması"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Yargıtay 11. HD 1999/5790 E. kararı, münhasıran il, bölge veya maruf mahal adından oluşan başvuruların tekelleştirilememesi ilkesine dayanır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a12",
+   "no": 12,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-a ve 5/1-b",
+   "tur": "banka",
+   "metin": "Harf-sayı kombinasyonlarından oluşan aşağıdaki başvurulardan hangisi ayırt edici değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Y2 — bilgisayar yazılımları için"
+    },
+    {
+     "harf": "B",
+     "metin": "T1 — otomobiller için"
+    },
+    {
+     "harf": "C",
+     "metin": "KL5 — ayakkabılar için"
+    },
+    {
+     "harf": "D",
+     "metin": "2e — mobilyalar için"
+    },
+    {
+     "harf": "E",
+     "metin": "350 gr — gıda ürünleri için"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Harf-sayı kombinasyonları kural olarak ayırt edicidir (Y2, T1, 2e, KL5). İstisna, tanımlayıcı olanlardır: \"350 gr\", \"%8\", \"24 Saat\"",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a13",
+   "no": 13,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Aşağıdakilerden hangisi tek başına tanımlayıcılığı ortadan kaldırır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İbarenin farklı bir yazı tipiyle yazılması"
+    },
+    {
+     "harf": "B",
+     "metin": "İbarenin renklendirilmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "İbarenin basit bir çerçeve içine alınması"
+    },
+    {
+     "harf": "D",
+     "metin": "İbarenin dikey olarak yazılması"
+    },
+    {
+     "harf": "E",
+     "metin": "Hiçbiri"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Farklı font, renk, noktalama, dikey/çok satırlı dizilim ve basit geometrik figüratif unsurların hiçbiri tek başına tanımlayıcılığı ortadan kaldırmaz",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a14",
+   "no": 14,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Tanımlayıcılık testi bakımından aşağıdakilerden hangisi kılavuzun kabul ettiği ölçüttür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İşaret ile mal/hizmet arasındaki ilişkinin doğrudan doğruya, derhal ve ilave irdeleme gerektirmeksizin kurulabilmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "İşaretin sözlükte yer alıyor olması"
+    },
+    {
+     "harf": "C",
+     "metin": "İşaretin sektörde en az üç aktör tarafından kullanılıyor olması"
+    },
+    {
+     "harf": "D",
+     "metin": "İşaretin yabancı dilde bir karşılığının bulunması"
+    },
+    {
+     "harf": "E",
+     "metin": "İşaretin ilgili sınıfta daha önce tescil edilmemiş olması"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "İşaret ile mal/hizmet arasında doğrudan ve özellikli ilişki bulunmalı; ilişki ilave irdeleme ya da analize gerek olmadan, derhal kurulabilmelidir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a15",
+   "no": 15,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "\"Plus / Artı\" ibaresi içeren başvurular bakımından kılavuzun yaklaşımı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Plus + tanımlayıcı ibare\" ayırt edici kabul edilir; ancak \"plus\" yerine \"+\" işareti kullanılmış ve tanımlayıcı ibarenin önüne geçememişse ret verilebilir"
+    },
+    {
+     "harf": "B",
+     "metin": "\"Plus + tanımlayıcı ibare\" her hâlükârda reddedilir"
+    },
+    {
+     "harf": "C",
+     "metin": "\"Plus\" ibaresi 5/1-d kapsamında değerlendirilir"
+    },
+    {
+     "harf": "D",
+     "metin": "\"Plus\" ibaresi yalnızca 35. sınıf bakımından ayırt edicidir"
+    },
+    {
+     "harf": "E",
+     "metin": "\"Plus\" ibaresi ancak kullanım sonucu ayırt edicilik kazanabilir"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "\"Plus/Artı\" kombinasyonları ayırt edici kabul edilir; ancak \"plus\" yerine \"+\" işareti kullanılmış ve tanımlayıcı ibarenin önüne geçememişse ret verilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a16",
+   "no": 16,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Aşağıdaki başvurulardan hangisi kılavuzda tanımlayıcı kabul edilen örneklerdendir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evrensel Ahşap"
+    },
+    {
+     "harf": "B",
+     "metin": "Universal Göz"
+    },
+    {
+     "harf": "C",
+     "metin": "Universal Charger Adaptor"
+    },
+    {
+     "harf": "D",
+     "metin": "Kolay Bal — 30. ve 35. sınıflar için"
+    },
+    {
+     "harf": "E",
+     "metin": "Yeşil Ceviz — boyalar için"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "\"Universal/Evrensel\" kural olarak tanımlayıcı değildir; ancak mal evrensel kullanıma uygun üretilebiliyorsa tanımlayıcıdır. Diğer seçenekler kılavuzda ilan örneğidir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a17",
+   "no": 17,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "ABAD'ın \"Windsurfing Chiemsee\" kararında ortaya konan kriterler arasında aşağıdakilerden hangisi yer almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İlgili kesimin zihninde mal ile yer adı arasında mevcut durumda ilişki kurulup kurulmadığı"
+    },
+    {
+     "harf": "B",
+     "metin": "Henüz ilişki kurulmuyorsa gelecekte bu ilişkinin kurulması ihtimali"
+    },
+    {
+     "harf": "C",
+     "metin": "Gelecekteki muhtemel ekonomik gelişmeler"
+    },
+    {
+     "harf": "D",
+     "metin": "Başvuru sahibinin o yörede fiilen üretim yapıp yapmadığı"
+    },
+    {
+     "harf": "E",
+     "metin": "Yer ile mal arasındaki bağlantının satın alma tercihini etkileyen olumlu bir algı yaratıp yaratmadığı"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Kriterler; mevcut ilişki, gelecekte ilişki kurulması ihtimali, gelecekteki muhtemel ekonomik gelişmeler ve bağlantının satın alma tercihini etkileyen olumlu algı yaratmasıdır. Fiilen üretim yapılması kriter değildir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a18",
+   "no": 18,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Tanımlayıcı bir ifadenin kısaltmasından oluşan başvurular bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kısaltmalar hiçbir zaman 5/1-c kapsamında değerlendirilmez"
+    },
+    {
+     "harf": "B",
+     "metin": "Aynı anlama gelen başka kısaltmaların da bulunması ret kararını engeller"
+    },
+    {
+     "harf": "C",
+     "metin": "Kısaltmanın başka anlamlarının da olması ret kararını engeller"
+    },
+    {
+     "harf": "D",
+     "metin": "Kısaltma ilgili anlamıyla algılanıyorsa, diğer kısaltmaların veya diğer anlamların varlığı ret kararını engellemez"
+    },
+    {
+     "harf": "E",
+     "metin": "Kısaltmalar yalnızca 5/1-b kapsamında reddedilebilir"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Kısaltma ilgili anlamıyla algılanıyorsa tanımlayıcıdır; başka kısaltmaların veya başka anlamların varlığı sonucu değiştirmez",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a19",
+   "no": 19,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Dünya Sağlık Örgütü'nün farmasötik etken maddelere tahsis ettiği INN adları bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kamu malı niteliğinde olup kimsenin mülkiyetine verilemez"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca ilaç şirketleri adına tescil edilebilir"
+    },
+    {
+     "harf": "C",
+     "metin": "5/1-g kapsamında korunur"
+    },
+    {
+     "harf": "D",
+     "metin": "Kullanım sonucu ayırt edicilik kazanabilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca 5. sınıf bakımından reddedilir"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "INN adları kamu malı niteliğindedir ve kimsenin mülkiyetine verilemez A.3",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a20",
+   "no": 20,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Aşağıdakilerden hangisi kılavuza göre kural olarak ilan edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Alo Su\" — su dağıtım hizmetleri için"
+    },
+    {
+     "harf": "B",
+     "metin": "\"Süper Terzilik\" — terzilik hizmetleri için"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir otel adı — konaklama hizmetleri için"
+    },
+    {
+     "harf": "D",
+     "metin": "\"Yeni Nesil Durak\" — ulaşım hizmetleri için"
+    },
+    {
+     "harf": "E",
+     "metin": "\"Çiçek Burada\" — çiçekçilik hizmetleri için"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Otel, gazete, dergi ve havaalanı adları sektör alışkanlığı nedeniyle kural olarak marka algısı yaratır. Diğer seçenekler kılavuzda ret örneğidir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a21",
+   "no": 21,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Tek başına sayılardan oluşan başvurular bakımından ABAD'ın C-51/10 P (\"1000\") kararı doğrultusundaki kural nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sayılar kural olarak tescil edilebilir; sayı ile malın nitelik veya niceliği arasında doğrudan ilişki varsa ret verilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Sayılar hiçbir şekilde marka olarak tescil edilemez"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca dört haneli sayılar tescil edilebilir"
+    },
+    {
+     "harf": "D",
+     "metin": "Sayılar ancak stilize yazıldıklarında tescil edilebilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Sayılar yalnızca hizmet sınıflarında tescil edilebilir"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "ABAD C-51/10 P kararı uyarınca sayılar kural olarak tescil edilebilir; sayı ile malın nitelik veya niceliği arasında doğrudan ilişki varsa (şaraplar için \"1996\") ret verilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a22",
+   "no": 22,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Bir başvuru ayırt edici bir şekil unsuru yanında \"İTALYA\" ibaresini içermekte olup, yapılan üç aşamalı test sonucunda ülke adının markaya açıkça hâkim olduğu tespit edilmiştir. Hangi karar verilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnızca ilgili mal ve hizmetler bakımından 5/1-c'den ret"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca tüm mal ve hizmetler bakımından 5/1-b'den ret"
+    },
+    {
+     "harf": "C",
+     "metin": "Şekil unsuru ayırt edici olduğundan başvuru ilan edilir"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca 5/1-f'den ret"
+    },
+    {
+     "harf": "E",
+     "metin": "İlgili mal ve hizmetler bakımından 5/1-c'den, tüm mal ve hizmetler bakımından ayrıca 5/1-b'den ret"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Ülke adı markaya açıkça hâkimse, ilgili mal ve hizmetler için 5/1-c'den, tüm mal ve hizmetler için ayrıca 5/1-b'den ret verilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a23",
+   "no": 23,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "\"Stoper\" ve \"dezenfekt\" ibarelerinin tanımlayıcı kabul edilmesinin gerekçesi aşağıdakilerden hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Coğrafi kaynak belirtmeleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Yabancı kelimelerin küçük yazım farklarıyla Türkçeye geçmiş ve yaygınlaşmış olmaları"
+    },
+    {
+     "harf": "C",
+     "metin": "Ticaret alanında herkesçe kullanılmaları"
+    },
+    {
+     "harf": "D",
+     "metin": "Belirli bir meslek grubuna mensup olanları ayırt etmeye yaramaları"
+    },
+    {
+     "harf": "E",
+     "metin": "Latin alfabesi dışındaki bir alfabeden gelmeleri"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Yabancı kelimelerin küçük yazım farklarıyla Türkçeye geçmiş ve yaygınlaşmış hâlleri (\"stopper\"→stoper, \"disinfect\"→dezenfekt) tanımlayıcı kabul edilir",
+   "topicId": "marka-isaret",
+   "topicGuven": 0.35,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a24",
+   "no": 24,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Coğrafi yer adı içeren başvurular bakımından aşağıdakilerden hangisi ret nedeni oluşturmaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yer adı ile mal arasında gelecekte kurulabilecek bir bağlantının bulunması"
+    },
+    {
+     "harf": "B",
+     "metin": "Ünlü yabancı şehir adlarının tekstil ürünleri için kullanılması"
+    },
+    {
+     "harf": "C",
+     "metin": "Yer adının hizmetin sağlandığı yeri göstermesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Yer adının mecazi anlamda kullanılması — dondurmalar için \"Kuzey Kutbu\""
+    },
+    {
+     "harf": "E",
+     "metin": "Yer adının malın üretim yerini göstermesi"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Coğrafi yer adının mecazi kullanımı ret gerekçesi değildir; kılavuzun örneği dondurmalar için \"Kuzey Kutbu\"dur",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a25",
+   "no": 25,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "\"Kolay / Easy\" ibaresi içeren başvurular bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Her hâlükârda reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Her hâlükârda ilan edilir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca 36. sınıfta reddedilir"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca yabancı dildeki karşılığı reddedilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Yanındaki unsurla birlikte değerlendirilir; \"Kolay Öde\" 36. sınıfta reddedilirken \"Kolay Bal\" ilan edilir"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "\"Kolay/Easy\" yanındaki unsurla birlikte değerlendirilir; \"Kolay Öde\" 36. sınıfta reddedilirken \"Kolay A.3 Bal\" 30. ve 35. sınıflarda ilan edilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a26",
+   "no": 26,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Aşağıdakilerden hangisi kılavuza göre düşük ayırt edicilikte olsa da tanımlayıcı görülmeyip ilan edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Multi-touch\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"Green Cooler\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Mini Parfüm\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"Çiğ süt matik\""
+    },
+    {
+     "harf": "E",
+     "metin": "\"… keyfi\" kalıbı"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "\"… keyfi\" kalıbı düşük ayırt edicilikte olsa da tanımlayıcı görülmez ve ilan edilir. Diğerleri kılavuzda ret örneğidir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a27",
+   "no": 27,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-c",
+   "tur": "banka",
+   "metin": "Renk adlarından oluşan başvurular bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Renk adları hiçbir şekilde tescil edilemez"
+    },
+    {
+     "harf": "B",
+     "metin": "Renk adları her zaman ayırt edicidir"
+    },
+    {
+     "harf": "C",
+     "metin": "Renk adı ilgili emtia bakımından özellik arz ediyorsa reddedilir; \"Pembe\" boyalar için ret, \"Yeşil Ceviz\" boyalar için ilan edilir"
+    },
+    {
+     "harf": "D",
+     "metin": "Renk adları yalnızca 2. sınıfta değerlendirilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Renk adları yalnızca renk markası olarak başvurulduğunda incelenir"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Renk adı emtia bakımından özellik arz ediyorsa reddedilir: \"Pembe\" boyalar (2. sınıf) için ret, \"Yeşil Ceviz\" boyalar için ilan",
+   "topicId": "marka-isaret",
+   "topicGuven": 0.69,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a28",
+   "no": 28,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "Aşağıdakilerden hangisi kılavuza göre iki işaret arasındaki ayırt edilemeyecek kadar benzerliği ortadan kaldırmaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kök ibareye \"-oğlu\" ekinin getirilmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "İşaretlerden birinde tire, nokta veya eğik çizgi gibi noktalama işaretlerinin bulunması"
+    },
+    {
+     "harf": "C",
+     "metin": "Kök ibarenin başına \"Has\", \"Öz\" veya \"Yeni\" eklenmesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Kök ibareye \"Grup\" eklenmesi"
+    },
+    {
+     "harf": "E",
+     "metin": "Kök ibareye \"Holding\" eklenmesi"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Tire, nokta, virgül, eğik çizgi gibi noktalama işaretleri görsel, işitsel ve kavramsal aynılık algısını engellemediğinden benzerliği ortadan kaldırmaz",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a29",
+   "no": 29,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "\"ÖZTÜRK\" markası ile \"ÖZTÜRKOĞLU\" başvurusu bakımından kılavuzun yaklaşımı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"-oğlu\" eki farklılaşma sağladığından ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Ayırt edilemeyecek kadar benzerdir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca aynı sınıfta yer alıyorsa benzerdir"
+    },
+    {
+     "harf": "D",
+     "metin": "Karar ancak 6/1 kapsamında verilebilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Başvuru sahibinden muvafakat istenir"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "\"-oğlu, -kızı, -zade, -oğulları, -ler, -lar\" ekleri ayırt edilemeyecek kadar benzerliği ortadan kaldırır A.4",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a30",
+   "no": 30,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "Kelime + şekil kombinasyonundan oluşan işaretler bakımından 5/1-ç uygulamasında aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Şekil unsuru özgün değilse işaretler ayırt edilemeyecek kadar benzerdir"
+    },
+    {
+     "harf": "B",
+     "metin": "Bu tür işaretlerde 5/1-ç hiçbir şekilde uygulanmaz"
+    },
+    {
+     "harf": "C",
+     "metin": "Kelime unsuru dikkate alınmaz, yalnızca şekiller karşılaştırılır"
+    },
+    {
+     "harf": "D",
+     "metin": "Şekil unsurunun özgünlüğüne bakılmaksızın, kelime unsuru bulunması hâlinde işaretler ayırt edilemeyecek kadar benzer kabul edilmez"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca şekiller aynı ise ret verilir"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Şekil unsurunun özgünlüğüne bakılmaksızın, karşılaştırılan işaretlerde kelime unsuru bulunması hâlinde ayırt edilemeyecek kadar benzerlik kabul edilmez",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a31",
+   "no": 31,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "İki renk markası arasında yapılan 5/1-ç incelemesinde belirleyici olan nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pantone kodlarının birebir aynı olması"
+    },
+    {
+     "harf": "B",
+     "metin": "Renklerin aynı sınıfta tescilli olması"
+    },
+    {
+     "harf": "C",
+     "metin": "Renklerin aynı olması veya ilk bakışta gözle ayırt edilemeyecek kadar yakın tonlarda bulunması"
+    },
+    {
+     "harf": "D",
+     "metin": "Renk markaları arasında 5/1-ç uygulanmaması"
+    },
+    {
+     "harf": "E",
+     "metin": "Renklerin aynı sistematik düzende gösterilmiş olması"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Renk markalarında aynılık veya ilk bakışta gözle ayırt edilemeyecek yakın tonlar benzer kabul edilir; Pantone kodlarının farklı olması tek başına sonucu değiştirmez",
+   "topicId": "marka-isaret",
+   "topicGuven": 0.69,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a32",
+   "no": 32,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "Karşılaştırılan işaretlerin her ikisinin de ayırt edici kelime ve şekil unsurunu birlikte içeren karma markalar olması hâlinde değerlendirme hangi yöntemle yapılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnızca kelime unsurları üzerinden"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca şekil unsurları üzerinden"
+    },
+    {
+     "harf": "C",
+     "metin": "Tali unsurlar üzerinden"
+    },
+    {
+     "harf": "D",
+     "metin": "Ayırt edici unsurlar tek tek ayrıştırılarak"
+    },
+    {
+     "harf": "E",
+     "metin": "İşaretlerin bıraktığı genel izlenim üzerinden"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Her iki işaret de karma marka ise genel izlenim üzerinden; işaretlerden biri karma değilse ayırt edici unsurlar üzerinden değerlendirme yapılır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a33",
+   "no": 33,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "Aşağıdaki karşılaştırmalardan hangisinde işaretler kılavuza göre ayırt edilemeyecek kadar benzer kabul edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "ALİ ÜSTÜN — ALİ ÜSTÜNLER"
+    },
+    {
+     "harf": "B",
+     "metin": "ALİ ALTIN — ALİ ALTINÖZ"
+    },
+    {
+     "harf": "C",
+     "metin": "ALİ DOĞRU — ALİ DOGRU"
+    },
+    {
+     "harf": "D",
+     "metin": "1223 — binikiyüzyirmiüç"
+    },
+    {
+     "harf": "E",
+     "metin": "HAS JARDIN — JARDIN"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "ALİ DOĞRU — ALİ DOGRU benzerdir. ALİ ÜSTÜN—ALİ ÜSTÜNLER, ALİ ALTIN—ALİ ALTINÖZ ve HAS JARDIN—JARDIN benzer değildir; rakam ile yazı arasında görsel benzerlik yoksa salt işitsel benzerlik yetmez",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a34",
+   "no": 34,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "Önceki marka sahibiyle birlikte başka bir kişi tarafından yapılan marka başvurusunda örtülü muvafakatin kabulü için aşağıdakilerden hangisi gereklidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vekilin başvuruyu imzalamış olması"
+    },
+    {
+     "harf": "B",
+     "metin": "Başvurunun önceki marka sahibi tarafından imzalanmış olması"
+    },
+    {
+     "harf": "C",
+     "metin": "Noter onaylı muvafakatname sunulması"
+    },
+    {
+     "harf": "D",
+     "metin": "Marka sahiplerinin aynı adreste bulunması"
+    },
+    {
+     "harf": "E",
+     "metin": "Başvurunun aynı sınıfta yapılmış olması"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Başvurunun önceki marka sahibince imzalanmış olması örtülü muvafakat sayılır; vekilin imzası yeterli değildir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a35",
+   "no": 35,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "5/1-ç bendinde aranan benzerlik eşiği bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İşaretlerin ortalama tüketicide bıraktığı genel izlenimin hemen hemen aynı olması aranır"
+    },
+    {
+     "harf": "B",
+     "metin": "6/1'deki karıştırılma ihtimalinden daha geniş bir benzerlik yeterlidir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca birebir aynılık hâlinde uygulanır"
+    },
+    {
+     "harf": "D",
+     "metin": "İlişkilendirilme ihtimali de bu bent kapsamındadır"
+    },
+    {
+     "harf": "E",
+     "metin": "Markaların tanınmışlık düzeyi dikkate alınır"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "5/1-ç'de \"hemen hemen aynılık\" eşiği aranır; bu, 6/1'deki benzerlikten çok daha dardır. İlişkilendirilme ihtimali 6/1 kapsamındadır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a36",
+   "no": 36,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "\"MULTITECH\" markası ile \"MULTİTEK\" başvurusu, ilave unsur bulunmaksızın karşılaştırılmaktadır. 5/1-ç bakımından sonuç nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ayırt edilemeyecek kadar benzerdir"
+    },
+    {
+     "harf": "B",
+     "metin": "\"tech/tek\" dönüşümü farklılaştırdığından benzer değildir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca aynı sınıfta ise benzerdir"
+    },
+    {
+     "harf": "D",
+     "metin": "Karar ancak 6/1 kapsamında verilebilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca işitsel benzerlik bulunduğundan ret verilemez"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "\"tech–tek / tek–tec\" dönüşümü, ilave unsur bulunmadığı sürece benzerliği ortadan kaldırmaz. Yalnızca kısa işaretlerde (CTEK–CTEC) farklılaştırır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a37",
+   "no": 37,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "Aşağıdaki eklerden hangisi 5/1-ç bakımından ayırt edilemeyecek kadar benzerliği ortadan kaldırmaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"-zade\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"Holding\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Smart\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"Home\""
+    },
+    {
+     "harf": "E",
+     "metin": "Uzun bir kelimeye eklenen İngilizce çoğul \"-s\""
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Uzun kelimelerde İngilizce çoğul \"-s\" farklılaştırmaz. \"-zade\", \"Holding\", \"Smart\" ve \"Home\" farklılaştırır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a38",
+   "no": 38,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "Ayırt edici gücü düşük ibareler (Optimum, Global, Star, İdeal) bakımından 5/1-ç uygulamasında aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bu ibarelere yapılan her ilave, benzerliği ortadan kaldırmaz"
+    },
+    {
+     "harf": "B",
+     "metin": "Bu ibareler hiçbir şekilde karşılaştırmaya konu edilemez"
+    },
+    {
+     "harf": "C",
+     "metin": "Bu ibarelerde yalnızca işitsel benzerlik aranır"
+    },
+    {
+     "harf": "D",
+     "metin": "İlave unsurlar bu işaretleri farklılaştırmaya yeterli sayılır; benzerlik ancak bütünsel izlenim hemen hemen aynıysa kurulur"
+    },
+    {
+     "harf": "E",
+     "metin": "Bu ibareler yalnızca kullanım sonucu ayırt edicilik kazanmışsa dikkate alınır"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Ayırt edici gücü düşük ibarelerde ilave unsurlar farklılaştırmaya yeterli sayılır; benzerlik ancak bütünsel izlenim hemen hemen aynıysa kurulur",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a39",
+   "no": 39,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "SMK m.5/1-ç bendinin uygulanabilmesi için aşağıdakilerden hangisi aranmaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Önceki tarihli bir marka tescili ya da başvurusunun bulunması"
+    },
+    {
+     "harf": "B",
+     "metin": "Markaların aynı veya ayırt edilemeyecek kadar benzer olması"
+    },
+    {
+     "harf": "C",
+     "metin": "Mal veya hizmetlerin aynı veya aynı tür olması"
+    },
+    {
+     "harf": "D",
+     "metin": "Değerlendirmenin resen yapılması"
+    },
+    {
+     "harf": "E",
+     "metin": "Karıştırılma ihtimalinin ayrıca ispatlanması"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "5/1-ç'de koşullar gerçekleştiğinde karıştırılma ihtimali peşinen kabul edilir; Kurum ayrıca karıştırılma ihtimali incelemesi yapmaz ve ispat aranmaz",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a40",
+   "no": 40,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-ç",
+   "tur": "banka",
+   "metin": "İki parçalı bir kelimenin parçalarının yer değiştirmesi bakımından 5/1-ç uygulamasında aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yer değiştirme hiçbir zaman farklılaşma sağlamaz"
+    },
+    {
+     "harf": "B",
+     "metin": "Yer değiştirme kural olarak görsel ve işitsel uzaklaşma sağlar; ancak her biri ayırt edici olan özgün kombinasyonlarda benzerlik sürer"
+    },
+    {
+     "harf": "C",
+     "metin": "Yer değiştirme yalnızca kelime + şekil markalarında dikkate alınır"
+    },
+    {
+     "harf": "D",
+     "metin": "Yer değiştirme yalnızca kısa kelimelerde farklılaşma sağlar"
+    },
+    {
+     "harf": "E",
+     "metin": "Yer değiştirme hâlinde başvuru resen ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Parçaların yer değiştirmesi kural olarak görsel ve işitsel uzaklaşma sağlar; istisna, her biri ayırt edici olan özgün kombinasyonlardır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a41",
+   "no": 41,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "SMK m.5/1-e kapsamında \"teknik bir sonucu elde etmek için zorunlu olan şekil\" değerlendirmesinde aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aynı teknik sonuca başka şekillerle de ulaşılabiliyor olması ret kararını engellemez"
+    },
+    {
+     "harf": "B",
+     "metin": "Aynı teknik sonuca başka şekillerle de ulaşılabiliyor olması ret kararını engeller"
+    },
+    {
+     "harf": "C",
+     "metin": "Bu hâlde kullanım sonucu kazanılmış ayırt edicilik ileri sürülebilir"
+    },
+    {
+     "harf": "D",
+     "metin": "Değerlendirme yalnızca patentli şekiller bakımından yapılır"
+    },
+    {
+     "harf": "E",
+     "metin": "Değerlendirme yalnızca üç boyutlu markalar bakımından yapılır"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "Aynı teknik sonuca başka şekillerle de ulaşılabiliyor olması ret kararını engellemez. Ayrıca 5/1-e'ye karşı m.5(2) ileri sürülemez",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a42",
+   "no": 42,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "SMK m.5/1-e'deki \"mala asli değerini veren şekil\" bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnızca ekonomik değer dikkate alınır"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca üretim maliyeti dikkate alınır"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca patent korumasına konu şekiller kapsam içindedir"
+    },
+    {
+     "harf": "D",
+     "metin": "Şeklin sektördeki diğer ürünlerden farklı olması ret kararını engeller"
+    },
+    {
+     "harf": "E",
+     "metin": "\"Değer\" kavramı ekonomik değerin yanı sıra estetik değeri de kapsar"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "\"Değer\" kavramı ekonomik değerin yanı sıra estetik değeri de kapsar; kılavuzun örneğinde 3 boyutlu hoparlör şekli, sektörden farklı olmasına rağmen estetik görünümü mala asli değerini verdiği için reddedilmiştir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a43",
+   "no": 43,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "SMK m.5/1-d bendinin uygulanmasında aşağıdakilerden hangisi aranır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İşaretin ayrıca tanımlayıcı olması"
+    },
+    {
+     "harf": "B",
+     "metin": "İşaretin tanınmış marka niteliğinde olması"
+    },
+    {
+     "harf": "C",
+     "metin": "Başvuru sahibinin kötü niyetli olması"
+    },
+    {
+     "harf": "D",
+     "metin": "İşaretin ticaret alanında farklı ticari aktörlerce hâlihazırda kullanılıyor olması"
+    },
+    {
+     "harf": "E",
+     "metin": "İşaretin yabancı dilde bir karşılığının bulunması"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "5/1-d'de terimin ayrıca tanımlayıcı olup olmadığına bakılmaz; farklı ticari aktörlerce hâlihazırda kullanılıp kullanılmadığı esastır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a44",
+   "no": 44,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "Resmi bir kurum adından oluşan ya da resmi kurum izlenimi veren marka başvuruları hangi bent kapsamında değerlendirilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "5/1-f"
+    },
+    {
+     "harf": "B",
+     "metin": "5/1-g"
+    },
+    {
+     "harf": "C",
+     "metin": "5/1-ğ"
+    },
+    {
+     "harf": "D",
+     "metin": "5/1-ı"
+    },
+    {
+     "harf": "E",
+     "metin": "5/1-h"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Resmi kurum adı veya resmi kurum izlenimi veren başvurular 5/1-f değil, 5/1-ı kapsamında değerlendirilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a45",
+   "no": 45,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "Paris Sözleşmesi 6 mükerrer maddesi kapsamında devlet bayrakları bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ancak WIPO 6ter veritabanına kayıtlıysa korunur"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca aynı veya benzer cinsteki mallar bakımından korunur"
+    },
+    {
+     "harf": "C",
+     "metin": "WIPO'ya kayıt gerekmeksizin, başvurulan mal veya hizmete bakılmaksızın tam ve mutlak koruma sağlanır"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca renkli gösterimleri korunur"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca hükümetlerarası örgütlerin bayrakları korunur"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Devlet bayrakları WIPO 6ter veritabanına kayıt gerekmeksizin, başvurulan mal veya hizmete bakılmaksızın tam ve mutlak koruma görür",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a46",
+   "no": 46,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "Paris Sözleşmesi 6 mükerrer maddesi kapsamında resmi kontrol ve garanti işaretleri bakımından sağlanan koruma nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tüm mal ve hizmetler bakımından mutlaktır"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca aynı veya benzer cinsteki mallarda kullanım hâlinde geçerli olan sınırlı bir korumadır"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca hizmetler bakımından geçerlidir"
+    },
+    {
+     "harf": "D",
+     "metin": "WIPO kaydı gerekmeksizin kendiliğinden doğar"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca ilgili devletin vatandaşlarına karşı ileri sürülebilir"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Resmi kontrol ve garanti işaretleri ile ayar damgaları yalnızca aynı veya benzer cinsteki mallarda kullanım hâlinde korunur — sınırlı korumadır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a47",
+   "no": 47,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "SMK m.5/1-ğ kapsamında aşağıdakilerden hangisi ret nedeni oluşturmaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Anıtkabir'in resmini içeren bir başvuru"
+    },
+    {
+     "harf": "B",
+     "metin": "Yaşayan ünlü bir sporcunun ad ve soyadından oluşan başvuru"
+    },
+    {
+     "harf": "C",
+     "metin": "\"Osmanlı İmparatorluğu\" ibaresini içeren bir başvuru"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir Cumhurbaşkanının ad ve soyadını birlikte içeren başvuru"
+    },
+    {
+     "harf": "E",
+     "metin": "\"Semazen\" figürünü içeren bir başvuru"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Yaşayan ünlü sanatçı, sporcu, yazar ve oyuncuların adları 5/1-ğ kapsamı dışındadır A.9",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a48",
+   "no": 48,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "SMK m.5/1-ı kapsamında yapılan değerlendirmede esas alınan ölçüt nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru sahibinin niyeti"
+    },
+    {
+     "harf": "B",
+     "metin": "Bölgesel ve bireysel değer yargıları"
+    },
+    {
+     "harf": "C",
+     "metin": "İşaretin özündeki nitelikler ve bütünsel algının verdiği mesaj"
+    },
+    {
+     "harf": "D",
+     "metin": "Başvuru sahibinin ticari geçmişi"
+    },
+    {
+     "harf": "E",
+     "metin": "İşaretin yabancı ülkelerde tescil edilip edilmediği"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Ölçüt başvuru sahibinin niyeti değil, işaretin özündeki nitelikler ve bütünsel algının verdiği mesajdır; esas alınan kesim Türkiye'de yaşayan ortalama duyarlılığa sahip makul bireylerdir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a49",
+   "no": 49,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "SMK m.5/1-h kapsamında aşağıdaki başvurulardan hangisi kural olarak ilan edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Alhuda\""
+    },
+    {
+     "harf": "B",
+     "metin": "Kâbe görselini içeren bir başvuru"
+    },
+    {
+     "harf": "C",
+     "metin": "\"Müslüman\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"İmam Usta\""
+    },
+    {
+     "harf": "E",
+     "metin": "\"Kab-ı Kavseyn\""
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Din görevlilerinin isim ve unvanları diğer unsurlarla bütünleşip doğrudan dini atıf yapmıyorsa ilan edilir: \"İmam Usta\", \"Papazın Bağı\"",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a50",
+   "no": 50,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "Marka başvurusunun tescilli bir coğrafi işaretin tam adını ayırt edici bir kelime yanında içermesi hâlinde (örneğin \"XYZ Ezine Peyniri\") verilecek karar nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnızca peynirler bakımından ret, kalan mal ve hizmetler bakımından ilan"
+    },
+    {
+     "harf": "B",
+     "metin": "Eşya listesinin sınırlandırılması"
+    },
+    {
+     "harf": "C",
+     "metin": "Tüm mal ve hizmetler bakımından tümden ret"
+    },
+    {
+     "harf": "D",
+     "metin": "Başvurunun aynen ilan edilmesi"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca 5/1-f'den ret"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Ayırt edici kelime veya şekil yanında tescilli coğrafi işaretin tam adını içeren başvurular tüm mal ve hizmetler bakımından tümden reddedilir",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a51",
+   "no": 51,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "\"Ezine Peyniri\" tescilli coğrafi işareti karşısında, \"EZİNELİ\" ibaresinden oluşan bir marka başvurusu hakkında verilecek karar nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tüm mal ve hizmetler bakımından tümden ret"
+    },
+    {
+     "harf": "B",
+     "metin": "Aynı ve kıyaslanabilir mallar bakımından eşya listesinin sınırlandırılması"
+    },
+    {
+     "harf": "C",
+     "metin": "Başvurunun aynen ilanı"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca 5/1-c'den ret"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca hizmetler bakımından ret"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Coğrafi kaynağa işaret eden eşdeğer sıfat veya isimden oluşan başvurularda aynı ve kıyaslanabilir mallar bakımından eşya listesi sınırlandırılır",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a52",
+   "no": 52,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.5/1-d, e, f, g, ğ, h, ı, i",
+   "tur": "banka",
+   "metin": "SMK m.5(2) uyarınca kullanım sonucu kazanılmış ayırt edicilik hangi bentlere karşı ileri sürülebilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnızca (b)"
+    },
+    {
+     "harf": "B",
+     "metin": "(b) ve (c)"
+    },
+    {
+     "harf": "C",
+     "metin": "(b), (c) ve (ç)"
+    },
+    {
+     "harf": "D",
+     "metin": "(b), (c) ve (d)"
+    },
+    {
+     "harf": "E",
+     "metin": "(a), (b) ve (c)"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "m.5(2), yalnızca 5/1 (b), (c) ve (d) bentlerine karşı ileri sürülebilir A.0",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-a53",
+   "no": 53,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Mal ve hizmetlerin karşılaştırılmasında Nis sınıflandırmasının rolü nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aynı sınıfta yer alan mallar aynı tür kabul edilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Farklı sınıflarda yer alan mallar benzer kabul edilemez"
+    },
+    {
+     "harf": "C",
+     "metin": "Nis sınıflandırması yalnızca 5/1-ç bakımından bağlayıcıdır"
+    },
+    {
+     "harf": "D",
+     "metin": "Nis sınıflandırması yalnızca hizmetler bakımından bağlayıcıdır"
+    },
+    {
+     "harf": "E",
+     "metin": "Nis sınıflandırması idari amaçlı olup benzerlik değerlendirmesinde bağlayıcı değildir"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Nis sınıflandırması idari amaçlarla oluşturulmuştur ve ofisleri bağlamaz; aynı sınıfta olmak benzerlik, farklı sınıfta olmak farklılık anlamına gelmez",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a54",
+   "no": 54,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Aşağıdaki karşılaştırmalardan hangisinde mallar kılavuza göre benzer değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Alkollü içecekler (33) — biralar (32)"
+    },
+    {
+     "harf": "B",
+     "metin": "Alkollü içecekler (33) — alkolsüz içecekler (32)"
+    },
+    {
+     "harf": "C",
+     "metin": "Çaylar (30) — meşrubatlar (32)"
+    },
+    {
+     "harf": "D",
+     "metin": "Giysiler (25) — çantalar ve cüzdanlar (18)"
+    },
+    {
+     "harf": "E",
+     "metin": "Elektronik yayınlar (9) — basılı yayınlar (16)"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Alkollü içecekler ile alkolsüz içecekler doğaları itibarıyla farklıdır. Buna karşılık alkollü içecekler ile biralar benzerdir — bu ayrım kılavuzun sık test edilen noktasıdır",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a55",
+   "no": 55,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Aşağıdakilerden hangisi mal ve hizmetlerin benzerliği bakımından mutlak bir kuraldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bir mal ile bir hizmet hiçbir şekilde aynı veya aynı tür kabul edilemez"
+    },
+    {
+     "harf": "B",
+     "metin": "Hammadde ile mamul her zaman benzerdir"
+    },
+    {
+     "harf": "C",
+     "metin": "Aynı nihai amaca hizmet eden her mal benzerdir"
+    },
+    {
+     "harf": "D",
+     "metin": "Tamir hizmetleri ile ilgili emtia her zaman benzerdir"
+    },
+    {
+     "harf": "E",
+     "metin": "Aynı sınıfta yer alan tüm mallar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "Mal ile hizmet doğaları itibarıyla farklı olduğundan hiçbir şekilde aynı veya aynı tür kabul edilemez B.1",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a56",
+   "no": 56,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Aşağıdaki karşılaştırmalardan hangisinde kılavuza göre benzerlik bulunmamaktadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İnşaat malzemeleri (19) — inşaat hizmetleri (37)"
+    },
+    {
+     "harf": "B",
+     "metin": "Bilgisayarlar (9) — yazılımlar (9)"
+    },
+    {
+     "harf": "C",
+     "metin": "Düğmeler (26) — giysiler (25)"
+    },
+    {
+     "harf": "D",
+     "metin": "Diş bakımı ürünleri (3) — diş fırçaları (21)"
+    },
+    {
+     "harf": "E",
+     "metin": "Yakıtlar (4) — kara araçları servis istasyonu hizmetleri (37)"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Parça-teçhizat ile nihai ürün arasında sırf üretimde kullanım nedeniyle benzerlik kurulmaz; düğmeler (26) ile giysiler (25) benzer değildir",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a57",
+   "no": 57,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Emtia ile tamir, bakım ve montaj hizmetleri arasında benzerlik kurulabilmesi için aşağıdakilerden hangisi gerekli değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üreticilerin bu hizmeti de vermesinin yaygın olması"
+    },
+    {
+     "harf": "B",
+     "metin": "Hizmetin satış sonrası hizmet olarak değil bağımsız biçimde veriliyor olması"
+    },
+    {
+     "harf": "C",
+     "metin": "Tüketici kesiminin aynı olması"
+    },
+    {
+     "harf": "D",
+     "metin": "Mal ile hizmetin aynı Nis sınıfında yer alması"
+    },
+    {
+     "harf": "E",
+     "metin": "Bu koşulların birlikte gerçekleşmesi"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Üç koşul birlikte aranır: üreticinin bu hizmeti de vermesinin yaygın olması, hizmetin bağımsız verilmesi ve tüketici kesiminin aynı olması. Aynı Nis sınıfında bulunma koşulu aranmaz",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a58",
+   "no": 58,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Aşağıdaki mal ve hizmet gruplarından hangisinde ilgili tüketicinin dikkat düzeyi yüksek kabul edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Günlük tüketilen ucuz gıda ürünleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Alışılagelmiş temizlik ürünleri"
+    },
+    {
+     "harf": "C",
+     "metin": "Kırtasiye malzemeleri"
+    },
+    {
+     "harf": "D",
+     "metin": "Reçeteli ilaçlar"
+    },
+    {
+     "harf": "E",
+     "metin": "Ambalajlı atıştırmalıklar"
+    }
+   ],
+   "cevap": "D",
+   "aciklama": "Reçeteli ilaçlarda tüketici kesimi hekim ve eczacılardan oluştuğundan dikkat düzeyi yüksektir; dikkat düzeyi yükseldikçe karıştırılma ihtimali azalır",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a59",
+   "no": 59,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Karıştırılma ihtimali değerlendirmesinde markanın bilinirliği bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru konusu markanın bilinirliği esas alınır"
+    },
+    {
+     "harf": "B",
+     "metin": "Önceki markanın bilinirliği esas alınır ve arttırılmış ayırt edicilik ancak müterizin iddiası üzerine incelenir"
+    },
+    {
+     "harf": "C",
+     "metin": "Her iki markanın bilinirliği resen araştırılır"
+    },
+    {
+     "harf": "D",
+     "metin": "Bilinirlik yalnızca tanınmış marka itirazlarında dikkate alınır"
+    },
+    {
+     "harf": "E",
+     "metin": "Bilinirlik yalnızca 5/1-ç bakımından dikkate alınır"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Karıştırılma ihtimalinde önemli olan önceki markanın bilinirliğidir; arttırılmış ayırt edicilik yalnızca müterizin iddiası üzerine incelenir",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a60",
+   "no": 60,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "İşitsel benzerlik değerlendirmesinde aşağıdakilerden hangisi kılavuzun kabulüdür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sessiz harflere sesli harflerden daha fazla önem atfedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "p-b, n-m, k-g, k-q gibi kolayca karışan sessizler arasındaki farklar önemsiz kabul edilir"
+    },
+    {
+     "harf": "C",
+     "metin": "Kısa kelimelerde tek harf farkı işitsel benzerliği asla etkilemez"
+    },
+    {
+     "harf": "D",
+     "metin": "\"&\" işareti işitsel karşılaştırmaya dâhil edilmez"
+    },
+    {
+     "harf": "E",
+     "metin": "Şekil markaları da işitsel olarak karşılaştırılır"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Türkçenin yapısı gereği sesli harflere daha fazla önem atfedilir; p-b, n-m, k-g, k-q gibi kolayca karışan sessizler arasındaki farklar önemsiz sayılır. \"&\" işareti işitsel karşılaştırmaya dâhil edilir",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a61",
+   "no": 61,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Görsel benzerlik değerlendirmesinde aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İşaretlerin aynı sayıda harften oluşması benzerliği doğrudan kurar"
+    },
+    {
+     "harf": "B",
+     "metin": "Stilizasyon benzerliği tamamen ortadan kaldırır"
+    },
+    {
+     "harf": "C",
+     "metin": "Tüketiciler kelimelerin başlangıç kısmına daha fazla dikkat eder"
+    },
+    {
+     "harf": "D",
+     "metin": "Şekil unsurunun boyut farkı tek başına benzerliği ortadan kaldırır"
+    },
+    {
+     "harf": "E",
+     "metin": "Latin alfabesi dışındaki kelimeler Latin harfli kelimelerle kural olarak görsel benzerlik taşır"
+    }
+   ],
+   "cevap": "C",
+   "aciklama": "Tüketiciler kelimelerin başlangıç kısmına daha fazla dikkat eder. Aynı sayıda harfe sahip olmanın özel bir önemi yoktur; stilizasyon benzerliği ortadan kaldırmaz, yalnızca derecesini etkiler",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a62",
+   "no": 62,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "\"Karşılıklı bağımlılık prensibi\" aşağıdakilerden hangisini ifade eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İşaretler arasındaki yüksek benzerlik, mal veya hizmetlerdeki düşük benzerliği telafi edebilir"
+    },
+    {
+     "harf": "B",
+     "metin": "İşaret benzerliği yoksa mal benzerliği tek başına yeterlidir"
+    },
+    {
+     "harf": "C",
+     "metin": "Mal benzerliği her zaman işaret benzerliğinden önce incelenir"
+    },
+    {
+     "harf": "D",
+     "metin": "İki koşuldan birinin gerçekleşmesi karıştırılma ihtimali için yeterlidir"
+    },
+    {
+     "harf": "E",
+     "metin": "Tüketicinin dikkat düzeyi arttıkça mal benzerliği de artar"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "İşaret benzerliği ile mal/hizmet benzerliği karşılıklı bağımlılık ve dengelenme ilişkisindedir. Ancak her iki koşulun da bir düzeyde bulunması zorunludur",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a63",
+   "no": 63,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Ad ve soyadı ile birlikte ayırt edici ikinci bir kelime unsuru içeren markalarda kılavuzun genel yaklaşımı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ad-soyad genel ilke olarak tali unsur kabul edilir; halk ikincil markayı asli marka olarak algılar"
+    },
+    {
+     "harf": "B",
+     "metin": "Ad-soyad her zaman asli unsurdur"
+    },
+    {
+     "harf": "C",
+     "metin": "Ad-soyad içeren markalar tescil edilemez"
+    },
+    {
+     "harf": "D",
+     "metin": "Ad-soyad ile ikinci kelime her zaman eşit ağırlıkta değerlendirilir"
+    },
+    {
+     "harf": "E",
+     "metin": "Ad-soyad yalnızca 5/1-ç bakımından dikkate alınır"
+    }
+   ],
+   "cevap": "A",
+   "aciklama": "Ad-soyad yanında ayırt edici ikinci bir kelime bulunuyorsa, ad-soyad genel ilke olarak tali unsur kabul edilir",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a64",
+   "no": 64,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Kılavuzda \"kısa işaret\" olarak nitelenen ve benzerlik ihtimalinin azaldığı kabul edilen işaretler kaç karakterden oluşur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki veya daha az"
+    },
+    {
+     "harf": "B",
+     "metin": "Üç veya daha az"
+    },
+    {
+     "harf": "C",
+     "metin": "Dört veya daha az"
+    },
+    {
+     "harf": "D",
+     "metin": "Beş veya daha az"
+    },
+    {
+     "harf": "E",
+     "metin": "Altı veya daha az"
+    }
+   ],
+   "cevap": "B",
+   "aciklama": "Kısa işaret, üç veya daha az karakterden oluşan işarettir; işaret kısaldıkça tüketici farklılıkları daha kolay algılar",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-a65",
+   "no": 65,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "SMK m.6/1",
+   "tur": "banka",
+   "metin": "Renk markaları arasında yapılan 6/1 incelemesi bakımından aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Görsel, işitsel ve kavramsal karşılaştırma birlikte yapılır"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca kavramsal karşılaştırma yapılır"
+    },
+    {
+     "harf": "C",
+     "metin": "Renk markaları arasında karıştırılma ihtimali incelenmez"
+    },
+    {
+     "harf": "D",
+     "metin": "Renklerin Pantone kodları farklıysa inceleme sonlandırılır"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca görsel karşılaştırma yapılır ve kendiliğinden ayırt edicilikleri düşük olduğundan yüksek düzeyde benzerlik aranır"
+    }
+   ],
+   "cevap": "E",
+   "aciklama": "Renk markalarında işitsel ve kavramsal benzerlik söz konusu olamaz; yalnızca görsel değerlendirme yapılır ve kendiliğinden ayırt edicilikleri düşük olduğundan yüksek düzeyde benzerlik aranır",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "mk-b1",
+   "no": 1,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"-oğlu\" eki getirilmesi (ÖZTÜRK – ÖZTÜRKOĞLU)\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b2",
+   "no": 2,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "İşaretlerden birinde tire, nokta veya eğik çizgi bulunması\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b3",
+   "no": 3,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Uzun bir kelimede \"x\" harfinin \"ks\" olarak yazılması, ilave unsur yokken\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b4",
+   "no": 4,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibarenin başına \"Has\", \"Öz\" veya \"Yeni\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b5",
+   "no": 5,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Uzun bir kelimenin sonuna İngilizce çoğul \"-s\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b6",
+   "no": 6,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Grup / Group\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b7",
+   "no": 7,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "\"AKINTEK – AKINTEC\" (tek/tec dönüşümü, ilave unsur yok)\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b8",
+   "no": 8,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Holding\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b9",
+   "no": 9,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Uzun bir kelimede İngilizce \" 's \" takısı\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b10",
+   "no": 10,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibarenin önüne \"by\" getirilmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b11",
+   "no": 11,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibarenin önüne \"the\" getirilmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b12",
+   "no": 12,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibare ile birleşerek yeni kelime oluşturan \"my\"\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b13",
+   "no": 13,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"-san, -mak, -pen, -med, -dent\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b14",
+   "no": 14,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Türk\" veya \"Euro\" eklenmesi (TÜRKSTAR – STAR)\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b15",
+   "no": 15,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Plus / Artı\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b16",
+   "no": 16,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Max / Maks\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b17",
+   "no": 17,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Home / House\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b18",
+   "no": 18,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Collection\" eklenmesi (JARDIN COLLECTION – JARDIN)\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b19",
+   "no": 19,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kök ibareye \"Lux / Delux / Premium\" eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b20",
+   "no": 20,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "İki parçalı bir kelimenin parçalarının yer değiştirmesi (özgün olmayan kombinasyonda)\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b21",
+   "no": 21,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kelimenin harflerinden birinin şekille gösterilmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b22",
+   "no": 22,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "İşaretlerden birinde belirgin bir \"&\" işareti bulunması\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b23",
+   "no": 23,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "İki renk markasında Pantone kodlarının farklı olması, ancak tonların gözle ayırt edilememesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b24",
+   "no": 24,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Kelime + şekil kombinasyonunda, şekiller farklı ama kelime unsuru mevcut\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b25",
+   "no": 25,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "ALİ ÜSTÜN – ALİ ÜSTÜNLER\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b26",
+   "no": 26,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "ALİ DOĞRU – ALİ DOGRU\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b27",
+   "no": 27,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "1223 – binikiyüzyirmiüç\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b28",
+   "no": 28,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "EUROASYA – EUROASIA\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b29",
+   "no": 29,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Ayırt edici gücü düşük bir ibareye (Optimum, Global, Star) ilave unsur eklenmesi\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b30",
+   "no": 30,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-ç ekleri",
+   "tur": "banka",
+   "metin": "Vitamix – Vitamiks (kısa kelimede x/ks dönüşümü)\n\nBu unsur, karşılaştırılan iki işaret arasındaki “ayırt edilemeyecek kadar benzerliği” ortadan kaldırır mı? (SMK m.5/1-ç)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Evet, farklılaştırır — işaretler artık ayırt edilemeyecek kadar benzer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Hayır, farklılaştırmaz — işaretler hâlâ ayırt edilemeyecek kadar benzerdir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b31",
+   "no": 31,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Plus + tanımlayıcı ibare\" kombinasyonu\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b32",
+   "no": 32,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Tanımlayıcı ibarenin önüne \"+\" işareti konması, ibarenin önüne geçemiyorsa\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b33",
+   "no": 33,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Bir otel adı — konaklama hizmetleri için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b34",
+   "no": 34,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Süper Terzilik\" — terzilik hizmetleri için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b35",
+   "no": 35,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"En İyi Avukat\", \"Best Shoes\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b36",
+   "no": 36,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"My\" + tanımlayıcı ibare (tanımlayıcı ibare baskın değilse)\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b37",
+   "no": 37,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Tanımlayıcı ibareye iyelik eki eklenmesi (-m, -n, -miz)\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b38",
+   "no": 38,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"… sarayı / dünyası / evi / world / land\" kalıpları\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b39",
+   "no": 39,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Çay Bahçesi\", \"Aile Çay Bahçesi\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b40",
+   "no": 40,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"… keyfi\" kalıbı\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b41",
+   "no": 41,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Bir gazete veya dergi adı\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b42",
+   "no": 42,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Bir TV programı adı (doğrudan tanımlayıcı değilse)\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b43",
+   "no": 43,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Tek başına bir sayı (mal ile nitelik/nicelik ilişkisi yoksa)\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b44",
+   "no": 44,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Şaraplar için \"1996\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b45",
+   "no": 45,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Universal Charger Adaptor\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b46",
+   "no": 46,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Evrensel Ahşap\", \"Universal Göz\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b47",
+   "no": 47,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Kolay Öde\" — 36. sınıf\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b48",
+   "no": 48,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Kolay Bal\" — 30. ve 35. sınıflar\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b49",
+   "no": 49,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Mini Parfüm\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b50",
+   "no": 50,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Yeni Nesil Durak\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b51",
+   "no": 51,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Green Cooler\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b52",
+   "no": 52,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Çiçek Burada\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b53",
+   "no": 53,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Alo + ürün adı\" kalıbı\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b54",
+   "no": 54,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"… matik / matic\" — hayal ürünü bir kelimeye eklendiğinde\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b55",
+   "no": 55,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Çiğ süt matik\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b56",
+   "no": 56,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Stoper\", \"Dezenfekt\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b57",
+   "no": 57,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"CARAMMEL\" — şekerlemeler için (harf tekrarı)\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b58",
+   "no": 58,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "INN adları (WHO'nun etken madde adları)\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b59",
+   "no": 59,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Pembe\" — boyalar (2. sınıf) için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b60",
+   "no": 60,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Yeşil Ceviz\" — boyalar için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b61",
+   "no": 61,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"S, M, L\" — giysiler için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b62",
+   "no": 62,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Tanımlayıcı ibarenin farklı fontla ve renkli yazılması\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b63",
+   "no": 63,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Tanımlayıcı ibarenin basit bir çerçeve içine alınması\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b64",
+   "no": 64,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Metal Ambalaj Sanayi ve Ticaret Limited Şirketi\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b65",
+   "no": 65,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Baklava Ustası\" — pastacılık ürünleri için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b66",
+   "no": 66,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Ateş Ustası\" — mangal kömürü için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b67",
+   "no": 67,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Türkiye'nin Sesi\", \"Konuşan Türkiye\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "B",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b68",
+   "no": 68,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "Münhasıran \"TÜRKİYE\" ibaresinden oluşan başvuru\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b69",
+   "no": 69,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"Multi-touch\"\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "mk-b70",
+   "no": 70,
+   "kaynak": "Marka Kılavuzu",
+   "bolum": "Kısım B — 5/1-c kalıpları",
+   "tur": "banka",
+   "metin": "\"350 gr\" — gıda ürünleri için\n\nBu başvuru SMK m.5/1-c bakımından kural olarak reddedilir mi, ilan edilir mi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kural olarak reddedilir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kural olarak ilan edilir"
+    }
+   ],
+   "cevap": "A",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "etiketler": [
+    "marka kılavuzu"
+   ],
+   "eklenme": 1789037442640,
+   "smkMaddeleri": [
+    5
+   ]
   }
  ]
 }

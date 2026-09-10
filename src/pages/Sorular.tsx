@@ -2,27 +2,28 @@
  * Soruları sınıflandırılmış hâlde gözden geçirme ekranı.
  *
  * İki bakış açısı var ve ikisi farklı soruları cevaplıyor:
- *   Yıla göre  — "2019 sınavında ne çıkmış?" Çıkmış sorular, sınav ve bölüm
- *                sırasıyla; sınavın kendi düzenini görmek için.
+ *   Yıla göre   — "2019 sınavında ne çıkmış?" Çıkmış sorular, sınav ve bölüm
+ *                 sırasıyla; sınavın kendi düzenini görmek için.
  *   Konuya göre — "Mutlak ret nedenlerinden kaç soru var, hangileri?" Tüm banka,
- *                hukuk alanı ve konu ağacına göre.
+ *                 hukuk alanı ve konu ağacına göre.
+ *   Kaynağa göre — "Marka Kılavuzu setinde neler var?" Soruların geldiği
+ *                 kitapçık/kitap ve onun kendi bölümlerine göre.
  *
  * Her grup açılıp okunabiliyor ve doğrudan çözmeye başlanabiliyor.
  */
 
 import { useMemo, useState } from 'react';
 import { useStore } from '../store';
-import { BosDurum, Kart } from '../components/ui';
+import { BosDurum, Cubuk, Kart } from '../components/ui';
 import { SoruKarti } from '../components/SoruKarti';
 import { SeansCalistir } from '../components/SeansCalistir';
-import { Cubuk } from '../components/ui';
 import { yuzde } from '../components/Grafik';
 import { AREAS, TOPICS, TOPIC_BY_ID, areaOf } from '../data/topics';
 import { cozulebilir, karistir, soruTuru } from '../lib/sec';
 import { kisalt } from '../lib/metin';
 import type { Soru } from '../types';
 
-type Bakis = 'yil' | 'konu';
+type Bakis = 'yil' | 'konu' | 'kaynak';
 
 /** Bir grup soru: yıl, kitapçık bölümü ya da konu. */
 type Grup = {
@@ -51,10 +52,11 @@ export default function Sorular() {
     return kova;
   }, [cevaplamalar]);
 
-  const gruplar = useMemo(
-    () => (bakis === 'yil' ? yilaGoreGrupla(sorular) : konuyaGoreGrupla(sorular)),
-    [sorular, bakis],
-  );
+  const gruplar = useMemo(() => {
+    if (bakis === 'yil') return yilaGoreGrupla(sorular);
+    if (bakis === 'kaynak') return kaynagaGoreGrupla(sorular);
+    return konuyaGoreGrupla(sorular);
+  }, [sorular, bakis]);
 
   if (sorular.length === 0) {
     return (
@@ -88,8 +90,8 @@ export default function Sorular() {
         <div>
           <h1>Sorular</h1>
           <p>
-            Çıkmış sınav sorularını yıl ve kitapçık bölümüne göre, soru bankasının tamamını
-            konu ağacına göre gözden geçir. Her gruptan doğrudan çözmeye başlayabilirsin.
+            Çıkmış sınav sorularını yıla, bankanın tamamını konu ağacına, soruları geldikleri
+            kitapçık ve kitaba göre gözden geçir. Her gruptan doğrudan çözmeye başlayabilirsin.
           </p>
         </div>
       </div>
@@ -105,6 +107,11 @@ export default function Sorular() {
                 onClick={() => { setBakis('konu'); setAcik(null); }}>
           Soru bankası · konuya göre
         </button>
+        <button role="tab" aria-selected={bakis === 'kaynak'}
+                className={`sekme ${bakis === 'kaynak' ? 'etkin' : ''}`}
+                onClick={() => { setBakis('kaynak'); setAcik(null); }}>
+          Kaynağa göre
+        </button>
       </div>
 
       {gruplar.length === 0 ? (
@@ -112,7 +119,9 @@ export default function Sorular() {
           <p className="sessiz">
             {bakis === 'yil'
               ? 'Bankada yılı belli çıkmış sınav sorusu yok. Sınav kitapçıklarını içe aktarabilirsin.'
-              : 'Bankadaki sorular henüz konulara yerleştirilmemiş. Soru Bankası ekranındaki “Otomatik sınıflandır” düğmesini kullanabilirsin.'}
+              : bakis === 'kaynak'
+                ? 'Sorularda kaynak bilgisi yok.'
+                : 'Bankadaki sorular henüz konulara yerleştirilmemiş. Soru Bankası ekranındaki “Otomatik sınıflandır” düğmesini kullanabilirsin.'}
           </p>
         </Kart>
       ) : (
@@ -154,6 +163,44 @@ function yilaGoreGrupla(sorular: Soru[]): Grup[] {
         : undefined,
     };
   });
+}
+
+/**
+ * Soruların geldiği kitapçık/kitaba göre gruplar; alt gruplar kaynağın kendi
+ * bölümleridir (Marka Kılavuzu'nun "Kısım B — 5/1-c kalıpları" bölümü gibi).
+ * Kaynakları soru sayısına göre değil, en çok sorusu olan üstte olacak şekilde
+ * sıralar; böylece asıl çalışılan setler öne çıkar.
+ */
+function kaynagaGoreGrupla(sorular: Soru[]): Grup[] {
+  const kaynaklar = new Map<string, Soru[]>();
+  for (const soru of sorular) {
+    const ad = soru.kaynak || 'Kaynağı belirtilmemiş';
+    if (!kaynaklar.has(ad)) kaynaklar.set(ad, []);
+    kaynaklar.get(ad)!.push(soru);
+  }
+
+  return [...kaynaklar.entries()]
+    .sort((a, b) => b[1].length - a[1].length)
+    .map(([ad, liste]) => {
+      const bolumler = [...new Set(liste.map((s) => s.bolum).filter((b): b is string => !!b))];
+      return {
+        anahtar: `kaynak-${ad}`,
+        baslik: ad,
+        altBaslik: `${liste.length} soru${bolumler.length > 1 ? ` · ${bolumler.length} bölüm` : ''}`,
+        sorular: liste,
+        altGruplar: bolumler.length > 1
+          ? bolumler.map((bolum) => {
+              const alt = liste.filter((s) => s.bolum === bolum);
+              return {
+                anahtar: `kaynak-${ad}-${bolum}`,
+                baslik: bolum,
+                altBaslik: `${alt.length} soru`,
+                sorular: [...alt].sort((a, b) => (a.no ?? 0) - (b.no ?? 0)),
+              };
+            })
+          : undefined,
+      };
+    });
 }
 
 function konuyaGoreGrupla(sorular: Soru[]): Grup[] {
