@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Soru } from '../types';
 import { TOPIC_BY_ID, areaOf } from '../data/topics';
 import { SMK_BY_NO } from '../data/smk';
+import { satirlaraAyir } from '../lib/bicim.mjs';
 
 export type SoruDurumu = {
   secilen: string | null;
@@ -60,7 +61,7 @@ export function SoruKarti({
         )}
       </div>
 
-      <div className="soru-govde">{soru.metin}</div>
+      {soru.gorsel ? <SoruGorseli soru={soru} /> : <SoruMetni metin={soru.metin} />}
 
       <div className="secenekler">
         {soru.secenekler.map((secenek) => {
@@ -92,6 +93,59 @@ export function SoruKarti({
         </div>
       )}
     </article>
+  );
+}
+
+/**
+ * Soru gövdesi. Öncüller ("1. … 2. …", "I. … II. …", "a) … b) …") asılı
+ * girintili ayrı satırlar olarak, soru cümlesi ayrı paragraf olarak basılır.
+ */
+export function SoruMetni({ metin }: { metin: string }) {
+  return (
+    <div className="soru-govde">
+      {satirlaraAyir(metin).map((satir, i) => {
+        if (satir.tur === 'bosluk') return <div key={i} className="soru-ara" aria-hidden="true" />;
+        if (satir.tur === 'oncul') {
+          return (
+            <div key={i} className="oncul">
+              <span className="oncul-isaret">{satir.isaret}</span>
+              <span>{satir.metin}</span>
+            </div>
+          );
+        }
+        return <p key={i}>{satir.metin}</p>;
+      })}
+    </div>
+  );
+}
+
+/**
+ * Tablo, amblem, tasarım görseli gibi metne dökülemeyen içerik taşıyan
+ * sorular kitapçıktaki hâliyle gösterilir. PDF'ten çıkan metin bu sorularda
+ * eksik ya da karışık olduğu için ikinci planda, istenirse açılır.
+ */
+function SoruGorseli({ soru }: { soru: Soru }) {
+  const [metinAcik, setMetinAcik] = useState(false);
+  const [hata, setHata] = useState(false);
+  useEffect(() => { setMetinAcik(false); setHata(false); }, [soru.id]);
+
+  if (hata) return <SoruMetni metin={soru.metin} />;
+  return (
+    <div className="soru-gorsel-kutu">
+      <figure className="soru-gorsel">
+        <img
+          src={`${import.meta.env.BASE_URL}${soru.gorsel}`}
+          alt={`${soru.no ? `${soru.no}. ` : ''}sorunun kitapçıktaki hâli: ${soru.metin.slice(0, 160)}`}
+          onError={() => setHata(true)}
+          decoding="async"
+        />
+      </figure>
+      <button type="button" className="dugme kucuk sade" onClick={() => setMetinAcik((a) => !a)}
+              aria-expanded={metinAcik}>
+        {metinAcik ? 'Metni gizle' : 'Metin olarak göster'}
+      </button>
+      {metinAcik && <SoruMetni metin={soru.metin} />}
+    </div>
   );
 }
 

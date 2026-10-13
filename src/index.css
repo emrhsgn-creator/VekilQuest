@@ -287,7 +287,20 @@ tbody tr:hover { background: var(--yuzey-2); }
 .tablo-sarmal { overflow-x: auto; margin: 0 -18px -18px; padding: 0 18px; }
 
 /* ------------------------------------------------------- soru */
-.soru-govde { font-size: 1.02rem; line-height: 1.65; margin-bottom: 18px; white-space: pre-wrap; }
+.soru-govde { font-size: 1.02rem; line-height: 1.65; margin-bottom: 18px; }
+.soru-govde p { margin: 0; }
+.soru-govde p + p { margin-top: 8px; }
+.soru-ara { height: 10px; }
+/* Öncüller: işaret sabit genişlikte, metin asılı girintiyle hizalı. */
+.oncul { display: grid; grid-template-columns: 2.4em 1fr; gap: 0 4px; margin: 4px 0 4px 6px; }
+.oncul-isaret { font-weight: 600; color: var(--metin-2); font-variant-numeric: tabular-nums; }
+.soru-gorsel-kutu { margin-bottom: 18px; display: grid; gap: 8px; justify-items: start; }
+.soru-gorsel { margin: 0; width: 100%; }
+/* Kitapçık kesimi beyaz zeminli; koyu temada da kâğıt gibi dursun. */
+.soru-gorsel img {
+  display: block; max-width: min(100%, 620px); height: auto;
+  background: #fff; border: 1px solid var(--kenar); border-radius: 8px; padding: 10px;
+}
 
 .secenekler { display: flex; flex-direction: column; gap: 8px; }
 .secenek {
@@ -510,3 +523,10 @@ details summary { color: var(--metin-2); }
   font-variant-numeric: tabular-nums;
 }
 .soru-satir-metin { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Yarım kalan oturumlar */
+.devam-satir {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px;
+  padding: 10px 12px; border: 1px solid var(--kenar); border-radius: 10px;
+}
+.devam-bilgi { display: grid; gap: 2px; min-width: 0; }

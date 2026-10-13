@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
-import { gomuluBankaDamgasiniYaz, gomuluBankayiGetir, useStore } from '../store';
+import { gomuluBankayiGetir, useStore } from '../store';
 import { Kart } from '../components/ui';
 import { siniflandir, topluSiniflandir } from '../lib/classify';
 import { pdfMetniCikar, pdfMi } from '../lib/pdf';
@@ -11,7 +11,7 @@ import { belgeyiAyristir, bolumKapsamlari, type AyristirmaRaporu, type HamSoru }
 type Adim = 'yukle' | 'onizle';
 
 export default function IceAktar() {
-  const { soruEkle, tumSorular: sorular, yedekYukle } = useStore();
+  const { soruEkle, tumSorular: sorular, yedekYukle, gomuluBankayiEsitle } = useStore();
 
   const [adim, setAdim] = useState<Adim>('yukle');
   const [kitapcikMetni, setKitapcikMetni] = useState('');
@@ -126,9 +126,12 @@ export default function IceAktar() {
       setDurum('Gömülü soru bankası okunamadı.');
       return;
     }
-    soruEkle(gelen);
-    gomuluBankaDamgasiniYaz(damga);
-    setDurum(`${gelen.length} soru yüklendi. Zaten bankada olanlar güncellendi, çözüm geçmişin korundu.`);
+    const ozet = gomuluBankayiEsitle(gelen, damga);
+    setDurum(
+      `Gömülü banka eşitlendi: ${ozet.eklenen} yeni, ${ozet.guncellenen} güncellenen` +
+      (ozet.birlesen ? `, kendi yüklediğin ${ozet.birlesen} kopya gömülü sürümle birleştirildi` : '') +
+      '. Çözüm geçmişin korundu.',
+    );
   };
 
   const jsonYukle = async (dosya: File) => {

@@ -14,12 +14,15 @@ import { Kart, Olcut, sayacBicim, sureBicim } from './ui';
 import { BuyuklukListesi, Halka, yuzde } from './Grafik';
 import { useStore } from '../store';
 import { TOPIC_BY_ID, areaOf } from '../data/topics';
-import type { Mod, Soru } from '../types';
+import type { DevamKaydi, Mod, SeansKaydi, Soru } from '../types';
 
-type Kayit = { secilen: string | null; gosterildi: boolean; sure: number };
+type Kayit = SeansKaydi;
+
+/** Bu kadar saniyede bir, süre işlerken anlık görüntü kaydedilir. */
+const KAYIT_ARALIGI_SN = 15;
 
 export function SeansCalistir({
-  sorular, mod, baslik, sureSiniriSn, anindaGeriBildirim, filtreOzeti, onCik,
+  sorular, mod, baslik, sureSiniriSn, anindaGeriBildirim, filtreOzeti, onCik, devam,
 }: {
   sorular: Soru[];
   mod: Mod;
@@ -28,10 +31,15 @@ export function SeansCalistir({
   anindaGeriBildirim: boolean;
   filtreOzeti?: string;
   onCik: () => void;
+  /** Yarım kalmış bir seansa dönülüyorsa onun anlık görüntüsü. */
+  devam?: DevamKaydi;
 }) {
-  const { seansBaslat, seansBitir, cevapKaydet, isaretiDegistir } = useStore();
+  const { seansBaslat, seansBitir, cevapKaydet, isaretiDegistir, devamKaydet, devamSil } = useStore();
 
-  const [seansId] = useState(() => `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`);
+  const [seansId] = useState(
+    () => devam?.seansId ?? `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`,
+  );
+  const [baslangic] = useState(() => devam?.baslangic ?? Date.now());
 
   // Seans kaydı render sırasında değil, bağlandıktan sonra oluşturulur.
   useEffect(() => {
@@ -40,41 +48,93 @@ export function SeansCalistir({
       mod,
       baslik,
       soruIdleri: sorular.map((s) => s.id),
-      baslangic: Date.now(),
+      baslangic,
       sureSiniri: sureSiniriSn,
       filtreOzeti,
     });
     // Seans bir kez, bileşen bağlandığında kaydedilir.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const [indeks, setIndeks] = useState(0);
-  const [kayitlar, setKayitlar] = useState<Record<string, Kayit>>({});
+  const [indeks, setIndeks] = useState(() => Math.min(devam?.indeks ?? 0, Math.max(0, sorular.length - 1)));
+  const [kayitlar, setKayitlar] = useState<Record<string, Kayit>>(() => devam?.kayitlar ?? {});
   const [bitti, setBitti] = useState(false);
-  const [kalanSn, setKalanSn] = useState(sureSiniriSn ?? 0);
+  const [kalanSn, setKalanSn] = useState(devam?.kalanSn ?? sureSiniriSn ?? 0);
+  // Süreli bir seansa geri dönülüyorsa süre, kullanıcı hazır olana kadar durur.
+  const [duraklatildi, setDuraklatildi] = useState(() => !!devam && !!sureSiniriSn);
 
   const soruBaslangic = useRef(Date.now());
-  useEffect(() => { soruBaslangic.current = Date.now(); }, [indeks]);
+  useEffect(() => { soruBaslangic.current = Date.now(); }, [indeks, duraklatildi]);
+  // Paletten ya da "Sonraki" ile geçilince yeni sorunun başı görünsün (mobilde
+  // palet sorunun altında kaldığı için aksi hâlde sayfa ortasında kalınıyor).
+  const ilkCizim = useRef(true);
+  useEffect(() => {
+    if (ilkCizim.current) { ilkCizim.current = false; return; }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [indeks]);
+
+  // ── Kaldığın yerden devam ────────────────────────────────────────────────
+  // Seansın anlık görüntüsü her anlamlı değişiklikte, süre işlerken düzenli
+  // aralıklarla ve ekrandan çıkılırken kaydedilir. Böylece sayfa kapansa,
+  // başka bir ekrana geçilse ya da "Duraklat → Kaydet ve çık" denense de
+  // seans Panel'den kaldığı yerden sürdürülebilir.
+  const anlik = useRef<DevamKaydi | null>(null);
+  anlik.current = bitti ? null : {
+    seansId,
+    mod,
+    baslik,
+    soruIdleri: sorular.map((s) => s.id),
+    anindaGeriBildirim,
+    filtreOzeti,
+    sureSiniriSn,
+    kalanSn: sureSiniriSn ? kalanSn : undefined,
+    indeks,
+    kayitlar,
+    baslangic,
+    guncelleme: Date.now(),
+  };
+  const kaydetRef = useRef(devamKaydet);
+  kaydetRef.current = devamKaydet;
+  const anlikKaydet = useCallback(() => {
+    const k = anlik.current;
+    // Hiç ilerleme yoksa (açıp hemen çıkıldıysa) yarım seans listesini doldurma.
+    if (!k || (k.indeks === 0 && Object.keys(k.kayitlar).length === 0)) return;
+    kaydetRef.current(k);
+  }, []);
+
+  useEffect(() => { anlikKaydet(); }, [indeks, kayitlar, duraklatildi, anlikKaydet]);
+  useEffect(() => {
+    const gizlenince = () => { if (document.visibilityState === 'hidden') anlikKaydet(); };
+    document.addEventListener('visibilitychange', gizlenince);
+    window.addEventListener('pagehide', anlikKaydet);
+    return () => {
+      document.removeEventListener('visibilitychange', gizlenince);
+      window.removeEventListener('pagehide', anlikKaydet);
+      // Ekrandan çıkılıyor (başka sayfaya geçiş): son durumu kaydet.
+      anlikKaydet();
+    };
+  }, [anlikKaydet]);
 
   const bitir = useCallback(() => {
+    anlik.current = null;
     setBitti(true);
     seansBitir(seansId);
-  }, [seansBitir, seansId]);
+    devamSil(seansId);
+  }, [seansBitir, devamSil, seansId]);
 
-  // Deneme modu geri sayımı
+  // Deneme modu geri sayımı — duraklatılınca durur.
   useEffect(() => {
-    if (!sureSiniriSn || bitti) return;
+    if (!sureSiniriSn || bitti || duraklatildi) return;
     const zamanlayici = window.setInterval(() => {
       setKalanSn((k) => {
         if (k <= 1) {
           window.clearInterval(zamanlayici);
-          bitir();
           return 0;
         }
         return k - 1;
       });
     }, 1000);
     return () => window.clearInterval(zamanlayici);
-  }, [sureSiniriSn, bitti, bitir]);
+  }, [sureSiniriSn, bitti, duraklatildi]);
 
   const aktifSoru = sorular[indeks];
   const aktifKayit = aktifSoru ? kayitlar[aktifSoru.id] : undefined;
@@ -96,6 +156,7 @@ export function SeansCalistir({
 
   // Deneme modunda cevaplar sınav sonunda toplu kaydedilir.
   const denemeSonuKaydet = useCallback(() => {
+    anlik.current = null;
     for (const soru of sorular) {
       if (soru.iptal) continue;
       const k = kayitlar[soru.id];
@@ -111,6 +172,19 @@ export function SeansCalistir({
     bitir();
   }, [sorular, kayitlar, cevapKaydet, seansId, mod, bitir]);
 
+  // Süre doldu: deneme cevapları kaydedilip sonuç ekranı açılır. Süre
+  // dolduğunda bitirmek sayacın içinden değil buradan yapılıyor, çünkü
+  // denemeSonuKaydet o anki cevapları görmeli.
+  useEffect(() => {
+    if (!sureSiniriSn || bitti || kalanSn > 0) return;
+    if (anindaGeriBildirim) bitir(); else denemeSonuKaydet();
+  }, [kalanSn, sureSiniriSn, bitti, anindaGeriBildirim, bitir, denemeSonuKaydet]);
+
+  // Süre işlerken düzenli aralıklarla kalan süreyi de kaydet.
+  useEffect(() => {
+    if (sureSiniriSn && kalanSn > 0 && kalanSn % KAYIT_ARALIGI_SN === 0) anlikKaydet();
+  }, [kalanSn, sureSiniriSn, anlikKaydet]);
+
   const ilerle = useCallback(() => {
     if (indeks < sorular.length - 1) setIndeks((i) => i + 1);
     else if (anindaGeriBildirim) bitir();
@@ -121,13 +195,14 @@ export function SeansCalistir({
     const dinleyici = (e: KeyboardEvent) => {
       const hedef = e.target as HTMLElement | null;
       if (hedef && ['INPUT', 'TEXTAREA', 'SELECT'].includes(hedef.tagName)) return;
+      if (duraklatildi) return;
       if (e.key === 'ArrowRight') ilerle();
       if (e.key === 'ArrowLeft') setIndeks((i) => Math.max(0, i - 1));
       if (e.key === 'Enter' && anindaGeriBildirim && aktifKayit?.gosterildi) ilerle();
     };
     window.addEventListener('keydown', dinleyici);
     return () => window.removeEventListener('keydown', dinleyici);
-  }, [ilerle, anindaGeriBildirim, aktifKayit]);
+  }, [ilerle, anindaGeriBildirim, aktifKayit, duraklatildi]);
 
   if (bitti) {
     return <SeansSonucu sorular={sorular} kayitlar={kayitlar} baslik={baslik} onCik={onCik} />;
@@ -158,11 +233,41 @@ export function SeansCalistir({
           {sureSiniriSn ? (
             <span className={`sayac ${acilMi ? 'acil' : ''}`} aria-live="polite">{sayacBicim(kalanSn)}</span>
           ) : null}
+          {!duraklatildi && (
+            <button className="dugme" onClick={() => setDuraklatildi(true)}
+                    title="Süreyi durdur; istersen kaydedip çık, sonra kaldığın yerden devam et">
+              ⏸ Duraklat
+            </button>
+          )}
           <button className="dugme" onClick={anindaGeriBildirim ? bitir : denemeSonuKaydet}>
             {anindaGeriBildirim ? 'Bitir ve özet gör' : 'Sınavı bitir'}
           </button>
         </div>
       </div>
+
+      {duraklatildi ? (
+        <Kart baslik="Duraklatıldı">
+          <div className="yigin">
+            <p style={{ margin: 0 }}>
+              {sureSiniriSn ? <>Süre durdu, kalan süre <strong>{sayacBicim(kalanSn)}</strong>. </> : null}
+              {cevaplananSayisi} / {sorular.length} soru cevaplandı, {indeks + 1}. sorudasın.
+            </p>
+            <p className="sessiz" style={{ margin: 0 }}>
+              İlerlemen bu cihazda kayıtlı. Şimdi çıkarsan Panel'deki
+              {' '}<em>Yarım kalan oturumlar</em> bölümünden kaldığın yerden devam edebilirsin.
+            </p>
+            <div className="satir">
+              <button className="dugme birincil" onClick={() => setDuraklatildi(false)} autoFocus>
+                ▶ Devam et
+              </button>
+              <button className="dugme" onClick={() => { anlikKaydet(); onCik(); }}>
+                Kaydet ve çık
+              </button>
+            </div>
+          </div>
+        </Kart>
+      ) : (
+      <>
 
       <div className="cubuk">
         <span style={{ width: `${((indeks + 1) / sorular.length) * 100}%`, background: 'var(--vurgu)' }} />
@@ -199,6 +304,8 @@ export function SeansCalistir({
             onGit={setIndeks}
           />
         </Kart>
+      )}
+      </>
       )}
     </div>
   );

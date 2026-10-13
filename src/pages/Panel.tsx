@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useStore } from '../store';
+import { DevamEdenler } from '../components/DevamEdenler';
 import { Kart, Olcut, BosDurum, Cubuk, tarihBicim } from '../components/ui';
 import { BuyuklukListesi, CizgiGrafik, IsiTakvimi, SutunGrafik, yuzde } from '../components/Grafik';
 import {
@@ -75,6 +76,7 @@ export default function Panel() {
           <Link className="dugme birincil" to="/deneme">Deneme başlat</Link>
         </div>
       </div>
+      <DevamEdenler />
 
       <div className="yigin">
         <div className="izgara izgara-4">

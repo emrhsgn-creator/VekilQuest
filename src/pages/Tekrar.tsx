@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useStore } from '../store';
+import { DevamEdenler } from '../components/DevamEdenler';
 import { BosDurum, Kart, Olcut } from '../components/ui';
 import { SeansCalistir } from '../components/SeansCalistir';
 import { BuyuklukListesi } from '../components/Grafik';
@@ -68,6 +69,7 @@ export default function Tekrar() {
           {vadeliler.length ? `${Math.min(40, vadeliler.length)} soruyu tekrar et` : 'Bugün tekrar yok'}
         </button>
       </div>
+      <DevamEdenler modlar={['tekrar']} />
 
       <div className="yigin">
         <div className="izgara izgara-4">

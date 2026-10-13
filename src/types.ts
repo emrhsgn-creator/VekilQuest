@@ -36,6 +36,14 @@ export type Soru = {
   etiketler?: string[];
   /** Kurum tarafından iptal edilen sorular istatistiğe katılmaz. */
   iptal?: boolean;
+  /**
+   * Sorunun kitapçıktaki hâlinin görseli (public/ altına göre yol). Tablo,
+   * amblem, tasarım görseli gibi metne dökülemeyen içerik taşıyan sorularda
+   * metnin yerine gösterilir; bkz. tools/gorsel-kes.py.
+   */
+  gorsel?: string;
+  /** Uygulamayla gelen gömülü bankadan yüklendi; banka güncellenince yenilenir. */
+  gomulu?: boolean;
   eklenme: number;
 };
 
@@ -66,6 +74,29 @@ export type Seans = {
   sureSiniri?: number;
   /** Seans sırasındaki konu filtresi — analizde gösterilir. */
   filtreOzeti?: string;
+};
+
+/** Seans içinde bir sorunun o anki durumu. */
+export type SeansKaydi = { secilen: string | null; gosterildi: boolean; sure: number };
+
+/**
+ * Yarım kalan (duraklatılmış ya da sayfadan çıkılmış) bir seansın anlık
+ * görüntüsü. Kaldığın yerden devam etmek için gereken her şey: hangi
+ * sorudasın, neleri işaretledin, sürenden ne kaldı.
+ */
+export type DevamKaydi = {
+  seansId: string;
+  mod: Mod;
+  baslik: string;
+  soruIdleri: string[];
+  anindaGeriBildirim: boolean;
+  filtreOzeti?: string;
+  sureSiniriSn?: number;
+  kalanSn?: number;
+  indeks: number;
+  kayitlar: Record<string, SeansKaydi>;
+  baslangic: number;
+  guncelleme: number;
 };
 
 /** SM-2 türevi aralıklı tekrar kartı. */
@@ -103,6 +134,8 @@ export type Yedek = {
   cevaplamalar: Cevaplama[];
   seanslar: Seans[];
   tekrarKartlari: TekrarKarti[];
+  /** Yarım kalan seanslar; eski yedeklerde bulunmaz. */
+  devamEdenler?: DevamKaydi[];
   ayarlar: Ayarlar;
 };
 

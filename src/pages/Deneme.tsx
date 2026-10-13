@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useStore } from '../store';
+import { DevamEdenler } from '../components/DevamEdenler';
 import { BosDurum, Kart, Olcut, sureBicim, tarihBicim } from '../components/ui';
 import { SeansCalistir } from '../components/SeansCalistir';
 import { BuyuklukListesi, yuzde } from '../components/Grafik';
@@ -70,7 +71,12 @@ export default function Deneme() {
     let baslik: string;
     if (kaynak === 'gercek-sinav' && yil) {
       // Gerçek sınav: soruları kitapçıktaki sırasıyla, tamamı.
-      secilen = [...yilHavuzu].sort((a, b) => (a.no ?? 0) - (b.no ?? 0));
+      // Bölümlü kitapçıklarda (2015: MARKA 1–25, ORTAK 1–25) numaralar her
+      // bölümde 1'den başlıyor; önce bölümün kitapçıktaki sırası, sonra numara.
+      const bolumSirasi = new Map<string, number>();
+      for (const s of yilHavuzu) if (!bolumSirasi.has(s.bolum ?? '')) bolumSirasi.set(s.bolum ?? '', bolumSirasi.size);
+      secilen = [...yilHavuzu].sort((a, b) =>
+        (bolumSirasi.get(a.bolum ?? '') ?? 0) - (bolumSirasi.get(b.bolum ?? '') ?? 0) || (a.no ?? 0) - (b.no ?? 0));
       baslik = `${yil} Marka Vekilliği Sınavı`;
     } else if (kaynak === 'zayif') {
       const oncelikler = new Map(konular.map((k) => [k.topicId, k.oncelik]));
@@ -100,6 +106,7 @@ export default function Deneme() {
           </p>
         </div>
       </div>
+      <DevamEdenler modlar={['deneme']} />
 
       <div className="yigin">
         <Kart baslik="Deneme kur">

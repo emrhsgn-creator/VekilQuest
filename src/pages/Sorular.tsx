@@ -14,6 +14,7 @@
 
 import { useMemo, useState } from 'react';
 import { useStore } from '../store';
+import { DevamEdenler } from '../components/DevamEdenler';
 import { BosDurum, Cubuk, Kart } from '../components/ui';
 import { SoruKarti } from '../components/SoruKarti';
 import { SeansCalistir } from '../components/SeansCalistir';
@@ -95,6 +96,7 @@ export default function Sorular() {
           </p>
         </div>
       </div>
+      <DevamEdenler modlar={['calisma']} />
 
       <div className="sekmeler" role="tablist">
         <button role="tab" aria-selected={bakis === 'yil'}

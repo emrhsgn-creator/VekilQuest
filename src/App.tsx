@@ -13,6 +13,7 @@ import IceAktar from './pages/IceAktar';
 import Plan from './pages/Plan';
 import Mevzuat from './pages/Mevzuat';
 import Ayarlar from './pages/Ayarlar';
+import DevamEt from './pages/DevamEt';
 
 export default function App() {
   const { hazir, sorular, tekrarKartlari } = useStore();
@@ -70,6 +71,7 @@ export default function App() {
           <Route path="/ice-aktar" element={<IceAktar />} />
           <Route path="/mevzuat" element={<Mevzuat />} />
           <Route path="/ayarlar" element={<Ayarlar />} />
+          <Route path="/devam/:seansId" element={<DevamEt />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

@@ -19,6 +19,7 @@ cihazından çıkmaz.
 | **Sorular** | Çıkmış soruları yıl ve kitapçık bölümüne göre, bankanın tamamını konu ağacına göre gözden geçirme; her gruptan doğrudan çözme |
 | **Konu çalışması** | Konu / alan / yıl / durum filtresiyle soru seti kurup anında geri bildirimle çözme |
 | **Deneme sınavı** | Süreli, geri bildirimsiz, soru paletli gerçek sınav simülasyonu; karışık deneme gerçek sınavın konu dağılımını taklit eder |
+| **Duraklat / devam et** | Her seans duraklatılabilir; sayfadan çıkılsa ya da tarayıcı kapansa bile kaldığın sorudan, kalan süren korunarak Panel'deki “Yarım kalan oturumlar”dan devam edilir |
 | **Tekrar** | SM-2 türevi aralıklı tekrar; ısrarla yanlış yapılanlar ve işaretlediklerin |
 | **Analiz** | Konu bazlı hâkimiyet, sınav ağırlığı, zaman/yıl eğilimi, hata ve süre analizi |
 | **Kapsam filtresi** | Genel Yeterlik kitapçıklarının patent bölümü içe aktarılmaz; yalnızca marka, coğrafi işaret ve ortak sorular bankaya girer |
@@ -68,8 +69,11 @@ Ayrıntılar ve sorun giderme: **[docs/SORU-YUKLEME.md](docs/SORU-YUKLEME.md)**
 
 ### Soru bankası ve telif
 
-Uygulamayla birlikte **166 soruluk bir banka dağıtılıyor** (`public/veri/soru-bankasi.json`),
-TÜRKPATENT'in kendi sitesinde yayımladığı Genel Yeterlik Sınavı kitapçıklarından ayrıştırılmış.
+Uygulamayla birlikte **363 soruluk bir banka dağıtılıyor** (`public/veri/soru-bankasi.json`):
+TÜRKPATENT'in kendi sitesinde yayımladığı 2015, 2017, 2019, 2021 Genel Yeterlik ve 2024 Marka
+Vekilliği sınav kitapçıklarının marka bölümleri (228 soru) ile Marka İnceleme Kılavuzu'na dayanan
+135 soruluk çalışma seti. Resimli/tablolu soruların kitapçıktan kesilmiş görselleri
+`public/veri/gorsel/` altında.
 Amaç kişisel sınav hazırlığı; soruların hakları Türk Patent ve Marka Kurumuna aittir.
 
 Kitapçıkların kapağında şu ibare bulunuyor: *“Hangi amaçla olursa olsun, testlerin tamamının veya
@@ -78,8 +82,13 @@ yayınlanması ya da kullanılması yasaktır.”* Bankayı depoya dahil etmek b
 tek dosyayı silmekle geri alınabilir:
 
 ```bash
-rm public/veri/soru-bankasi.json   # uygulama boş bankayla açılır, içe aktarma çalışmaya devam eder
+rm -r public/veri/soru-bankasi.json public/veri/gorsel   # uygulama boş bankayla açılır, içe aktarma çalışmaya devam eder
 ```
+
+Banka her yayında güncellenebilir. Uygulama açılışta içerik damgasına bakar ve değiştiyse
+cihazdaki kopyayı eşitler: yeni sorular eklenir, düzeltilen sorular yenilenir, aynı kitapçığı
+daha önce kendin içe aktardıysan o kopya gömülü sürümle birleşir ve çözüm geçmişin yeni soruya
+taşınır. Kendi eklediğin diğer sorulara ve işaretlerine dokunulmaz (`src/lib/bankaGuncelle.ts`).
 
 Ham PDF'ler (`data/ham/`) ve ara çıktılar (`data/sorular/`) depoya girmez; bunlar
 `npm run banka:uret` ile yeniden üretilebilir.
@@ -99,10 +108,35 @@ Kitapçık düzeni yıldan yıla değişiyor ve naif bir “satır başındaki n
 | Kitapçık iki bölümlü (60 + 40 soru); biri 1'den, biri 61'den başlıyor | Basılı numaralar esas alınır, süreklilik ölçülüp kaydırma buna göre yapılır |
 | Cevap anahtarı bazen 5 sütun sürekli (1-100), bazen bölüm başına paralel (2015) | Numaralar benzersizse tek harita, tekrar ediyorsa sütun-bölüm eşlemesi |
 | Gövdesi görsel olan sorulardan artakalan seçenek blokları | Numarası olmayan bloklar soru sayılmaz — yoksa **sonraki bütün cevaplar kayar** |
+| Sayfa altlığı (“Diğer sayfaya geçiniz.”) pdfjs'te parçalara bölünüp son seçeneğe yapışıyor | Sayfanın üst/alt kenar bandındaki metin konumundan atılır (`src/lib/pdfMetin.mjs`) |
+| Tireden sonra boşluksuz numara (2015: `15-6098 sayılı…`) | Tanınır; `1-1 1-2` gibi görsel numaraları tanınmaz |
+| 2024: patent ve marka kitapçığı tek PDF'te, anahtar 4 sütun (patent 1–30 · 31–60, marka 1–30 · 31–60) | Sütun sayısı bölüm sayısının katıysa ardışık sütunlar aynı bölüme bağlanır |
 
-Ölçülen sonuç (2015, 2017, 2019, 2021 A kitapçıkları): **370 soru ayrıştırıldı, 370'inin cevabı
-eşleşti, doğrulayıcıda 0 sorun.** 2017 ve 2021 kitapçıkları tek uyarı bile üretmeden 100/100
-çıkıyor. Bunların **166'sı marka vekilliği kapsamında**; patent bölümleri içe aktarılmaz.
+Ölçülen sonuç (2015, 2017, 2019, 2021, 2024 A kitapçıkları): **492 soru ayrıştırıldı, 492'sinin
+cevabı eşleşti.** Bunların **228'i marka vekilliği kapsamında**; patent bölümleri içe aktarılmaz.
+
+### Öncüllü sorular, resimli ve tablolu sorular
+
+PDF metni tek paragrafa dökülüyor. İki ek adım bunu düzeltir:
+
+- **Öncüller** (`1. … 2. …`, `I. … II. …`, `a) … b) …`) ayrı satırlara alınır, liste sonrasındaki
+  soru cümlesi ayrı paragrafa iner (`src/lib/bicim.mjs`). Düz yazıdaki sayılar (“25. ve 35.
+  sınıflar”, “SMK m. 6/5”) öncül sayılmaz; zincir 1'den başlayıp ardışık gitmek zorunda.
+- **Görsel ve tablolar** — amblem, tasarım görselleri, görsel şıklar, tablolar metne dökülemez.
+  `tools/gorsel-kes.py` sorunun kitapçıktaki bölgesini (sütun ya da sayfa atlasa bile) kesip
+  `public/veri/gorsel/` altına yazar; uygulama bu sorularda kitapçıktaki hâlini gösterir:
+
+  ```bash
+  pip install pymupdf pillow
+  python3 tools/gorsel-kes.py --pdf data/ham/2024-A.pdf --json data/sorular/2024-marka-A.json --sayfalar 33-56
+  ```
+
+  Soru başları sütun kenarındaki numaralardan bulunur ve JSON'daki sırayla eşlenir; bölgede
+  raster görsel, tablo çizgisi ya da hizalı sütunlu metin varsa kesilir. 2024'te 60/60 soru
+  eşleşti, 13'ü kesildi; 2015'te 50/50, 2'si.
+
+Otomatik sınıflandırmanın açıkça yanıldığı sorular `tools/konu-duzeltmeleri.json` ile elle
+düzeltilir; `npm run banka:uret` bunu uygular.
 
 ### Çözümlü soru bankaları
 
@@ -127,10 +161,11 @@ elenmez — o sorular marka adayının da kapsamındadır.
 | Yıl | Bölüm | Soru | Sonuç |
 |---|---|---|---|
 | 2015 | PATENT | 25 | elendi |
-| 2015 | MARKA · ORTAK | 25 · 23 | alındı |
+| 2015 | MARKA · ORTAK | 25 · 25 | alındı |
 | 2017 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
 | 2019 | 1. kitapçık · 2. kitapçık | 59 · 38 | elendi · alındı |
 | 2021 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
+| 2024 | Patent Vekilliği · Marka Vekilliği | 60 · 60 | elendi · alındı |
 
 Hepsini yine de istersen: içe aktarma ekranındaki onay kutusunu kapat ya da
 `node tools/pdf-to-json.mjs … --kapsam hepsi`. Bankaya patent sorusu girdiyse Soru Bankası
@@ -198,13 +233,19 @@ src/
   data/topics.ts     Konu taksonomisi (9 alan, 55 konu)
   data/smk.ts        SMK madde indeksi (kapsam içi 101 madde)
   lib/parse.mjs      Kitapçık/cevap anahtarı ayrıştırıcı (tarayıcı + terminal ortak)
+  lib/pdfMetin.mjs   PDF sayfa metni; başlık/altlık bandını konumdan atar (ortak)
+  lib/bicim.mjs      Öncülleri satırlara bölme, sayfa artıklarını ayıklama (ortak)
+  lib/bankaGuncelle.ts  Gömülü bankayı cihazdaki kopyayla eşitleme
   lib/classify.ts    Otomatik konu sınıflandırma
   lib/stats.ts       Hâkimiyet, sınav ağırlığı, öncelik, plan
   lib/srs.ts         Aralıklı tekrar (SM-2 türevi)
   components/        Grafikler, soru kartı, seans motoru
   pages/             Ekranlar
 tools/
-  pdf-to-json.mjs    Toplu PDF → JSON dönüştürücü
+  pdf-to-json.mjs    Toplu PDF → JSON dönüştürücü (--sayfalar, --bolum-adi)
+  gorsel-kes.py      Resimli/tablolu soruları kitapçıktan kesme
+  kilavuz-to-json.mjs  Marka Kılavuzu çalışma kitapçığı dönüştürücü
+  konu-duzeltmeleri.json  Elle konu atamaları
   validate-bank.mjs  Soru bankası şema denetimi
   parse.test.mjs     Ayrıştırıcı testleri
 ```

@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useStore } from '../store';
+import { DevamEdenler } from '../components/DevamEdenler';
 import { Kart, BosDurum } from '../components/ui';
 import { FiltrePaneli } from '../components/FiltrePaneli';
 import { SeansCalistir } from '../components/SeansCalistir';
@@ -71,6 +72,7 @@ export default function Calisma() {
           <p>Filtrele, soru sayısını seç ve çözmeye başla. Her sorudan sonra doğru cevabı ve gerekçesini görürsün.</p>
         </div>
       </div>
+      <DevamEdenler modlar={['calisma']} />
 
       <div className="yigin">
         <Kart baslik="Ne çalışayım?">

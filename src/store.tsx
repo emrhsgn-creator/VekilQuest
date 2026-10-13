@@ -6,10 +6,12 @@ import { oku, yaz, yerelOku, yerelYaz } from './lib/db';
 import { kaliteNotu, kartiGuncelle, yeniKart } from './lib/srs';
 import { topluSiniflandir } from './lib/classify';
 import { bolumKapsamlari } from './lib/parse.mjs';
+import { soruyuBicimle } from './lib/bicim.mjs';
+import { gomuluBankayiBirlestir, type BirlestirmeOzeti } from './lib/bankaGuncelle';
 import { kapsamDisiMi } from './data/topics';
 import {
   VARSAYILAN_AYARLAR,
-  type Ayarlar, type Cevaplama, type Seans, type Soru, type TekrarKarti, type Yedek,
+  type Ayarlar, type Cevaplama, type DevamKaydi, type Seans, type Soru, type TekrarKarti, type Yedek,
 } from './types';
 
 const ANAHTAR = {
@@ -17,6 +19,7 @@ const ANAHTAR = {
   cevaplamalar: 'cevaplamalar',
   seanslar: 'seanslar',
   tekrar: 'tekrarKartlari',
+  devamEdenler: 'devamEdenler',
   ayarlar: 'mv.ayarlar',
   bankaDamgasi: 'mv.bankaDamgasi',
 } as const;
@@ -30,6 +33,8 @@ type Durum = {
   cevaplamalar: Cevaplama[];
   seanslar: Seans[];
   tekrarKartlari: TekrarKarti[];
+  /** Yarım bırakılmış seanslar — kaldığın yerden devam için. */
+  devamEdenler: DevamKaydi[];
   ayarlar: Ayarlar;
 };
 
@@ -40,6 +45,9 @@ type Islemler = {
   tumSorulariSiniflandir: () => number;
   seansBaslat: (seans: Seans) => void;
   seansBitir: (seansId: string) => void;
+  devamKaydet: (kayit: DevamKaydi) => void;
+  devamSil: (seansId: string) => void;
+  gomuluBankayiEsitle: (gomulu: Soru[], damga: string) => BirlestirmeOzeti;
   cevapKaydet: (girdi: Omit<Cevaplama, 'id' | 'zaman'>) => void;
   isaretiDegistir: (soruId: string) => void;
   ayarlariGuncelle: (degisiklik: Partial<Ayarlar>) => void;
@@ -58,6 +66,7 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
     cevaplamalar: [],
     seanslar: [],
     tekrarKartlari: [],
+    devamEdenler: [],
     ayarlar: yerelOku<Ayarlar>(ANAHTAR.ayarlar, VARSAYILAN_AYARLAR),
   });
 
@@ -73,31 +82,50 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
   useEffect(() => {
     let iptal = false;
     void (async () => {
-      const [sorular, cevaplamalar, seanslar, tekrarKartlari] = await Promise.all([
+      const [sorular, cevaplamalar, seanslar, tekrarKartlari, devamEdenler] = await Promise.all([
         oku<Soru[]>(ANAHTAR.sorular, []),
         oku<Cevaplama[]>(ANAHTAR.cevaplamalar, []),
         oku<Seans[]>(ANAHTAR.seanslar, []),
         oku<TekrarKarti[]>(ANAHTAR.tekrar, []),
+        oku<DevamKaydi[]>(ANAHTAR.devamEdenler, []),
       ]);
       if (iptal) return;
 
-      // İlk açılışta gömülü soru bankasını yükle: siteye giren herkesin elle
-      // içe aktarma yapması gerekmesin. Yalnızca banka boşken çalışır, yani
-      // kullanıcının kendi eklediği sorular hiçbir zaman ezilmez.
-      let baslangicSorulari = sorular;
-      if (sorular.length === 0) {
-        const gelen = await gomuluBankayiGetir();
-        if (gelen.sorular.length > 0) {
-          baslangicSorulari = gelen.sorular;
-          void yaz(ANAHTAR.sorular, gelen.sorular);
-          yerelYaz(ANAHTAR.bankaDamgasi, gelen.damga);
-        }
-      }
-      if (iptal) return;
+      let baslangic = { sorular, cevaplamalar, seanslar, tekrarKartlari, devamEdenler };
 
-      setDurum((d) => ({
-        ...d, hazir: true, sorular: baslangicSorulari, cevaplamalar, seanslar, tekrarKartlari,
-      }));
+      // Gömülü soru bankası: ilk açılışta yüklenir, sonraki yayınlarda
+      // (damga değişince) cihazdaki kopyayla eşitlenir. Böylece yeni eklenen
+      // sınavlar ve ayrıştırma düzeltmeleri mevcut kullanıcılara da ulaşır.
+      // Kullanıcının kendi eklediği sorular ve çözüm geçmişi korunur.
+      const gelen = await gomuluBankayiGetir();
+      if (iptal) return;
+      if (gelen.sorular.length > 0 && (sorular.length === 0 || gelen.damga !== gomuluBankaDamgasi())) {
+        const birlesik = gomuluBankayiBirlestir(baslangic, gelen.sorular);
+        baslangic = {
+          sorular: birlesik.sorular,
+          cevaplamalar: birlesik.cevaplamalar,
+          seanslar: birlesik.seanslar,
+          tekrarKartlari: birlesik.tekrarKartlari,
+          devamEdenler: birlesik.devamEdenler,
+        };
+        void yaz(ANAHTAR.sorular, birlesik.sorular);
+        void yaz(ANAHTAR.cevaplamalar, birlesik.cevaplamalar);
+        void yaz(ANAHTAR.seanslar, birlesik.seanslar);
+        void yaz(ANAHTAR.tekrar, birlesik.tekrarKartlari);
+        void yaz(ANAHTAR.devamEdenler, birlesik.devamEdenler);
+        yerelYaz(ANAHTAR.bankaDamgasi, gelen.damga);
+      }
+
+      // Cihazda kayıtlı (ör. kendi içe aktarılmış) sorulardaki sayfa
+      // artıklarını ayıkla, öncülleri satırlara böl. Değişiklik yoksa aynı
+      // nesne döner; yalnızca bir şey düzeldiyse diske yazılır.
+      const bicimli = baslangic.sorular.map(soruyuBicimle);
+      if (bicimli.some((s, i) => s !== baslangic.sorular[i])) {
+        baslangic = { ...baslangic, sorular: bicimli };
+        void yaz(ANAHTAR.sorular, bicimli);
+      }
+
+      setDurum((d) => ({ ...d, hazir: true, ...baslangic }));
     })();
     return () => { iptal = true; };
   }, []);
@@ -115,7 +143,7 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
         const mevcut = new Map(d.sorular.map((s) => [s.id, s]));
         for (const soru of yeniler) {
           // Aynı id ile gelen soru mevcut kaydı günceller; çözüm geçmişi korunur.
-          mevcut.set(soru.id, { ...mevcut.get(soru.id), ...soru });
+          mevcut.set(soru.id, soruyuBicimle({ ...mevcut.get(soru.id), ...soru }));
         }
         const sorular = [...mevcut.values()];
         kalicilastir(ANAHTAR.sorular, sorular);
@@ -181,6 +209,48 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
       });
     },
 
+    devamKaydet(kayit) {
+      setDurum((d) => {
+        const devamEdenler = [kayit, ...d.devamEdenler.filter((k) => k.seansId !== kayit.seansId)]
+          // En fazla on yarım seans tutulur; en eskisi düşer.
+          .slice(0, 10);
+        kalicilastir(ANAHTAR.devamEdenler, devamEdenler);
+        return { ...d, devamEdenler };
+      });
+    },
+
+    devamSil(seansId) {
+      setDurum((d) => {
+        if (!d.devamEdenler.some((k) => k.seansId === seansId)) return d;
+        const devamEdenler = d.devamEdenler.filter((k) => k.seansId !== seansId);
+        kalicilastir(ANAHTAR.devamEdenler, devamEdenler);
+        return { ...d, devamEdenler };
+      });
+    },
+
+    gomuluBankayiEsitle(gomulu, damga) {
+      let ozet: BirlestirmeOzeti = { eklenen: 0, guncellenen: 0, birlesen: 0, silinen: 0 };
+      setDurum((d) => {
+        const sonuc = gomuluBankayiBirlestir(d, gomulu);
+        ozet = sonuc.ozet;
+        kalicilastir(ANAHTAR.sorular, sonuc.sorular);
+        kalicilastir(ANAHTAR.cevaplamalar, sonuc.cevaplamalar);
+        kalicilastir(ANAHTAR.seanslar, sonuc.seanslar);
+        kalicilastir(ANAHTAR.tekrar, sonuc.tekrarKartlari);
+        kalicilastir(ANAHTAR.devamEdenler, sonuc.devamEdenler);
+        return {
+          ...d,
+          sorular: sonuc.sorular,
+          cevaplamalar: sonuc.cevaplamalar,
+          seanslar: sonuc.seanslar,
+          tekrarKartlari: sonuc.tekrarKartlari,
+          devamEdenler: sonuc.devamEdenler,
+        };
+      });
+      yerelYaz(ANAHTAR.bankaDamgasi, damga);
+      return ozet;
+    },
+
     cevapKaydet(girdi) {
       setDurum((d) => {
         const kayit: Cevaplama = {
@@ -233,6 +303,7 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
         cevaplamalar: durum.cevaplamalar,
         seanslar: durum.seanslar,
         tekrarKartlari: durum.tekrarKartlari,
+        devamEdenler: durum.devamEdenler,
         ayarlar: durum.ayarlar,
       };
     },
@@ -245,8 +316,10 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
           cevaplamalar: yedek.cevaplamalar ?? [],
           seanslar: yedek.seanslar ?? [],
           tekrarKartlari: yedek.tekrarKartlari ?? [],
+          devamEdenler: yedek.devamEdenler ?? [],
           ayarlar: { ...VARSAYILAN_AYARLAR, ...(yedek.ayarlar ?? {}) },
         };
+        kalicilastir(ANAHTAR.devamEdenler, yeni.devamEdenler);
         kalicilastir(ANAHTAR.sorular, yeni.sorular);
         kalicilastir(ANAHTAR.cevaplamalar, yeni.cevaplamalar);
         kalicilastir(ANAHTAR.seanslar, yeni.seanslar);
@@ -261,7 +334,8 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
         kalicilastir(ANAHTAR.cevaplamalar, []);
         kalicilastir(ANAHTAR.seanslar, []);
         kalicilastir(ANAHTAR.tekrar, []);
-        return { ...d, cevaplamalar: [], seanslar: [], tekrarKartlari: [] };
+        kalicilastir(ANAHTAR.devamEdenler, []);
+        return { ...d, cevaplamalar: [], seanslar: [], tekrarKartlari: [], devamEdenler: [] };
       });
     },
 
@@ -271,10 +345,11 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
         kalicilastir(ANAHTAR.cevaplamalar, []);
         kalicilastir(ANAHTAR.seanslar, []);
         kalicilastir(ANAHTAR.tekrar, []);
-        return { ...d, sorular: [], cevaplamalar: [], seanslar: [], tekrarKartlari: [] };
+        kalicilastir(ANAHTAR.devamEdenler, []);
+        return { ...d, sorular: [], cevaplamalar: [], seanslar: [], tekrarKartlari: [], devamEdenler: [] };
       });
     },
-  }), [kalicilastir, durum.sorular, durum.cevaplamalar, durum.seanslar, durum.tekrarKartlari, durum.ayarlar]);
+  }), [kalicilastir, durum.sorular, durum.cevaplamalar, durum.seanslar, durum.tekrarKartlari, durum.devamEdenler, durum.ayarlar]);
 
   // `sorular` kapsam ayarına göre süzülmüş listedir; ekranların çoğu bunu
   // kullanır. Soru bankası, yedekleme ve içe aktarma `tumSorular` ile çalışır.
@@ -304,6 +379,7 @@ export async function gomuluBankayiGetir(): Promise<{ sorular: Soru[]; damga: st
     const simdi = Date.now();
     const sorular: Soru[] = (veri.sorular ?? []).map((s: Soru) => ({
       ...s,
+      gomulu: true,
       eklenme: s.eklenme ?? simdi,
     }));
     return { sorular, damga: String(veri.damga ?? '') };
@@ -315,10 +391,6 @@ export async function gomuluBankayiGetir(): Promise<{ sorular: Soru[]; damga: st
 /** Kullanıcının cihazındaki gömülü banka sürümü. */
 export function gomuluBankaDamgasi(): string {
   return yerelOku<string>(ANAHTAR.bankaDamgasi, '');
-}
-
-export function gomuluBankaDamgasiniYaz(damga: string): void {
-  yerelYaz(ANAHTAR.bankaDamgasi, damga);
 }
 
 export function useStore() {
