@@ -76,7 +76,11 @@ export function SoruKarti({
           return (
             <button key={bu} className={sinif} onClick={() => onSec(bu)} disabled={gosterCevap} type="button">
               <span className="harf">{bu}</span>
-              <span>{secenek.metin}</span>
+              <span>
+                {secenek.metin || (soru.gorsel
+                  ? <span className="sessiz">Görsel şık — yukarıdaki kitapçık görüntüsünde</span>
+                  : null)}
+              </span>
             </button>
           );
         })}

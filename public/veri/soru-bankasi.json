@@ -1,6 +1,6 @@
 {
  "surum": 1,
- "damga": "2015-2017-2019-2021-2024-363-facaa818a6",
+ "damga": "2015-2017-2019-2021-2024-365-bd6b237610",
  "kaynak": "TÜRKPATENT Patent ve Marka Vekilliği sınavları (marka bölümleri) ve Marka Kılavuzu çalışma seti",
  "aciklama": "TÜRKPATENT tarafından yayımlanan sınav kitapçıklarından ayrıştırılmıştır. Kişisel sınav hazırlığı amaçlıdır.",
  "yillar": [
@@ -1876,7 +1876,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-isaret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -1913,7 +1913,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -1950,7 +1950,8 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
+   "gorsel": "veri/gorsel/tp-2017-A-k2-63.webp",
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.57,
    "smkMaddeleri": []
@@ -1987,7 +1988,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2024,7 +2025,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-basvuru",
    "topicGuven": 0.35,
    "smkMaddeleri": []
@@ -2061,7 +2062,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -2098,7 +2099,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2135,7 +2136,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-isaret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2172,7 +2173,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2209,7 +2210,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -2245,7 +2246,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "ulus-paris",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -2282,7 +2283,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2319,7 +2320,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -2356,7 +2357,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.94,
    "smkMaddeleri": []
@@ -2393,7 +2394,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.35,
    "smkMaddeleri": []
@@ -2430,7 +2431,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.86,
    "smkMaddeleri": [
@@ -2469,7 +2470,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2506,7 +2507,8 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
+   "gorsel": "veri/gorsel/tp-2017-A-k2-78.webp",
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -2543,7 +2545,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2580,7 +2582,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.36,
    "smkMaddeleri": []
@@ -2617,7 +2619,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.49,
    "smkMaddeleri": []
@@ -2654,7 +2656,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -2691,7 +2693,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2728,7 +2730,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -2765,7 +2767,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-kullanim",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -2802,7 +2804,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -2838,7 +2840,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-ruchan",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -2875,7 +2877,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-sona-erme",
    "topicGuven": 0.29,
    "smkMaddeleri": []
@@ -2912,7 +2914,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -2949,7 +2951,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-kullanim",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -2986,7 +2988,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3023,7 +3025,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-madrid",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -3060,7 +3062,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-madrid",
    "topicGuven": 0.88,
    "smkMaddeleri": []
@@ -3097,7 +3099,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-madrid",
    "topicGuven": 0.79,
    "smkMaddeleri": []
@@ -3134,7 +3136,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3171,7 +3173,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "ci-basvuru",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -3208,7 +3210,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -3244,7 +3246,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "ci-basvuru",
    "topicGuven": 0.19,
    "smkMaddeleri": []
@@ -3281,7 +3283,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "ci-basvuru",
    "topicGuven": 0.66,
    "smkMaddeleri": []
@@ -3318,7 +3320,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305592801,
+   "eklenme": 1791879380959,
    "topicId": "ci-basvuru",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -3355,7 +3357,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-isaret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3392,7 +3394,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3429,7 +3431,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3466,7 +3468,8 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
+   "gorsel": "veri/gorsel/tp-2019-A-k2-64.webp",
    "topicId": "marka-basvuru",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3503,7 +3506,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -3536,13 +3539,50 @@
     },
     {
      "harf": "E",
-     "metin": "Başvuru sahibine ikinci kez eksiklik bildirimi yapılır. 67.Bir başvuru sahibi tarafından, 01.07.2019 tarihinde TÜRKPATENT’e “гüнайдын” ibaresinin tescili talebiyle marka başvurusunda bulunulmuştur. 05.08.2019 tarihinde yapılan şekli inceleme sonucunda Kurum, markada yer alan ibareye ilişkin eksiklik tespit etmiş ve bu eksikliği 15.08.2019 tarihinde başvuru sahibine bildirmiştir. Başvuru sahibi eksikliği giderdiğini belirten cevap dilekçesini 20.09.2019 tarihinde Kuruma sunmuştur. 6769 sayılı SMK’nın Uygulama Yönetmeliğine göre bu süreçle ilgili alınması muhtemel bazı kararlar şunlardır:"
+     "metin": "Başvuru sahibine ikinci kez eksiklik bildirimi yapılır."
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k2-67",
+   "no": 67,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "2. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir başvuru sahibi tarafından, 01.07.2019 tarihinde TÜRKPATENT’e “гüнайдын” ibaresinin tescili talebiyle marka başvurusunda bulunulmuştur. 05.08.2019 tarihinde yapılan şekli inceleme sonucunda Kurum, markada yer alan ibareye ilişkin eksiklik tespit etmiş ve bu eksikliği 15.08.2019 tarihinde başvuru sahibine bildirmiştir. Başvuru sahibi eksikliği giderdiğini belirten cevap dilekçesini 20.09.2019 tarihinde Kuruma sunmuştur. 6769 sayılı SMK’nın Uygulama Yönetmeliğine göre bu süreçle ilgili alınması muhtemel bazı kararlar şunlardır:\n1. Eksiklik bildirimini süresi içinde cevapladığını tespit eder.\n2. Cevap dilekçesinde eksiklik tespit ederse yeni bir eksiklik bildirimi yapar.\n3. Eksiklik nedeniyle başvuru tarihinin değiştirir.\n\nBuna göre Kurum yukarıdaki kararlardan hangisini alır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791879537282,
+   "topicId": "marka-sekli-inceleme",
+   "topicGuven": 0.84,
    "smkMaddeleri": []
   },
   {
@@ -3565,7 +3605,45 @@
     },
     {
      "harf": "C",
-     "metin": "D) 986 E) Osmanlı İmparatorluğu Böreği 69. TÜRKPATENT’e yapılan marka başvuruları üzerine Kurumun yaptığı marka benzerlik araştırması raporunda yer alan, önceki tarihli ve başvuruya konu marka örnekleri ile bu markaların tescil kapsamlarında yer alan mal ve hizmetlere aşağıda yer verilmiştir: Önceki tarihli marka Başvuruya konu marka 1. XYZ tekstil XYZ triko Şapkalar Bereler 2. Multitec Multitech Bilgisayarlar Bisikletler 3. the vernalanga Vernalanga İnşaat hizmetleri Tuğlalar 4. INFINITY Infinnity Yaş pastalar Kuru pastalar 5. Anadolu Grup Anatolia Eğitim hizmetleri Tıbbi hizmetler Araştırma sonuçlarına göre, 6769 sayılı SMK’nın 5/1(ç) bendi kapsamında reddedilmesi gereken markalar aşağıdakilerden hangisinde birlikte verilmiştir? A) 1 ve 4 B) 1 ve 3 C) 2 ve 4"
+     "metin": ""
+    },
+    {
+     "harf": "D",
+     "metin": "986"
+    },
+    {
+     "harf": "E",
+     "metin": "Osmanlı İmparatorluğu Böreği"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791879537282,
+   "gorsel": "veri/gorsel/tp-2019-A-k2-68.webp",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k2-69",
+   "no": 69,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "2. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "TÜRKPATENT’e yapılan marka başvuruları üzerine Kurumun yaptığı marka benzerlik araştırması raporunda yer alan, önceki tarihli ve başvuruya konu marka örnekleri ile bu markaların tescil kapsamlarında yer alan mal ve hizmetlere aşağıda yer verilmiştir: Önceki tarihli marka Başvuruya konu marka\n1. XYZ tekstil XYZ triko Şapkalar Bereler\n2. Multitec Multitech Bilgisayarlar Bisikletler\n3. the vernalanga Vernalanga İnşaat hizmetleri Tuğlalar\n4. INFINITY Infinnity Yaş pastalar Kuru pastalar\n5. Anadolu Grup Anatolia Eğitim hizmetleri Tıbbi hizmetler Araştırma sonuçlarına göre, 6769 sayılı SMK’nın 5/1(ç) bendi kapsamında reddedilmesi gereken markalar\n\naşağıdakilerden hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 4"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 4"
     },
     {
      "harf": "D",
@@ -3576,10 +3654,11 @@
      "metin": "4 ve 5"
     }
    ],
-   "cevap": "E",
-   "eklenme": 1787305594820,
+   "cevap": "A",
+   "eklenme": 1791879537282,
+   "gorsel": "veri/gorsel/tp-2019-A-k2-69.webp",
    "topicId": "marka-mutlak-ret",
-   "topicGuven": 0.69,
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -3614,7 +3693,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -3653,7 +3732,8 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
+   "gorsel": "veri/gorsel/tp-2019-A-k2-71.webp",
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3690,7 +3770,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3727,7 +3807,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3764,7 +3844,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3801,7 +3881,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-kullanim",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3838,7 +3918,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3875,7 +3955,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3912,7 +3992,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.52,
    "smkMaddeleri": []
@@ -3949,7 +4029,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3986,7 +4066,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.49,
    "smkMaddeleri": [
@@ -4026,7 +4106,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -4063,7 +4143,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.89,
    "smkMaddeleri": []
@@ -4100,7 +4180,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -4136,7 +4216,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -4172,7 +4252,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-sona-erme",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -4209,7 +4289,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4246,7 +4326,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4283,7 +4363,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "ortak-dava-mahkeme",
    "topicGuven": 0.68,
    "smkMaddeleri": []
@@ -4320,7 +4400,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -4356,7 +4436,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-madrid",
    "topicGuven": 0.85,
    "smkMaddeleri": []
@@ -4393,7 +4473,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-ruchan",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -4430,7 +4510,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-madrid",
    "topicGuven": 0.51,
    "smkMaddeleri": []
@@ -4467,7 +4547,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-madrid",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4504,7 +4584,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-madrid",
    "topicGuven": 0.28,
    "smkMaddeleri": []
@@ -4541,7 +4621,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-madrid",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -4578,7 +4658,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "ci-turler",
    "topicGuven": 1,
    "smkMaddeleri": []
@@ -4615,7 +4695,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4652,7 +4732,8 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
+   "gorsel": "veri/gorsel/tp-2019-A-k2-98.webp",
    "topicId": "marka-tescil-yenileme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4689,7 +4770,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "ci-tescil-degisiklik",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -4726,7 +4807,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305594820,
+   "eklenme": 1791879537282,
    "topicId": "ortak-talepler-tazminat",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -4763,7 +4844,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-basvuru",
    "topicGuven": 0.28,
    "smkMaddeleri": []
@@ -4800,7 +4881,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -4837,7 +4918,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-isaret",
    "topicGuven": 0.28,
    "smkMaddeleri": []
@@ -4874,7 +4955,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-ruchan",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -4911,7 +4992,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -4948,7 +5029,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4985,7 +5066,8 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
+   "gorsel": "veri/gorsel/tp-2021-A-k2-67.webp",
    "topicId": "uyg-kilavuz",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -5022,7 +5104,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5059,7 +5141,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5096,7 +5178,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.85,
    "smkMaddeleri": [
@@ -5135,7 +5217,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -5172,7 +5254,8 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
+   "gorsel": "veri/gorsel/tp-2021-A-k2-72.webp",
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.36,
    "smkMaddeleri": []
@@ -5209,7 +5292,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5246,7 +5329,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.77,
    "smkMaddeleri": [
@@ -5285,7 +5368,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.86,
    "smkMaddeleri": [
@@ -5324,7 +5407,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -5363,7 +5446,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5400,7 +5483,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5437,7 +5520,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-madrid",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -5474,7 +5557,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-madrid",
    "topicGuven": 0.76,
    "smkMaddeleri": []
@@ -5511,7 +5594,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5548,7 +5631,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.62,
    "smkMaddeleri": [
@@ -5587,7 +5670,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.37,
    "smkMaddeleri": [
@@ -5626,7 +5709,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.63,
    "smkMaddeleri": [
@@ -5666,7 +5749,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.7,
    "smkMaddeleri": [
@@ -5705,7 +5788,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -5744,7 +5827,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -5783,7 +5866,8 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
+   "gorsel": "veri/gorsel/tp-2021-A-k2-88.webp",
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.66,
    "smkMaddeleri": [
@@ -5823,7 +5907,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.58,
    "smkMaddeleri": [
@@ -5863,7 +5947,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -5899,7 +5983,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5936,7 +6020,8 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
+   "gorsel": "veri/gorsel/tp-2021-A-k2-92.webp",
    "topicId": "marka-tescil-yenileme",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -5973,7 +6058,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-lisans-devir",
    "topicGuven": 0.39,
    "smkMaddeleri": []
@@ -6010,7 +6095,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-lisans-devir",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -6047,7 +6132,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -6083,7 +6168,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "ci-turler",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -6120,7 +6205,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "ci-kullanim-denetim",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -6157,7 +6242,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "ci-basvuru",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -6194,7 +6279,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "ci-tescil-degisiklik",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -6231,7 +6316,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305596615,
+   "eklenme": 1791879383146,
    "topicId": "marka-ruchan",
    "topicGuven": 0.34,
    "smkMaddeleri": []

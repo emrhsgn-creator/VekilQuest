@@ -426,3 +426,29 @@ test('bir bölüme iki sütun düşen anahtar (2024: patent 1–30 | 31–60, ma
   const marka = sorular.filter((s) => s.kitapcikNo === 2);
   assert.deepEqual(marka.map((s) => `${s.no}${s.cevap}`), ['1A', '2E', '3D', '4A']);
 });
+
+test('metni görsel olan boş şık bir sonraki şıkkı yutmaz (2019/68–69)', () => {
+  const metin = `
+68. Hangisi tescil edilemez?
+A) Yıldırım
+B)
+(Pantone : 20228C)
+C)
+D) 986
+E) Osmanlı İmparatorluğu Böreği
+69. Hangileri reddedilir?
+A) 1 ve 4
+B) 1 ve 3
+C) 2 ve 4
+D) 3 ve 5
+E) 4 ve 5
+`;
+  const { sorular } = sorulariAyristir(metin);
+  assert.deepEqual(sorular.map((s) => s.no), [68, 69]);
+  assert.deepEqual(sorular[0].secenekler.map((o) => o.metin), ['Yıldırım', '(Pantone : 20228C)', '', '986', 'Osmanlı İmparatorluğu Böreği']);
+});
+
+test('numaradan sonra boşluksuz büyük harf ("67.Bir başvuru…") soru başıdır', () => {
+  const metin = `66. Birinci?\nA) a\nB) b\nC) c\nD) d\nE) e\n67.Bir başvuru sahibi?\nA) a\nB) b\nC) c\nD) d\nE) e\n`;
+  assert.deepEqual(sorulariAyristir(metin).sorular.map((s) => s.no), [66, 67]);
+});

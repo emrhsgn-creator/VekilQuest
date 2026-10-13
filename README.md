@@ -69,9 +69,9 @@ Ayrıntılar ve sorun giderme: **[docs/SORU-YUKLEME.md](docs/SORU-YUKLEME.md)**
 
 ### Soru bankası ve telif
 
-Uygulamayla birlikte **363 soruluk bir banka dağıtılıyor** (`public/veri/soru-bankasi.json`):
+Uygulamayla birlikte **365 soruluk bir banka dağıtılıyor** (`public/veri/soru-bankasi.json`):
 TÜRKPATENT'in kendi sitesinde yayımladığı 2015, 2017, 2019, 2021 Genel Yeterlik ve 2024 Marka
-Vekilliği sınav kitapçıklarının marka bölümleri (228 soru) ile Marka İnceleme Kılavuzu'na dayanan
+Vekilliği sınav kitapçıklarının marka bölümleri (230 soru) ile Marka İnceleme Kılavuzu'na dayanan
 135 soruluk çalışma seti. Resimli/tablolu soruların kitapçıktan kesilmiş görselleri
 `public/veri/gorsel/` altında.
 Amaç kişisel sınav hazırlığı; soruların hakları Türk Patent ve Marka Kurumuna aittir.
@@ -108,12 +108,14 @@ Kitapçık düzeni yıldan yıla değişiyor ve naif bir “satır başındaki n
 | Kitapçık iki bölümlü (60 + 40 soru); biri 1'den, biri 61'den başlıyor | Basılı numaralar esas alınır, süreklilik ölçülüp kaydırma buna göre yapılır |
 | Cevap anahtarı bazen 5 sütun sürekli (1-100), bazen bölüm başına paralel (2015) | Numaralar benzersizse tek harita, tekrar ediyorsa sütun-bölüm eşlemesi |
 | Gövdesi görsel olan sorulardan artakalan seçenek blokları | Numarası olmayan bloklar soru sayılmaz — yoksa **sonraki bütün cevaplar kayar** |
+| Metni görsel olan boş şık (`C)` hemen altında `D) 986`) | Şık işaretinin önündeki boşluk tüketilmeden (lookbehind) aranır; aksi hâlde sonraki şık kaçıyor, şıklar sonraki sorudan ödünç alınıyor ve o soru kayboluyordu (2019/68–69) |
+| Numaradan sonra boşluksuz büyük harf (2019: `67.Bir başvuru…`) | Soru başı sayılır |
 | Sayfa altlığı (“Diğer sayfaya geçiniz.”) pdfjs'te parçalara bölünüp son seçeneğe yapışıyor | Sayfanın üst/alt kenar bandındaki metin konumundan atılır (`src/lib/pdfMetin.mjs`) |
 | Tireden sonra boşluksuz numara (2015: `15-6098 sayılı…`) | Tanınır; `1-1 1-2` gibi görsel numaraları tanınmaz |
 | 2024: patent ve marka kitapçığı tek PDF'te, anahtar 4 sütun (patent 1–30 · 31–60, marka 1–30 · 31–60) | Sütun sayısı bölüm sayısının katıysa ardışık sütunlar aynı bölüme bağlanır |
 
-Ölçülen sonuç (2015, 2017, 2019, 2021, 2024 A kitapçıkları): **492 soru ayrıştırıldı, 492'sinin
-cevabı eşleşti.** Bunların **228'i marka vekilliği kapsamında**; patent bölümleri içe aktarılmaz.
+Ölçülen sonuç (2015, 2017, 2019, 2021, 2024 A kitapçıkları): marka kitapçıklarının
+**230 sorusunun tamamı ayrıştırıldı ve cevabı eşleşti**; patent bölümleri içe aktarılmaz.
 
 ### Öncüllü sorular, resimli ve tablolu sorular
 
@@ -132,8 +134,9 @@ PDF metni tek paragrafa dökülüyor. İki ek adım bunu düzeltir:
   ```
 
   Soru başları sütun kenarındaki numaralardan bulunur ve JSON'daki sırayla eşlenir; bölgede
-  raster görsel, tablo çizgisi ya da hizalı sütunlu metin varsa kesilir. 2024'te 60/60 soru
-  eşleşti, 13'ü kesildi; 2015'te 50/50, 2'si.
+  raster görsel, tablo çizgisi ya da hizalı sütunlu metin varsa kesilir. Bütün sınavlarda
+  her soru kitapçıktaki yerine eşlendi; 26 soru kesildi (2015: 2, 2017: 2, 2019: 5, 2021: 4,
+  2024: 13).
 
 Otomatik sınıflandırmanın açıkça yanıldığı sorular `tools/konu-duzeltmeleri.json` ile elle
 düzeltilir; `npm run banka:uret` bunu uygular.
@@ -163,7 +166,7 @@ elenmez — o sorular marka adayının da kapsamındadır.
 | 2015 | PATENT | 25 | elendi |
 | 2015 | MARKA · ORTAK | 25 · 25 | alındı |
 | 2017 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
-| 2019 | 1. kitapçık · 2. kitapçık | 59 · 38 | elendi · alındı |
+| 2019 | 1. kitapçık · 2. kitapçık | 59 · 40 | elendi · alındı |
 | 2021 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
 | 2024 | Patent Vekilliği · Marka Vekilliği | 60 · 60 | elendi · alındı |
 

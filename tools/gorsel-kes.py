@@ -149,10 +149,11 @@ class Sayfa:
         """Sütun kenarındaki soru numaraları ve bölüm başlıkları."""
         cikti = []
         for sutun, x0, s in self.numara_adaylari():
-            # Numaralar sağa hizalı basılabiliyor: "9." ile "10." arasında
-            # bir rakam genişliği (~5pt) fark var. Öncüller ise ~20pt içeride.
+            # Numaralar sağa hizalı basılabiliyor: "9.", "10." ve "100."
+            # arasında birer rakam genişliği (~5–7pt) fark var. Öncüller ise
+            # ~20pt içeride.
             kenar = kenarlar.get((self.tek_sutun, sutun))
-            if kenar is None or not (kenar - 3 <= x0 <= kenar + 9):
+            if kenar is None or not (kenar - 9 <= x0 <= kenar + 9):
                 continue
             e = NUMARA.match(s["metin"])
             if e:

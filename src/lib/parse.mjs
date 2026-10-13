@@ -117,8 +117,12 @@ export function metniTemizle(ham) {
 /* ────────────────────────────────── seçenek kümeleri ────────────────────── */
 
 // Harften hemen önce boşluk/satır başı olmalı: "KİTAPÇIĞI (A)" gibi sayfa
-// başlıklarındaki parantezli harfler seçenek sanılmasın.
-const SECENEK_ISARETI = /(?:^|[ \t\n])([A-E])\s*[).]\s+/g;
+// başlıklarındaki parantezli harfler seçenek sanılmasın. Bu koşul geriye
+// bakışla (lookbehind) yazılıyor, tüketilmiyor: metni görsel olan boş bir
+// şıkkın ("C)\nD) 986") ardındaki satır sonu bir önceki eşleşmenin kuyruğunda
+// kalınca sonraki şık hiç bulunmuyor, şıklar bir sonraki sorudan ödünç
+// alınıyor ve o soru kayboluyordu (2019/68–69).
+const SECENEK_ISARETI = /(?<=^|[ \t\n])([A-E])\s*[).]\s+/g;
 const SIRA = ['A', 'B', 'C', 'D', 'E'];
 
 /**
@@ -192,11 +196,12 @@ function kuyrukGurultusunuAt(parca) {
 /**
  * Satır başındaki "12.", "12-", "12)" biçimindeki numara adayları.
  * 2015 kitapçığında tireden sonra boşluk bırakılmayan sorular var
- * ("15-6098 sayılı…", "25-Yoğun…"); tire için boşluk zorunlu değil. Tireden
+ * ("15-6098 sayılı…", "25-Yoğun…"), 2019'da noktadan sonra boşluksuz olan
+ * ("67.Bir başvuru…"); ayraçtan sonra boşluk zorunlu değil. Tireden
  * sonra kısa bir sayı gelmesi ise numara sayılmaz: tasarım görsel numaraları
  * ("1-1 1-2 2-1") seçenek metninin içinde satır başına düşebiliyor.
  */
-const NUMARA_DESENI = String.raw`(?:^|\n)\s*(\d{1,3})\s*(?:[.)]\s+|-(?:\s+|(?=[\p{L}"“]|\d{3})))`;
+const NUMARA_DESENI = String.raw`(?:^|\n)\s*(\d{1,3})\s*(?:[.)](?:\s+|(?=\p{Lu}))|-(?:\s+|(?=[\p{L}"“]|\d{3})))`;
 const NUMARA_ADAYI = new RegExp(NUMARA_DESENI, 'gu');
 
 function numaraAdaylari(metin) {
