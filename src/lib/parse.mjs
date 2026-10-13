@@ -78,8 +78,10 @@ const GURULTU_DESENLERI = [
   /t\.?c\.? kimlik numarasi/,
   /^(adi soyadi|salon no|sira no|imza)$/,
   /adayin (adi|soyadi)/,
-  /diger sayfaya geciniz/,
-  /^test bitti/,
+  /(diger|arka|sonraki) sayfaya geciniz/,
+  /sorularina geciniz|sorulara geciniz/,
+  /^test(iniz)? bitti/,
+  /cevaplarinizi kontrol ediniz/,
   /sinav baslamadan/,
   /^sayfa \d+/,
   /^turk patent ve marka kurumu$/,
@@ -156,14 +158,46 @@ function secenekKumeleriniBul(metin) {
 function seceneklereBol(metin, dizi, son) {
   return dizi.map((isaret, i) => {
     const bitis = dizi[i + 1] ? dizi[i + 1].bas : son;
-    return { harf: isaret.harf, metin: metin.slice(isaret.govdeBas, bitis).replace(/\s+/g, ' ').trim() };
+    return { harf: isaret.harf, metin: kuyrukGurultusunuAt(metin.slice(isaret.govdeBas, bitis)).replace(/\s+/g, ' ').trim() };
   });
+}
+
+/**
+ * Bir parçanın sonuna yapışan sayfa artıklarını atar: tek başına kitapçık
+ * harfi ("A"), sütun sonuna düşen bölüm başlığı ("ORTAK SORULAR"), "Test
+ * bitti" gibi satırlar. Bunlar sayfa başlığı olarak basıldığı için bir sonraki
+ * sorunun değil, o sütundaki son seçeneğin arkasına ekleniyor.
+ */
+const KUYRUK_GURULTUSU = [
+  /^[a-e]$/,
+  /^(patent|marka|tasarim|cografi isaret|ortak)( sorulari?| sorulara geciniz)?$/,
+  /^test(iniz)? bitti/,
+  /^cevaplarinizi kontrol/,
+  /^sinavda uyulmasi gereken/,
+  /sinavi$/,
+];
+
+function kuyrukGurultusunuAt(parca) {
+  const satirlar = parca.split('\n');
+  while (satirlar.length > 1) {
+    const son = katla(satirlar[satirlar.length - 1]);
+    if (son && !KUYRUK_GURULTUSU.some((d) => d.test(son))) break;
+    satirlar.pop();
+  }
+  return satirlar.join('\n');
 }
 
 /* ─────────────────────────────────── numaralar ──────────────────────────── */
 
-/** Satır başındaki "12.", "12-", "12)" biçimindeki numara adayları. */
-const NUMARA_ADAYI = /(?:^|\n)\s*(\d{1,3})\s*[-.)]\s+/g;
+/**
+ * Satır başındaki "12.", "12-", "12)" biçimindeki numara adayları.
+ * 2015 kitapçığında tireden sonra boşluk bırakılmayan sorular var
+ * ("15-6098 sayılı…", "25-Yoğun…"); tire için boşluk zorunlu değil. Tireden
+ * sonra kısa bir sayı gelmesi ise numara sayılmaz: tasarım görsel numaraları
+ * ("1-1 1-2 2-1") seçenek metninin içinde satır başına düşebiliyor.
+ */
+const NUMARA_DESENI = String.raw`(?:^|\n)\s*(\d{1,3})\s*(?:[.)]\s+|-(?:\s+|(?=[\p{L}"“]|\d{3})))`;
+const NUMARA_ADAYI = new RegExp(NUMARA_DESENI, 'gu');
 
 function numaraAdaylari(metin) {
   NUMARA_ADAYI.lastIndex = 0;
@@ -316,7 +350,7 @@ function bolumdenSorular(bolumMetni, bolumlereAyrilabilir = false) {
     sonNo = no;
 
     const govdeBas = aday ? aday.govdeBas : oncekiSon;
-    const metin = bolumMetni.slice(govdeBas, govdeSonu).replace(/\s+/g, ' ').trim();
+    const metin = kuyrukGurultusunuAt(bolumMetni.slice(govdeBas, govdeSonu)).replace(/\s+/g, ' ').trim();
     const secenekler = seceneklereBol(bolumMetni, dizi, sonrakiSinir(bolumMetni, dizi));
 
     const gorselIcerikli = metin.length < 15;
@@ -348,7 +382,7 @@ function bolumdenSorular(bolumMetni, bolumlereAyrilabilir = false) {
 function sonrakiSinir(metin, dizi) {
   const sonIsaret = dizi[dizi.length - 1];
   const kalan = metin.slice(sonIsaret.govdeBas);
-  const sonraki = /(?:^|\n)\s*\d{1,3}\s*[-.)]\s+/.exec(kalan);
+  const sonraki = new RegExp(NUMARA_DESENI, 'u').exec(kalan);
   return sonIsaret.govdeBas + (sonraki ? sonraki.index : kalan.length);
 }
 
@@ -525,6 +559,18 @@ export function belgeyiAyristir(kitapcikMetni, ayriAnahtarMetni = '') {
 
   // Sütunlu anahtarda sütun sırası, sorulardaki bölüm sırasına karşılık gelir.
   const bolumSirasi = [...new Set(sorular.map((s) => s.bolum ?? `kitapçık ${s.kitapcikNo ?? 1}`))];
+
+  // Bir bölüm birden çok sütuna yayılmış olabilir: 2024 anahtarında patent
+  // 1–30 | 31–60, marka 1–30 | 31–60 olmak üzere dört sütun var. Sütun sayısı
+  // bölüm sayısının katıysa ardışık sütunlar aynı bölüme aittir.
+  if (anahtar.sutunlar.length > bolumSirasi.length
+      && bolumSirasi.length > 0
+      && anahtar.sutunlar.length % bolumSirasi.length === 0) {
+    const kat = anahtar.sutunlar.length / bolumSirasi.length;
+    anahtar.sutunlar = bolumSirasi.map((_, b) => new Map(
+      anahtar.sutunlar.slice(b * kat, b * kat + kat).flatMap((m) => [...m]),
+    ));
+  }
 
   const cikti = sorular.map((soru) => {
     let harf = '';

@@ -5,6 +5,8 @@
  * indirilsin diye dinamik import ediliyor. Böylece ilk açılış hafif kalıyor.
  */
 
+import { sayfaMetni } from './pdfMetin.mjs';
+
 type PdfModulu = typeof import('pdfjs-dist');
 let pdfjsSozu: Promise<PdfModulu> | null = null;
 
@@ -33,27 +35,7 @@ export async function pdfMetniCikar(
   const sayfalar: string[] = [];
 
   for (let i = 1; i <= belge.numPages; i++) {
-    const sayfa = await belge.getPage(i);
-    const icerik = await sayfa.getTextContent();
-
-    // PDF metin parçaları konuma göre gelir; satır yapısını Y koordinatından
-    // yeniden kuruyoruz, aksi hâlde seçenekler tek satıra yapışıyor.
-    const satirlar: string[] = [];
-    let sonY: number | null = null;
-    let satir = '';
-    for (const oge of icerik.items) {
-      if (!('str' in oge)) continue;
-      const y = Math.round((oge.transform as number[])[5]);
-      if (sonY !== null && Math.abs(y - sonY) > 2) {
-        satirlar.push(satir.trim());
-        satir = '';
-      }
-      satir += oge.str + (oge.hasEOL ? ' ' : '');
-      sonY = y;
-    }
-    if (satir.trim()) satirlar.push(satir.trim());
-
-    sayfalar.push(satirlar.join('\n'));
+    sayfalar.push(await sayfaMetni(await belge.getPage(i)));
     ilerleme?.(i, belge.numPages);
   }
 

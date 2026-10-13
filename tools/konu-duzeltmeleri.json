@@ -1,0 +1,25 @@
+{
+  "_aciklama": "Otomatik sınıflandırmanın açıkça yanlış bıraktığı sorular için elle konu ataması. npm run banka:uret bu dosyayı uygular; atanan konu güven 1 ile işaretlenir ve uygulamada yeniden sınıflandırmada da korunur.",
+  "konular": {
+    "tp-2024-A-marka-1": "marka-basvuru",
+    "tp-2024-A-marka-2": "marka-sekli-inceleme",
+    "tp-2024-A-marka-3": "marka-nispi-ret",
+    "tp-2024-A-marka-6": "marka-basvuru",
+    "tp-2024-A-marka-7": "marka-sekli-inceleme",
+    "tp-2024-A-marka-9": "marka-mutlak-ret",
+    "tp-2024-A-marka-29": "marka-tescil-yenileme",
+    "tp-2024-A-marka-31": "marka-hak-kapsam",
+    "tp-2024-A-marka-33": "marka-isaret",
+    "tp-2024-A-marka-34": "marka-tescil-yenileme",
+    "tp-2024-A-marka-35": "ci-tescil-degisiklik",
+    "tp-2024-A-marka-38": "ulus-trips",
+    "tp-2024-A-marka-39": "ci-basvuru",
+    "tp-2024-A-marka-41": "tasarim-basvuru",
+    "tp-2024-A-marka-42": "tasarim-inceleme-tescil",
+    "tp-2024-A-marka-43": "ulus-siniflandirma",
+    "tp-2024-A-marka-45": "tasarim-sure-yenileme",
+    "tp-2024-A-marka-46": "tasarim-inceleme-tescil",
+    "tp-2024-A-marka-48": "vekil-kurum",
+    "tp-2024-A-marka-51": "temel-medeni"
+  }
+}

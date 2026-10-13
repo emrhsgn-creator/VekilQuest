@@ -379,3 +379,50 @@ CEVAP: B
   assert.equal(sorular[0].bolum, 'ORTAK');
   assert.equal(sorular[0].cevap, 'B');
 });
+
+test('tireden sonra boşluksuz numara ("15-6098 sayılı…") soru başı sayılır, "1-1" sayılmaz', () => {
+  const metin = `
+14- Birinci soru hangisidir?
+A) Bir
+B) İki
+C) Üç
+D) Dört
+E) Beş
+15-6098 sayılı Kanuna göre hangisi yanlıştır?
+A) Bir
+B) İki
+C) Üç
+D) Dört
+E) Görseller:
+1-1 1-2 2-1
+Toplam ücret: 400 TL
+`;
+  const { sorular } = sorulariAyristir(metin);
+  assert.deepEqual(sorular.map((s) => s.no), [14, 15]);
+  assert.match(sorular[1].metin, /^6098 sayılı/);
+  assert.match(sorular[1].secenekler[4].metin, /1-1 1-2 2-1 Toplam ücret: 400 TL$/);
+});
+
+test('sütun sonundaki kitapçık harfi ve bölüm başlığı seçeneğe eklenmez', () => {
+  const metin = `
+1. Soru nedir?
+A) Bir
+B) İki
+C) Üç
+D) Dört
+E) Beş
+ORTAK SORULAR
+A
+`;
+  const { sorular } = sorulariAyristir(metin);
+  assert.equal(sorular[0].secenekler[4].metin, 'Beş');
+});
+
+test('bir bölüme iki sütun düşen anahtar (2024: patent 1–30 | 31–60, marka 1–30 | 31–60)', () => {
+  const soru = (n) => `${n}. Soru ${n} nedir?\nA) a\nB) b\nC) c\nD) d\nE) e\n`;
+  const kitapcik = (ad) => `AÇIKLAMALAR\n${ad} kitapçığı\n${[1, 2, 3, 4].map(soru).join('')}`;
+  const anahtar = 'CEVAP ANAHTARI (A)\n1. E 3. A 1. A 3. D\n2. B 4. B 2. E 4. A\n';
+  const { sorular } = belgeyiAyristir(`${kitapcik('Patent')}\n${kitapcik('Marka')}\n${anahtar}`);
+  const marka = sorular.filter((s) => s.kitapcikNo === 2);
+  assert.deepEqual(marka.map((s) => `${s.no}${s.cevap}`), ['1A', '2E', '3D', '4A']);
+});

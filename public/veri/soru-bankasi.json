@@ -1,13 +1,14 @@
 {
  "surum": 1,
- "damga": "2015-2017-2019-2021-301",
- "kaynak": "TÜRKPATENT Patent ve Marka Vekilliği Genel Yeterlik Sınavı — marka bölümleri",
+ "damga": "2015-2017-2019-2021-2024-363-facaa818a6",
+ "kaynak": "TÜRKPATENT Patent ve Marka Vekilliği sınavları (marka bölümleri) ve Marka Kılavuzu çalışma seti",
  "aciklama": "TÜRKPATENT tarafından yayımlanan sınav kitapçıklarından ayrıştırılmıştır. Kişisel sınav hazırlığı amaçlıdır.",
  "yillar": [
   2015,
   2017,
   2019,
-  2021
+  2021,
+  2024
  ],
  "sorular": [
   {
@@ -42,7 +43,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -79,7 +80,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -115,7 +116,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-ruchan",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -148,11 +149,11 @@
     },
     {
      "harf": "E",
-     "metin": "Mal veya hizmet listesi başvuru anında sunulmazsa, başvuru şeklen reddedilir ve başvuru sahibine eksikliği gidermesi için iki ay süre verilir. MARKA SORULARI A"
+     "metin": "Mal veya hizmet listesi başvuru anında sunulmazsa, başvuru şeklen reddedilir ve başvuru sahibine eksikliği gidermesi için iki ay süre verilir."
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-basvuru",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -189,7 +190,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.89,
    "smkMaddeleri": []
@@ -226,7 +227,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -259,11 +260,11 @@
     },
     {
      "harf": "E",
-     "metin": "KARİTE ibaresi tescili talep edilen mallar için tanımlayıcı nitelik taşıdığından ve şekil unsuru da tropik ağacın fotoğrafı olduğundan başvuru reddedilir. A"
+     "metin": "KARİTE ibaresi tescili talep edilen mallar için tanımlayıcı nitelik taşıdığından ve şekil unsuru da tropik ağacın fotoğrafı olduğundan başvuru reddedilir."
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -276,7 +277,7 @@
    "bolum": "MARKA",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "Başvuruya konu işaretin, tescil tarihinden önce başvuru kapsamındaki mallarla ilgili olarak kullanılması ve bu kullanım sonucu ayırt edici nitelik kazanması, aşağıdaki mutlak ret nedenlerinden hangilerini ortadan kaldırmaz? 1. Başvurunun malı nitelemesi 2. Başvurunun malın niteliği konusunda yanıltıcı olması 3. Başvurunun ayırt edici nitelikten yoksun olması 4. Başvurunun önceden tescilli bir marka ile aynı olması 5. Başvurunun teknik bir sonucu elde etmek için zorunlu olan şekilden oluşması",
+   "metin": "Başvuruya konu işaretin, tescil tarihinden önce başvuru kapsamındaki mallarla ilgili olarak kullanılması ve bu kullanım sonucu ayırt edici nitelik kazanması, aşağıdaki mutlak ret nedenlerinden hangilerini ortadan kaldırmaz?\n1. Başvurunun malı nitelemesi\n2. Başvurunun malın niteliği konusunda yanıltıcı olması\n3. Başvurunun ayırt edici nitelikten yoksun olması\n4. Başvurunun önceden tescilli bir marka ile aynı olması\n5. Başvurunun teknik bir sonucu elde etmek için zorunlu olan şekilden oluşması",
    "secenekler": [
     {
      "harf": "A",
@@ -300,7 +301,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.78,
    "smkMaddeleri": []
@@ -337,7 +338,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -374,7 +375,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -407,11 +408,11 @@
     },
     {
      "harf": "E",
-     "metin": "Tescilsiz şekil markasının eskiye dayalı kullanımı A"
+     "metin": "Tescilsiz şekil markasının eskiye dayalı kullanımı"
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.42,
    "smkMaddeleri": []
@@ -448,7 +449,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -460,7 +461,7 @@
    "bolum": "MARKA",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "A firması TPE’ye bir marka tescil başvurusu yapmıştır. Başvuru, mutlak ret nedenleri kapsamında incelenmiş ve 12.03.2015 tarihli Resmi Marka Bülteni’nde kısmen yayımlanmıştır. Başvuru sahibi reddedilen mallar için süresinde karara itiraz etmiştir. İtiraz, Yeniden İnceleme ve Değerlendirme Kurulu (YİDK) tarafından incelenmiş, 20.05.2015 tarihinde karar verilmiştir. Söz konusu YİDK kararı 25.05.2015 tarihinde firmaya tebliğ edilmiştir. Başvurunun tescil süreciyle ilgili bazı bilgiler şöyledir: 1. YİDK’nın itirazı reddetmesi halinde, YİDK karar tarihi itibarıyla, 12.03.2015 tarihli Resmi Marka Bülteni’nde yayınlanmış mallar için tescil kararı kesin hale gelir. 2. YİDK yayınlanmış mallar açısından da başvuruyu mutlak ret nedenleri uyarınca resen reddetme yetkisine sahiptir. 3. YİDK’nın itirazı reddetmesi halinde, A firmasının YİDK kararına karşı yetkili mahkemede dava açması için son gün 20.07.2015’tir. 4. YİDK’nın itirazı kısmen kabul etmesi halinde bu karar, itirazın kabul edilmediği mallar için TPE nezdindeki işlemler açısından nihai karardır. Buna göre, başvurunun itiraz ve tescil süreciyle ilgili doğru bilgiler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "A firması TPE’ye bir marka tescil başvurusu yapmıştır. Başvuru, mutlak ret nedenleri kapsamında incelenmiş ve 12.03.2015 tarihli Resmi Marka Bülteni’nde kısmen yayımlanmıştır. Başvuru sahibi reddedilen mallar için süresinde karara itiraz etmiştir. İtiraz, Yeniden İnceleme ve Değerlendirme Kurulu (YİDK) tarafından incelenmiş, 20.05.2015 tarihinde karar verilmiştir. Söz konusu YİDK kararı 25.05.2015 tarihinde firmaya tebliğ edilmiştir. Başvurunun tescil süreciyle ilgili bazı bilgiler şöyledir:\n1. YİDK’nın itirazı reddetmesi halinde, YİDK karar tarihi itibarıyla, 12.03.2015 tarihli Resmi Marka Bülteni’nde yayınlanmış mallar için tescil kararı kesin hale gelir.\n2. YİDK yayınlanmış mallar açısından da başvuruyu mutlak ret nedenleri uyarınca resen reddetme yetkisine sahiptir.\n3. YİDK’nın itirazı reddetmesi halinde, A firmasının YİDK kararına karşı yetkili mahkemede dava açması için son gün 20.07.2015’tir.\n4. YİDK’nın itirazı kısmen kabul etmesi halinde bu karar, itirazın kabul edilmediği mallar için TPE nezdindeki işlemler açısından nihai karardır.\n\nBuna göre, başvurunun itiraz ve tescil süreciyle ilgili doğru bilgiler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -484,7 +485,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.73,
    "smkMaddeleri": []
@@ -521,7 +522,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -534,7 +535,7 @@
    "bolum": "MARKA",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "A firması, CANMERT ibaresinin tescili amacıyla 29., 30. ve 31. sınıflarda yer alan mallar için başvuruda bulunmuştur. TPE’de mutlak ret nedenleri kapsamında yapılan inceleme sonucunda, başvuru 31. sınıfa dahil mallar yönünden reddedilmiş, kalan mallar için 12.04.2015 tarihli Resmi Marka Bülteni’nde yayımlanmıştır. Söz konusu kısmi ret kararı 30.03.2015 tarihinde verilmiş ve 08.04.2015 tarihinde firmaya tebliğ edilmiştir. Bu süreçle ilgili; 1. Başvuru sahibinin karara itiraz etmesi için son tarih 08.06.2015’tir. 2. Yayına itiraz süreci, 08.04.2015’te başlar. 3. Başvuru sahibinin karara itiraz süresi 30.03.2015’te başlar. 4. Üçüncü kişilerin, başvurunun yayınına itiraz etmesi için son tarih 12.07.2015’tir. ifadelerinden doğru olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "A firması, CANMERT ibaresinin tescili amacıyla 29., 30. ve 31. sınıflarda yer alan mallar için başvuruda bulunmuştur. TPE’de mutlak ret nedenleri kapsamında yapılan inceleme sonucunda, başvuru 31. sınıfa dahil mallar yönünden reddedilmiş, kalan mallar için 12.04.2015 tarihli Resmi Marka Bülteni’nde yayımlanmıştır. Söz konusu kısmi ret kararı 30.03.2015 tarihinde verilmiş ve 08.04.2015 tarihinde firmaya tebliğ edilmiştir. Bu süreçle ilgili;\n1. Başvuru sahibinin karara itiraz etmesi için son tarih 08.06.2015’tir.\n2. Yayına itiraz süreci, 08.04.2015’te başlar.\n3. Başvuru sahibinin karara itiraz süresi 30.03.2015’te başlar.\n4. Üçüncü kişilerin, başvurunun yayınına itiraz etmesi için son tarih 12.07.2015’tir. ifadelerinden doğru olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -554,11 +555,11 @@
     },
     {
      "harf": "E",
-     "metin": "3 ve 4 A"
+     "metin": "3 ve 4"
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -571,7 +572,7 @@
    "bolum": "MARKA",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "Marka tescil başvurularının yayınına karşı üçüncü kişi görüşü sunulması işlemiyle ilgili bazı ifadeler aşağıda verilmiştir: 1. Üçüncü kişi görüşleri, başvurunun yayınından itibaren üç ay içinde sunulmalıdır. 2. Başvurunun eskiye dayalı kullanım gerekçesiyle reddedilmesi gerektiği iddiası, üçüncü kişi görüşlerinde ileri sürülebilir. 3. Üçüncü kişi görüşlerini sunanlar TPE nezdindeki işlemlere taraf olamaz. 4. Başvurunun kamu düzenine aykırılık gerekçesiyle reddedilmesi gerektiği iddiası, üçüncü kişi görüşlerinde ileri sürülebilir. Buna göre, üçüncü kişi görüşüyle ilgili doğru olan ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Marka tescil başvurularının yayınına karşı üçüncü kişi görüşü sunulması işlemiyle ilgili bazı ifadeler aşağıda verilmiştir:\n1. Üçüncü kişi görüşleri, başvurunun yayınından itibaren üç ay içinde sunulmalıdır.\n2. Başvurunun eskiye dayalı kullanım gerekçesiyle reddedilmesi gerektiği iddiası, üçüncü kişi görüşlerinde ileri sürülebilir.\n3. Üçüncü kişi görüşlerini sunanlar TPE nezdindeki işlemlere taraf olamaz.\n4. Başvurunun kamu düzenine aykırılık gerekçesiyle reddedilmesi gerektiği iddiası, üçüncü kişi görüşlerinde ileri sürülebilir.\n\nBuna göre, üçüncü kişi görüşüyle ilgili doğru olan ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -595,7 +596,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.19,
    "smkMaddeleri": []
@@ -632,7 +633,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "ulus-trips",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -645,7 +646,7 @@
    "bolum": "MARKA",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda markaların hükümsüzlüğü ile ilgili ifadeler yer almaktadır: 1. Marka, sahibinin davranışları nedeniyle mal ve hizmetler için yaygın bir ad haline gelmişse hükümsüz kılınabilir. 2. Markanın, tescil kapsamındaki mal ve hizmetlerin bir bölümü bakımından kısmi hükümsüzlüğü mümkün değildir. 3. Markanın hükümsüzlüğüne ilişkin kararın sonuçları geçmişe etkilidir. 4. 556 sayılı KHK’da sayılan nispi ret nedenlerine dayanılarak hükümsüzlük kararı verilemez. 556 sayılı KHK’ya göre, markaların hükümsüzlüğüyle ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Aşağıda markaların hükümsüzlüğü ile ilgili ifadeler yer almaktadır:\n1. Marka, sahibinin davranışları nedeniyle mal ve hizmetler için yaygın bir ad haline gelmişse hükümsüz kılınabilir.\n2. Markanın, tescil kapsamındaki mal ve hizmetlerin bir bölümü bakımından kısmi hükümsüzlüğü mümkün değildir.\n3. Markanın hükümsüzlüğüne ilişkin kararın sonuçları geçmişe etkilidir.\n4. 556 sayılı KHK’da sayılan nispi ret nedenlerine dayanılarak hükümsüzlük kararı verilemez.\n\n556 sayılı KHK’ya göre, markaların hükümsüzlüğüyle ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -669,7 +670,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -702,11 +703,11 @@
     },
     {
      "harf": "E",
-     "metin": "24 A"
+     "metin": "24"
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-madrid",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -743,7 +744,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "ortak-talepler-tazminat",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -756,7 +757,7 @@
    "bolum": "MARKA",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda tescilli bir markanın konu edilebileceği hukuki işlemlerle ilgili ifadeler yer almaktadır: 1. Tescilli bir marka, işletmeden bağımsız olarak teminat gösterilemez. 2. Tescilli bir marka, işletmeden bağımsız olarak haciz edilebilir. 3. Tescilli bir marka, tescil edildiği malların bir kısmı için lisans sözleşmesine konu olabilir. 4. Devir, tarafların talebi olmaksızın sicile kaydedilir ve yayımlanır. 556 sayılı KHK’ya göre, tescilli bir markanın konu edilebileceği hukuki işlemlerle ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Aşağıda tescilli bir markanın konu edilebileceği hukuki işlemlerle ilgili ifadeler yer almaktadır:\n1. Tescilli bir marka, işletmeden bağımsız olarak teminat gösterilemez.\n2. Tescilli bir marka, işletmeden bağımsız olarak haciz edilebilir.\n3. Tescilli bir marka, tescil edildiği malların bir kısmı için lisans sözleşmesine konu olabilir.\n4. Devir, tarafların talebi olmaksızın sicile kaydedilir ve yayımlanır.\n\n556 sayılı KHK’ya göre, tescilli bir markanın konu edilebileceği hukuki işlemlerle ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -780,7 +781,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-lisans-devir",
    "topicGuven": 0.73,
    "smkMaddeleri": []
@@ -817,7 +818,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-lisans-devir",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -850,11 +851,11 @@
     },
     {
      "harf": "E",
-     "metin": "Markanın yalnızca ihracat amacıyla üretilen mallar üzerinde kullanılması A"
+     "metin": "Markanın yalnızca ihracat amacıyla üretilen mallar üzerinde kullanılması"
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -866,7 +867,7 @@
    "bolum": "MARKA",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda markanın bölünmesiyle ilgili ifadeler yer almaktadır: 1. Bölünme sonucunda oluşan başvuruların her birine ayrı numara verilir. 2. Bölünme sonucunda malların ayrı, hizmetlerin ayrı başvurulara dağıtılması zorunludur. 3. Tescilli markalar bölünme işlemine konu olabilir. 4. Bölünmüş başvurular ilk başvurunun rüçhan hakkına sahip olur. 556 sayılı KHK’nın Uygulama Şeklini Gösterir Yönetmeliğe göre, markanın bölünmesiyle ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Aşağıda markanın bölünmesiyle ilgili ifadeler yer almaktadır:\n1. Bölünme sonucunda oluşan başvuruların her birine ayrı numara verilir.\n2. Bölünme sonucunda malların ayrı, hizmetlerin ayrı başvurulara dağıtılması zorunludur.\n3. Tescilli markalar bölünme işlemine konu olabilir.\n4. Bölünmüş başvurular ilk başvurunun rüçhan hakkına sahip olur.\n\n556 sayılı KHK’nın Uygulama Şeklini Gösterir Yönetmeliğe göre, markanın bölünmesiyle ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -890,7 +891,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-ruchan",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -923,11 +924,11 @@
     },
     {
      "harf": "E",
-     "metin": "Markayı yenileme talebi, ek ücret ödenerek 01.05.2014 ile 31.10.2014 tarihleri arasında da yapılabilir. Ortak Sorulara Geçiniz A"
+     "metin": "Markayı yenileme talebi, ek ücret ödenerek 01.05.2014 ile 31.10.2014 tarihleri arasında da yapılabilir."
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-tescil-yenileme",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -964,7 +965,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -977,7 +978,7 @@
    "bolum": "ORTAK",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda 554 sayılı KHK’da öngörülen sürelerle ilgili ifadeler yer almaktadır. Doğru ifadeler hangi seçenekte birlikte verilmiştir? 1. Yayın erteleme en çok 18 aya kadar talep edilebilir. 2. Rüçhan hakkı talebi, yurtdışında yapılan başvuru tarihinden itibaren 6 ay içinde yapılan başvurularda geçerlidir. 3. Rüçhanlı başvurularda, rüçhan belgesi başvuru tarihinden itibaren 2 ay içinde TPE’ye sunulmalıdır. 4. Tasarım tesciline itiraz süresi yayın tarihinden itibaren 6 aydır. 5. Tasarım tesciline yapılan itiraza karşı görüş bildirme süresi itirazın tebliğ tarihinden itibaren 1 aydır.",
+   "metin": "Aşağıda 554 sayılı KHK’da öngörülen sürelerle ilgili ifadeler yer almaktadır. Doğru ifadeler hangi seçenekte birlikte verilmiştir?\n1. Yayın erteleme en çok 18 aya kadar talep edilebilir.\n2. Rüçhan hakkı talebi, yurtdışında yapılan başvuru tarihinden itibaren 6 ay içinde yapılan başvurularda geçerlidir.\n3. Rüçhanlı başvurularda, rüçhan belgesi başvuru tarihinden itibaren 2 ay içinde TPE’ye sunulmalıdır.\n4. Tasarım tesciline itiraz süresi yayın tarihinden itibaren 6 aydır.\n5. Tasarım tesciline yapılan itiraza karşı görüş bildirme süresi itirazın tebliğ tarihinden itibaren 1 aydır.",
    "secenekler": [
     {
      "harf": "A",
@@ -1001,7 +1002,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-ruchan",
    "topicGuven": 0.46,
    "smkMaddeleri": []
@@ -1034,11 +1035,12 @@
     },
     {
      "harf": "E",
-     "metin": "1-1 1-2 2-1 3-1 Toplam ücret: 400 TL ORTAK SORULAR A"
+     "metin": "1-1 1-2 2-1 3-1 Toplam ücret: 400 TL"
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
+   "gorsel": "veri/gorsel/tp-2015-A-ortak-3.webp",
    "topicId": "tasarim-inceleme-tescil",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -1075,7 +1077,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "marka-ruchan",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -1112,7 +1114,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1148,7 +1150,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1160,7 +1162,7 @@
    "bolum": "ORTAK",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
-   "metin": "Tasarımların Uluslararası Korunmasına İlişkin Lahey Anlaşması ile ilgili bazı ifadeler aşağıda verilmiştir: 1. Türkiye, Lahey Anlaşması Cenevre Metni’ne üyedir. 2. Lahey Anlaşması çerçevesinde, uluslararası başvuru yapabilmek için daha önceden ulusal başvuru yapılmış olması ya da ulusal tescil elde edilmiş olması gerekmektedir. 3. Ulusal ofis aracılığıyla uluslararası başvuru yapılabilir. 4. Çoklu bir uluslararası başvuru en fazla 50 farklı tasarım içerebilir. 5. Korumanın reddine karşı yapılacak itirazlar, uluslararası başvuru sahibi tarafından ilgili taraf ülkenin yetkili kuruluşuna yapılır. Lahey Anlaşmasıyla ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Tasarımların Uluslararası Korunmasına İlişkin Lahey Anlaşması ile ilgili bazı ifadeler aşağıda verilmiştir:\n1. Türkiye, Lahey Anlaşması Cenevre Metni’ne üyedir.\n2. Lahey Anlaşması çerçevesinde, uluslararası başvuru yapabilmek için daha önceden ulusal başvuru yapılmış olması ya da ulusal tescil elde edilmiş olması gerekmektedir.\n3. Ulusal ofis aracılığıyla uluslararası başvuru yapılabilir.\n4. Çoklu bir uluslararası başvuru en fazla 50 farklı tasarım içerebilir.\n5. Korumanın reddine karşı yapılacak itirazlar, uluslararası başvuru sahibi tarafından ilgili taraf ülkenin yetkili kuruluşuna yapılır.\n\nLahey Anlaşmasıyla ilgili doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -1184,7 +1186,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "ulus-siniflandirma",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -1217,11 +1219,11 @@
     },
     {
      "harf": "E",
-     "metin": "Teknoloji transferinin yönlendirilmesi işlemlerini yapmak A"
+     "metin": "Teknoloji transferinin yönlendirilmesi işlemlerini yapmak"
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1257,7 +1259,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1293,7 +1295,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "vekil-kurum",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -1330,7 +1332,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "temel-ticari-isletme",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -1367,7 +1369,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "temel-ticari-isletme",
    "topicGuven": 0.8,
    "smkMaddeleri": []
@@ -1400,11 +1402,11 @@
     },
     {
      "harf": "E",
-     "metin": "Elektronik imza kullanılarak kayıtlı elektronik posta A"
+     "metin": "Elektronik imza kullanılarak kayıtlı elektronik posta"
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1436,13 +1438,49 @@
     },
     {
      "harf": "E",
-     "metin": "Bir gerçek kişinin aynı zamanda birden fazla yerleşim yeri olamaz. 15-6098 sayılı Borçlar Kanunu hükümlerine göre aşağıdaki ifadelerden hangisi yanlıştır? A) Vekil, vekâlet verenin açık talimatına uymakla yükümlüdür. B) Vekil, sözleşme veya teamül varsa ücrete hak kazanır. C) Vekil, vekâlet borcunu hiçbir şartta başkasına ifa ettiremez. D) Vekil, vekâletin ifası sebebiyle uğradığı zararın giderilmesini vekâlet verenden isteyebilir. E) Vekil, vekâlet verene, tesliminde geciktiği paranın faizini de ödemekle yükümlüdür."
+     "metin": "Bir gerçek kişinin aynı zamanda birden fazla yerleşim yeri olamaz."
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicId": "temel-medeni",
    "topicGuven": 0.98,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2015-A-ortak-15",
+   "no": 15,
+   "yil": 2015,
+   "kitapcik": "A",
+   "bolum": "ORTAK",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
+   "metin": "6098 sayılı Borçlar Kanunu hükümlerine göre aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vekil, vekâlet verenin açık talimatına uymakla yükümlüdür."
+    },
+    {
+     "harf": "B",
+     "metin": "Vekil, sözleşme veya teamül varsa ücrete hak kazanır."
+    },
+    {
+     "harf": "C",
+     "metin": "Vekil, vekâlet borcunu hiçbir şartta başkasına ifa ettiremez."
+    },
+    {
+     "harf": "D",
+     "metin": "Vekil, vekâletin ifası sebebiyle uğradığı zararın giderilmesini vekâlet verenden isteyebilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Vekil, vekâlet verene, tesliminde geciktiği paranın faizini de ödemekle yükümlüdür."
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877247162,
+   "topicGuven": 0,
    "smkMaddeleri": []
   },
   {
@@ -1477,7 +1515,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1513,7 +1551,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1549,7 +1587,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1581,11 +1619,11 @@
     },
     {
      "harf": "E",
-     "metin": "On Birinci Kalkınma Planı (2015-2019) A"
+     "metin": "On Birinci Kalkınma Planı (2015-2019)"
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1621,7 +1659,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1657,7 +1695,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1693,7 +1731,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1729,7 +1767,8 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
+   "gorsel": "veri/gorsel/tp-2015-A-ortak-23.webp",
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -1761,11 +1800,47 @@
     },
     {
      "harf": "E",
-     "metin": "Tüketici gözüyle bakıldığında markamızın ayırt edici olduğu görülecektir. A 25-Yoğun koşuşturma içinde debelenen insanlar, en şaşırtıcı doğal güzellikleri bile şöyle soğuk bir bakışla süzüp geçerler. Bu cümledeki altı çizili bölüm anlamca aşağıdakilerden hangisiyle karşılanabilir? A) Beğenmeyerek B) Alıcı gözle C) Dikkatlice D) İlgisizce E) Sıkılarak 5 ARALIK 2015 TARİHLİ PATENT VEKİLLİĞİ VE MARKA VEKİLLİĞİ GENEL YETERLİK SINAVI"
+     "metin": "Tüketici gözüyle bakıldığında markamızın ayırt edici olduğu görülecektir."
     }
    ],
    "cevap": "C",
-   "eklenme": 1787305591585,
+   "eklenme": 1791877247162,
+   "topicGuven": 0,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2015-A-ortak-25",
+   "no": 25,
+   "yil": 2015,
+   "kitapcik": "A",
+   "bolum": "ORTAK",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2015 Genel Yeterlik Sınavı (A)",
+   "metin": "Yoğun koşuşturma içinde debelenen insanlar, en şaşırtıcı doğal güzellikleri bile şöyle soğuk bir bakışla süzüp geçerler. Bu cümledeki altı çizili bölüm anlamca aşağıdakilerden hangisiyle karşılanabilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Beğenmeyerek"
+    },
+    {
+     "harf": "B",
+     "metin": "Alıcı gözle"
+    },
+    {
+     "harf": "C",
+     "metin": "Dikkatlice"
+    },
+    {
+     "harf": "D",
+     "metin": "İlgisizce"
+    },
+    {
+     "harf": "E",
+     "metin": "Sıkılarak 5 ARALIK 2015 TARİHLİ PATENT VEKİLLİĞİ VE MARKA VEKİLLİĞİ GENEL"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877247162,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -2220,7 +2295,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir firma, piyasaya yeni süreceği el kremi ürünü ve içine bu ürünlerin konulabileceği boş makyaj çantaları için oluşturduğu ticari adın, ilave herhangi bir unsur içermeksizin tek başına marka olarak tescili konusunda marka vekilinin görüşüne başvurmuştur. Marka vekili yaptığı incelemede, seçilen ticari adın kozmetik ürünlerinin üretiminde yaygın olarak kullanılan bir kimyasalın adı olduğunu belirlemiştir. Marka vekili, Kurum sicilinde yaptığı incelemede ise söz konusu ibareyle ayırt edilemeyecek kadar benzer nitelikte ancak hükümden düşmüş bir markanın bulunduğunu, bu markanın aynı sahip adına çantalar için tanınmış marka olarak da kayıtlı olduğunu tespit etmiştir. Bu tespitlere rağmen firma, marka vekiline “el kremleri” ve “boş makyaj çantaları” emtialarını kapsayan bir başvuruda bulunması talimatını vermiştir. Söz konusu ibarenin marka olarak tescili için TÜRKPATENT’e yapılacak başvurunun, 6769 sayılı SMK kapsamında mutlak ret nedenleri açısından incelenmesi sonucunda Kurumun vereceği; 1. Başvuru el kremleri için tanımlayıcı nitelikte bulunacaktır. 2. Başvuru tüm mallar için tanınmış marka gerekçesiyle reddedilecektir. 3. Başvuru yalnızca boş makyaj çantaları için tanınmış marka gerekçesiyle reddedilecektir. 4. Başvuru boş makyaj çantaları için ilan edilecektir. kararlarından doğru olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Bir firma, piyasaya yeni süreceği el kremi ürünü ve içine bu ürünlerin konulabileceği boş makyaj çantaları için oluşturduğu ticari adın, ilave herhangi bir unsur içermeksizin tek başına marka olarak tescili konusunda marka vekilinin görüşüne başvurmuştur. Marka vekili yaptığı incelemede, seçilen ticari adın kozmetik ürünlerinin üretiminde yaygın olarak kullanılan bir kimyasalın adı olduğunu belirlemiştir. Marka vekili, Kurum sicilinde yaptığı incelemede ise söz konusu ibareyle ayırt edilemeyecek kadar benzer nitelikte ancak hükümden düşmüş bir markanın bulunduğunu, bu markanın aynı sahip adına çantalar için tanınmış marka olarak da kayıtlı olduğunu tespit etmiştir. Bu tespitlere rağmen firma, marka vekiline “el kremleri” ve “boş makyaj çantaları” emtialarını kapsayan bir başvuruda bulunması talimatını vermiştir. Söz konusu ibarenin marka olarak tescili için TÜRKPATENT’e yapılacak başvurunun, 6769 sayılı SMK kapsamında mutlak ret nedenleri açısından incelenmesi sonucunda Kurumun vereceği;\n1. Başvuru el kremleri için tanımlayıcı nitelikte bulunacaktır.\n2. Başvuru tüm mallar için tanınmış marka gerekçesiyle reddedilecektir.\n3. Başvuru yalnızca boş makyaj çantaları için tanınmış marka gerekçesiyle reddedilecektir.\n4. Başvuru boş makyaj çantaları için ilan edilecektir. kararlarından doğru olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -2294,7 +2369,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda, marka hukukunda “karıştırılma ihtimali”nin değerlendirilmesiyle ilgili ifadeler verilmiştir: 1. Markaların benzerlik düzeyi yüksek ve önceki markanın özellikle tanınmışlığı nedeniyle ayırt ediciliği yüksekse, mal ve hizmetler arasında görece daha düşük düzeyde benzerlik bulunmasına rağmen, markalar arasında karıştırılma ihtimali bulunduğu sonucuna ulaşılabilir. 2. Başvuru sahibinin, itiraz sahibine ait marka ile karıştırılma etkisini yaratmak istememesi, işareti bu kasıt altında kullanmaması, böyle bir sonuç istememesi halinde dahi karıştırılma ihtimalinin varlığı yönünde karar verilebilir. 3. Çekişme konusu markalar arasında ve bu markaların kapsamlarındaki mal ve hizmetler arasında belli düzeyde benzerlik bulunmasına rağmen, markalar arasında karıştırılma ihtimali bulunmadığı sonucuna ulaşılabilir. 4. Başvuruya konu markanın bir bütün olarak ayırt ediciliğinin yüksek olması, mallar arasındaki benzerliği ortadan kaldıran bir husus olarak dikkate alınabilir. Yerleşik yargı içtihatları ve TÜRKPATENT uygulamaları dikkate alındığında, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Aşağıda, marka hukukunda “karıştırılma ihtimali”nin değerlendirilmesiyle ilgili ifadeler verilmiştir:\n1. Markaların benzerlik düzeyi yüksek ve önceki markanın özellikle tanınmışlığı nedeniyle ayırt ediciliği yüksekse, mal ve hizmetler arasında görece daha düşük düzeyde benzerlik bulunmasına rağmen, markalar arasında karıştırılma ihtimali bulunduğu sonucuna ulaşılabilir.\n2. Başvuru sahibinin, itiraz sahibine ait marka ile karıştırılma etkisini yaratmak istememesi, işareti bu kasıt altında kullanmaması, böyle bir sonuç istememesi halinde dahi karıştırılma ihtimalinin varlığı yönünde karar verilebilir.\n3. Çekişme konusu markalar arasında ve bu markaların kapsamlarındaki mal ve hizmetler arasında belli düzeyde benzerlik bulunmasına rağmen, markalar arasında karıştırılma ihtimali bulunmadığı sonucuna ulaşılabilir.\n4. Başvuruya konu markanın bir bütün olarak ayırt ediciliğinin yüksek olması, mallar arasındaki benzerliği ortadan kaldıran bir husus olarak dikkate alınabilir.\n\nYerleşik yargı içtihatları ve TÜRKPATENT uygulamaları dikkate alındığında, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -2331,7 +2406,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir başvuru sahibi tarafından yapılan marka başvurusunun yayımına süresi içinde itiraz edilmiştir. İtiraz sahibi itiraz dilekçesinde markasını Türkiye’de uzun yıllardır itiraza konu mallar için tescilsiz olarak kullanmakta olduğunu, bu kullanım sonrasında markasını tanınmış bir marka haline getirdiğini öne sürmüştür. Başvuru sahibi ise sunduğu karşı görüşte, itiraz sahibinin Kurum siciline kayıtlı herhangi bir marka başvurusu veya tescilinin bulunmadığını belirterek, itiraza konu ibare için kullanım hakkının kendisine ait olduğunu ileri sürmüştür. Buna göre, itiraz sahibinin dayandığı; 1. Eskiye dayalı kullanım (SMK m. 6/3) 2. Paris Sözleşmesi anlamındaki tanınmış markalar (SMK m. 6/4) 3. Türkiye’de tanınmışlık düzeyine ulaşmış markalar (SMK m. 6/5) gerekçelerden hangisi bu itirazın kabulünü sağlayabilir?",
+   "metin": "Bir başvuru sahibi tarafından yapılan marka başvurusunun yayımına süresi içinde itiraz edilmiştir. İtiraz sahibi itiraz dilekçesinde markasını Türkiye’de uzun yıllardır itiraza konu mallar için tescilsiz olarak kullanmakta olduğunu, bu kullanım sonrasında markasını tanınmış bir marka haline getirdiğini öne sürmüştür. Başvuru sahibi ise sunduğu karşı görüşte, itiraz sahibinin Kurum siciline kayıtlı herhangi bir marka başvurusu veya tescilinin bulunmadığını belirterek, itiraza konu ibare için kullanım hakkının kendisine ait olduğunu ileri sürmüştür. Buna göre, itiraz sahibinin dayandığı;\n1. Eskiye dayalı kullanım (SMK m. 6/3)\n2. Paris Sözleşmesi anlamındaki tanınmış markalar (SMK m. 6/4)\n3. Türkiye’de tanınmışlık düzeyine ulaşmış markalar (SMK m. 6/5)\n\ngerekçelerden hangisi bu itirazın kabulünü sağlayabilir?",
    "secenekler": [
     {
      "harf": "A",
@@ -2370,7 +2445,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda, marka tescilinde mutlak ve nispi ret nedenleriyle ilgili bazı ifadeler verilmiştir: 1. 6769 sayılı SMK’nın 5(1) fıkrasındaki mutlak ret nedenleri TÜRKPATENT tarafından yalnızca re’sen incelenebilir, üçüncü kişilerin itirazı üzerine incelenemez. 2. 6769 sayılı SMK’nın 6’ncı maddesindeki nispi ret nedenleri TÜRKPATENT tarafından yalnızca üçüncü kişilerin yayıma itirazı üzerine incelenebilir, re’sen incelenemez. 3. Tescilli bir marka için mutlak ret nedenlerinin varlığı markanın hükümsüzlük sebebidir. 4. Tescilli bir marka için nispi ret nedenlerinin varlığı markanın iptal sebebidir. Buna göre, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Aşağıda, marka tescilinde mutlak ve nispi ret nedenleriyle ilgili bazı ifadeler verilmiştir:\n1. 6769 sayılı SMK’nın 5(1) fıkrasındaki mutlak ret nedenleri TÜRKPATENT tarafından yalnızca re’sen incelenebilir, üçüncü kişilerin itirazı üzerine incelenemez.\n2. 6769 sayılı SMK’nın 6’ncı maddesindeki nispi ret nedenleri TÜRKPATENT tarafından yalnızca üçüncü kişilerin yayıma itirazı üzerine incelenebilir, re’sen incelenemez.\n3. Tescilli bir marka için mutlak ret nedenlerinin varlığı markanın hükümsüzlük sebebidir.\n4. Tescilli bir marka için nispi ret nedenlerinin varlığı markanın iptal sebebidir.\n\nBuna göre, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -2592,7 +2667,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
-   "metin": "A firması 06.01.2017 tarihinde TÜRKPATENT’e bir marka başvurusu yapmıştır. 18. ve 25. sınıflardaki malları kapsayan başvuru, mutlak ret nedenleri kapsamındaki inceleme sonucunda 18. sınıfa dâhil mallar bakımından reddedilmiş, 25. sınıfa dâhil malların ise 12.03.2017 tarihli Bültende yayımlanmasına karar verilmiştir. Söz konusu kısmi ret kararı 01.03.2017 tarihinde verilmiş ve 18.03.2017 tarihinde firmaya tebliğ edilmiştir. Bu süreçle ilgili gerçekleşmiş veya gerçekleşmesi muhtemel bazı durumlar şunlardır: 1. Başvuru sahibinin karara itiraz etmesi için son tarih 01.05.2017’dir. 2. Kısmi ret kararının verildiği tarihte 6769 sayılı SMK yürürlükte olduğundan karara itirazın 6769 sayılı SMK çerçevesinde yapılması gerekir. 3. İlgili kişilerin, başvurunun yayımına itiraz etmesi için son tarih 12.05.2017’dir. 4. Kısmi ret kararı 556 sayılı KHK çerçevesinde verilmiştir. 5. Başvuru sahibi tarafından süresi içinde karara itiraz edilmesi halinde 18. sınıfa dâhil mallar bakımından verilmiş ret kararı kesinleşmemiş olacaktır. Buna göre, bu sürece ilişkin doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "A firması 06.01.2017 tarihinde TÜRKPATENT’e bir marka başvurusu yapmıştır. 18. ve 25. sınıflardaki malları kapsayan başvuru, mutlak ret nedenleri kapsamındaki inceleme sonucunda 18. sınıfa dâhil mallar bakımından reddedilmiş, 25. sınıfa dâhil malların ise 12.03.2017 tarihli Bültende yayımlanmasına karar verilmiştir. Söz konusu kısmi ret kararı 01.03.2017 tarihinde verilmiş ve 18.03.2017 tarihinde firmaya tebliğ edilmiştir. Bu süreçle ilgili gerçekleşmiş veya gerçekleşmesi muhtemel bazı durumlar şunlardır:\n1. Başvuru sahibinin karara itiraz etmesi için son tarih 01.05.2017’dir.\n2. Kısmi ret kararının verildiği tarihte 6769 sayılı SMK yürürlükte olduğundan karara itirazın 6769 sayılı SMK çerçevesinde yapılması gerekir.\n3. İlgili kişilerin, başvurunun yayımına itiraz etmesi için son tarih 12.05.2017’dir.\n4. Kısmi ret kararı 556 sayılı KHK çerçevesinde verilmiştir.\n5. Başvuru sahibi tarafından süresi içinde karara itiraz edilmesi halinde 18. sınıfa dâhil mallar bakımından verilmiş ret kararı kesinleşmemiş olacaktır.\n\nBuna göre, bu sürece ilişkin doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -2703,7 +2778,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda markanın devrine ilişkin bazı ifadeler yer almaktadır: 1. Tescil süreci devam eden başvuru halindeki bir markanın devri mümkündür. 2. Marka, işletmeden bağımsız olarak devredilebilir. 3. Devir sözleşmelerinin geçerliği için devrin marka siciline kaydı zorunludur. 4. Devrin sicile kaydedilebilmesi için devredene ait aynı veya ayırt edilemeyecek kadar benzer diğer markaların da devri zorunludur. 5. Devrin sicile kaydedilebilmesi için markanın kapsamındaki tüm mal ve hizmetlerin devri gerekir. 6769 sayılı SMK ve Uygulama Yönetmeliğine göre, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Aşağıda markanın devrine ilişkin bazı ifadeler yer almaktadır:\n1. Tescil süreci devam eden başvuru halindeki bir markanın devri mümkündür.\n2. Marka, işletmeden bağımsız olarak devredilebilir.\n3. Devir sözleşmelerinin geçerliği için devrin marka siciline kaydı zorunludur.\n4. Devrin sicile kaydedilebilmesi için devredene ait aynı veya ayırt edilemeyecek kadar benzer diğer markaların da devri zorunludur.\n5. Devrin sicile kaydedilebilmesi için markanın kapsamındaki tüm mal ve hizmetlerin devri gerekir.\n\n6769 sayılı SMK ve Uygulama Yönetmeliğine göre, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -2813,7 +2888,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
-   "metin": "Aşağıda tescilli markalara ilişkin bazı durumlar yer almaktadır: 1. Markanın tescil tarihinden itibaren beş yıl içinde haklı bir sebep olmadan Türkiye’de kullanılmaması 2. Markanın başvuru tarihinde ayırt edicilikten yoksun olması 3. Markanın aynısının, hak sahibinin izni olmaksızın ve haklı bir sebebe dayanmaksızın ticari vekil adına tescil edilmiş olması 4. Marka sahibinin fiillerinin sonucu olarak, markanın tescil tarihinden sonra tescilli olduğu mal ve hizmetler için yaygın bir ad haline gelmesi 6769 sayılı SMK’ya göre, markanın iptalini gerektiren durumlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Aşağıda tescilli markalara ilişkin bazı durumlar yer almaktadır:\n1. Markanın tescil tarihinden itibaren beş yıl içinde haklı bir sebep olmadan Türkiye’de kullanılmaması\n2. Markanın başvuru tarihinde ayırt edicilikten yoksun olması\n3. Markanın aynısının, hak sahibinin izni olmaksızın ve haklı bir sebebe dayanmaksızın ticari vekil adına tescil edilmiş olması\n4. Marka sahibinin fiillerinin sonucu olarak, markanın tescil tarihinden sonra tescilli olduğu mal ve hizmetler için yaygın bir ad haline gelmesi 6769 sayılı SMK’ya göre, markanın iptalini gerektiren durumlar aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -3239,7 +3314,7 @@
     },
     {
      "harf": "E",
-     "metin": "Coğrafi işaretin kullanım biçimini SINAVDA UYULMASI GEREKEN KURALLAR"
+     "metin": "Coğrafi işaretin kullanım biçimini"
     }
    ],
    "cevap": "D",
@@ -3515,7 +3590,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "A firması ayırt edici niteliği yüksek bir ibare için 7. sınıfta yer alan mallar bakımından 07.01.2009 tarihinde TÜRKPATENT’e marka başvurusunda bulunmuştur. Mutlak ret nedenleri açısından yapılan inceleme sonucunda, başvuru tüm mallar için yayımlanmış ve 15.09.2009 tarihinde tüm mallar için tescil edilmiştir. A firması markasının yenileme işlemini gerçekleştirmemiş ve marka hükümden düşmüştür. Ancak A firması markasının kullanımına koruma süresi bittikten sonra da devam etmiştir. Söz konusu markanın koruma süresinin bittiğini fark eden B firması 07.09.2019 tarihinde 7. sınıfta yer alan mallar bakımından aynı ibare için bir marka başvurusunda bulunmuştur. A firması, B firmasının marka başvurusunun yayımına yasal süre içinde itiraz etmiştir. İtiraz dilekçesinde A firması söz konusu marka hakkının kendisine ait olduğunu, markanın tesadüfen seçilebilecek bir ibare olmadığını ve B firmasıyla aralarında lisans sözleşmesi bulunduğunu, ancak bu sözleşmenin 23.12.2018 tarihinde sona erdiğini belirtmiştir. Buna göre itiraz sahibinin dayandığı; 1. Türkiye’de tanınmışlık düzeyine ulaşmış markalar (SMK m. 6/5) 2. Koruma süresi biten markalar (SMK m. 6/8) 3. Diğer fikri haklar (SMK m. 6/6) 4. Kötü niyet (SMK m. 6/9) gerekçelerinden, itirazın kabulünü sağlayabilecek olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "A firması ayırt edici niteliği yüksek bir ibare için 7. sınıfta yer alan mallar bakımından 07.01.2009 tarihinde TÜRKPATENT’e marka başvurusunda bulunmuştur. Mutlak ret nedenleri açısından yapılan inceleme sonucunda, başvuru tüm mallar için yayımlanmış ve 15.09.2009 tarihinde tüm mallar için tescil edilmiştir. A firması markasının yenileme işlemini gerçekleştirmemiş ve marka hükümden düşmüştür. Ancak A firması markasının kullanımına koruma süresi bittikten sonra da devam etmiştir. Söz konusu markanın koruma süresinin bittiğini fark eden B firması 07.09.2019 tarihinde 7. sınıfta yer alan mallar bakımından aynı ibare için bir marka başvurusunda bulunmuştur. A firması, B firmasının marka başvurusunun yayımına yasal süre içinde itiraz etmiştir. İtiraz dilekçesinde A firması söz konusu marka hakkının kendisine ait olduğunu, markanın tesadüfen seçilebilecek bir ibare olmadığını ve B firmasıyla aralarında lisans sözleşmesi bulunduğunu, ancak bu sözleşmenin 23.12.2018 tarihinde sona erdiğini belirtmiştir. Buna göre itiraz sahibinin dayandığı;\n1. Türkiye’de tanınmışlık düzeyine ulaşmış markalar (SMK m. 6/5)\n2. Koruma süresi biten markalar (SMK m. 6/8)\n3. Diğer fikri haklar (SMK m. 6/6)\n4. Kötü niyet (SMK m. 6/9) gerekçelerinden, itirazın kabulünü sağlayabilecek olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -3554,7 +3629,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "“Çikolatalar” için yapılan bir marka başvurusu ve bu başvuruya yapılan itirazda gerekçe olarak gösterilen “şekerlemeler” için tescilli markaya ilişkin marka örnekleri aşağıda verilmiştir. Marka başvurusu İtiraza gerekçe gösterilen marka 6769 sayılı SMK’nın 6/1 fıkrasında geçen “karıştırılma ihtimali” kavramı kapsamında bu markaların benzerliğinin tespiti TÜRKPATENT tarafından yapılacaktır. Buna göre; 1. görsel benzerlik, 2. işitsel benzerlik, 3. kavramsal benzerlik, 4. mal ve hizmet benzerliği durumlarından hangileri markaların benzerlik incelemesinde dikkate alınır?",
+   "metin": "“Çikolatalar” için yapılan bir marka başvurusu ve bu başvuruya yapılan itirazda gerekçe olarak gösterilen “şekerlemeler” için tescilli markaya ilişkin marka örnekleri aşağıda verilmiştir. Marka başvurusu İtiraza gerekçe gösterilen marka 6769 sayılı SMK’nın 6/1 fıkrasında geçen “karıştırılma ihtimali” kavramı kapsamında bu markaların benzerliğinin tespiti TÜRKPATENT tarafından yapılacaktır. Buna göre;\n1. görsel benzerlik,\n2. işitsel benzerlik,\n3. kavramsal benzerlik,\n4. mal ve hizmet benzerliği\n\ndurumlarından hangileri markaların benzerlik incelemesinde dikkate alınır?",
    "secenekler": [
     {
      "harf": "A",
@@ -3591,7 +3666,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir marka başvurusunun yayımına yapılan itirazın geri çekilmesi için sunulması gereken bilgi ve belgeler aşağıda verilmiştir: 1. İtirazı geri çekme ücretinin ödendiğini gösterir bilgi, 2. İtirazın geri çekilmesi talebini içeren form, 3. Talep eden itiraz sahibi tüzel kişi ise noter onaylı imza sirküleri, 4. Talep vekil tarafından yapılmış ise geri çekme yetkisini açıkça içeren vekâletname. 6769 sayılı SMK’nın Uygulama Yönetmeliğine göre, yayıma itirazın geri çekilmesi işlemi için Kuruma sunulması zorunlu bilgi ve belgeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "Bir marka başvurusunun yayımına yapılan itirazın geri çekilmesi için sunulması gereken bilgi ve belgeler aşağıda verilmiştir:\n1. İtirazı geri çekme ücretinin ödendiğini gösterir bilgi,\n2. İtirazın geri çekilmesi talebini içeren form,\n3. Talep eden itiraz sahibi tüzel kişi ise noter onaylı imza sirküleri,\n4. Talep vekil tarafından yapılmış ise geri çekme yetkisini açıkça içeren vekâletname.\n\n6769 sayılı SMK’nın Uygulama Yönetmeliğine göre, yayıma itirazın geri çekilmesi işlemi için Kuruma sunulması zorunlu bilgi ve belgeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -3628,7 +3703,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir başvuru sahibi 7. ve 8. sınıflarda yer alan mallar için marka başvurusunda bulunmuş ve mutlak ret nedenleri açısından yapılan inceleme sonucunda marka tüm mallar için Bültende yayımlanmıştır. Söz konusu başvuruya 10, 11 ve 12. sınıflarda tescilli bir marka gerekçe gösterilerek itiraz edilmiştir. Başvuru sahibi, 6769 sayılı SMK’nın 19/2 fıkrası kapsamında itiraz gerekçesi markanın; 1. 7. sınıfta yer alan mallar bakımından kullanımının ispatlanmasını talep etmiştir, 2. 8. ve 10. sınıflarda yer alan mallar bakımından kullanımının ispatlanmasını talep etmiştir, 3. tescil kapsamında yer alan tüm mallar bakımından kullanımının ispatlanmasını talep etmiştir. Buna göre TÜRKPATENT, belirtilen taleplerden hangisini dikkate alır?",
+   "metin": "Bir başvuru sahibi 7. ve 8. sınıflarda yer alan mallar için marka başvurusunda bulunmuş ve mutlak ret nedenleri açısından yapılan inceleme sonucunda marka tüm mallar için Bültende yayımlanmıştır. Söz konusu başvuruya 10, 11 ve 12. sınıflarda tescilli bir marka gerekçe gösterilerek itiraz edilmiştir. Başvuru sahibi, 6769 sayılı SMK’nın 19/2 fıkrası kapsamında itiraz gerekçesi markanın;\n1. 7. sınıfta yer alan mallar bakımından kullanımının ispatlanmasını talep etmiştir,\n2. 8. ve 10. sınıflarda yer alan mallar bakımından kullanımının ispatlanmasını talep etmiştir,\n3. tescil kapsamında yer alan tüm mallar bakımından kullanımının ispatlanmasını talep etmiştir.\n\nBuna göre TÜRKPATENT, belirtilen taleplerden hangisini dikkate alır?",
    "secenekler": [
     {
      "harf": "A",
@@ -3739,7 +3814,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "TÜRKPATENT’e yapılan X ibareli marka başvurusu tüm mal ve hizmetler için Bültende yayımlanmıştır. Marka vekili, Kuruma sunduğu üçüncü kişi görüşünde; 1. önceki tarihli Y markası ile X markasının aynı ya da ayırt edilemeyecek kadar benzer olduğu, 2. X markasının Türk bayrağını içerdiği, 3. X ile benzer Y markasının Kurum sicilinde tanınmış marka olarak kayıtlı olduğu iddialarını belirterek X markasının reddini talep etmiştir. 6769 sayılı SMK’ya göre Kurum, X markası için sunulan üçüncü kişi görüşü hakkında aşağıdaki kararlardan hangisini verir?",
+   "metin": "TÜRKPATENT’e yapılan X ibareli marka başvurusu tüm mal ve hizmetler için Bültende yayımlanmıştır. Marka vekili, Kuruma sunduğu üçüncü kişi görüşünde;\n1. önceki tarihli Y markası ile X markasının aynı ya da ayırt edilemeyecek kadar benzer olduğu,\n2. X markasının Türk bayrağını içerdiği,\n3. X ile benzer Y markasının Kurum sicilinde tanınmış marka olarak kayıtlı olduğu iddialarını belirterek X markasının reddini talep etmiştir.\n\n6769 sayılı SMK’ya göre Kurum, X markası için sunulan üçüncü kişi görüşü hakkında aşağıdaki kararlardan hangisini verir?",
    "secenekler": [
     {
      "harf": "A",
@@ -3887,7 +3962,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "12.10.2019 tarihli bir marka tescil başvurusunun yayımına itirazın Markalar Dairesi Başkanlığı tarafından reddi kararına yapılan itirazda başvurunun; 1. ayırt edici niteliğe sahip olmadığı [SMK m. 5/1(b)], 2. cins, çeşit ve vasıf bildirdiği [SMK m. 5/1(c)], 3. 10.10.2014 başvuru tarihli itiraz gerekçesi markayla karıştırılma ihtimali bulunduğu [SMK m. 6/1] gerekçeleri ileri sürülerek reddi talep edilmiştir. Buna göre, başvuru sahibinin bu itiraza sunduğu karşı görüşteki iddialardan hangisi Kurum tarafından değerlendirmeye alınmaz?",
+   "metin": "12.10.2019 tarihli bir marka tescil başvurusunun yayımına itirazın Markalar Dairesi Başkanlığı tarafından reddi kararına yapılan itirazda başvurunun;\n1. ayırt edici niteliğe sahip olmadığı [SMK m. 5/1(b)],\n2. cins, çeşit ve vasıf bildirdiği [SMK m. 5/1(c)],\n3. 10.10.2014 başvuru tarihli itiraz gerekçesi markayla karıştırılma ihtimali bulunduğu [SMK m. 6/1] gerekçeleri ileri sürülerek reddi talep edilmiştir.\n\nBuna göre, başvuru sahibinin bu itiraza sunduğu karşı görüşteki iddialardan hangisi Kurum tarafından değerlendirmeye alınmaz?",
    "secenekler": [
     {
      "harf": "A",
@@ -4001,7 +4076,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "A firması “çanta” malını kapsayan “X” ibareli bir marka tescilinin sahibidir. B firması dürüstlük ilkesine uygun olarak X ibareli çanta üretmek istediği için A firmasıyla iletişime geçmiştir. 6769 sayılı SMK’ya göre B firması, “X” ibareli markaya ilişkin; 1. devir, 2. bölünme, 3. lisans, 4. birleşme işlemlerinden hangisini gerçekleştirerek “X” ibareli çanta üretebilir?",
+   "metin": "A firması “çanta” malını kapsayan “X” ibareli bir marka tescilinin sahibidir. B firması dürüstlük ilkesine uygun olarak X ibareli çanta üretmek istediği için A firmasıyla iletişime geçmiştir. 6769 sayılı SMK’ya göre B firması, “X” ibareli markaya ilişkin;\n1. devir,\n2. bölünme,\n3. lisans,\n4. birleşme\n\nişlemlerinden hangisini gerçekleştirerek “X” ibareli çanta üretebilir?",
    "secenekler": [
     {
      "harf": "A",
@@ -4037,7 +4112,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "A firması 10.01.2009 tarihinde 25. ve 35. sınıflar için marka başvurusunda bulunmuştur. Başvuru sahibi markasını yenilemek için gerekli ücretin ödendiği bilgisini 22.04.2019 tarihinde TÜRKPATENT’e bildirmiştir. A firmasının yapacağı yenileme işlemiyle ilgili; 1. yenileme ücreti, koruma süresi bittikten sonra yatırıldığı için yenileme işlemi geçersizdir, 2. 25. veya 35. sınıflardan herhangi biri için yenileme işlemi yapabilir, 3. Kurum tarafından yapılan incelemede yenileme ücretinin eksik olduğu tespit edilirse başvuru sahibine bu eksikliğin giderilmesi için bildirim yapılır ifadelerinden hangisi doğrudur?",
+   "metin": "A firması 10.01.2009 tarihinde 25. ve 35. sınıflar için marka başvurusunda bulunmuştur. Başvuru sahibi markasını yenilemek için gerekli ücretin ödendiği bilgisini 22.04.2019 tarihinde TÜRKPATENT’e bildirmiştir. A firmasının yapacağı yenileme işlemiyle ilgili;\n1. yenileme ücreti, koruma süresi bittikten sonra yatırıldığı için yenileme işlemi geçersizdir,\n2. 25. veya 35. sınıflardan herhangi biri için yenileme işlemi yapabilir,\n3. Kurum tarafından yapılan incelemede yenileme ücretinin eksik olduğu tespit edilirse başvuru sahibine bu eksikliğin giderilmesi için bildirim yapılır\n\nifadelerinden hangisi doğrudur?",
    "secenekler": [
     {
      "harf": "A",
@@ -4110,7 +4185,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "A firması 16.08.2019 tarihinde 9. ve 42. sınıflarda yer alan mallar ve hizmetler için TÜRKPATENT’e marka başvurusunda bulunmuştur. Kurum 09.09.2019 tarihinde mutlak ret nedenleri kapsamında yaptığı inceleme sonucunda, başvurunun 9. sınıfında yer alan mallar için reddedilmesine karar vermiştir. Başvuru sahibi söz konusu kısmi ret kararına itiraz etmeyi düşünmektedir. 42. sınıfta yer alan hizmetlerin tescil işlemlerinin hızlanması için de 12.10.2019 tarihinde markanın bölünmesini talep etmiştir. Başvuru sahibi markanın bölünmesiyle ilgili Kurumun aşağıdaki kararları alacağını düşünmektedir. Buna göre, Kurum bölünme işlemiyle ilgili olarak; 1. 42. sınıf için ayrı bir başvuru olarak bölünmesi talebini kabul eder, 2. bölünen markanın başvuru tarihini 16.08.2019 olarak kaydeder, 3. talep halinde bölünen başvuruyu tekrar birleştirir ifadelerinden doğru olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "A firması 16.08.2019 tarihinde 9. ve 42. sınıflarda yer alan mallar ve hizmetler için TÜRKPATENT’e marka başvurusunda bulunmuştur. Kurum 09.09.2019 tarihinde mutlak ret nedenleri kapsamında yaptığı inceleme sonucunda, başvurunun 9. sınıfında yer alan mallar için reddedilmesine karar vermiştir. Başvuru sahibi söz konusu kısmi ret kararına itiraz etmeyi düşünmektedir. 42. sınıfta yer alan hizmetlerin tescil işlemlerinin hızlanması için de 12.10.2019 tarihinde markanın bölünmesini talep etmiştir. Başvuru sahibi markanın bölünmesiyle ilgili Kurumun aşağıdaki kararları alacağını düşünmektedir. Buna göre, Kurum bölünme işlemiyle ilgili olarak;\n1. 42. sınıf için ayrı bir başvuru olarak bölünmesi talebini kabul eder,\n2. bölünen markanın başvuru tarihini 16.08.2019 olarak kaydeder,\n3. talep halinde bölünen başvuruyu tekrar birleştirir ifadelerinden doğru olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -4331,7 +4406,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "Madrid Protokolü kapsamında, 10.08.2017 tarihinde İspanya’dan Türkiye’ye uluslararası bir marka başvurusu yapılmıştır. Mutlak ret nedenleri kapsamında yapılan inceleme sonucunda Bültende yayımlanan markaya herhangi bir itiraz gelmemiş ve marka Türkiye’de tescil edilmiştir. İspanya’daki menşe marka ise 15.06.2018 tarihinde tescil kapsamındaki tüm mal ve hizmetler bakımından nihai olarak reddedilmiştir. Buna göre, başvuru sahibi Türkiye’de marka korumasını devam ettirmek için; 1. devir, 2. dönüştürme, 3. sonraki belirleme işlemlerinden hangisini yapabilir?",
+   "metin": "Madrid Protokolü kapsamında, 10.08.2017 tarihinde İspanya’dan Türkiye’ye uluslararası bir marka başvurusu yapılmıştır. Mutlak ret nedenleri kapsamında yapılan inceleme sonucunda Bültende yayımlanan markaya herhangi bir itiraz gelmemiş ve marka Türkiye’de tescil edilmiştir. İspanya’daki menşe marka ise 15.06.2018 tarihinde tescil kapsamındaki tüm mal ve hizmetler bakımından nihai olarak reddedilmiştir. Buna göre, başvuru sahibi Türkiye’de marka korumasını devam ettirmek için;\n1. devir,\n2. dönüştürme,\n3. sonraki belirleme\n\nişlemlerinden hangisini yapabilir?",
    "secenekler": [
     {
      "harf": "A",
@@ -4368,7 +4443,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "Madrid Protokolü kapsamında 07.12.2008 tarihinde Portekiz’den; Türkiye, Rusya, İran, Ukrayna ve Japonya’ya uluslararası marka başvurusu yapılmıştır. Rusya ve Japonya ofisleri yaptıkları inceleme sonucunda başvurunun kısmen reddine, TÜRKPATENT ise başvurunun tamamen reddine karar vermiştir. İran ve Ukrayna ofisleri başvurunun tamamen yayımlanmasına karar vermiştir. Bu bilgilere dayanarak; 1. Rusya ve Japonya için yenileme yapılabilir, 2. İran ve Ukrayna için yenileme yapılabilir, 3. Türkiye için yenileme yapılamaz ifadelerinden hangisi markanın uluslararası yenileme işlemi için doğrudur?",
+   "metin": "Madrid Protokolü kapsamında 07.12.2008 tarihinde Portekiz’den; Türkiye, Rusya, İran, Ukrayna ve Japonya’ya uluslararası marka başvurusu yapılmıştır. Rusya ve Japonya ofisleri yaptıkları inceleme sonucunda başvurunun kısmen reddine, TÜRKPATENT ise başvurunun tamamen reddine karar vermiştir. İran ve Ukrayna ofisleri başvurunun tamamen yayımlanmasına karar vermiştir. Bu bilgilere dayanarak;\n1. Rusya ve Japonya için yenileme yapılabilir,\n2. İran ve Ukrayna için yenileme yapılabilir,\n3. Türkiye için yenileme yapılamaz\n\nifadelerinden hangisi markanın uluslararası yenileme işlemi için doğrudur?",
    "secenekler": [
     {
      "harf": "A",
@@ -4442,7 +4517,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir başvuru sahibi 21.12.2018 tarihinde 3, 5 ve 25. sınıfta yer alan mallar için TÜRKPATENT’e marka başvurusunda bulunmuş ve marka talep edilen tüm mallar için 12.06.2019 tarihinde tescil edilmiştir. Başvuru sahibi markasını Madrid Protokolü kapsamında Almanya’da da koruma altına almaya karar vermiş ve 16.08.2019 tarihinde WIPO’ya iletilmek üzere uluslararası başvuru formunu Kuruma sunmuştur. Bu bilgilere göre başvuru sahibinin; 1. 25. sınıfta yer alan mallar için uluslararası marka başvurusu yapma hakkı vardır, 2. başvuruya dayalı rüçhan hakkından faydalanması mümkündür, 3. WIPO’ya ödemesi gereken ücretin eksik olması durumunda, eksikliği gidermesi için WIPO’dan bildirim yapılır ifadelerinden hangisi doğrudur?",
+   "metin": "Bir başvuru sahibi 21.12.2018 tarihinde 3, 5 ve 25. sınıfta yer alan mallar için TÜRKPATENT’e marka başvurusunda bulunmuş ve marka talep edilen tüm mallar için 12.06.2019 tarihinde tescil edilmiştir. Başvuru sahibi markasını Madrid Protokolü kapsamında Almanya’da da koruma altına almaya karar vermiş ve 16.08.2019 tarihinde WIPO’ya iletilmek üzere uluslararası başvuru formunu Kuruma sunmuştur. Bu bilgilere göre başvuru sahibinin;\n1. 25. sınıfta yer alan mallar için uluslararası marka başvurusu yapma hakkı vardır,\n2. başvuruya dayalı rüçhan hakkından faydalanması mümkündür,\n3. WIPO’ya ödemesi gereken ücretin eksik olması durumunda, eksikliği gidermesi için WIPO’dan bildirim yapılır\n\nifadelerinden hangisi doğrudur?",
    "secenekler": [
     {
      "harf": "A",
@@ -4479,7 +4554,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "6769 sayılı SMK’ya göre, “geleneksel ürün adı”nı tanımlayan ifadeler aşağıda verilmiştir: 1. Coğrafi yer adı içermesi 2. Menşe adı kapsamının dışında olması 3. En az yirmi yıl kullanılmış olması 4. Mahreç işareti kapsamı dışında kalması Buna göre, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "6769 sayılı SMK’ya göre, “geleneksel ürün adı”nı tanımlayan ifadeler aşağıda verilmiştir:\n1. Coğrafi yer adı içermesi\n2. Menşe adı kapsamının dışında olması\n3. En az yirmi yıl kullanılmış olması\n4. Mahreç işareti kapsamı dışında kalması\n\nBuna göre, doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -4516,7 +4591,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir coğrafi işaretin üretiminde “X” malzemesinin kullanıldığı tescil metninde belirtilmiştir. Ancak “X” malzemesinin gıdada kullanımı Sağlık Bakanlığı tarafından yasaklanmıştır. Bunun üzerine coğrafi işareti tescil ettiren kuruluş, “X” malzemesinin alternatifi olan “Y” malzemesinin kullanılması için değişiklik talebinde bulunmuştur. Bu talep 01.08.2019 tarihinde Bültende yayımlanmıştır. Tarım ve Orman Bakanlığı “Y” malzemesinin bu üründe kullanımının gıda mevzuatına aykırı olması sebebiyle 31.10.2019 tarihinde itiraz etmiş ancak itiraz ücreti ödememiştir. Buna göre, Bakanlığın itirazı hakkında; 1. Bakanlık itiraz hakkı olanlar arasındadır. 2. İtiraz, 01.10.2019 tarihine kadar sunulmadığından itiraz yapılmamış sayılır. 3. Bakanlık itiraz ücretini ödememiş olmasına rağmen itiraz geçerlidir. ifadelerinden doğru olanlar aşağıdakilerin hangisinde verilmiştir?",
+   "metin": "Bir coğrafi işaretin üretiminde “X” malzemesinin kullanıldığı tescil metninde belirtilmiştir. Ancak “X” malzemesinin gıdada kullanımı Sağlık Bakanlığı tarafından yasaklanmıştır. Bunun üzerine coğrafi işareti tescil ettiren kuruluş, “X” malzemesinin alternatifi olan “Y” malzemesinin kullanılması için değişiklik talebinde bulunmuştur. Bu talep 01.08.2019 tarihinde Bültende yayımlanmıştır. Tarım ve Orman Bakanlığı “Y” malzemesinin bu üründe kullanımının gıda mevzuatına aykırı olması sebebiyle 31.10.2019 tarihinde itiraz etmiş ancak itiraz ücreti ödememiştir. Buna göre, Bakanlığın itirazı hakkında;\n1. Bakanlık itiraz hakkı olanlar arasındadır.\n2. İtiraz, 01.10.2019 tarihine kadar sunulmadığından itiraz yapılmamış sayılır.\n3. Bakanlık itiraz ücretini ödememiş olmasına rağmen itiraz geçerlidir. ifadelerinden doğru olanlar aşağıdakilerin hangisinde verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -4647,7 +4722,7 @@
     },
     {
      "harf": "E",
-     "metin": "Tecavüze konu ürünlerin tescil ettirene devri SINAVDA UYULMASI GEREKEN KURALLAR"
+     "metin": "Tecavüze konu ürünlerin tescil ettirene devri"
     }
    ],
    "cevap": "A",
@@ -4664,7 +4739,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "1. İlave sınıf ücreti 2. Başvuruya konu mal veya hizmetler 3. Garanti markası başvurusu için teknik şartname 4. Rüçhan hakkı belgesi 5. Marka örneği 6. Renk markası başvurusunda renk kodu 6769 sayılı SMK ve Uygulama Yönetmeliğinde yer alan şekli incelemeyle ilgili esaslara göre, bir marka başvurusunda yukarıdakilerden hangisinin bulunmaması başvuru tarihinin kesinleşmesini engeller?",
+   "metin": "1. İlave sınıf ücreti\n2. Başvuruya konu mal veya hizmetler\n3. Garanti markası başvurusu için teknik şartname\n4. Rüçhan hakkı belgesi\n5. Marka örneği\n6. Renk markası başvurusunda renk kodu 6769 sayılı SMK ve Uygulama Yönetmeliğinde yer alan şekli incelemeyle ilgili esaslara göre, bir marka başvurusunda\n\nyukarıdakilerden hangisinin bulunmaması başvuru tarihinin kesinleşmesini engeller?",
    "secenekler": [
     {
      "harf": "A",
@@ -4738,7 +4813,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "1. Bir teşebbüsün mallarının veya hizmetlerinin diğer teşebbüsün mallarından veya hizmetlerinden ayırt edilmesini sağlaması 2. Marka sahibine sağlanan korumanın konusunun açık ve kesin olarak anlaşılmasını sağlayabilecek şekilde sicilde gösterilebilir olması 3. Tescilli coğrafi işaret adı içermemesi 4. Ticaret alanında cins, çeşit, vasıf, kalite, miktar gibi tanımlayıcı ifadeler içermemesi 6769 sayılı SMK’nın 4’üncü maddesine göre, yukarıdakilerden hangisi marka olabilecek işaretlerin özellikleri arasında yer almaz?",
+   "metin": "1. Bir teşebbüsün mallarının veya hizmetlerinin diğer teşebbüsün mallarından veya hizmetlerinden ayırt edilmesini sağlaması\n2. Marka sahibine sağlanan korumanın konusunun açık ve kesin olarak anlaşılmasını sağlayabilecek şekilde sicilde gösterilebilir olması\n3. Tescilli coğrafi işaret adı içermemesi\n4. Ticaret alanında cins, çeşit, vasıf, kalite, miktar gibi tanımlayıcı ifadeler içermemesi 6769 sayılı SMK’nın 4’üncü maddesine göre,\n\nyukarıdakilerden hangisi marka olabilecek işaretlerin özellikleri arasında yer almaz?",
    "secenekler": [
     {
      "harf": "A",
@@ -4812,7 +4887,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "1. K, ortak marka başvurusu yapmak isterken marka türünü yanlışlıkla garanti markası olarak seçmiştir. 2. K, 41. sınıf hizmetler için marka başvurusu yapmak isterken yanlışlıkla 40. sınıf hizmetler için başvuru yapmıştır. 3. K, rüçhan tarihini 03.08.2021 olarak belirtmek isterken yanlışlıkla 03.09.2021 olarak belirtmiştir. 4. K, marka örneğini YEŞİLKOY şeklinde sunmak isterken yanlışlıkla YEŞİLKOY® şeklinde sunmuştur. 6769 sayılı SMK’ya göre, yukarıdakilerden hangisi TÜRKPATENT tarafından düzeltilebilecek hatalar arasında yer almaz?",
+   "metin": "1. K, ortak marka başvurusu yapmak isterken marka türünü yanlışlıkla garanti markası olarak seçmiştir.\n2. K, 41. sınıf hizmetler için marka başvurusu yapmak isterken yanlışlıkla 40. sınıf hizmetler için başvuru yapmıştır.\n3. K, rüçhan tarihini 03.08.2021 olarak belirtmek isterken yanlışlıkla 03.09.2021 olarak belirtmiştir.\n4. K, marka örneğini YEŞİLKOY şeklinde sunmak isterken yanlışlıkla YEŞİLKOY® şeklinde sunmuştur.\n\n6769 sayılı SMK’ya göre, yukarıdakilerden hangisi TÜRKPATENT tarafından düzeltilebilecek hatalar arasında yer almaz?",
    "secenekler": [
     {
      "harf": "A",
@@ -5147,7 +5222,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "Başvuru sahibi K, TÜRKPATENT’e 10.08.2018 tarihinde marka başvurusunda bulunmuş, başvuru 01.12.2018 tarihinde SMK m. 5/1(b) ve (c) bentleri gereğince reddedilmiştir. K, ret kararına 20.01.2019 tarihinde itiraz etmiş ve başvuruya konu ibarenin kullanım sonucu ayırt edici nitelik kazandığını ileri sürmüştür. K bu iddiasını desteklemek için başvuruya konu ibareyi taşıyan mallarla ilgili; 1. 2014-2017 yılları arasındaki satış miktarı bilgisini 2. Almanya’da 10.10.2018 tarihinde düzenlenmiş bir fuara ilişkin katılım belgesini 3. 01.09.2018 tarihli bir gazete haberini 4. 2018 yılının ilk 6 ayına ilişkin reklam tanıtım harcama bilgisini sunmuştur. Buna göre, aşağıdakilerden hangisi Kurumun kullanım sonucu ayırt edicilik iddiasını kabul etmesini sağlayabilecek delillerden değildir?",
+   "metin": "Başvuru sahibi K, TÜRKPATENT’e 10.08.2018 tarihinde marka başvurusunda bulunmuş, başvuru 01.12.2018 tarihinde SMK m. 5/1(b) ve (c) bentleri gereğince reddedilmiştir. K, ret kararına 20.01.2019 tarihinde itiraz etmiş ve başvuruya konu ibarenin kullanım sonucu ayırt edici nitelik kazandığını ileri sürmüştür. K bu iddiasını desteklemek için başvuruya konu ibareyi taşıyan mallarla ilgili;\n1. 2014-2017 yılları arasındaki satış miktarı bilgisini\n2. Almanya’da 10.10.2018 tarihinde düzenlenmiş bir fuara ilişkin katılım belgesini\n3. 01.09.2018 tarihli bir gazete haberini\n4. 2018 yılının ilk 6 ayına ilişkin reklam tanıtım harcama bilgisini sunmuştur.\n\nBuna göre, aşağıdakilerden hangisi Kurumun kullanım sonucu ayırt edicilik iddiasını kabul etmesini sağlayabilecek delillerden değildir?",
    "secenekler": [
     {
      "harf": "A",
@@ -5186,7 +5261,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "Başvuru sahibi M, “43. sınıf: Yiyecek ve içecek sağlanması hizmetleri” için “MAİ BULUT” ibareli marka başvurusunda bulunmuş ve başvuru Bültende yayımlanmıştır. P, aynı sektörde uzun süredir kullanmakta olduğu “MAVİ BULUT KAFE” ibareli markası ile M’nin başvurusunun benzer nitelikte olduğu gerekçesiyle marka vekilinden itirazda bulunmasını istemiştir. Marka vekili, yaptığı incelemede P’ye ait “MAVİ BULUT KAFE” markasının yenilenmeme nedeniyle hükümden düştüğünü ve koruma süresinin sona ermesinden itibaren bir yıl geçtiğini tespit etmiştir. Buna göre P’nin vekili itirazın kabulünü sağlayabilmek için; 1. M tarafından yapılan başvurunun, müvekkilinin yenilenmeme nedeniyle hükümden düşen markası ile benzer olması (SMK m. 6/8) 2. Markalar arasında karıştırılma ihtimali bulunması (SMK m. 6/1) 3. Müvekkilinin eskiye dayalı kullanımının bulunması (SMK m. 6/3) gerekçelerinden hangisini ileri süremez?",
+   "metin": "Başvuru sahibi M, “43. sınıf: Yiyecek ve içecek sağlanması hizmetleri” için “MAİ BULUT” ibareli marka başvurusunda bulunmuş ve başvuru Bültende yayımlanmıştır. P, aynı sektörde uzun süredir kullanmakta olduğu “MAVİ BULUT KAFE” ibareli markası ile M’nin başvurusunun benzer nitelikte olduğu gerekçesiyle marka vekilinden itirazda bulunmasını istemiştir. Marka vekili, yaptığı incelemede P’ye ait “MAVİ BULUT KAFE” markasının yenilenmeme nedeniyle hükümden düştüğünü ve koruma süresinin sona ermesinden itibaren bir yıl geçtiğini tespit etmiştir. Buna göre P’nin vekili itirazın kabulünü sağlayabilmek için;\n1. M tarafından yapılan başvurunun, müvekkilinin yenilenmeme nedeniyle hükümden düşen markası ile benzer olması (SMK m. 6/8)\n2. Markalar arasında karıştırılma ihtimali bulunması (SMK m. 6/1)\n3. Müvekkilinin eskiye dayalı kullanımının bulunması (SMK m. 6/3)\n\ngerekçelerinden hangisini ileri süremez?",
    "secenekler": [
     {
      "harf": "A",
@@ -5264,7 +5339,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "TÜRKPATENT’e XYZ ibareli marka başvurusu yapılmış ve üçüncü kişi K, Bültende yayımlanan başvurunun tescil edilmemesi gerektiği görüşünü Kuruma sunmuştur. K, görüşünde XYZ ibaresinin Türkiye’de yaygın olarak bilinen bir kamu kurum adının marka olarak da tescilli kısaltmasına benzer olduğunu, bu nedenle iyi niyetle yapılmış bir başvuru olmadığını ifade etmiştir. K ayrıca, kamu kurumu ve kısaltmasının yaygın bilinirliğinden dolayı XYZ ibaresinin marka olarak algılanmayacağını, ibarenin başvuru kapsamındaki hizmetler yönünden yanıltıcı nitelikte olduğunu ileri sürerek başvurunun reddini talep etmiştir. 6769 sayılı SMK’ya göre, K’nın görüşünde dayandığı; 1. Benzerlik 2. Ayırt edicilikten yoksunluk 3. Yanıltıcılık 4. Kötüniyet 5. Tanınmışlık gerekçelerinden, üçüncü kişi görüşünün kabulünü sağlayabilecek olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "metin": "TÜRKPATENT’e XYZ ibareli marka başvurusu yapılmış ve üçüncü kişi K, Bültende yayımlanan başvurunun tescil edilmemesi gerektiği görüşünü Kuruma sunmuştur. K, görüşünde XYZ ibaresinin Türkiye’de yaygın olarak bilinen bir kamu kurum adının marka olarak da tescilli kısaltmasına benzer olduğunu, bu nedenle iyi niyetle yapılmış bir başvuru olmadığını ifade etmiştir. K ayrıca, kamu kurumu ve kısaltmasının yaygın bilinirliğinden dolayı XYZ ibaresinin marka olarak algılanmayacağını, ibarenin başvuru kapsamındaki hizmetler yönünden yanıltıcı nitelikte olduğunu ileri sürerek başvurunun reddini talep etmiştir. 6769 sayılı SMK’ya göre, K’nın görüşünde dayandığı;\n1. Benzerlik\n2. Ayırt edicilikten yoksunluk\n3. Yanıltıcılık\n4. Kötüniyet\n5. Tanınmışlık gerekçelerinden, üçüncü kişi görüşünün kabulünü sağlayabilecek olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
    "secenekler": [
     {
      "harf": "A",
@@ -5338,7 +5413,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir başvuru sahibi Madrid Protokolü kapsamında uluslararası marka başvurusu yapmak istemektedir. Başvuru sahibi talebini TÜRKPATENT’e 02.03.2021 tarihinde sunmuş, Kurum gerekli incelemeleri yaparak başvuruyu 02.04.2021 tarihinde WIPO’ya iletmiştir. WIPO inceleme sonucunda marka örneğinin eksik olduğunu tespit etmiş, 12.07.2021 tarihine kadar eksikliğin giderilmesi gerektiğini belirten yazısını başvuru sahibine 12.04.2021 tarihinde bildirmiştir. Buna göre başvuru tarihiyle ilgili; 1. Eksikliğin 30.04.2021 tarihinde giderilmesi halinde başvuru tarihi 02.03.2021 olarak kesinleşir. 2. Eksikliğin 01.06.2021 tarihinde giderilmesi halinde başvuru tarihi 01.06.2021 olarak kesinleşir. 3. Eksikliğin 01.07.2021 tarihinde giderilmesi halinde başvuru tarihi 12.04.2021 olarak kesinleşir. ifadelerinden hangisi doğrudur?",
+   "metin": "Bir başvuru sahibi Madrid Protokolü kapsamında uluslararası marka başvurusu yapmak istemektedir. Başvuru sahibi talebini TÜRKPATENT’e 02.03.2021 tarihinde sunmuş, Kurum gerekli incelemeleri yaparak başvuruyu 02.04.2021 tarihinde WIPO’ya iletmiştir. WIPO inceleme sonucunda marka örneğinin eksik olduğunu tespit etmiş, 12.07.2021 tarihine kadar eksikliğin giderilmesi gerektiğini belirten yazısını başvuru sahibine 12.04.2021 tarihinde bildirmiştir. Buna göre başvuru tarihiyle ilgili;\n1. Eksikliğin 30.04.2021 tarihinde giderilmesi halinde başvuru tarihi 02.03.2021 olarak kesinleşir.\n2. Eksikliğin 01.06.2021 tarihinde giderilmesi halinde başvuru tarihi 01.06.2021 olarak kesinleşir.\n3. Eksikliğin 01.07.2021 tarihinde giderilmesi halinde başvuru tarihi 12.04.2021 olarak kesinleşir.\n\nifadelerinden hangisi doğrudur?",
    "secenekler": [
     {
      "harf": "A",
@@ -5449,7 +5524,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "Bir başvuru sahibi, “YAŞAM” ibaresinin tescili için TÜRKPATENT’e marka başvurusunda bulunmuştur. Başvuru 6769 sayılı SMK m. 5/1(ç) bendi gereğince reddedilmiştir. Bunun üzerine başvuru sahibi ret kararına itiraz etmiştir. 6769 sayılı SMK’nın Uygulama Yönetmeliğine göre; 1. Markaların benzer ancak mal ve hizmetlerin farklı olduğu gerekçesiyle itirazın tamamen kabul edilmesi 2. Markaların benzer ancak mal ve hizmetlerin kısmen farklı olduğu gerekçesiyle itirazın kısmen kabul edilmesi 3. Markalar ile markalara ait mal ve hizmetlerin farklı olduğu gerekçesiyle itirazın tamamen kabul edilmesi 4. Ret gerekçesi markanın sahibinden alınan muvafakatname nedeniyle itirazın tamamen kabul edilmesi 5. İtirazın incelendiği tarihte ret gerekçesi markanın hükümden düşmüş olması nedeniyle itirazın tamamen kabul edilmesi durumlarının hangisinde talep etmesi halinde karara itiraz ücreti, başvuru sahibine iade edilir?",
+   "metin": "Bir başvuru sahibi, “YAŞAM” ibaresinin tescili için TÜRKPATENT’e marka başvurusunda bulunmuştur. Başvuru 6769 sayılı SMK m. 5/1(ç) bendi gereğince reddedilmiştir. Bunun üzerine başvuru sahibi ret kararına itiraz etmiştir. 6769 sayılı SMK’nın Uygulama Yönetmeliğine göre;\n1. Markaların benzer ancak mal ve hizmetlerin farklı olduğu gerekçesiyle itirazın tamamen kabul edilmesi\n2. Markaların benzer ancak mal ve hizmetlerin kısmen farklı olduğu gerekçesiyle itirazın kısmen kabul edilmesi\n3. Markalar ile markalara ait mal ve hizmetlerin farklı olduğu gerekçesiyle itirazın tamamen kabul edilmesi\n4. Ret gerekçesi markanın sahibinden alınan muvafakatname nedeniyle itirazın tamamen kabul edilmesi\n5. İtirazın incelendiği tarihte ret gerekçesi markanın hükümden düşmüş olması nedeniyle itirazın tamamen kabul edilmesi durumlarının hangisinde talep etmesi halinde karara itiraz ücreti, başvuru sahibine iade edilir?",
    "secenekler": [
     {
      "harf": "A",
@@ -5527,7 +5602,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "K firması, marka başvurusunda L firmasından aldığı muvafakatnameyi TÜRKPATENT’e sunmuştur. Kurum, muvafakatnameyi dikkate alarak başvurunun 12.01.2021 tarihli Bültende yayımlanmasına karar vermiş ve kararı K’ya 07.01.2021 tarihinde bildirmiştir. L firması başvurunun yayımına karıştırılma ihtimali (SMK m. 6/1) ve yanıltıcılık (SMK m. 5/1(f)) gerekçeleriyle itiraz etmiştir. Buna göre yayıma itiraz süreciyle ilgili; 1. Başvurunun yayımına itiraz edilebilecek son tarih 12.03.2021’dir. 2. L firması başvurunun tesciline muvafakat ettiği için yayıma itiraz reddedilir. 3. Mutlak ret nedenleri yayıma itiraz aşamasında ileri sürülemeyeceği için SMK m. 5/1(f) gerekçeli itiraz reddedilir. ifadelerinden hangisi doğrudur?",
+   "metin": "K firması, marka başvurusunda L firmasından aldığı muvafakatnameyi TÜRKPATENT’e sunmuştur. Kurum, muvafakatnameyi dikkate alarak başvurunun 12.01.2021 tarihli Bültende yayımlanmasına karar vermiş ve kararı K’ya 07.01.2021 tarihinde bildirmiştir. L firması başvurunun yayımına karıştırılma ihtimali (SMK m. 6/1) ve yanıltıcılık (SMK m. 5/1(f)) gerekçeleriyle itiraz etmiştir. Buna göre yayıma itiraz süreciyle ilgili;\n1. Başvurunun yayımına itiraz edilebilecek son tarih 12.03.2021’dir.\n2. L firması başvurunun tesciline muvafakat ettiği için yayıma itiraz reddedilir.\n3. Mutlak ret nedenleri yayıma itiraz aşamasında ileri sürülemeyeceği için SMK m. 5/1(f) gerekçeli itiraz reddedilir.\n\nifadelerinden hangisi doğrudur?",
    "secenekler": [
     {
      "harf": "A",
@@ -5724,7 +5799,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "K firması 9. sınıfa ait “yazılımlar” ve 42. sınıfa ait “bilgisayar hizmetleri” için TÜRKPATENT’e marka başvurusu yapmıştır. Yapılan inceleme sonucunda başvuru, SMK m. 5/1(ç) bendi gereğince “yazılımlar” malları bakımından reddedilmiş ve kalan hizmetler 12.04.2021 tarihli Bültende yayımlanmıştır. Başvuru sahibinin itirazı sonucunda Kurul, itirazın incelendiği tarihte redde gerekçe markanın hükümden düştüğünü tespit etmiş, redde konu malların 12.07.2021 tarihli Bültende yayımlanmasına karar vermiştir. Bunun üzerine L firması 18.08.2021 tarihinde, “bilgisayar hizmetleri”nde başvuru ile yüksek düzeyde benzer tescilli markasını gerekçe göstererek karıştırılma ihtimali (SMK m. 6/1) ve tanınmışlık (SMK m. 6/5) gerekçeleriyle başvurunun yayımına itiraz etmiştir. 6769 sayılı SMK’ya göre Kurum; 1. Tanınmışlık gerekçeli itirazın kabulü halinde “bilgisayar hizmetleri” ve bununla ilişkili “yazılımlar” malları için başvurunun reddi 2. Karıştırılma ihtimali gerekçeli itirazın kabulü halinde “yazılımlar” malları için başvurunun reddi 3. “Yazılımlar” ve “bilgisayar hizmetleri” benzer mal ve hizmetler olmadığı için yayıma itirazın reddi kararlarından hangisini verir?",
+   "metin": "K firması 9. sınıfa ait “yazılımlar” ve 42. sınıfa ait “bilgisayar hizmetleri” için TÜRKPATENT’e marka başvurusu yapmıştır. Yapılan inceleme sonucunda başvuru, SMK m. 5/1(ç) bendi gereğince “yazılımlar” malları bakımından reddedilmiş ve kalan hizmetler 12.04.2021 tarihli Bültende yayımlanmıştır. Başvuru sahibinin itirazı sonucunda Kurul, itirazın incelendiği tarihte redde gerekçe markanın hükümden düştüğünü tespit etmiş, redde konu malların 12.07.2021 tarihli Bültende yayımlanmasına karar vermiştir. Bunun üzerine L firması 18.08.2021 tarihinde, “bilgisayar hizmetleri”nde başvuru ile yüksek düzeyde benzer tescilli markasını gerekçe göstererek karıştırılma ihtimali (SMK m. 6/1) ve tanınmışlık (SMK m. 6/5) gerekçeleriyle başvurunun yayımına itiraz etmiştir. 6769 sayılı SMK’ya göre Kurum;\n1. Tanınmışlık gerekçeli itirazın kabulü halinde “bilgisayar hizmetleri” ve bununla ilişkili “yazılımlar” malları için başvurunun reddi\n2. Karıştırılma ihtimali gerekçeli itirazın kabulü halinde “yazılımlar” malları için başvurunun reddi\n3. “Yazılımlar” ve “bilgisayar hizmetleri” benzer mal ve hizmetler olmadığı için yayıma itirazın reddi\n\nkararlarından hangisini verir?",
    "secenekler": [
     {
      "harf": "A",
@@ -5948,7 +6023,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "K Limited Şirketi’nin spor hizmetlerinde “Doruk” ibareli tescilli markası bulunmaktadır. Bu tescilden sonra şirketin temsil yetkisine sahip ortağı L, “Dorukk Spor” ibaresini aynı hizmetlerde kendi adına tescil ettirmiştir. Buna göre marka hakkının ihlal edildiğini düşünen K, “Dorukk Spor” ibareli tescilli marka hakkında, 1. Kullanılmasının yasaklanmasını mahkemeden talep etme 2. Tescilinin kendisine devrini mahkemeden talep etme 3. İptalini TÜRKPATENT’ten talep etme yollarından hangisine başvurma hakkına sahiptir?",
+   "metin": "K Limited Şirketi’nin spor hizmetlerinde “Doruk” ibareli tescilli markası bulunmaktadır. Bu tescilden sonra şirketin temsil yetkisine sahip ortağı L, “Dorukk Spor” ibaresini aynı hizmetlerde kendi adına tescil ettirmiştir. Buna göre marka hakkının ihlal edildiğini düşünen K, “Dorukk Spor” ibareli tescilli marka hakkında,\n1. Kullanılmasının yasaklanmasını mahkemeden talep etme\n2. Tescilinin kendisine devrini mahkemeden talep etme\n3. İptalini TÜRKPATENT’ten talep etme\n\nyollarından hangisine başvurma hakkına sahiptir?",
    "secenekler": [
     {
      "harf": "A",
@@ -6021,7 +6096,7 @@
    "bolum": "2. kitapçık",
    "tur": "cikmis",
    "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
-   "metin": "1. Coğrafi sınırları belirli bir bölgeye özgü tekniklerle üretilen peynir 2. Coğrafi sınırları belirli bir bölgeden çıkarılan mermer 3. Coğrafi sınırları belirli bir bölgede yaşayan keçi cinsi 4. Coğrafi sınırları belirli bir bölgede yetiştirilen bitki çeşidi 6769 sayılı SMK’ya göre, yukarıdakilerden hangisi coğrafi işaret korumasından yararlanamaz?",
+   "metin": "1. Coğrafi sınırları belirli bir bölgeye özgü tekniklerle üretilen peynir\n2. Coğrafi sınırları belirli bir bölgeden çıkarılan mermer\n3. Coğrafi sınırları belirli bir bölgede yaşayan keçi cinsi\n4. Coğrafi sınırları belirli bir bölgede yetiştirilen bitki çeşidi 6769 sayılı SMK’ya göre,\n\nyukarıdakilerden hangisi coğrafi işaret korumasından yararlanamaz?",
    "secenekler": [
     {
      "harf": "A",
@@ -6152,13 +6227,2275 @@
     },
     {
      "harf": "E",
-     "metin": "Denetlenen özellikler tescil belgesindeki bilgiler esas alınarak belirlenir. SINAVDA UYULMASI GEREKEN KURALLAR"
+     "metin": "Denetlenen özellikler tescil belgesindeki bilgiler esas alınarak belirlenir."
     }
    ],
    "cevap": "B",
    "eklenme": 1787305596615,
    "topicId": "marka-ruchan",
    "topicGuven": 0.34,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-1",
+   "no": 1,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’nin Uygulama Yönetmeliğine göre, aşağıdaki bilgi ve belgelerden hangisinin marka başvuru formunda yer alması gerekmez?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vekil aracılığıyla yapılan başvurularda vekaletname"
+    },
+    {
+     "harf": "B",
+     "metin": "Başvuru sahibinin iletişim bilgisi"
+    },
+    {
+     "harf": "C",
+     "metin": "Başvuru sahibinin kimlik bilgisi"
+    },
+    {
+     "harf": "D",
+     "metin": "Vekil aracılığıyla yapılan başvurularda vekil iletişim bilgisi"
+    },
+    {
+     "harf": "E",
+     "metin": "Ortak temsilci varsa temsilciye ilişkin bilgiler"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "marka-basvuru",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-2",
+   "no": 2,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK ve Uygulama Yönetmeliğine göre bir marka başvurusunda Kuruma sunulması gereken bilgiler ve belgelerden bazıları aşağıda verilmiştir:\n1. Marka örneği\n2. Başvuruya konu mal ve hizmetlerin listesi\n3. Başvuru ücretinin ödendiğini gösterir bilgi\n4. Başvuru ortak veya garanti markası için yapılmışsa 32’nci madde kapsamında düzenlenmiş teknik şartname\n5. Rüçhan hakkı talebi varsa rüçhan hakkı talep ücretinin ödendiğini gösteren bilgi\n6. Marka örneğinde Latin alfabesi dışında harf veya harfler kullanılmışsa bunların Latin alfabesindeki karşılığı\n\nBuna göre eksikliği, başvuru tarihinin kesinleşmesini etkilemeyen bilgiler ve belgeler aşağıdakilerden hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1, 2 ve 3"
+    },
+    {
+     "harf": "B",
+     "metin": "1, 3 ve 5"
+    },
+    {
+     "harf": "C",
+     "metin": "2, 4 ve 6"
+    },
+    {
+     "harf": "D",
+     "metin": "3, 4 ve 5"
+    },
+    {
+     "harf": "E",
+     "metin": "4, 5 ve 6"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "marka-sekli-inceleme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-3",
+   "no": 3,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’nin Uygulama Yönetmeliğine göre, muvafakatname ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Muvafakat, kayıtsız ve şartsız olmalıdır."
+    },
+    {
+     "harf": "B",
+     "metin": "Muvafakatname Kuruma sunulduktan sonra, verilen muvafakat geri alınamaz."
+    },
+    {
+     "harf": "C",
+     "metin": "Muvafakatnamenin Kurum tarafından geçerli kabul edilen imzalı form şeklinde düzenlenmesi ve noter tarafından onaylanması zorunludur."
+    },
+    {
+     "harf": "D",
+     "metin": "Sicile kaydedilmiş inhisari lisans sahiplerinin bulunması halinde bunların yazılı izinlerinin sunulması gerekmez."
+    },
+    {
+     "harf": "E",
+     "metin": "Muvafakatname formundaki eksikliklerin süresi içinde giderilmemesi halinde muvafakat talebi yapılmamış sayılır."
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-4",
+   "no": 4,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "K firması 26.01.2024 tarihinde TÜRKPATENT’e bir ses markası başvurusunda bulunmuştur. Başvuru sahibi tescil talebine konu sesin elektronik kaydıyla birlikte nota ile gösterimini de Kuruma sunmuştur. TÜRKPATENT tarafından 02.02.2024 tarihinde yapılan incelemede elektronik ortamda sunulan ses kaydı ve nota ile gösterim arasında uyumsuzluk olduğu tespit edilmiş ve eksiklik 04.02.2024 tarihli yazıyla başvuru sahibine 14.02.2024 tarihinde tebliğ edilmiştir. Başvuru sahibi eksikliği 01.04.2024 tarihinde gidermiştir. Buna göre, 6769 sayılı SMK ve Uygulama Yönetmeliği kapsamında bu başvuru aşağıdaki tarihlerden hangisi itibarıyla kesinleşir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "26.01.2024"
+    },
+    {
+     "harf": "B",
+     "metin": "04.02.2024"
+    },
+    {
+     "harf": "C",
+     "metin": "14.02.2024"
+    },
+    {
+     "harf": "D",
+     "metin": "01.04.2024"
+    },
+    {
+     "harf": "E",
+     "metin": "14.04.2024"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "marka-isaret",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-5",
+   "no": 5,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir başvuru sahibi, 07.06.2023 tarihinde iki sınıf ücreti ödeyerek “çaylar, limonatalar ve tarım ürünleri” malları için marka tescil başvurusunda bulunmuştur. Kurum tarafından yapılan incelemede “tarım ürünleri” ifadesi genel tabir olarak değerlendirilmiş ve buna ilişkin eksiklik bildirim yazısı başvuru sahibine 15.06.2023 tarihinde tebliğ edilmiştir. Başvuru sahibi, 15.09.2023 tarihinde Kuruma sunduğu dilekçeyle “tarım ürünleri” ifadesini “işlenmemiş tarım ürünleri” olarak açıklamıştır. (Çaylar: 30. Sınıf; İşlenmemiş tarım ürünleri: 31. Sınıf; Limonatalar: 32. Sınıf) 6769 sayılı SMK’nin Uygulama Yönetmeliğine göre, Kurumun bu başvuru için yapacağı işlem aşağıdakilerden hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru tarihini 15.09.2023 olarak kesinleştirir."
+    },
+    {
+     "harf": "B",
+     "metin": "Başvuruyu işlemden kaldırır."
+    },
+    {
+     "harf": "C",
+     "metin": "“Çaylar, limonatalar, işlenmemiş tarım ürünleri” malları için işlemleri devam ettirir."
+    },
+    {
+     "harf": "D",
+     "metin": "İlave sınıf ücret eksikliği bildiriminde bulunur."
+    },
+    {
+     "harf": "E",
+     "metin": "Başvuru işlemlerini yalnızca “çaylar, limonatalar” malları için devam ettirir."
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "marka-basvuru",
+   "topicGuven": 0.14,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-6",
+   "no": 6,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Başvuru sahibi K, 21.01.2024 tarihinde TÜRKPATENT’e aşağıdaki mal ve hizmetler için marka tescil başvurusunda bulunmuştur. 29. Sınıf: Kuruyemişler 30. Sınıf: Pastane mamulleri 32. Sınıf: İçecekler 35. Sınıf: Her türlü gıda ürünlerinin perakendeciliği hizmetleri 43. Sınıf: Yiyecek ve içecek sağlanması hizmetleri Yapılan incelemede başvuru kapsamındaki 30, 32 ve 35. sınıflarda yer alan mal ve hizmetlerin genel tabirler olduğu belirlenmiş ve başvuru sahibinden açıklama yapması istenmiştir. Buna ilişkin eksiklik yazısı başvuru sahibine 12.02.2024 tarihinde tebliğ edilmiştir. Başvuru sahibi 12.04.2024 tarihinde Kuruma sunduğu dilekçede söz konusu genel tabirler için aşağıdaki açıklamaları iletmiştir: 30. Sınıf: Şerbetli tatlılar 32. Sınıf: Sebze ve meyve suları 35. Sınıf: Müşterilerin malları elverişli bir şekilde görmesi ve satın alması için gıda maddelerinin bir araya getirilmesi hizmetleri Buna göre, 6769 sayılı SMK ve Uygulama Yönetmeliği hükümleri ile Sınıflandırma Tebliği kapsamında, Kurum hangi sınıflar için yapılan açıklamaları kabul eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 30"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 32"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız 35"
+    },
+    {
+     "harf": "D",
+     "metin": "30 ve 32"
+    },
+    {
+     "harf": "E",
+     "metin": "32 ve 35"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "marka-basvuru",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-7",
+   "no": 7,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir başvuru sahibi, TÜRKPATENT’e 10.02.2023 tarihinde “22. Sınıf: Tekstil amaçlı sentetik elyaflar” ve “23. Sınıf: Esnek iplikler” malları için garanti markası başvurusunda bulunmuştur. Kurum, yapmış olduğu incelemede tespit ettiği eksikliklerin giderilmesi için 25.02.2023 tarihinde başvuru sahibine bildirimde bulunmuş ve başvuru sahibinin bildirilen eksikliklerin tamamını aşağıda verilen bilgiler kapsamında giderdiğini tespit etmiştir. Bildirilen Eksiklik Eksikliğin Giderildiği Tarih Ek sınıf ücreti 05.03.2023 Teknik şartnamenin sunulmaması 10.03.2023 Marka örneğinde Kiril alfabesiyle yazılan kelimenin Latin alfabesi karşılığının yazılmaması 15.03.2023 6769 sayılı SMK ve Uygulama Yönetmeliğine göre başvuru aşağıdaki tarihlerden hangisi itibarıyla kesinleşir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "10.02.2023"
+    },
+    {
+     "harf": "B",
+     "metin": "25.02.2023"
+    },
+    {
+     "harf": "C",
+     "metin": "05.03.2023"
+    },
+    {
+     "harf": "D",
+     "metin": "10.03.2023"
+    },
+    {
+     "harf": "E",
+     "metin": "15.03.2023"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-7.webp",
+   "topicId": "marka-sekli-inceleme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-8",
+   "no": 8,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "K firması, resmi açılış tarihi 15.03.2023 olan ve Antalya’da gerçekleşen 5. Uluslararası Geleneksel El Sanatları Sergisi’ne katılım kaydı yaptırmıştır. 10.03.2023 tarihinde sergi alanında kendisine ayrılan kısımda, ürettiği ahşap bibloları üzerinde markası yer almadan, serginin resmi açılış tarihinde ise bunların üzerine markasının yer aldığı etiketleri yerleştirerek görünür şekilde teşhir etmiştir. Sergilediği ürünlerin yoğun ilgi görmesinden memnun olan K, markasını korumak amacıyla 13.09.2023 tarihinde “14. Sınıf: Değerli metalden mamul biblolar” ile “20. Sınıf: Ahşaptan mamul biblolar” için rüçhan hakkı talep ederek TÜRKPATENT’e marka başvurusunda bulunmuştur. 6769 sayılı SMK ve Uygulama Yönetmeliğine göre, K’nin rüçhan talebiyle ilgili aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "K, başvuru kapsamındaki tüm mallar için rüçhandan yararlanır."
+    },
+    {
+     "harf": "B",
+     "metin": "K, “ahşaptan mamul biblolar” için rüçhandan yararlanır."
+    },
+    {
+     "harf": "C",
+     "metin": "K, talep süresi geçtiği için rüçhan hakkından yararlanamaz."
+    },
+    {
+     "harf": "D",
+     "metin": "K’nin rüçhan hakkı talep süresi 10.03.2023 tarihi itibarıyla başlar."
+    },
+    {
+     "harf": "E",
+     "metin": "K’nin rüçhan hakkı belgesini Kuruma sunması gereken son tarih 13.11.2023’tür."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "marka-ruchan",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-9",
+   "no": 9,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "K firması, 18. ve 25. sınıfta yer alan mallar için TÜRKPATENT’e marka başvurusunda bulunmayı düşünmektedir. K, Kurum sicilinde yaptığı araştırma sonucunda başvuru yapmak istediği markanın, aynı sınıflarda L adına tescilli olduğunu tespit etmiştir. K ile L anlaşarak 18. sınıfta yer alan mallar için Kurum tarafından geçerli kabul edilen muvafakat formunu adi yazılı şekilde düzenlemişlerdir. K, 05.07.2023 tarihinde 18. ve 25. sınıflarda yer alan mallar için marka başvurusunda bulunmuş ve bu muvafakatname formunun aslını da başvuru formuna ek olarak Kuruma sunmuştur. Buna göre, başvuru için Kurum tarafından yapılacak işlem aşağıdakilerden hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tüm mallar için yayım kararı vermek"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca 18. sınıf için yayım kararı vermek"
+    },
+    {
+     "harf": "C",
+     "metin": "5/1(ç) bendi gereğince başvuruyu reddetmek"
+    },
+    {
+     "harf": "D",
+     "metin": "Muvafakatname için eksiklik bildiriminde bulunmak"
+    },
+    {
+     "harf": "E",
+     "metin": "Yalnızca 25. sınıf için yayım kararı vermek"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-10",
+   "no": 10,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’de nispi ret nedenleri arasında yer alan aşağıdaki yayıma itiraz gerekçelerinin hangisinde, yayıma itirazın kabulü için gerekçe markanın kullanım şartının arandığı açıkça düzenlenmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tescilli Markanın Yenilenmemesi (SMK m. 6/8)"
+    },
+    {
+     "harf": "B",
+     "metin": "Garanti Markasının Yenilenmemesi (SMK m.6/7)"
+    },
+    {
+     "harf": "C",
+     "metin": "Tanınmışlık (SMK m.6/5)"
+    },
+    {
+     "harf": "D",
+     "metin": "Paris Sözleşmesi Kapsamında Tanınmışlık (SMK m.6/4)"
+    },
+    {
+     "harf": "E",
+     "metin": "Karıştırılma İhtimali (SMK m.6/1)"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "smkMaddeleri": [
+    6
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-11",
+   "no": 11,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’de nispi ret nedenleri arasında yer alan aşağıdaki yayıma itiraz gerekçelerinin hangisinde itirazın kabulü için mal ve hizmet benzerliği koşulu açıkça düzenlenmemiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Karıştırılma İhtimali (SMK m. 6/1)"
+    },
+    {
+     "harf": "B",
+     "metin": "Paris Sözleşmesi Kapsamında Tanınmışlık (SMK m. 6/4)"
+    },
+    {
+     "harf": "C",
+     "metin": "Diğer Fikri Haklar veya Kişi Hakları (SMK m. 6/6)"
+    },
+    {
+     "harf": "D",
+     "metin": "Ortak Markanın Yenilenmemesi (SMK m. 6/7)"
+    },
+    {
+     "harf": "E",
+     "metin": "Tescilli Markanın Yenilenmemesi (SMK m. 6/8)"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.85,
+   "smkMaddeleri": [
+    6
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-12",
+   "no": 12,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’nin 5/1 fıkrası kapsamında ret kararına konu olabilecek bazı işaretler aşağıda verilmiştir:\n1. Tanımlayıcı nitelikteki işaretler\n2. Tescilli coğrafi işaret içeren işaretler\n3. Kamu düzenine aykırı işaretler\n4. Ticaret alanında herkes tarafından kullanılan işaretler\n\nBu işaretleri içeren başvuruların ret kararına konu edilebilmesi için söz konusu işaretlerden hangisinin marka örneğinde münhasıran ya da esas unsur olarak yer alması gerekmez?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "3 ve 4"
+    },
+    {
+     "harf": "D",
+     "metin": "1, 2 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2, 3 ve 4"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.85,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-13",
+   "no": 13,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir başvuru sahibi TÜRKPATENT’e 18, 25 ve 35. sınıfların tamamı için şeklinde bir marka başvurusunda bulunmuştur. Yapılan incelemede TÜRKPATENT, 18. sınıfın tamamında tescilli “BURAK” ibareli önceki tarihli bir markanın bulunduğunu tespit etmiştir. Buna göre, 6769 sayılı SMK kapsamında mutlak ret nedenleri açısından yapılacak incelemede başvuruya ilişkin verilmesi gereken karar aşağıdakilerden hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru yalnızca 5/1(ç) bendi gereğince tüm sınıflarda reddedilir."
+    },
+    {
+     "harf": "B",
+     "metin": "Başvuru yalnızca 5/1(g) bendi gereğince tüm sınıflarda reddedilir."
+    },
+    {
+     "harf": "C",
+     "metin": "Başvuru yalnızca 5/1(ç) bendi gereğince 18. sınıf için reddedilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Başvuru 18. sınıf için 5/1(ç), 25 ve 35. sınıflar için 5/1(g) bendi gereğince reddedilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Başvuru 18. sınıf için 5/1(ç), tüm sınıflar için 5/1(g) bendi gereğince reddedilir."
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-13.webp",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-14",
+   "no": 14,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tacir K uzun yıllardır “gömlek, kazak” malları için “DOĞRU” ibareli bir markayı tescilsiz olarak Türkiye’de kullanmaktadır. Yurtdışına açılmak amacıyla TÜRKPATENT’e marka tescil başvurusunda bulunmak istemiş ancak Tacir L’nin aynı mallar için “Doğru Tekstil + şekil” ibareli bir marka tescil başvurusunun bulunduğunu görmüştür. Konuyla ilgili vekili M ile görüşen K, M’ye markasını tescilsiz şekilde 10 yılı aşkın süredir kesintisiz olarak kullanmakta olduğunu, L’nin başvurusunun tescil edilmesi halinde kendi markasıyla karışabileceğini belirtmiştir. K ayrıca, “DOĞRU” ibaresini “gömlek ve kazak” malları için tanınmış marka haline getirdiğini, L’ye ait başvuru örneğinde “DOĞRU” ibaresine ek olarak kendisi adına TÜRKPATENT nezdinde tasarım tescili bulunan gömlek ambalajı şeklinin de yer aldığı bilgisini paylaşmıştır. K, tüm bu hususlara ilişkin bilgi ve belgeleri M’ye iletmiştir. M, bu bilgiler ışığında süresi içinde L’nin Bültende yayımlanan başvurusuna itiraz etmiştir. M yayıma itiraz dilekçesinde;\n1. Karıştırılma İhtimali (SMK m.6/1)\n2. Eskiye Dayalı Kullanım (SMK m.6/3)\n3. Tanınmışlık (SMK m.6/5)\n4. Diğer Fikri Haklar veya Kişi Hakları (SMK m.6/6) gerekçelerini ileri sürmüştür.\n\nBuna göre, TÜRKPATENT tarafından kabul edilebilir nitelikteki gerekçeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 4"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "D",
+     "metin": "1, 2 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2, 3 ve 4"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.89,
+   "smkMaddeleri": [
+    6
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-15",
+   "no": 15,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "K firması, 03.01.2023 tarihinde “18. Sınıf: İşlenmemiş deriler” ve “24. Sınıf: Dokunmamış kumaşlar” için marka başvurusunda bulunmuştur. Kurum tarafından yapılan inceleme sonucunda başvuru SMK m. 5/1(ç) bendi gereğince “işlenmemiş deriler” için reddedilmiş, kalan mallar içinse 12.01.2023 tarihli Bültende yayımlanmıştır. K, süresi içinde karara itiraz ederek, 5/1(ç) gerekçesi markanın sahibinden aldığı muvafakatnameyi itiraz dilekçesi ekinde Kuruma sunmuştur. L firması, 12.01.2023 tarihli Bültende yayımlanan mallar için 20.02.2023 tarihinde, eskiye dayalı kullanım (SMK m. 6/3) gerekçesiyle K’nin marka başvurusunun yayımına itiraz etmiştir. Buna göre, K’nin başvurusu hakkında Kurum;\n1. Muvafakatnameyi geçerli bulursa, başvuruyu “işlenmemiş deriler” için yayımlar.\n2. Muvafakatname, Kuruma başvuru tarihinde sunulmadığı için karara itirazı reddeder.\n3. L adına tescilli bir marka olmaması nedeniyle yayıma itirazı reddeder.\n4. L’nin itirazını haklı bulması halinde, başvuruyu “dokunmamış kumaşlar” için reddeder.\n\nkararlarından hangisini verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 4"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "1, 3 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "2, 3 ve 4"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.56,
+   "smkMaddeleri": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-16",
+   "no": 16,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "K firması, 12.05.2023 tarihinde “Etamin” ibaresinden oluşan ve “24. Sınıf: Kumaşlar”, “32. Sınıf: Enerji içecekleri” malları ile “43. Sınıf: İçecek sağlanması hizmetleri” için marka başvurusunda bulunmuştur. Kurum, başvurunun 27.05.2023 tarihli Bültende yayımlanmasına karar vermiştir. L firması, 30.05.2023 tarihinde “etamin” ibaresinin bir kumaş türü olduğuna dair bilgiler sunarak SMK m. 5/1(c) bendi, kendi adına 32. sınıf için tescilli “L’etamin” markasına dayanarak benzerlik iddiasıyla SMK m. 5/1(ç) bendi, başvuru örneğinde Atatürk silüeti yer aldığı iddiasıyla SMK m. 5/1(ğ) bendi kapsamında başvurunun tescil edilebilir olmadığı gerekçeleriyle Kuruma üçüncü kişi görüşü sunmuştur. Buna göre, Kuruma sunulan üçüncü kişi görüşüyle ilgili aşağıdakilerin hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Görüş, süresi içinde sunulmadığından işleme alınmaz."
+    },
+    {
+     "harf": "B",
+     "metin": "Görüş sunma ücreti ödenmediği için eksiklik bildiriminde bulunulur."
+    },
+    {
+     "harf": "C",
+     "metin": "Görüş kapsamındaki her bir gerekçe, tüm mal ve hizmetler için kabul edilebilir niteliktedir."
+    },
+    {
+     "harf": "D",
+     "metin": "Görüş “kumaşlar” için SMK m. 5/1(c) ve “enerji içecekleri” için SMK m. 5/1(ç) bendi açısından kabul edilebilir niteliktedir."
+    },
+    {
+     "harf": "E",
+     "metin": "Görüş “kumaşlar” için SMK m. 5/1(c) ve tüm mal/hizmetler için SMK m. 5/1(ğ) bendi açısından kabul edilebilir niteliktedir."
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.43,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-17",
+   "no": 17,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Gerçek kişi K, TÜRKPATENT’e aşağıdaki ibareler için marka tescil başvurusu yapacaktır. Bu ibarelerin 6769 sayılı SMK’de düzenlenen mutlak ret nedenleri açısından tescil edilebilirliği konusunda vekilinden görüş istemiştir. Vekil, inceleme sonucunda aşağıdaki raporu hazırlamıştır. Tescil Edilmek İstenen İbare Başvuru Kapsamı Vekilin Görüşleri “Orijinal Rize Çayı” Çaylar Başvuru, herhangi bir mutlak ret nedeni içermemesi nedeniyle yayımlanır. “ANNEBE takviye gıda” Bebek Mamaları Başvuru, 5/1(ç) bendi gereğince reddine neden olabilecek marka başvurusu veya tescilli bir marka olmaması halinde yayımlanır. Türk bayrağı görseli içeren “Rize Çay Festivali” Spor, Kültür ve Eğlence Hizmetleri Başvuru, Türk bayrağının marka örneğinden çıkartılması halinde yayımlanır. “Dünya Sağlık Örgütü” Tıbbi Hizmetler Başvuru, uluslararası örgüt isminden oluşması ve örgütün faaliyet alanı sayılan hizmetleri kapsaması nedeniyle 5/1(g) bendi gereğince reddedilir. Buna göre, 6769 sayılı SMK hükümleri ve Marka İnceleme Kılavuzu kapsamında, raporda yer alan ibarelere ilişkin görüşlerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "D",
+     "metin": "1, 3 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "2, 3 ve 4"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-17.webp",
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.14,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-18",
+   "no": 18,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tacir Y, TÜRKPATENT’e aşağıdaki mallar için “ŞAHİN” ibareli bir marka başvurusunda bulunmayı planlamaktadır. 14. Sınıf: Mücevherler, saatler 18. Sınıf: Çantalar, cüzdanlar 25. Sınıf: Ayakkabılar Y’nin 14. sınıftaki “mücevherler” için Almanya’da yapmış olduğu aynı ibareli 05.11.2022 tarihli bir marka başvurusu bulunmaktadır. Y, marka vekili M’den söz konusu ibare ve sınıflar için bir marka araştırması yapmasını istemiştir. M, Y’nin talebi üzerine yaptığı marka araştırması sonuçlarını aşağıdaki tabloyla başvuru sahibine iletmiştir. Marka Adı Mal ve Hizmet Listesi Durumu Şahin 14. Sınıf: Mücevherler, saatler Başvuru aşamasında Başvuru Tarihi: 01.01.2023 Rüçhan talebi yok. Şahin Shoes 25. Sınıf: Ayakkabılar Tescilli Başvuru tarihi: 22.10.2021 Şahin Çanta 18. Sınıf: Çantalar Tescilli Başvuru tarihi: 07.03.2019 Durumu değerlendiren Y’nin talebi üzerine M, 05.03.2023 tarihinde TÜRKPATENT’e belirtilen mallar için marka başvurusunda bulunmuştur. M, başvuruyla birlikte Almanya’daki marka başvurusuna dayandığı rüçhan talebinde de bulunmuş, ayrıca “ŞAHİN ÇANTA” marka sahibinden “çantalar” için almış olduğu usulüne uygun düzenlenmiş bir muvafakatnameyi de Kuruma sunmuştur. M, rüçhan belgesini 04.05.2023 tarihinde Kuruma sunmuş ve Kurum tarafından rüçhan talebinde veya belgesinde herhangi bir eksiklik tespit edilmemiştir. Buna göre, Y’nin başvurusu için mutlak ret nedenleri kapsamında yapılacak benzerlik incelemesi sonucunda ilan edilecek mallar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Mücevherler ve çantalar"
+    },
+    {
+     "harf": "B",
+     "metin": "Çantalar ve cüzdanlar"
+    },
+    {
+     "harf": "C",
+     "metin": "Çantalar ve ayakkabılar"
+    },
+    {
+     "harf": "D",
+     "metin": "Çantalar, cüzdanlar ve ayakkabılar"
+    },
+    {
+     "harf": "E",
+     "metin": "Mücevherler, çantalar ve cüzdanlar"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-18.webp",
+   "topicId": "marka-basvuru",
+   "topicGuven": 0.28,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-19",
+   "no": 19,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "İzmir’in Tire ilçesinde ikamet eden bir gerçek kişi “Tireli Şiş Köfteci Mustafa Usta” ibaresi için “29. Sınıf: Et, balık, kümes ve av hayvanlarının etleri ile her nevi işlenmiş et ürünleri” ve “30. Sınıf: Kahve ve kakao” mallarında marka tescil başvurusunda bulunmuştur. Buna göre, Tire Şiş Köftenin C2020/092 sayı ile TÜRKPATENT nezdinde tescilli bir coğrafi işaret olduğu hususu dikkate alındığında 6769 sayılı SMK m. 5 kapsamında Kurum tarafından başvuru için verilecek karar aşağıdakilerden hangisidir?(Başvurunun SMK m. 5/1(ç) bendi açısından tescil engeli bulunmamaktadır.)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "29. sınıfta yer alan malları 5/1(i) bendi gereğince “Tire Şiş Köfte coğrafi işareti özelliklerine uygun köfteler” şeklinde sınırlandırarak, 30. sınıftaki malları ise herhangi bir değişiklik yapmadan Bültende yayımlar."
+    },
+    {
+     "harf": "B",
+     "metin": "“Tire Şiş Köfte” coğrafi işaret olarak tescilli olduğu için başvuruyu, 6769 sayılı SMK 5/1(i) bendi gereğince eşya listesinde yer alan tüm mallar bakımından reddeder."
+    },
+    {
+     "harf": "C",
+     "metin": "29. sınıfta yer alan malları SMK 5/1(c) bendi gereğince “Tire Şiş Köfte coğrafi işareti özelliklerine uygun köfteler” şeklinde sınırlandırarak, 30. sınıftaki malları ise herhangi bir değişiklik yapmadan Bültende yayımlar."
+    },
+    {
+     "harf": "D",
+     "metin": "Başvuru, tescilli coğrafi işaret “Tire Şiş Köfte” ibaresini bire bir içermediği ve başvuru sahibi Tire’de ikamet ettiği için, eşya listesinde yer alan tüm mallar bakımından Bültende yayımlar."
+    },
+    {
+     "harf": "E",
+     "metin": "“Tire Şiş Köfte” coğrafi işaret olarak tescilli olduğu için başvuruyu, 6769 sayılı SMK 5/1(c) bendi gereğince eşya listesinde yer alan tüm mallar bakımından reddeder."
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "marka-mutlak-ret",
+   "topicGuven": 0.43,
+   "smkMaddeleri": [
+    5
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-20",
+   "no": 20,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Madrid Protokolü kapsamında menşe ofisin TÜRKPATENT olduğu uluslararası marka başvurularında;\n1. Uluslararası başvuru kapsamında yer alan mal ve hizmet listesindeki uygunsuzluğu giderme\n2. Uluslararası başvurunun ücret eksikliğini giderme\n3. Uluslararası tescile dayanan sonraki belirleme talebi\n4. Ulusal markaya dayanarak uluslararası tescil başvurusunda bulunma\n\nişlemlerinden hangisinin Kurum aracılığıyla yapılması zorunludur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 4"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "3 ve 4"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "marka-madrid",
+   "topicGuven": 0.73,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-21",
+   "no": 21,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tacir K’nin, Madrid Protokolü kapsamında WIPO nezdinde 25 ve 35. sınıflardaki mal ve hizmetler için 02.10.2019 tarihli bir uluslararası marka tescili bulunmaktadır. K, uluslararası tesciline dayanarak 18, 25 ve 35. sınıflarda yer alan mallar ve hizmetler için Rusya Federasyonu ve Azerbaycan ülkelerini kapsayan sonraki belirleme talebini 02.08.2023 tarihinde TÜRKPATENT’e sunmuştur. TÜRKPATENT taleple ilgili tespit ettiği eksikliği 02.09.2023 tarihinde K’ye tebliğ etmiştir. K, eksiklikleri 20.09.2023 tarihinde Kuruma sunduğu yazıyla gidermiş ve talep 01.10.2023 tarihinde TÜRKPATENT tarafından WIPO’ya iletilmiştir. WIPO taleple ilgili herhangi bir eksiklik tespit etmemiş ve sonraki belirlemeyi uluslararası sicile kaydetmiştir. TÜRKPATENT’e sunulan sonraki belirleme talebiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sonraki belirleme talebi K tarafından doğrudan WIPO’ya iletilebilir nitelikteki bir taleptir."
+    },
+    {
+     "harf": "B",
+     "metin": "Sonraki belirlemeye ilişkin Kurumun tespit ettiği eksiklik 18. sınıfın talepte yer alamayacağıdır."
+    },
+    {
+     "harf": "C",
+     "metin": "Uluslararası sicildeki sonraki belirleme koruma bitiş tarihi 02.10.2029’dur."
+    },
+    {
+     "harf": "D",
+     "metin": "Sonraki belirlemenin koruma başlangıç ve bitiş tarihleri 01.10.2023 ve 02.10.2029’dur."
+    },
+    {
+     "harf": "E",
+     "metin": "Uluslararası sicildeki sonraki belirleme tarihi 02.08.2023’tür."
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "marka-madrid",
+   "topicGuven": 0.55,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-22",
+   "no": 22,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Başvuru sahibi K, TÜRKPATENT’e 01.05.2022 tarihinde yaptığı bir başvuruyu esas alarak Madrid Protokolü kapsamında 01.08.2022 tarihinde bir uluslararası marka tescil başvurusunda bulunmuştur. TÜRKPATENT, 18.08.2022 tarihinde uluslararası tescil başvurusunu WIPO’ya iletmiştir. WIPO incelemeleri devam ederken TÜRKPATENT, esas başvuru için 01.09.2022 tarihinde kısmi ret kararı vermiştir. WIPO, uluslararası başvuruda herhangi bir eksiklik tespit etmemiş ve başvuruyu uluslararası sicile kaydetmiştir. Buna göre, K’nin yaptığı uluslararası başvurunun esas başvuruya bağımlı kalacağı tarih aralığı aşağıdakilerin hangisinde verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "01.05.2022 – 01.05.2027"
+    },
+    {
+     "harf": "B",
+     "metin": "01.08.2022 – 01.08.2032"
+    },
+    {
+     "harf": "C",
+     "metin": "01.08.2022 – 01.08.2027"
+    },
+    {
+     "harf": "D",
+     "metin": "18.08.2022 – 18.08.2032"
+    },
+    {
+     "harf": "E",
+     "metin": "18.08.2022 – 18.08.2027"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "marka-madrid",
+   "topicGuven": 0.7,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-23",
+   "no": 23,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK hükümlerine ve Marka İnceleme Kılavuzunda yer alan esaslara göre, aşağıda bilgileri verilen yayıma itirazlarda, karıştırılma ihtimalinin (SMK m. 6/1) bulunup bulunmadığına ilişkin yapılan değerlendirme hangisinde doğru olarak verilmiştir? Başvuru Konusu Marka ve Kapsamı İtiraz Gerekçesi Marka ve Kapsamı Karıştırılma İhtimali",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "KAPPANA (3. Sınıf: Sabunlar) KAPPANA (5. Sınıf: Dezenfektanlar) Yok"
+    },
+    {
+     "harf": "B",
+     "metin": "ALBATROS (27. sınıf: Halılar) ALBATROS (35. sınıf: Halıların perakendeciliği hizmetleri) Var"
+    },
+    {
+     "harf": "C",
+     "metin": "YAYLA MUTFAĞI (29. Sınıf: Hayvansal kaynaklı sütler) MUTFAĞIM (43. sınıf: İçecek sağlanması hizmetleri) Var"
+    },
+    {
+     "harf": "D",
+     "metin": "TALENTSMART (9. sınıf: Yazılımlar) SMARTTALENT (9. sınıf: Yazılımlar) Yok"
+    },
+    {
+     "harf": "E",
+     "metin": "NUA (12. sınıf: Bisikletler) NUA (3. sınıf: Parfümler) Var"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-23.webp",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.7,
+   "smkMaddeleri": [
+    6
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-24",
+   "no": 24,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir başvuru sahibi İtalya’da 08.03.2023 tarihinde yaptığı bir başvuruya dayanarak 08.10.2023 tarihinde TÜRKPATENT’e rüçhan hakkı talebi de içeren bir marka başvurusunda bulunmuştur. 18, 25 ve 35. sınıflarda yapılan başvuru 12.11.2023 tarihli Bültende yayımlanmıştır. Bu yayıma süresi içinde karıştırılma ihtimali (SMK m. 6/1) gerekçesiyle aşağıdaki tabloda bilgileri verilen markalar gerekçe gösterilerek itiraz edilmiştir. İtiraz Gerekçesi Markalar Rüçhan Tarihi Başvuru Tarihi Tescil Tarihi K 27.12.2021 31.01.2022 31.08.2022 L 11.08.2017 11.10.2017 07.10.2018 M 06.04.2016 08.10.2016 24.11.2017 N 07.10.2018 12.11.2018 21.09.2019 Buna göre, 6769 sayılı SMK hükümleri kapsamında başvuru sahibi, itiraz gerekçesi markalardan hangileri için kullanım ispatı talebinde bulunabilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "K ve N"
+    },
+    {
+     "harf": "B",
+     "metin": "K ve L"
+    },
+    {
+     "harf": "C",
+     "metin": "L ve M"
+    },
+    {
+     "harf": "D",
+     "metin": "L, M ve N"
+    },
+    {
+     "harf": "E",
+     "metin": "K, M ve N"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-24.webp",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.49,
+   "smkMaddeleri": [
+    6
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-25",
+   "no": 25,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tacir K, 07.05.2023 tarihinde 19, 36 ve 37. sınıflarda yer alan mal ve hizmetlerin tamamı için TÜRKPATENT’e marka başvurusunda bulunmuştur. Başvuru formu ile birlikte rüçhan hakkından yararlanmak için 10.01.2023 tarihinde Avusturya’da aynı mal ve hizmetler için yapmış olduğu marka başvurusundan kaynaklanan rüçhan belgesini de sunmuştur. Kurum, rüçhan hakkı talebini kabul ederek başvuruyu tüm mal ve hizmetler için 12.06.2023 tarihli Bültende yayımlamıştır. Tacir L, bu yayıma karıştırılma ihtimali (SMK m. 6/1) gerekçesiyle itiraz etmiş, Kurum, K’ye yayıma itiraz bildirim yazısını 20.09.2023 tarihinde tebliğ etmiştir. K, 05.10.2023 tarihli karşı görüş formu ve dilekçesinde tabloda verilen itiraz gerekçesi markalar için kullanım ispatı talebinde bulunmuştur. İtiraz Gerekçesi Markalar Tescil Tarihleri İtiraz Gerekçesi Markaların Tescil Kapsamında Yer Alan Sınıflar K’nin Kullanım İspatı Talep Ettiği Sınıflar P 02.03.2018 19/36 19/36 R 22.05.2017 35/36/37 36/37 S 10.09.2016 39/41 19/37 T 03.01.2018 19 19 Buna göre Kurum, itiraz gerekçesi markaların hangisi için talep edilen kullanım ispatını dikkate alır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "P ve R"
+    },
+    {
+     "harf": "B",
+     "metin": "P ve S"
+    },
+    {
+     "harf": "C",
+     "metin": "R ve T"
+    },
+    {
+     "harf": "D",
+     "metin": "P, R ve S"
+    },
+    {
+     "harf": "E",
+     "metin": "R, S ve T"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-25.webp",
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 0.41,
+   "smkMaddeleri": [
+    6
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-26",
+   "no": 26,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’nin Uygulama Yönetmeliğine göre, aşağıdakilerden hangisi yayıma itirazın geri çekilebilmesi için TÜRKPATENT’e sunulması zorunlu bilgi ve belgelerden biridir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yayıma itiraza gerekçe markanın lisans hakkı sahibinden alınmış onay beyanı"
+    },
+    {
+     "harf": "B",
+     "metin": "İtirazın geri çekilmesine ilişkin ücretin ödendiğini gösterir bilgi"
+    },
+    {
+     "harf": "C",
+     "metin": "Talep eden itiraz sahibi gerçek kişi ise noter onaylı imza beyannamesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Talep vekil tarafından yapılmışsa geri çekme yetkisini açıkça içeren vekaletname"
+    },
+    {
+     "harf": "E",
+     "metin": "Talep eden itiraz sahibi tüzel kişi ise noter onaylı imza sirküleri"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "marka-gorus-itiraz",
+   "topicGuven": 0.14,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-27",
+   "no": 27,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK ve Uygulama Yönetmeliğine göre, başvuru sürecinde veya tescil sonrasında markanın konu olabileceği işlemler hakkında Kuruma sunulan aşağıdaki belgelerden hangisinin noter onaylı olması zorunlu değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru sahibi tarafından karara itiraz aşamasında sunulan muvafakatname"
+    },
+    {
+     "harf": "B",
+     "metin": "Tescilli bir marka için düzenlenen inhisari lisans sözleşmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Muvafakat formunun vekil tarafından imzalanması halinde muvafakat yetkisini içeren vekaletname"
+    },
+    {
+     "harf": "D",
+     "metin": "Bültende yayımlanmış bir başvuru için düzenlenen kısmi devir sözleşmesi"
+    },
+    {
+     "harf": "E",
+     "metin": "Arabuluculuk faaliyetinin sonucuna ilişkin düzenlenen tutanak örneği"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "marka-lisans-devir",
+   "topicGuven": 0.79,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-28",
+   "no": 28,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "TÜRKPATENT’e 07.10.2012 tarihinde başvurusu yapılan ve 05.09.2012 tarihli rüçhan hakkına sahip bir marka 18.03.2013 tarihinde tescil edilmiştir. Buna göre, 6769 sayılı SMK ve Uygulama Yönetmeliği kapsamında aşağıdaki tarihlerin hangisinde yapılan yenileme talebi Kurum tarafından kabul edilmez?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "05.06.2022"
+    },
+    {
+     "harf": "B",
+     "metin": "07.10.2022"
+    },
+    {
+     "harf": "C",
+     "metin": "18.03.2023"
+    },
+    {
+     "harf": "D",
+     "metin": "06.04.2023"
+    },
+    {
+     "harf": "E",
+     "metin": "18.04.2023"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "marka-ruchan",
+   "topicGuven": 0.14,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-29",
+   "no": 29,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "TÜRKPATENT’e 21.11.2022 tarihinde yapılan bir marka başvurusu için ilk incelemede Kurum tarafından ret kararı verilmiştir. Bu ret kararına başvuru sahibi tarafından süresi içinde itiraz edilmiş ve Kurum itirazı haklı bularak başvurunun 27.08.2023 tarihli Bültende yayımlanmasına karar vermiştir. Herhangi bir yayıma itiraz yapılmayan başvuru 30.12.2023 tarihinde tescil edilmiş ve bu tescil işlemi de 30.01.2024 tarihinde yayımlanmıştır. Bu arada 01.02.2024 tarihinde marka için devir talebinde bulunulmuş ve 01.03.2024 tarihinde devir işlemi gerçekleşmiştir. Devralanın talebi üzerine 01.04.2024 tarihinde yeni bir tescil belgesi düzenlenmiş ve marka sahibine gönderilmiştir. Buna göre, bu tescilli markanın koruma başlangıç ve bitiş tarihleri aşağıdakilerden hangisinde verilmiştir? Koruma Başlangıç Tarihi Koruma Bitiş Tarihi",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "21.11.2022 21.11.2032"
+    },
+    {
+     "harf": "B",
+     "metin": "27.08.2023 27.08.2033"
+    },
+    {
+     "harf": "C",
+     "metin": "30.12.2023 30.12.2033"
+    },
+    {
+     "harf": "D",
+     "metin": "30.01.2024 30.01.2034"
+    },
+    {
+     "harf": "E",
+     "metin": "01.04.2024 01.04.2034"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-29.webp",
+   "topicId": "marka-tescil-yenileme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-30",
+   "no": 30,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "K firmasının, TÜRKPATENT nezdinde 17. ve 19. sınıflarda tescilli “X” ibareli markası bulunmaktadır. K, üretim kapasitesini artırmak amacıyla 07.08.2023 tarihinde B firması ile belli bir ücret karşılığında beş yıllık lisans sözleşmesi yapmıştır. K, 10.08.2023 tarihinde lisansın sicile kaydı ve yayımlanması için Kuruma talepte bulunmuştur. Kurum, bu taleple ilgili aşağıdaki tespitleri yapmıştır:\n1. Lisans sözleşmesinde lisansın türü belirtilmemiştir.\n2. Lisans sözleşmesi noter onaylı değildir.\n3. Yabancı dildeki sözleşmenin yeminli tercüman onaylı Türkçe çevirisi sunulmamıştır.\n4. Lisans sözleşmesi 17. sınıfta yer alan mallar için yapılmıştır.\n5. Sözleşmenin sicile kaydı ve yayımlanması için gerekli ücret ödenmemiştir.\n\n6769 sayılı SMK ve Uygulama Yönetmeliğine göre bu tespitlerden hangisi için Kurum eksiklik bildiriminde bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 5"
+    },
+    {
+     "harf": "B",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "3 ve 5"
+    },
+    {
+     "harf": "D",
+     "metin": "1, 2 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "2, 3 ve 5"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "marka-lisans-devir",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-31",
+   "no": 31,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’de düzenlenmiş marka tescilinden doğan haklarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "6769 sayılı SMK ile sağlanan marka koruması tescil yoluyla elde edilir."
+    },
+    {
+     "harf": "B",
+     "metin": "Marka tescilinden doğan haklar münhasıran marka sahibine aittir."
+    },
+    {
+     "harf": "C",
+     "metin": "Marka sahibi, tescilli markasıyla aynı olan işaretin tescil kapsamına giren mal veya hizmetlerde izinsiz kullanılmasının önlenmesini talep edebilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Marka sahibi, üçüncü kişiler tarafından dürüstçe ve ticari hayatın olağan akışı içinde, markasının malın ya da hizmetin kullanım amacının belirtilmesinin gerekli olduğu hallerde kullanılmasını engelleyebilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Marka başvurusunun Bültende yayımlanmasından sonra gerçekleşen ve marka tescilinin ilan edilmiş olması halinde yasaklanması söz konusu olabilecek fiiller nedeniyle başvuru sahibi, tazminat davası açmaya yetkilidir."
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "marka-hak-kapsam",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-32",
+   "no": 32,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tescilli bir markaya ilişkin üçüncü kişiler tarafından gerçekleştirilen aşağıdaki kullanımlardan hangisi, 6769 sayılı SMK m.7/5’te sayılan istisnalar arasında yer almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tüzel kişilerin ticaret unvanını belirtmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Gerçek kişilerin kendi ad veya adresini belirtmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Malların türüne ilişkin açıklamalarda bulunulması"
+    },
+    {
+     "harf": "D",
+     "metin": "Hizmetlerin sunuluş zamanına ilişkin açıklamalarda bulunulması"
+    },
+    {
+     "harf": "E",
+     "metin": "Malların kullanım amacına ilişkin açıklamalarda bulunulması"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "marka-hak-kapsam",
+   "topicGuven": 0.43,
+   "smkMaddeleri": [
+    7
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-33",
+   "no": 33,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’de ve doktrinde çeşitli marka türlerine atıflar yapılmaktadır. Bu kapsamda SMK m. 6 ve 31’de tanınmış marka, ortak marka ve garanti markasına ilişkin düzenlemeler yer almaktadır. Ayrıca, genel olarak ticaret ve hizmet markası da marka türleri arasında sayılmaktadır. SMK m. 9’da ise markanın kullanılmasına ilişkin düzenlemeler bulunmaktadır. Buna göre, her biri birbirinden farklı marka türlerini ifade eden aşağıdaki markalardan hangisi kullanım hakkı açısından diğerlerinden farklıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Garanti markası"
+    },
+    {
+     "harf": "B",
+     "metin": "Hizmet markası"
+    },
+    {
+     "harf": "C",
+     "metin": "Ortak marka"
+    },
+    {
+     "harf": "D",
+     "metin": "Tanınmış marka"
+    },
+    {
+     "harf": "E",
+     "metin": "Ticaret markası"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "marka-isaret",
+   "topicGuven": 1,
+   "smkMaddeleri": [
+    6,
+    9
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-34",
+   "no": 34,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir başvuru sahibi, 14. sınıf için 01.03.2023 tarihinde TÜRKPATENT’e marka başvurusunda bulunmuştur. Kurum tarafından incelenen başvuru, 12.05.2023 tarihli Bültende yayımlanmıştır. İtiraza konu olmayan başvuru hakkında Kurum, başvuru sahibine 20.07.2023 tarihinde tescil ücreti bildiriminde bulunmuştur. Başvuru sahibi tescil ücretini ödeyerek, ödediğine dair bilgiyi 15.08.2023 tarihinde Kuruma sunmuştur. Kurum, markayı 05.09.2023 tarihinde tescil ederek sicile kaydetmiş ve tescili 30.09.2023 tarihinde yayımlamıştır. Buna göre, 6769 sayılı SMK kapsamında, markanın sahibine sağladığı haklar istisnai haller dışında üçüncü kişilere karşı hangi tarih itibarıyla hüküm ifade eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "01.03.2023"
+    },
+    {
+     "harf": "B",
+     "metin": "12.05.2023"
+    },
+    {
+     "harf": "C",
+     "metin": "15.08.2023"
+    },
+    {
+     "harf": "D",
+     "metin": "05.09.2023"
+    },
+    {
+     "harf": "E",
+     "metin": "30.09.2023"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "marka-tescil-yenileme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-35",
+   "no": 35,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tescil ettireni K Ticaret ve Sanayi Odası olan K Portakalı coğrafi işaretinin ürün özelliklerinde mevsimsel şartlara bağlı olarak değişiklikler meydana gelmiştir. Bu nedenle bir K Portakalı coğrafi işareti üreticisi, coğrafi işaretin tescile konu özelliklerinde değişiklik talebinde bulunmuştur. 6769 sayılı SMK ve Uygulama Yönetmeliği kapsamında, bu değişiklik talebiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "K Portakalı coğrafi işareti üreticisi, K Portakalı coğrafi işaretini tescil ettiren olmadığı gerekçesiyle değişiklik talebi reddedilir."
+    },
+    {
+     "harf": "B",
+     "metin": "Değişiklik Bültende yayımlanmadan önce, tescil ettirenden varsa değişiklik talebine ilişkin görüşlerini sunması istenir."
+    },
+    {
+     "harf": "C",
+     "metin": "Değişiklik talebine konu olan hususlara ilişkin eksikliklerin bulunması halinde değişiklik talebi K Portakalı coğrafi işareti üreticisine bildirim yapılmaksızın reddedilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Değişiklik talebinde eksiklik görülmemesi halinde değişiklik talep edilen hususlar kesinleşerek doğrudan sicile kaydedilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Değişikliğin kesinleşmesi halinde, değişikliğin ilgililerce uygulanması için gerekli tedbirlerin alınması K Portakalı coğrafi işareti üreticisinden istenir."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "ci-tescil-degisiklik",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-36",
+   "no": 36,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Aşağıda mahreç işareti amblem örnekleri verilmiştir: 1. 2. 3. 4. Yukarıda yer alan amblem örneklerinden Coğrafi İşaret ve Geleneksel Ürün Adı Amblem Yönetmeliğine uygun olan kullanımlar aşağıdakilerden hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "1, 3 ve 4"
+    },
+    {
+     "harf": "D",
+     "metin": "2, 3 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "1, 2, 3 ve 4"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-36.webp",
+   "topicId": "ci-turler",
+   "topicGuven": 0.74,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-37",
+   "no": 37,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Aşağıda coğrafi işaret başvurusu yapılması düşünülen bazı ürünler, özellikleri ve coğrafi işaretin türü verilmiştir: Ürün adı Ürün özelliği Coğrafi işaretin türü\n1. A Sarımsağı Ürün ile coğrafi sınırın iklim, toprak özellikleri ve beşeri unsurları arasında sıkı bağ bulunmaktadır. Menşe adı\n2. B Baklavası Ürünün üretiminde kullanılan bileşenler coğrafi sınırdan temin edilir ve coğrafi sınıra özgü üretim metodu bulunmaktadır ancak ürünün pişirilmesi ve şerbetlenmesi coğrafi sınır dışında gerçekleştirilebilmektedir. Menşe adı\n3. C Bastonu Ürünün üretimi, coğrafi sınırdaki ustaların bilgi birikimine bağlıdır ve ürünün hammaddesi coğrafi sınır dışındaki şekil vermeye elverişli olan bir ağaçtan elde edilmektedir. Mahreç işareti\n4. D Bileziği Ürünün hammaddesi coğrafi sınırdan temin edilmektedir ve ürünün üretimi, işlenmesi coğrafi sınırdaki ustaların bilgi birikimine bağlıdır.\n\nMenşe adı Buna göre, bu ürünlerden coğrafi işaret türü doğru olanlar aşağıdakilerden hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "B",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "C",
+     "metin": "3 ve 4"
+    },
+    {
+     "harf": "D",
+     "metin": "1, 3 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "2, 3 ve 4"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-37.webp",
+   "topicId": "ci-turler",
+   "topicGuven": 0.46,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-38",
+   "no": 38,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir Fransız üretici “A type of Antep Baklavası” (Antep Baklavası tipinde) ibaresiyle Fransa’da baklava üretip satmaktadır. Avrupa Birliğinde Antep Baklavası coğrafi işaretini tescil ettiren Gaziantep Sanayi Odası, Fransa’daki halkı yanıltıcı bu kullanımı engellemek istemektedir. Buna göre, Gaziantep Sanayi Odasının bu kullanımı engellemek için dayanabileceği hükümler aşağıdakilerin hangisinde mevcuttur? (Fransa aşağıdaki uluslararası sözleşme, protokol ve anlaşmalara taraftır.)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dünya Fikri Mülkiyet Örgütünü Kuran Stockholm Sözleşmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Markaların Figüratif Elemanlarının Sınıflandırılmasına İlişkin Viyana Anlaşması"
+    },
+    {
+     "harf": "C",
+     "metin": "Markaların Uluslararası Tescili Konusunda Madrid Sözleşmesi ile İlgili Protokolü"
+    },
+    {
+     "harf": "D",
+     "metin": "Mikroorganizmaların Uluslararası Saklanmasına İlişkin Budapeşte Anlaşması"
+    },
+    {
+     "harf": "E",
+     "metin": "Ticaretle Bağlantılı Fikri Mülkiyet Hakları Anlaşması"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "ulus-trips",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-39",
+   "no": 39,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "A ilinde üretilen ve söz konusu ille özdeşleşmiş “A Çileği” için TÜRKPATENT’e coğrafi işaret tescil başvurusu yapılmıştır. Söz konusu başvuru Kurum tarafından incelenmiş, ürünün tanımı ve ayırt edici özellikleri bakımından yetersiz olduğu tespit edilmiş ve eksiklikler başvuru yapana bildirilmiştir. Bildirilen eksiklikler, belirtilen süre içinde tamamlanamamış ve ek süre talebinde bulunulmuştur. Eksiklikler, Kurum tarafından onaylanan ek süre içinde de tamamlanamamıştır. Buna göre, 6769 sayılı SMK ve Uygulama Yönetmeliği kapsamında Kurum, talep edilmesi halinde başvuru yapana kaç kez daha ek süre verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1"
+    },
+    {
+     "harf": "B",
+     "metin": "2"
+    },
+    {
+     "harf": "C",
+     "metin": "3"
+    },
+    {
+     "harf": "D",
+     "metin": "4"
+    },
+    {
+     "harf": "E",
+     "metin": "5"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "ci-basvuru",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-40",
+   "no": 40,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "TÜRKPATENT nezdinde menşe adı olarak tescilli A Kirazının tescil belgesinde, denetim merci olarak A Ticaret ve Sanayi Odası ile A Tarım İl Müdürlüğü yer almaktadır. Tescil ettiren, A Kirazının 2023 yılında yapılan denetimlerine ilişkin denetim raporunu TÜRKPATENT’e sunmadan önce iki hususun sorun olup olmadığıyla ilgili bir marka vekilinden görüş almak istemiştir. Birinci husus, A Tarım İl Müdürlüğünün denetimlere katılamadığı, yerine A Üniversitesi Ziraat Fakültesi Bahçe Bitkileri Bölümünden ürün konusunda uzman bir kişinin katıldığıdır. İkincisi ise denetlenenlerin tescilde belirtilen özelliklere uygun bulunmayan ürünleri için uygulanan tedbirlere denetim raporunda yer verilmediğidir. Vekil bu iki hususla ilgili aşağıdaki görüşleri tescil ettirene bildirmiştir.\n1. Denetimlere A Tarım İl Müdürlüğü yerine katılım sağlayan kişi, ürün konusunda uzman olduğundan TÜRKPATENT konuya ilişkin eksiklik bildiriminde bulunmaz.\n2. Denetimlere, A Tarım İl Müdürlüğünden katılım sağlanmadığı için TÜRKPATENT eksiklik bildirimi yapar.\n3. Denetlenenlerin tescilde belirtilen özelliklere uygun bulunmayan ürünleri için uygulanan tedbirlerin denetim tutanağında bulunması zorunluyken bu bilgilerin denetim raporunda bulunması zorunlu değildir.\n\n6769 sayılı SMK’nin Uygulama Yönetmeliği kapsamında, denetim raporuna ilişkin vekilin bildirdiği görüşlerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "ci-kullanim-denetim",
+   "topicGuven": 0.56,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-41",
+   "no": 41,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir tasarımcı, yeni ve ayırt edici niteliğe sahip A ve B tasarımlarını ilk kez Türkiye’de 03.06.2023 tarihinde açılan X sergisinde 05.06.2023 tarihinde teşhir ederek kamuya sunmuştur. B tasarımı için TÜRKPATENT’e tasarım tescil başvurusu yapmış, bu başvurusunda X sergisindeki teşhirden doğan rüçhan hakkı talebinde bulunmuş ve bu haktan yararlanmıştır. Kurum tarafından yapılan incelemelerin ardından tescil belgesi başvuru sahibine tebliğ edilmiştir. 6769 sayılı SMK’ye göre, A ve B tasarımları için tasarım korumasından yararlanılabilecek son tarih aşağıdakilerden hangisidir? A Tasarımı B Tasarımı",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "03.06.2026 05.12.2043"
+    },
+    {
+     "harf": "B",
+     "metin": "05.06.2026 05.06.2048"
+    },
+    {
+     "harf": "C",
+     "metin": "05.06.2026 05.12.2048"
+    },
+    {
+     "harf": "D",
+     "metin": "03.06.2028 05.06.2043"
+    },
+    {
+     "harf": "E",
+     "metin": "05.06.2028 05.06.2048"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-41.webp",
+   "topicId": "tasarim-basvuru",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-42",
+   "no": 42,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6769 sayılı SMK’nin Uygulama Yönetmeliğinde sicile kaydı yapılmış tasarımlar için Bültende yayımlanacak unsurlar belirlenmiştir. Aşağıdakilerden hangisi, ilk kez yayımlanan her başvuru için Bültende kesinlikle yer alır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tasarımcı adı"
+    },
+    {
+     "harf": "B",
+     "metin": "Rüçhan bilgileri"
+    },
+    {
+     "harf": "C",
+     "metin": "Vekil adı"
+    },
+    {
+     "harf": "D",
+     "metin": "Tasarım sayısı"
+    },
+    {
+     "harf": "E",
+     "metin": "Görsel anlatım"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "tasarim-inceleme-tescil",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-43",
+   "no": 43,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Almanya’da yerleşik Firma A, tasarladığı koltuklar için menşe ülke ofisindeki 28.12.2021 tarihli başvurusunu rüçhan göstererek 10.06.2022 tarihinde WIPO’ya uluslararası tasarım tescil başvurusunda bulunmuş ve koruma talep edilen ülkeler arasında Türkiye’yi de seçmiştir. WIPO tarafından yapılan incelemenin ardından başvuru, 16.12.2022 tarihli uluslararası Bültende yayımlanmış ve aynı gün TÜRKPATENT veri tabanına aktarılmıştır. TÜRKPATENT yaptığı inceleme sonucunda başvuruda bulunan iki tasarımdan birini yeni olmadığı gerekçesiyle reddetmiş, diğerini 09.05.2023 tarihli Bültende yayımlamıştır. Bu başvuruyla ilgili aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rüçhan belgesi 16.03.2023 tarihine kadar Kuruma sunulmadığı takdirde rüçhan hakkından yararlanma talebi yapılmamış sayılır."
+    },
+    {
+     "harf": "B",
+     "metin": "Tescilin koruma süresi başlangıçta beş yıldır ve yenileme talebi WIPO’ya yapılmalıdır."
+    },
+    {
+     "harf": "C",
+     "metin": "TÜRKPATENT, tasarımın reddine ilişkin kararını Firma A’ya 16.12.2023 tarihine kadar bildirmelidir."
+    },
+    {
+     "harf": "D",
+     "metin": "Firma A, ret kararına yönelik itirazını kararın bildirim tarihinden itibaren iki ay içinde TÜRKPATENT’e iletmelidir."
+    },
+    {
+     "harf": "E",
+     "metin": "Yayımlanan tasarımın yeni olmadığını öne süren Firma B, itirazını 09.08.2023 tarihine kadar TÜRKPATENT’e iletmelidir."
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "ulus-siniflandirma",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-44",
+   "no": 44,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tasarımcı A, 16.10.2023 tarihinde kendi tasarımları için TÜRKPATENT’e tasarım tescil başvurusunda bulunmuştur. Bu başvuruda 19.03.2023 rüçhan tarihli iki adet otomobil (12. Locarno sınıfı), 24.06.2023 rüçhan tarihli bir adet otomobil farı (26. Locarno sınıfı) tasarımı bulunmaktadır. Başvuru sahibine 20.11.2023 tarihinde tebliğ edilen yazıda başvurunun çoklu başvuruya uygun olmadığı belirtilmiştir. Bunun üzerine başvuru sahibi 26. sınıftaki otomobil farı tasarımı için ilk başvurudaki aynı bilgi ve belgelerle 10.01.2024 tarihinde bölünmüş başvuru yapmıştır. Kurum tarafından yapılan yenilik incelemesi sırasında tasarımların daha önce, Tasarımcı A ve üçüncü bir kişi olan Tasarımcı B tarafından birbirinden habersiz olarak tasarlanıp internette kamuya sunulduğu görülmüştür. Bu tasarımların kamuya sunulmasına ilişkin bilgiler aşağıdaki tabloda verilmiştir: Tasarımlar İnternette Kamuya Sunulma Tarihi Kamuya Sunan Kişi 1. Otomobil Tasarımı 05.09.2022 Tasarımcı A 2. Otomobil Tasarımı 22.04.2023 Tasarımcı B Bölünmüş Başvurudaki Otomobil Farı Tasarımı 27.09.2023 Tasarımcı B Buna göre, bu tasarımlar için Tasarımlar Dairesi Başkanlığı tarafından verilmesi gereken kararlar aşağıdakilerin hangisinde birlikte verilmiştir? 1. Tasarım 2. Tasarım Bölünmüş Başvurudaki",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ret Ret Yayım"
+    },
+    {
+     "harf": "B",
+     "metin": "Yayım Yayım Ret"
+    },
+    {
+     "harf": "C",
+     "metin": "Yayım Ret Yayım"
+    },
+    {
+     "harf": "D",
+     "metin": "Yayım Yayım Yayım"
+    },
+    {
+     "harf": "E",
+     "metin": "Ret Ret Ret"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-44.webp",
+   "topicId": "tasarim-basvuru",
+   "topicGuven": 0.45,
+   "smkMaddeleri": [
+    2
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-45",
+   "no": 45,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "2019-2021 yılları arası tasarım yenileme başvuru ücretleri aşağıdaki tabloda verilmiştir. Yıl Tek Tasarım İçin İlave Her Bir Tasarım İçin Yenileme Başvuru Ücreti (TL) 6 Ay Süre Uzatımı ile Yenileme Başvuru Ücreti (TL) Yenileme Başvuru Ücreti (TL) 6 Ay Süre Uzatımı ile Yenileme Başvuru Ücreti (TL) 2019 445 850 55 110 2020 540 1030 70 130 2021 600 1150 80 150 Başvuru sahibi X, 18.04.2015 tarihli bir tescilinde bulunan su filtreli sürahi tasarımlarının tamamı için TÜRKPATENT’e 680 TL ücret ödediğine ilişkin bilgiyle yenileme talebinde bulunmuş ve tescili yenilenmiştir. Buna göre, bu tescilde yer alan görseller ve tasarım numaraları aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1.1 1.2 2.1"
+    },
+    {
+     "harf": "B",
+     "metin": "1.1 2.1 2.2"
+    },
+    {
+     "harf": "C",
+     "metin": "1.1 1.2 2.1 2.2"
+    },
+    {
+     "harf": "D",
+     "metin": "1.1 2.1 2.2 3.1"
+    },
+    {
+     "harf": "E",
+     "metin": "1.1 2.1 3.1 3.2"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "gorsel": "veri/gorsel/tp-2024-A-marka-45.webp",
+   "topicId": "tasarim-sure-yenileme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-46",
+   "no": 46,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "TÜRKPATENT’e yapılan 02.05.2019 rüçhan ve 30.10.2019 başvuru tarihli, yayım erteleme talebi bulunan bir başvuruda A, B, C, D, E ve F olmak üzere altı adet tasarım ve her bir tasarımda ikişer adet 8x8 cm boyutunda görsel anlatım bulunmaktadır. Kurum, 27.11.2019 tarihinde başvuru sahibine tebliğ ettiği yazıda, A ve B tasarımlarının görsel anlatımları için şekli eksiklik bildiriminde bulunmuştur. Bunun üzerine başvuru sahibi, 14.02.2020 tarihinde bu eksikliklerin giderildiği görselleri Kuruma sunmuştur. Kurum, yaptığı incelemede başvuru sahibinin C tasarımını 03.09.2018, F tasarımını 05.02.2018 tarihinde internette yayımlayarak kamuya sunduğunu tespit etmiş ve inceleme sonucu verdiği kararı başvuru sahibine iletmiştir. Başvuru sahibi karara herhangi bir itirazda bulunmamış ve yayım erteleme süresinin tamamını kullanarak sürenin sona erdiği tarihte Kuruma ilettiği taleple tasarımları üçüncü kişilerin incelemesine açmıştır. Buna göre, bu başvuru için ödenmesi gereken yayım ücreti kaç TL’dir? (Her bir 8x8 cm alan için yayım ücreti; 2019 yılı için 35 TL, 2020 yılı için 40 TL, 2021 yılı için 45 TL, 2022 yılı için 60 TL’dir.)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "240"
+    },
+    {
+     "harf": "B",
+     "metin": "270"
+    },
+    {
+     "harf": "C",
+     "metin": "360"
+    },
+    {
+     "harf": "D",
+     "metin": "450"
+    },
+    {
+     "harf": "E",
+     "metin": "480"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "tasarim-inceleme-tescil",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-47",
+   "no": 47,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Sınai mülkiyet haklarının korunmasına ilişkin bazı ilkeler aşağıda verilmiştir:\n1. En çok kayrılan ülke ilkesi\n2. Milli muamele ilkesi\n3. Tükenme ilkesi\n4. Ülkesellik ilkesi\n\nBuna göre, bu ilkelerden 1883 tarihli Paris Sözleşmesinde düzenlenmiş olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "3 ve 4"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "ulus-paris",
+   "topicGuven": 0.98,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-48",
+   "no": 48,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Aşağıdakilerden hangisi TÜRKPATENT’in görevleri arasında yer almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sınai mülkiyet haklarıyla ilgili yayınlar yapmak"
+    },
+    {
+     "harf": "B",
+     "metin": "Zorunlu lisans sözleşmelerini düzenlemek"
+    },
+    {
+     "harf": "C",
+     "metin": "Buluşların kullanımını takip etmek"
+    },
+    {
+     "harf": "D",
+     "metin": "Geleneksel ürün adlarının tescil işlemlerini yapmak"
+    },
+    {
+     "harf": "E",
+     "metin": "Sınai mülkiyet alanında Avrupa Birliği ile ilişkileri yürütmek"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "vekil-kurum",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-49",
+   "no": 49,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Eşini kaybetmiş olan D, velayeti altındaki ayırt etme gücüne sahip 16 yaşındaki kızı E ve alkol bağımlılığı nedeniyle kısıtlanarak vesayet altına alınmış kardeşi F ile yaşamaktadır. F, ayırt etme gücüne sahip olup vasisi D’dir. 4721 sayılı Türk Medeni Kanunu’nun kişiliğe ilişkin hükümlerine göre, aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "F, haksız fiillerinden doğan zararlardan sorumlu tutulamaz."
+    },
+    {
+     "harf": "B",
+     "metin": "E, kendi isteği ve D’nin rızasıyla mahkemece ergin kılınabilir."
+    },
+    {
+     "harf": "C",
+     "metin": "E ve F’nin hak ehliyeti vardır, fakat fiil ehliyeti yoktur."
+    },
+    {
+     "harf": "D",
+     "metin": "E’nin borç altına girebilmesi için, D’nin rızası gereklidir."
+    },
+    {
+     "harf": "E",
+     "metin": "F, kendisine yapılan bir bağışlamayı kabul edebilir."
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.87,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-50",
+   "no": 50,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "H, A’nın fotoğraf stüdyosunda fotoğraf çektirmiştir. Fotoğrafı çok beğenen A, hukuka aykırı olduğunu bildiği halde H’nin rızasını almadan fotoğrafı vitrininde ve sosyal medyada yayınlamıştır. H’nin fotoğrafı ilgi çekmiş ve A’nın satışlarının artmasını sağlamıştır. H’nin patronu K, fotoğrafı görmüş ve bu sebeple H’yi işten çıkarmıştır. H, fotoğrafının aleni şekilde yayınlanmasından dolayı büyük bir üzüntü yaşamış ve ruh sağlığı bozulmuştur. 4721 sayılı Türk Medeni Kanunu’nda kişiliğin korunması hakkında düzenlenen hükümler çerçevesinde, aşağıdakilerden hangisi H’nin A’ya karşı ileri sürebileceği talepler arasında yer almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Saldırıya son verilmesini talep etmek"
+    },
+    {
+     "harf": "B",
+     "metin": "Maddi tazminat talebinde bulunmak"
+    },
+    {
+     "harf": "C",
+     "metin": "Saldırıda etkili olan araçların imhasını istemek"
+    },
+    {
+     "harf": "D",
+     "metin": "Saldırıdan elde edilen kazancın verilmesini istemek"
+    },
+    {
+     "harf": "E",
+     "metin": "Manevi tazminat talebinde bulunmak"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-51",
+   "no": 51,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Bir inşaat firması sahibi olan ve Bayburt’ta ikamet eden M, Suriye’den bir toplu konut projesi işi almış ve iki aylığına Suriye’ye gitmiştir. Gittikten sonra eşi K ile her gün düzenli olarak görüşen M, eşiyle en son 10.05.2023 tarihinde telefon görüşmesi yapmış, bu tarihten sonra M’ye hiçbir şekilde ulaşılamamıştır. Eşinden uzun zamandır haber alamayan K, eşinin döneceğine dair umudunu yitirmiş ve gaiplik kararı verilmesi için mahkemeye başvurmuştur. 4721 sayılı Türk Medeni Kanunu m. 32 ve m. 33 hükümlerine göre, aşağıdakilerden hangisi M’nin gaipliğine karar verilebilmesi için gerekli şartlardan biri değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Mahkemeden gaiplik kararının istenebilmesi için, M’den alınan son haber tarihinin üzerinden en az beş yıl geçmelidir."
+    },
+    {
+     "harf": "B",
+     "metin": "Suriye’deki yetkili makamlardan M’nin ölümüne kesin gözüyle bakıldığına yönelik rapor alınmalıdır."
+    },
+    {
+     "harf": "C",
+     "metin": "Dava, yetkili mahkeme olan Bayburt mahkemelerinde açılmalıdır."
+    },
+    {
+     "harf": "D",
+     "metin": "M hakkında bilgisi olanlar, açıklama yapmaları için mahkeme tarafından ilan yoluyla davet edilmelidir."
+    },
+    {
+     "harf": "E",
+     "metin": "Hakları M’nin ölümüne bağlı olanlar tarafından dava açılmalıdır."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "temel-medeni",
+   "topicGuven": 1,
+   "smkMaddeleri": [
+    32,
+    33
+   ]
+  },
+  {
+   "id": "tp-2024-A-marka-52",
+   "no": 52,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Aşağıda 6102 sayılı Türk Ticaret Kanunu’nun ticari işletmeye ilişkin hükümlerine göre, esnaf işletmesi için öngörülen sınırı aşan düzeyde gelir elde etme amacı bulunan işletmelere yer verilmiştir:\n1. A limited şirketinin işlettiği yaz sezonlarında faaliyet gösteren yazlık sinema\n2. Bir bakanlıkta memur olarak çalışan C’nin işlettiği süpermarket\n3. Kimsesiz çocuklara yardım amacıyla kurulan B Derneği’nin işlettiği lokanta\n\nBuna göre, ticari işletme olanlar aşağıdakilerin hangisinde doğru verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "1, 2 ve 3"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.84,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-53",
+   "no": 53,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Tacir A, İstanbul’un Bebek semtinde uzun yıllardır sahibi olduğu tescilli ticari işletmesi olan “Ahmet Karadeniz” isimli lüks restoranını Tacir B’ye devredecektir. A, devir işleminden önce avukatından 6102 sayılı Türk Ticaret Kanunu’nun ticari işletmenin devrine ilişkin hükümlerine göre görüş istemiştir. Avukatın verdiği hukuki görüşler şunlardır:\n1. Devir sözleşmesi yazılı şekilde yapılmalı, ticaret siciline tescil ve ilan edilmelidir.\n2. A ticaret unvanını devretmek istemiyorsa, devir sözleşmesine hüküm koyarak devrin kapsamı dışında bırakmalıdır.\n3. Ticari işletmenin bünyesindeki taşınmazın devri için, ayrıca tapu sicilindeki zorunlu tasarruf işlemlerinin yapılması gereklidir.\n\nBuna göre, bu görüşlerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.8,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-54",
+   "no": 54,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’nda, gerçek kişi ad ve soyadlarının ticaret unvanında yer alması halinde uyulması gereken düzenlemelere yer verilmiştir. Buna göre, aşağıdaki unvanlardan hangisi bu düzenlemelere uygun şekilde oluşturulmamıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Özlem Deniz Yapı Kooperatifi"
+    },
+    {
+     "harf": "B",
+     "metin": "Murat Uzun Donatma İştiraki"
+    },
+    {
+     "harf": "C",
+     "metin": "Metin Arslan Otomotiv Sanayi A.Ş."
+    },
+    {
+     "harf": "D",
+     "metin": "Mehmet Kahraman Kozmetik Limited Şirketi"
+    },
+    {
+     "harf": "E",
+     "metin": "Ali Kılıç ve Ortakları İnşaat Kollektif Şirketi"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1791877246555,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-55",
+   "no": 55,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "İzmir’de mahalle arasında yer alan dükkanında ayakkabı satışı yapan gerçek kişi tacir Mehmet Doruk, kanuni temsilcisi aracılığıyla ticaret unvanını “Doruk Ayakkabıcılık Fabrikası” olarak tescil ettirmek için İzmir Ticaret Sicil Müdürlüğü’ne dilekçe ile süresi içinde başvurmuştur. Sicil Müdürlüğü dilekçeyi 6102 sayılı Türk Ticaret Kanunu hükümlerine göre inceledikten sonra, başvuruyu nihai olarak reddetmiştir. Mehmet Doruk, başvurusunun;\n1. Ticaret unvanının üçüncü kişilerde yanlış izlenim yaratacak nitelik taşıması\n2. Başvurunun temsilcisi aracılığıyla yapılmış olması\n3. Ticaret unvanında adını ve soyadını birlikte kullanmaması gerekçeleriyle reddedildiğini düşünmektedir.\n\nBuna göre, Sicil Müdürlüğünün ret nedenine ilişkin, Mehmet Doruk’un düşündüğü gerekçelerden doğru olan aşağıdakilerden hangisinde verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-56",
+   "no": 56,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "Ankara’da faaliyet gösteren K işletmesi, tarımsal ve hayvansal ürünlerin satışını yapmaktadır. K, organik ürünlere yönelik artan taleplerden faydalanmak amacıyla, satışını yaptığı ürünlerin organik üretim olmadığını bildiği halde işletmenin tabelasında ve ürünlerinin üstünde “%100 organik. Tarım Bakanlığı sertifikalı.” ibaresini kullanmaktadır. Birçok müşteri ürünlerin organik olduğunu düşünerek K’den bu ürünleri almaktadır. K ayrıca, kendisine gelen müşterilere rakip L işletmesinin ürünlerini kötülemektedir. Sözü edilen bu durumlar, L’nin satışlarının giderek düşmesine neden olmaktadır. L, yaptığı araştırmada K’nin sattığı ürünlerin organik ve sertifikalı olmadığını tespit etmiştir. Buna göre, 6102 sayılı Türk Ticaret Kanunu’nun haksız rekabet hükümleri kapsamında, aşağıdakilerden hangisi K’ye yönelik başvurulabilecek hukuki yollardan biri değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "L, K’nin haksız rekabet yaratan yanlış veya yanıltıcı beyanlarının düzeltilmesi için dava açabilir."
+    },
+    {
+     "harf": "B",
+     "metin": "Ankara Ticaret Odası, haksız rekabet sonucu zarar gören üyelerinin maddi zararının tazmini talebiyle dava açabilir."
+    },
+    {
+     "harf": "C",
+     "metin": "Ekonomik çıkarları zarar gören müşteriler, K’nin fiilinin haksız olup olmadığının tespitini isteyebilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Satışları düşen L, maddi zararının tazmini talebiyle dava açabilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Ekonomik çıkarları zarar gören müşteriler, haksız rekabetin men’i davası açabilir."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "temel-haksiz-rekabet",
+   "topicGuven": 0.57,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-57",
+   "no": 57,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "K, yazlık evinin bahçesindeki bakım işleri için Bahçıvan L ile vekâlet sözleşmesi yapmış ve sözleşmede L’ye ödenecek vekâlet ücreti kararlaştırılmıştır. L’ye, bu işleri sadece kendisinin yapması ve 10.000 TL üzerinde harcama yapmaması talimatını vermiştir. Bahçe aşırı yağışlardan zarar gördüğü için, yaptığı piyasa araştırmasında L, bu bütçeyle bakım işlerinin yapılamayacağını anlamıştır. K’nin yoğun bakımda olması nedeniyle L, K’den izin alamadan 10.500 TL harcama yapmıştır. L, bahçıvan arkadaşı M’ye gerekli talimatları aktarıp bahçenin bakımıyla ilgili alt vekalet vererek hafta sonu gezmeye gitmiştir. M, bahçeye aşırı gübre attığı için, bahçedeki tüm fideler yanmış ve 2.000 TL’lik bir zarar ortaya çıkmıştır. Buna göre, 6098 sayılı Türk Borçlar Kanunu’nun vekâlet sözleşmesi hükümleri göz önüne alındığında, bu olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "L, vekâlet borcunu şahsen ifa etmekle yükümlü olup, M’ye alt vekâlet vermesi sözleşmeye aykırıdır."
+    },
+    {
+     "harf": "B",
+     "metin": "Sözleşmede ücret kararlaştırılmış olsa bile, K zarara uğramış olduğu için, L ücrete hak kazanamaz."
+    },
+    {
+     "harf": "C",
+     "metin": "L, K’nin ücrete ilişkin talimatından haksız şekilde ayrılarak sözleşmeye aykırı hareket etmiştir."
+    },
+    {
+     "harf": "D",
+     "metin": "L, M’yi seçme ve talimat vermede gerekli özeni gösterdiğinden, M’nin fiilinden kendisi yapmış gibi sorumlu tutulamaz."
+    },
+    {
+     "harf": "E",
+     "metin": "K ile M arasında bir sözleşme ilişkisi mevcut olmadığından K, ortaya çıkmış olan zararın tazminini sadece L’den talep edebilir, M’den talep edemez."
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1791877246555,
+   "topicId": "temel-borclar",
+   "topicGuven": 0.84,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-58",
+   "no": 58,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6098 sayılı Türk Borçlar Kanunu’nun vekâlet sözleşmesi hükümlerine göre, aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vekâlete ilişkin hükümler, niteliklerine uygun düştükleri ölçüde, Türk Borçlar Kanunu’nda düzenlenmemiş olan işgörme sözleşmelerine de uygulanır."
+    },
+    {
+     "harf": "B",
+     "metin": "Vekil, üzerine aldığı işi ifa ederken aynı şartlar altında iş gören basiretli, özenli bir vekil gibi hareket etmelidir."
+    },
+    {
+     "harf": "C",
+     "metin": "Bir kişiye birlikte vekâlet verenler, vekile karşı müteselsilen sorumlu olurlar."
+    },
+    {
+     "harf": "D",
+     "metin": "Vekâlet sözleşmesinde vekâletin kapsamının açıkça gösterilmemesi hâlinde, sözleşme kurulmamış sayılır."
+    },
+    {
+     "harf": "E",
+     "metin": "Kendisine bir işin görülmesi önerilen kişi, bu işi görme konusunda resmî sıfata sahipse, öneriyi hemen reddetmedikçe sözleşme kurulmuş sayılır."
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1791877246555,
+   "topicId": "temel-borclar",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-59",
+   "no": 59,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’nun işletme adına ilişkin hükümleri göz önünde bulundurulduğunda, aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Usulen tescil ve ilan edilmiş işletme adını kullanma hakkı sadece sahibine aittir."
+    },
+    {
+     "harf": "B",
+     "metin": "“Cumhuriyet” kelimesi bir işletme adında ancak Cumhurbaşkanı kararıyla yer alabilir."
+    },
+    {
+     "harf": "C",
+     "metin": "İşletme adını hem tacirler hem esnaflar kullanabilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Seçilecek işletme adının gerçeğe ve kamu düzenine aykırı olmaması gerekir."
+    },
+    {
+     "harf": "E",
+     "metin": "Bir işletme adı, yalnızca tescil edilmiş olduğu ilgili sicil dairesi çevresinde korunur."
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1791877246555,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.57,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2024-A-marka-60",
+   "no": 60,
+   "yil": 2024,
+   "kitapcik": "A",
+   "bolum": "MARKA",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2024 Marka Vekilliği Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’nda yer alan tüzel kişilere ilişkin genel hükümlere göre, aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tüzel kişiler, örgütlenmiş kişi ve mal topluluklarından oluşur."
+    },
+    {
+     "harf": "B",
+     "metin": "Tüzel kişi organlarının, kusurlarından dolayı kişisel sorumluluğu bulunmaz."
+    },
+    {
+     "harf": "C",
+     "metin": "Tüzel kişiler, gerçek kişilere özgü cins, yaş, hısımlığa ilişkin haklardan yararlanamazlar."
+    },
+    {
+     "harf": "D",
+     "metin": "Tüzel kişi, iradesini organları aracılığıyla açıklar."
+    },
+    {
+     "harf": "E",
+     "metin": "Tüzel kişiler, kanuna ve kuruluş belgelerine göre gerekli organlara sahip olmakla fiil ehliyetini kazanırlar."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1791877246555,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.98,
    "smkMaddeleri": []
   },
   {

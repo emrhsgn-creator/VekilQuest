@@ -17,3 +17,4 @@ data/ham/*
 data/sorular/*
 !data/sorular/.gitkeep
 tsconfig.tsbuildinfo
+__pycache__/

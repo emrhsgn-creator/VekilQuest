@@ -14,17 +14,24 @@
  */
 
 import { readdir, readFile, writeFile, mkdir, rm } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { tmpdir } from 'node:os';
 import { build } from 'esbuild';
 import { bolumKapsamlari } from '../src/lib/parse.mjs';
+import { soruyuBicimle } from '../src/lib/bicim.mjs';
 
 const KAYNAK_KLASOR = path.join('data', 'sorular');
 const CIKTI = path.join('public', 'veri', 'soru-bankasi.json');
 
 const gecici = path.join(tmpdir(), `vekilquest-classify-${Date.now()}.mjs`);
 await build({
-  entryPoints: ['src/lib/classify.ts'],
+  stdin: {
+    contents: "export * from './src/lib/classify.ts'; import { TOPICS } from './src/data/topics.ts'; export const TOPIC_IDLERI = new Set(TOPICS.map((t) => t.id));",
+    resolveDir: process.cwd(),
+    loader: 'ts',
+  },
   bundle: true,
   format: 'esm',
   outfile: gecici,
@@ -60,24 +67,52 @@ if (patentBolumleri.length > 0) {
 }
 
 const siniflar = topluSiniflandir(sorular, kapsamlar);
+
+// Elle konu düzeltmeleri: sınıflandırıcının açıkça yanıldığı sorular.
+const { konular: elleKonular } = JSON.parse(await readFile(path.join('tools', 'konu-duzeltmeleri.json'), 'utf8'));
+const { TOPIC_IDLERI } = await import(`file://${gecici}`);
+for (const [id, topicId] of Object.entries(elleKonular)) {
+  if (!TOPIC_IDLERI.has(topicId)) {
+    console.error(`konu-duzeltmeleri.json: bilinmeyen konu "${topicId}" (${id})`);
+    process.exit(1);
+  }
+  if (!sorular.some((s) => s.id === id)) console.warn(`Uyarı: konu düzeltmesindeki soru bankada yok: ${id}`);
+}
 const zenginlestirilmis = sorular.map((s) => {
   const sonuc = siniflar.get(s.id);
-  return {
+  // Öncüller satırlara bölünür, sayfa artıkları ayıklanır (src/lib/bicim.mjs).
+  const elle = elleKonular[s.id];
+  return soruyuBicimle({
     ...s,
-    topicId: s.topicId ?? sonuc?.topicId,
-    topicGuven: s.topicGuven ?? sonuc?.guven,
+    topicId: elle ?? s.topicId ?? sonuc?.topicId,
+    topicGuven: elle ? 1 : (s.topicGuven ?? sonuc?.guven),
     smkMaddeleri: s.smkMaddeleri ?? sonuc?.maddeler,
-  };
+  });
 });
+
+// Kitapçıktan kesilmiş görseller (tools/gorsel-kes.py) gerçekten var mı?
+const eksikGorsel = zenginlestirilmis.filter((s) => s.gorsel && !existsSync(path.join('public', s.gorsel)));
+if (eksikGorsel.length > 0) {
+  console.error(`Görseli bulunamayan sorular: ${eksikGorsel.map((s) => s.id).join(', ')}`);
+  process.exit(1);
+}
+const kullanilan = new Set(zenginlestirilmis.map((s) => s.gorsel).filter(Boolean));
+const sahipsiz = existsSync(path.join('public', 'veri', 'gorsel'))
+  ? (await readdir(path.join('public', 'veri', 'gorsel'))).filter((d) => !kullanilan.has(`veri/gorsel/${d}`))
+  : [];
+if (sahipsiz.length > 0) console.warn(`Uyarı: hiçbir soruya bağlı olmayan görseller: ${sahipsiz.join(', ')}`);
 
 const yillar = [...new Set(zenginlestirilmis.map((s) => s.yil).filter(Boolean))].sort();
 
 await mkdir(path.dirname(CIKTI), { recursive: true });
 await writeFile(CIKTI, JSON.stringify({
   surum: 1,
-  // Uygulama bu damgayı saklar; büyüdüğünde güncelleme önerir.
-  damga: `${yillar.join('-')}-${zenginlestirilmis.length}`,
-  kaynak: 'TÜRKPATENT Patent ve Marka Vekilliği Genel Yeterlik Sınavı — marka bölümleri',
+  // İçerik özeti: soru metni, cevabı ya da görseli değişen her derlemede
+  // farklılaşır, uygulama da cihazdaki kopyayı buna bakarak günceller.
+  damga: `${yillar.join('-')}-${zenginlestirilmis.length}-${createHash('sha256')
+    .update(JSON.stringify(zenginlestirilmis.map(({ eklenme, ...s }) => s)))
+    .digest('hex').slice(0, 10)}`,
+  kaynak: 'TÜRKPATENT Patent ve Marka Vekilliği sınavları (marka bölümleri) ve Marka Kılavuzu çalışma seti',
   aciklama:
     'TÜRKPATENT tarafından yayımlanan sınav kitapçıklarından ayrıştırılmıştır. ' +
     'Kişisel sınav hazırlığı amaçlıdır.',

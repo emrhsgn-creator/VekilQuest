@@ -19,6 +19,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { belgeyiAyristir, bolumKapsamlari, cozumluBankaAyristir, katla } from '../src/lib/parse.mjs';
+import { sayfaMetni } from '../src/lib/pdfMetin.mjs';
 
 function argumanlar(argv) {
   const cikti = {};
@@ -40,25 +41,9 @@ async function pdfMetni(dosya) {
   const veri = new Uint8Array(await readFile(dosya));
   const belge = await getDocument({ data: veri, useSystemFonts: true }).promise;
   const sayfalar = [];
-  for (let i = 1; i <= belge.numPages; i++) {
-    const sayfa = await belge.getPage(i);
-    const icerik = await sayfa.getTextContent();
-    // Y koordinatı değiştiğinde satır sonu ekleyerek düzeni koru.
-    let sonY = null;
-    let satir = '';
-    const satirlar = [];
-    for (const oge of icerik.items) {
-      if (!('str' in oge)) continue;
-      const y = Math.round(oge.transform[5]);
-      if (sonY !== null && Math.abs(y - sonY) > 2) {
-        satirlar.push(satir.trim());
-        satir = '';
-      }
-      satir += oge.str + (oge.hasEOL ? ' ' : '');
-      sonY = y;
-    }
-    if (satir.trim()) satirlar.push(satir.trim());
-    sayfalar.push(satirlar.join('\n'));
+  const [bas, son] = (arg.sayfalar ?? `1-${belge.numPages}`).split('-').map(Number);
+  for (let i = bas; i <= Math.min(son, belge.numPages); i++) {
+    sayfalar.push(await sayfaMetni(await belge.getPage(i)));
   }
   return sayfalar.join('\n\n');
 }
@@ -81,6 +66,8 @@ Marka Vekilliği soru bankası dönüştürücü
                            (… SORULARI / … CEVAPLARI başlıkları, "CEVAP: X"
                            ve gerekçeli çözümler)
   --kaynak   <metin>       Çıktıdaki kaynak adı (çözümlü bankalar için)
+  --sayfalar <33-56>       Yalnızca bu sayfa aralığını oku
+  --bolum-adi <MARKA>      Patent kitapçığı elendikten sonra kalan tek bölümün adı
   --cikti    <dosya.json>  Çıktı yolu
 `);
   process.exit(arg.kitapcik ? 0 : 1);
@@ -129,6 +116,17 @@ const kaynak = arg.kaynak ?? [
   'Genel Yeterlik Sınavı',
   kitapcikTuru ? `(${kitapcikTuru})` : '',
 ].filter(Boolean).join(' ');
+
+// Ayrı oturumlu sınavlarda (2024'ten itibaren patent ve marka kitapçıkları
+// tek PDF'te) elde tek bölüm kalır; "2. kitapçık" yerine anlamlı bir ad ver.
+if (arg['bolum-adi']) {
+  const kalanlar = new Set(ayristirilan.map(bolumAdi));
+  if (kalanlar.size !== 1) {
+    console.error(`--bolum-adi yalnızca tek bölüm kaldığında kullanılabilir; kalan: ${[...kalanlar].join(', ')}`);
+    process.exit(1);
+  }
+  for (const s of ayristirilan) { s.bolum = arg['bolum-adi']; s.kitapcikNo = undefined; }
+}
 
 const simdi = Date.now();
 const banka = ayristirilan.map((s) => ({
