@@ -14,6 +14,7 @@ import { Kart, Olcut, sayacBicim, sureBicim } from './ui';
 import { BuyuklukListesi, Halka, yuzde } from './Grafik';
 import { useStore } from '../store';
 import { TOPIC_BY_ID, areaOf } from '../data/topics';
+import { SinavKarnesiKarti } from './Karne';
 import type { DevamKaydi, Mod, SeansKaydi, Soru } from '../types';
 
 type Kayit = SeansKaydi;
@@ -22,7 +23,7 @@ type Kayit = SeansKaydi;
 const KAYIT_ARALIGI_SN = 15;
 
 export function SeansCalistir({
-  sorular, mod, baslik, sureSiniriSn, anindaGeriBildirim, filtreOzeti, onCik, devam,
+  sorular, mod, baslik, sureSiniriSn, anindaGeriBildirim, filtreOzeti, onCik, devam, karneYili,
 }: {
   sorular: Soru[];
   mod: Mod;
@@ -33,6 +34,8 @@ export function SeansCalistir({
   onCik: () => void;
   /** Yarım kalmış bir seansa dönülüyorsa onun anlık görüntüsü. */
   devam?: DevamKaydi;
+  /** Bir sınavın eksik soruları çözülüyorsa: sonuçta o sınavın toplam karnesi gösterilir. */
+  karneYili?: number;
 }) {
   const { seansBaslat, seansBitir, cevapKaydet, isaretiDegistir, devamKaydet, devamSil } = useStore();
 
@@ -87,6 +90,7 @@ export function SeansCalistir({
     filtreOzeti,
     sureSiniriSn,
     kalanSn: sureSiniriSn ? kalanSn : undefined,
+    karneYili,
     indeks,
     kayitlar,
     baslangic,
@@ -205,7 +209,7 @@ export function SeansCalistir({
   }, [ilerle, anindaGeriBildirim, aktifKayit, duraklatildi]);
 
   if (bitti) {
-    return <SeansSonucu sorular={sorular} kayitlar={kayitlar} baslik={baslik} onCik={onCik} />;
+    return <SeansSonucu sorular={sorular} kayitlar={kayitlar} baslik={baslik} onCik={onCik} karneYili={karneYili} />;
   }
 
   if (!aktifSoru) {
@@ -314,12 +318,13 @@ export function SeansCalistir({
 /* ------------------------------------------------------------ sonuç ekranı */
 
 function SeansSonucu({
-  sorular, kayitlar, baslik, onCik,
+  sorular, kayitlar, baslik, onCik, karneYili,
 }: {
   sorular: Soru[];
   kayitlar: Record<string, Kayit>;
   baslik: string;
   onCik: () => void;
+  karneYili?: number;
 }) {
   const { ayarlar } = useStore();
   const [yanlislariGoster, setYanlislariGoster] = useState(true);
@@ -377,12 +382,24 @@ function SeansSonucu({
                alt={`Soru başı ${sureBicim(gecerli.length ? toplamSure / gecerli.length : 0)}`} />
       </div>
 
-      <div className={`bilgi-kutusu ${gecti ? '' : 'uyari'}`}>
-        {gecti
-          ? `Bu denemede %${puan} ile ${ayarlar.gecmeNotu} geçme eşiğinin üzerindesin.`
-          : `Bu denemede %${puan} aldın; belirlediğin ${ayarlar.gecmeNotu} eşiğinin ${ayarlar.gecmeNotu - puan} puan altındasın.`}
-        {sorular.some((s) => s.iptal) && ' İptal edilmiş sorular hesaba katılmadı.'}
-      </div>
+      {karneYili !== undefined ? (
+        // Eksik soruları tamamlama oturumu: birkaç soruluk sonuç üzerinden
+        // geçer/kalır demek yanıltıcı; değerlendirme sınavın toplamında.
+        <>
+          <div className="bilgi-kutusu">
+            Bu oturumda {gecerli.length} eksik sorudan {dogru.length} tanesini doğru cevapladın.
+            Sınavın toplam sonucu aşağıda, önceki çözümlerinle birleştirildi.
+          </div>
+          <SinavKarnesiKarti yil={karneYili} buOturumdakiler={sorular} />
+        </>
+      ) : (
+        <div className={`bilgi-kutusu ${gecti ? '' : 'uyari'}`}>
+          {gecti
+            ? `Bu denemede %${puan} ile ${ayarlar.gecmeNotu} geçme eşiğinin üzerindesin.`
+            : `Bu denemede %${puan} aldın; belirlediğin ${ayarlar.gecmeNotu} eşiğinin ${ayarlar.gecmeNotu - puan} puan altındasın.`}
+          {sorular.some((s) => s.iptal) && ' İptal edilmiş sorular hesaba katılmadı.'}
+        </div>
+      )}
 
       <Kart baslik="Konu kırılımı" not="En zayıf konu en üstte.">
         <BuyuklukListesi satirlar={konuKirilimi} birim="%" />

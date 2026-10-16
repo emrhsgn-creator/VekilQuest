@@ -19,6 +19,7 @@ cihazından çıkmaz.
 | **Sorular** | Çıkmış soruları yıl ve kitapçık bölümüne göre, bankanın tamamını konu ağacına göre gözden geçirme; her gruptan doğrudan çözme |
 | **Konu çalışması** | Konu / alan / yıl / durum filtresiyle soru seti kurup anında geri bildirimle çözme |
 | **Deneme sınavı** | Süreli, geri bildirimsiz, soru paletli gerçek sınav simülasyonu; karışık deneme gerçek sınavın konu dağılımını taklit eder |
+| **Sınav karneleri** | Her çıkmış sınav için ne kadarını çözdüğün ve ilk çözümlerine göre puanın; bankaya sonradan eklenen soruları "Eksik N soruyu çöz" ile tamamlayıp önceki çözümlerinle birleşik toplam sonucu görürsün |
 | **Duraklat / devam et** | Her seans duraklatılabilir; sayfadan çıkılsa ya da tarayıcı kapansa bile kaldığın sorudan, kalan süren korunarak Panel'deki “Yarım kalan oturumlar”dan devam edilir |
 | **Tekrar** | SM-2 türevi aralıklı tekrar; ısrarla yanlış yapılanlar ve işaretlediklerin |
 | **Analiz** | Konu bazlı hâkimiyet, sınav ağırlığı, zaman/yıl eğilimi, hata ve süre analizi |
@@ -255,6 +256,7 @@ src/
   lib/pdfMetin.mjs   PDF sayfa metni; başlık/altlık bandını konumdan atar (ortak)
   lib/bicim.mjs      Öncülleri satırlara bölme, sayfa artıklarını ayıklama (ortak)
   lib/bankaGuncelle.ts  Gömülü bankayı cihazdaki kopyayla eşitleme
+  lib/karne.ts       Çıkmış sınav karnesi: eksik sorular ve birleşik toplam sonuç
   lib/classify.ts    Otomatik konu sınıflandırma
   lib/stats.ts       Hâkimiyet, sınav ağırlığı, öncelik, plan
   lib/srs.ts         Aralıklı tekrar (SM-2 türevi)

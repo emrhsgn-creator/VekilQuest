@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
 import { useStore } from '../store';
 import { DevamEdenler } from '../components/DevamEdenler';
+import { SinavKarneleri } from '../components/Karne';
+import { sinavSorulari } from '../lib/karne';
 import { BosDurum, Kart, Olcut, sureBicim, tarihBicim } from '../components/ui';
 import { SeansCalistir } from '../components/SeansCalistir';
 import { BuyuklukListesi, yuzde } from '../components/Grafik';
@@ -19,7 +21,9 @@ export default function Deneme() {
   const [yil, setYil] = useState<string>('');
   const [soruSayisi, setSoruSayisi] = useState(ayarlar.denemeSoruSayisi);
   const [sureDk, setSureDk] = useState(ayarlar.denemeSuresiDk);
-  const [aktif, setAktif] = useState<{ sorular: Soru[]; baslik: string } | null>(null);
+  const [aktif, setAktif] = useState<{
+    sorular: Soru[]; baslik: string; sureSn: number; karneYili?: number;
+  } | null>(null);
 
   const havuz = useMemo(() => cozulebilir(sorular), [sorular]);
   const mevcutYillar = useMemo(() => yillar(havuz), [havuz]);
@@ -57,7 +61,8 @@ export default function Deneme() {
         sorular={aktif.sorular}
         mod="deneme"
         baslik={aktif.baslik}
-        sureSiniriSn={sureDk * 60}
+        sureSiniriSn={aktif.sureSn}
+        karneYili={aktif.karneYili}
         anindaGeriBildirim={false}
         onCik={() => setAktif(null)}
       />
@@ -70,13 +75,9 @@ export default function Deneme() {
     let secilen: Soru[];
     let baslik: string;
     if (kaynak === 'gercek-sinav' && yil) {
-      // Gerçek sınav: soruları kitapçıktaki sırasıyla, tamamı.
-      // Bölümlü kitapçıklarda (2015: MARKA 1–25, ORTAK 1–25) numaralar her
-      // bölümde 1'den başlıyor; önce bölümün kitapçıktaki sırası, sonra numara.
-      const bolumSirasi = new Map<string, number>();
-      for (const s of yilHavuzu) if (!bolumSirasi.has(s.bolum ?? '')) bolumSirasi.set(s.bolum ?? '', bolumSirasi.size);
-      secilen = [...yilHavuzu].sort((a, b) =>
-        (bolumSirasi.get(a.bolum ?? '') ?? 0) - (bolumSirasi.get(b.bolum ?? '') ?? 0) || (a.no ?? 0) - (b.no ?? 0));
+      // Gerçek sınav: soruları kitapçıktaki sırasıyla, tamamı (bölümlü
+      // kitapçıklarda önce bölüm, sonra numara).
+      secilen = sinavSorulari(havuz, Number(yil));
       baslik = `${yil} Marka Vekilliği Sınavı`;
     } else if (kaynak === 'zayif') {
       const oncelikler = new Map(konular.map((k) => [k.topicId, k.oncelik]));
@@ -90,7 +91,25 @@ export default function Deneme() {
         : karistir(yilHavuzu).slice(0, soruSayisi);
       baslik = yil ? `${yil} soruları · karışık deneme` : 'Karışık deneme';
     }
-    if (secilen.length > 0) setAktif({ sorular: secilen, baslik });
+    if (secilen.length > 0) setAktif({ sorular: secilen, baslik, sureSn: sureDk * 60 });
+  };
+
+  // Karne tablosundan: bir sınavın yalnızca hiç çözülmemiş soruları. Süre,
+  // ayarlanan deneme süresinden soru sayısına orantılı (en az üç dakika).
+  const eksikleriCoz = (sinavYili: number, eksik: Soru[], toplam: number) => {
+    setAktif({
+      sorular: eksik,
+      baslik: `${sinavYili} sınavı · eksik ${eksik.length} soru`,
+      sureSn: Math.max(180, Math.ceil((sureDk * 60 * eksik.length) / Math.max(1, toplam))),
+      karneYili: sinavYili,
+    });
+  };
+  const sinaviBaslat = (sinavYili: number) => {
+    setAktif({
+      sorular: sinavSorulari(havuz, sinavYili),
+      baslik: `${sinavYili} Marka Vekilliği Sınavı`,
+      sureSn: sureDk * 60,
+    });
   };
 
   const secilecekSayi = kaynak === 'gercek-sinav' && yil ? yilHavuzu.length : Math.min(soruSayisi, yilHavuzu.length);
@@ -107,6 +126,7 @@ export default function Deneme() {
         </div>
       </div>
       <DevamEdenler modlar={['deneme']} />
+      <SinavKarneleri onEksikCoz={eksikleriCoz} onBasla={sinaviBaslat} />
 
       <div className="yigin">
         <Kart baslik="Deneme kur">

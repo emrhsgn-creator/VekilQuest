@@ -40,6 +40,7 @@ export default function DevamEt() {
       anindaGeriBildirim={kayit.anindaGeriBildirim}
       filtreOzeti={kayit.filtreOzeti}
       devam={kayit}
+      karneYili={kayit.karneYili}
       onCik={() => navigate(DONUS[kayit.mod])}
     />
   );

@@ -93,6 +93,8 @@ export type DevamKaydi = {
   filtreOzeti?: string;
   sureSiniriSn?: number;
   kalanSn?: number;
+  /** Bir sınavın eksik soruları çözülüyorsa o sınavın yılı (sonuçta karne gösterilir). */
+  karneYili?: number;
   indeks: number;
   kayitlar: Record<string, SeansKaydi>;
   baslangic: number;
