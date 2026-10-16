@@ -74,6 +74,10 @@ export type Seans = {
   sureSiniri?: number;
   /** Seans sırasındaki konu filtresi — analizde gösterilir. */
   filtreOzeti?: string;
+  /** Eksik soruları tamamlama oturumuysa sınavın yılı (sonuçta toplam karne gösterilir). */
+  karneYili?: number;
+  /** Seansın başlatıldığı ekran; sonuç ekranındaki "Bitir" buraya döner. */
+  donusYolu?: string;
 };
 
 /** Seans içinde bir sorunun o anki durumu. */

@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { useStore } from '../store';
 import { cozulebilir, yillar } from '../lib/sec';
 import { sinavKarnesi, sinavSorulari, type SinavKarnesi } from '../lib/karne';
@@ -59,6 +60,13 @@ export function SinavKarneleri({ onEksikCoz, onBasla }: {
                 <td className="sayi">{k.cozulen ? k.puan.toLocaleString('tr-TR') : '–'}</td>
                 <td className="sayi">{durumRozeti(k, ayarlar.gecmeNotu)}</td>
                 <td className="sayi">
+                  <div className="satir" style={{ justifyContent: 'flex-end', flexWrap: 'nowrap' }}>
+                  {k.cozulen > 0 && (
+                    <Link className="dugme kucuk" to={`/karne/${k.yil}`}
+                          title="Her soru için ilk çözümün, işaretlediğin şık ve doğru cevapla">
+                      Sonucu gör
+                    </Link>
+                  )}
                   {k.cozulen > 0 && k.eksik.length > 0 && (
                     <button className="dugme birincil kucuk" type="button"
                             onClick={() => onEksikCoz(k.yil, k.eksik, k.toplam)}>
@@ -70,6 +78,7 @@ export function SinavKarneleri({ onEksikCoz, onBasla }: {
                       Sınavı başlat
                     </button>
                   )}
+                  </div>
                 </td>
               </tr>
             ))}

@@ -19,6 +19,7 @@ cihazından çıkmaz.
 | **Sorular** | Çıkmış soruları yıl ve kitapçık bölümüne göre, bankanın tamamını konu ağacına göre gözden geçirme; her gruptan doğrudan çözme |
 | **Konu çalışması** | Konu / alan / yıl / durum filtresiyle soru seti kurup anında geri bildirimle çözme |
 | **Deneme sınavı** | Süreli, geri bildirimsiz, soru paletli gerçek sınav simülasyonu; karışık deneme gerçek sınavın konu dağılımını taklit eder |
+| **Kalıcı sonuç sayfaları** | Her bitmiş oturumun sonucu (işaretlediğin şık, doğru cevap, yanlış ve boşlar) kendi adresinde durur; sayfa yenilense de kaybolmaz, Deneme geçmişinden ya da karne tablosundan yeniden açılır |
 | **Sınav karneleri** | Her çıkmış sınav için ne kadarını çözdüğün ve ilk çözümlerine göre puanın; bankaya sonradan eklenen soruları "Eksik N soruyu çöz" ile tamamlayıp önceki çözümlerinle birleşik toplam sonucu görürsün |
 | **Duraklat / devam et** | Her seans duraklatılabilir; sayfadan çıkılsa ya da tarayıcı kapansa bile kaldığın sorudan, kalan süren korunarak Panel'deki “Yarım kalan oturumlar”dan devam edilir |
 | **Tekrar** | SM-2 türevi aralıklı tekrar; ısrarla yanlış yapılanlar ve işaretlediklerin |

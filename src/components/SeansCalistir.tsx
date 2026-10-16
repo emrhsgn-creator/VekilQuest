@@ -8,7 +8,7 @@
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { SoruKarti, SoruPaleti } from './SoruKarti';
 import { Kart, Olcut, sayacBicim, sureBicim } from './ui';
 import { BuyuklukListesi, Halka, yuzde } from './Grafik';
@@ -38,6 +38,8 @@ export function SeansCalistir({
   karneYili?: number;
 }) {
   const { seansBaslat, seansBitir, cevapKaydet, isaretiDegistir, devamKaydet, devamSil } = useStore();
+  const navigate = useNavigate();
+  const konum = useLocation();
 
   const [seansId] = useState(
     () => devam?.seansId ?? `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`,
@@ -54,6 +56,8 @@ export function SeansCalistir({
       baslangic,
       sureSiniri: sureSiniriSn,
       filtreOzeti,
+      karneYili,
+      donusYolu: konum.pathname,
     });
     // Seans bir kez, bileşen bağlandığında kaydedilir.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -208,9 +212,15 @@ export function SeansCalistir({
     return () => window.removeEventListener('keydown', dinleyici);
   }, [ilerle, anindaGeriBildirim, aktifKayit, duraklatildi]);
 
-  if (bitti) {
-    return <SeansSonucu sorular={sorular} kayitlar={kayitlar} baslik={baslik} onCik={onCik} karneYili={karneYili} />;
-  }
+  // Seans bitince kalıcı sonuç sayfasına geçilir (/sonuc/:id). Sonuç ekranı
+  // eskiden yalnızca bellekte duruyordu: sayfa yenilenince ya da başka ekrana
+  // geçilince yanlışlara bir daha bakılamıyordu. Cevaplar zaten kayıtlı;
+  // sonuç sayfası onlardan yeniden kuruluyor.
+  useEffect(() => {
+    if (bitti) navigate(`/sonuc/${seansId}`, { replace: true });
+  }, [bitti, navigate, seansId]);
+
+  if (bitti) return null;
 
   if (!aktifSoru) {
     return (
@@ -317,14 +327,18 @@ export function SeansCalistir({
 
 /* ------------------------------------------------------------ sonuç ekranı */
 
-function SeansSonucu({
-  sorular, kayitlar, baslik, onCik, karneYili,
+export function SeansSonucu({
+  sorular, kayitlar, baslik, onCik, karneYili, tarih, not,
 }: {
   sorular: Soru[];
   kayitlar: Record<string, Kayit>;
   baslik: string;
   onCik: () => void;
   karneYili?: number;
+  /** Seansın bittiği (ya da başladığı) an. */
+  tarih: number;
+  /** Başlığın altına eklenecek açıklama. */
+  not?: string;
 }) {
   const { ayarlar } = useStore();
   const [yanlislariGoster, setYanlislariGoster] = useState(true);
@@ -367,7 +381,10 @@ function SeansSonucu({
       <div className="satir aralikli">
         <div>
           <h1>Sonuç · {baslik}</h1>
-          <p className="sessiz" style={{ margin: 0 }}>{new Date().toLocaleString('tr-TR')}</p>
+          <p className="sessiz" style={{ margin: 0 }}>
+            {new Date(tarih).toLocaleString('tr-TR', { dateStyle: 'long', timeStyle: 'short' })}
+            {not ? ` · ${not}` : ''}
+          </p>
         </div>
         <button className="dugme birincil" onClick={onCik}>Bitir</button>
       </div>

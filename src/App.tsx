@@ -14,6 +14,7 @@ import Plan from './pages/Plan';
 import Mevzuat from './pages/Mevzuat';
 import Ayarlar from './pages/Ayarlar';
 import DevamEt from './pages/DevamEt';
+import { KarneSonucSayfasi, SeansSonucSayfasi } from './pages/SonucIncele';
 
 export default function App() {
   const { hazir, sorular, tekrarKartlari } = useStore();
@@ -72,6 +73,8 @@ export default function App() {
           <Route path="/mevzuat" element={<Mevzuat />} />
           <Route path="/ayarlar" element={<Ayarlar />} />
           <Route path="/devam/:seansId" element={<DevamEt />} />
+          <Route path="/sonuc/:seansId" element={<SeansSonucSayfasi />} />
+          <Route path="/karne/:yil" element={<KarneSonucSayfasi />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

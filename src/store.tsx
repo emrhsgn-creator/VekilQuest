@@ -72,12 +72,36 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
 
   // Yazma işlemleri yoğun olabildiği için IndexedDB'ye debounce ile yazıyoruz.
   const zamanlayicilar = useRef<Record<string, number>>({});
+  const bekleyenler = useRef<Record<string, unknown>>({});
   const kalicilastir = useCallback((anahtar: string, deger: unknown) => {
     window.clearTimeout(zamanlayicilar.current[anahtar]);
+    bekleyenler.current[anahtar] = deger;
     zamanlayicilar.current[anahtar] = window.setTimeout(() => {
+      delete bekleyenler.current[anahtar];
       void yaz(anahtar, deger);
     }, 300);
   }, []);
+
+  /** Bekleyen yazmaları beklemeden diske gönderir. */
+  const bosalt = useCallback(() => {
+    for (const [anahtar, deger] of Object.entries(bekleyenler.current)) {
+      window.clearTimeout(zamanlayicilar.current[anahtar]);
+      void yaz(anahtar, deger);
+    }
+    bekleyenler.current = {};
+  }, []);
+
+  // Sayfa yenilenir, kapanır ya da arka plana alınırken bekleyen yazmaları
+  // hemen boşalt: sınav bitip hemen yenilenince son cevaplar kaybolmasın.
+  useEffect(() => {
+    const gizlenince = () => { if (document.visibilityState === 'hidden') bosalt(); };
+    window.addEventListener('pagehide', bosalt);
+    document.addEventListener('visibilitychange', gizlenince);
+    return () => {
+      window.removeEventListener('pagehide', bosalt);
+      document.removeEventListener('visibilitychange', gizlenince);
+    };
+  }, [bosalt]);
 
   useEffect(() => {
     let iptal = false;
@@ -207,6 +231,10 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
         kalicilastir(ANAHTAR.seanslar, seanslar);
         return { ...d, seanslar };
       });
+      // Seansın son cevapları ve bitişi debounce'u beklemeden diske yazılsın:
+      // sonuç ekranı bunlardan kuruluyor, hemen yenilense de kaybolmamalı.
+      // Durum güncellemeleri işlendikten sonra çalışsın diye bir tur sonra.
+      window.setTimeout(bosalt, 0);
     },
 
     devamKaydet(kayit) {
@@ -349,7 +377,7 @@ export function StoreSaglayici({ children }: { children: ReactNode }) {
         return { ...d, sorular: [], cevaplamalar: [], seanslar: [], tekrarKartlari: [], devamEdenler: [] };
       });
     },
-  }), [kalicilastir, durum.sorular, durum.cevaplamalar, durum.seanslar, durum.tekrarKartlari, durum.devamEdenler, durum.ayarlar]);
+  }), [kalicilastir, bosalt, durum.sorular, durum.cevaplamalar, durum.seanslar, durum.tekrarKartlari, durum.devamEdenler, durum.ayarlar]);
 
   // `sorular` kapsam ayarına göre süzülmüş listedir; ekranların çoğu bunu
   // kullanır. Soru bankası, yedekleme ve içe aktarma `tumSorular` ile çalışır.

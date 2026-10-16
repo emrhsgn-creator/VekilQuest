@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useStore } from '../store';
 import { DevamEdenler } from '../components/DevamEdenler';
 import { SinavKarneleri } from '../components/Karne';
@@ -252,6 +253,7 @@ export default function Deneme() {
                       <th className="sayi">Başarı</th>
                       <th className="sayi">Süre</th>
                       <th className="sayi">Durum</th>
+                      <th />
                     </tr>
                   </thead>
                   <tbody>
@@ -268,6 +270,9 @@ export default function Deneme() {
                           <td className="sayi">{sureBicim(d.sure)}</td>
                           <td className="sayi">
                             <span className={`rozet ${gecti ? 'dogru' : 'yanlis'}`}>{gecti ? 'Geçer' : 'Kalır'}</span>
+                          </td>
+                          <td className="sayi">
+                            <Link className="dugme kucuk" to={`/sonuc/${d.seans.id}`}>Sonucu gör</Link>
                           </td>
                         </tr>
                       );
