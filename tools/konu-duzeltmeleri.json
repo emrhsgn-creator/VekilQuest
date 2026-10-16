@@ -1,5 +1,29 @@
 {
   "_aciklama": "Otomatik sınıflandırmanın açıkça yanlış bıraktığı sorular için elle konu ataması. npm run banka:uret bu dosyayı uygular; atanan konu güven 1 ile işaretlenir ve uygulamada yeniden sınıflandırmada da korunur.",
+  "_alanKurallariAciklama": "Kitapçıktaki yerinden alanı belli olan sorular: 2017–2021 Genel Yeterlik 1. kitapçığının 41–60'ı (2024'ten itibaren Marka Vekilliği Sınavı'nın da 41–60'ı) her yıl aynı düzende: 41–46 tasarım, 47–48 vekillik / ortak hükümler / uluslararası mevzuat, 49–60 genel hukuk. Bu sorularda sınıflandırıcı yalnızca bu alanların konuları arasından seçer.",
+  "alanKurallari": [
+    {
+      "desen": "^tp-20(17|19|21)-A-k1-4[1-6]$",
+      "alanlar": [
+        "tasarim",
+        "uluslararasi"
+      ]
+    },
+    {
+      "desen": "^tp-20(17|19|21)-A-k1-4[78]$",
+      "alanlar": [
+        "vekillik",
+        "ortak",
+        "uluslararasi"
+      ]
+    },
+    {
+      "desen": "^tp-20(17|19|21)-A-k1-(49|5[0-9]|60)$",
+      "alanlar": [
+        "temel"
+      ]
+    }
+  ],
   "konular": {
     "tp-2024-A-marka-1": "marka-basvuru",
     "tp-2024-A-marka-2": "marka-sekli-inceleme",
@@ -21,6 +45,32 @@
     "tp-2024-A-marka-46": "tasarim-inceleme-tescil",
     "tp-2024-A-marka-48": "vekil-kurum",
     "tp-2024-A-marka-51": "temel-medeni",
-    "tp-2019-A-k2-69": "marka-mutlak-ret"
+    "tp-2019-A-k2-69": "marka-mutlak-ret",
+    "tp-2017-A-k1-42": "tasarim-kamuya-sunma",
+    "tp-2017-A-k1-44": "tasarim-sure-yenileme",
+    "tp-2017-A-k1-46": "ulus-siniflandirma",
+    "tp-2017-A-k1-48": "marka-lisans-devir",
+    "tp-2017-A-k1-49": "temel-borclar",
+    "tp-2019-A-k1-42": "tasarim-basvuru",
+    "tp-2019-A-k1-44": "tasarim-kamuya-sunma",
+    "tp-2019-A-k1-45": "tasarim-sure-yenileme",
+    "tp-2019-A-k1-46": "ulus-siniflandirma",
+    "tp-2019-A-k1-47": "vekil-kurum",
+    "tp-2019-A-k1-50": "temel-borclar",
+    "tp-2019-A-k1-60": "temel-haksiz-rekabet",
+    "tp-2021-A-k1-41": "tasarim-kamuya-sunma",
+    "tp-2021-A-k1-43": "tasarim-basvuru",
+    "tp-2021-A-k1-44": "tasarim-kamuya-sunma",
+    "tp-2021-A-k1-45": "tasarim-itiraz",
+    "tp-2021-A-k1-46": "ulus-siniflandirma",
+    "tp-2021-A-k1-48": "vekil-sinav-sicil",
+    "tp-2021-A-k1-53": "temel-borclar",
+    "tp-2015-A-marka-2": "vekil-vekaletname",
+    "tp-2015-A-marka-12": "marka-nispi-ret",
+    "tp-2015-A-marka-23": "marka-kullanim",
+    "tp-2015-A-ortak-5": "ulus-ab",
+    "tp-2015-A-ortak-8": "vekil-kurum",
+    "tp-2015-A-ortak-13": "temel-ticari-isletme",
+    "tp-2015-A-ortak-15": "temel-borclar"
   }
 }

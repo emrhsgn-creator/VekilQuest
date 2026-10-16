@@ -18,7 +18,9 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { belgeyiAyristir, bolumKapsamlari, cozumluBankaAyristir, katla } from '../src/lib/parse.mjs';
+import {
+  belgeyiAyristir, bolumKapsamlari, cozumluBankaAyristir, katla, patentDisiKuyrukBasi,
+} from '../src/lib/parse.mjs';
 import { sayfaMetni } from '../src/lib/pdfMetin.mjs';
 
 function argumanlar(argv) {
@@ -67,6 +69,9 @@ Marka Vekilliği soru bankası dönüştürücü
                            ve gerekçeli çözümler)
   --kaynak   <metin>       Çıktıdaki kaynak adı (çözümlü bankalar için)
   --sayfalar <33-56>       Yalnızca bu sayfa aralığını oku
+  --patent-kuyrugu alma    Patent kitapçığının sonundaki tasarım / vekillik /
+                           genel hukuk sorularını da alma (2024+: patent ayrı
+                           bir sınav olduğu için o soruları istemeyebilirsin)
   --bolum-adi <MARKA>      Patent kitapçığı elendikten sonra kalan tek bölümün adı
   --cikti    <dosya.json>  Çıktı yolu
 `);
@@ -101,13 +106,23 @@ const { sorular: tumSorular, uyarilar, rapor } = cozumluMu
 
 // Genel Yeterlik kitapçıkları patent ve marka sorularını ayrı bölümlerde
 // taşıyor. Varsayılan davranış, marka vekilliği kapsamı dışındaki patent
-// bölümünü hiç çıktıya almamak.
+// bölümünü çıktıya almamak — ama patent kitapçığının sonundaki tasarım,
+// vekillik ve genel hukuk soruları (2017–2021: 41–60) kapsam içinde olduğu
+// için alınır (bkz. patentDisiKuyrukBasi).
 const bolumAdi = (s) => s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : 'tümü');
 const kapsamlar = bolumKapsamlari(tumSorular);
 const hepsiniAl = arg.kapsam === 'hepsi';
-const ayristirilan = hepsiniAl
-  ? tumSorular
-  : tumSorular.filter((s) => kapsamlar.get(bolumAdi(s)) !== 'patent');
+const kuyruguAl = arg['patent-kuyrugu'] !== 'alma';
+
+const kuyruklar = new Map();
+const ayristirilan = hepsiniAl ? tumSorular : [...new Set(tumSorular.map(bolumAdi))].flatMap((ad) => {
+  const bolum = tumSorular.filter((s) => bolumAdi(s) === ad);
+  if (kapsamlar.get(ad) !== 'patent') return bolum;
+  if (!kuyruguAl) return [];
+  const kuyruk = bolum.slice(patentDisiKuyrukBasi(bolum));
+  if (kuyruk.length) kuyruklar.set(ad, kuyruk);
+  return kuyruk;
+});
 const elenen = tumSorular.length - ayristirilan.length;
 
 const kaynak = arg.kaynak ?? [
@@ -166,7 +181,12 @@ console.table({ ...rapor, yazilan: ayristirilan.length, elenenPatent: elenen });
 console.log('\nBölüm kapsamları:');
 for (const [ad, kapsam] of kapsamlar) {
   const adet = tumSorular.filter((s) => bolumAdi(s) === ad).length;
-  const durum = kapsam === 'patent' && !hepsiniAl ? 'ELENDİ' : 'alındı';
+  const kuyruk = kuyruklar.get(ad);
+  const durum = kapsam !== 'patent' || hepsiniAl
+    ? 'alındı'
+    : kuyruk
+      ? `patent soruları elendi; ${kuyruk[0].yerelNo}–${kuyruk.at(-1).yerelNo} (${kuyruk.length} soru: tasarım, vekillik, genel hukuk) alındı`
+      : 'ELENDİ';
   console.log(`  ${ad.padEnd(16)} ${kapsam.padEnd(7)} ${String(adet).padStart(3)} soru  →  ${durum}`);
 }
 if (elenen > 0) {

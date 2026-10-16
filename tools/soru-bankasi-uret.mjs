@@ -69,8 +69,20 @@ if (patentBolumleri.length > 0) {
 const siniflar = topluSiniflandir(sorular, kapsamlar);
 
 // Elle konu düzeltmeleri: sınıflandırıcının açıkça yanıldığı sorular.
-const { konular: elleKonular } = JSON.parse(await readFile(path.join('tools', 'konu-duzeltmeleri.json'), 'utf8'));
-const { TOPIC_IDLERI } = await import(`file://${gecici}`);
+const { konular: elleKonular, alanKurallari = [] } = JSON.parse(
+  await readFile(path.join('tools', 'konu-duzeltmeleri.json'), 'utf8'),
+);
+const { TOPIC_IDLERI, siniflandir } = await import(`file://${gecici}`);
+
+// Yerinden alanı belli sorular: sınıflandırıcı yalnızca o alanlarda arar.
+for (const kural of alanKurallari) {
+  const desen = new RegExp(kural.desen);
+  for (const s of sorular) {
+    if (!desen.test(s.id) || s.topicId) continue;
+    const sonuc = siniflandir(s.metin, s.secenekler.map((o) => o.metin), { alanlar: kural.alanlar });
+    siniflar.set(s.id, { topicId: sonuc.topicId, guven: sonuc.guven, maddeler: sonuc.maddeler });
+  }
+}
 for (const [id, topicId] of Object.entries(elleKonular)) {
   if (!TOPIC_IDLERI.has(topicId)) {
     console.error(`konu-duzeltmeleri.json: bilinmeyen konu "${topicId}" (${id})`);

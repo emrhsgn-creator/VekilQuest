@@ -69,9 +69,9 @@ Ayrıntılar ve sorun giderme: **[docs/SORU-YUKLEME.md](docs/SORU-YUKLEME.md)**
 
 ### Soru bankası ve telif
 
-Uygulamayla birlikte **365 soruluk bir banka dağıtılıyor** (`public/veri/soru-bankasi.json`):
+Uygulamayla birlikte **425 soruluk bir banka dağıtılıyor** (`public/veri/soru-bankasi.json`):
 TÜRKPATENT'in kendi sitesinde yayımladığı 2015, 2017, 2019, 2021 Genel Yeterlik ve 2024 Marka
-Vekilliği sınav kitapçıklarının marka bölümleri (230 soru) ile Marka İnceleme Kılavuzu'na dayanan
+Vekilliği sınav kitapçıklarının marka vekilliği kapsamındaki soruları (290 soru) ile Marka İnceleme Kılavuzu'na dayanan
 135 soruluk çalışma seti. Resimli/tablolu soruların kitapçıktan kesilmiş görselleri
 `public/veri/gorsel/` altında.
 Amaç kişisel sınav hazırlığı; soruların hakları Türk Patent ve Marka Kurumuna aittir.
@@ -114,8 +114,8 @@ Kitapçık düzeni yıldan yıla değişiyor ve naif bir “satır başındaki n
 | Tireden sonra boşluksuz numara (2015: `15-6098 sayılı…`) | Tanınır; `1-1 1-2` gibi görsel numaraları tanınmaz |
 | 2024: patent ve marka kitapçığı tek PDF'te, anahtar 4 sütun (patent 1–30 · 31–60, marka 1–30 · 31–60) | Sütun sayısı bölüm sayısının katıysa ardışık sütunlar aynı bölüme bağlanır |
 
-Ölçülen sonuç (2015, 2017, 2019, 2021, 2024 A kitapçıkları): marka kitapçıklarının
-**230 sorusunun tamamı ayrıştırıldı ve cevabı eşleşti**; patent bölümleri içe aktarılmaz.
+Ölçülen sonuç (2015, 2017, 2019, 2021, 2024 A kitapçıkları): marka vekilliği kapsamındaki
+**290 sorunun tamamı ayrıştırıldı ve cevabı eşleşti**; patent soruları içe aktarılmaz.
 
 ### Öncüllü sorular, resimli ve tablolu sorular
 
@@ -135,7 +135,7 @@ PDF metni tek paragrafa dökülüyor. İki ek adım bunu düzeltir:
 
   Soru başları sütun kenarındaki numaralardan bulunur ve JSON'daki sırayla eşlenir; bölgede
   raster görsel, tablo çizgisi ya da hizalı sütunlu metin varsa kesilir. Bütün sınavlarda
-  her soru kitapçıktaki yerine eşlendi; 26 soru kesildi (2015: 2, 2017: 2, 2019: 5, 2021: 4,
+  her soru kitapçıktaki yerine eşlendi; 33 soru kesildi (2015: 2, 2017: 4, 2019: 7, 2021: 7,
   2024: 13).
 
 Otomatik sınıflandırmanın açıkça yanıldığı sorular `tools/konu-duzeltmeleri.json` ile elle
@@ -153,7 +153,7 @@ kendi tarayıcına yüklenir.
 ### Marka kapsamı
 
 Genel Yeterlik kitapçıkları iki sınav taşır: bir bölüm patent, diğeri marka / coğrafi işaret /
-tasarım. Marka vekilliğine hazırlanan biri için patent bölümü kapsam dışıdır ve **hiç içe
+tasarım. Marka vekilliğine hazırlanan biri için patent soruları kapsam dışıdır ve **içe
 aktarılmaz.**
 
 Karar tek tek sorulara değil bölümün tamamına bakılarak verilir (`bolumKapsamlari`): tek bir
@@ -161,17 +161,33 @@ soruda "patent" kelimesinin geçmesi onu patent sorusu yapmaz, ama kırk sorunun
 geçiyorsa bölüm patent bölümüdür. Eşik oransal olduğu için 2015'in karma **ORTAK** bölümü
 elenmez — o sorular marka adayının da kapsamındadır.
 
+**Patent kitapçığının ortak bölümü.** 2017–2021'de 1. kitapçık yalnızca patent değil: 1–40
+patent ve faydalı model, ardından **41–46 tasarım, 47–48 vekillik mevzuatı, 49–60 genel hukuk**
+(Medeni, Borçlar, Ticaret, haksız rekabet). Bu 20 soru marka adayının da kapsamında; 2024'ten
+itibaren ayrı yapılan Marka Vekilliği Sınavı'nın 41–60'ı da tam bu bölüm (2024'te patent ve
+marka sınavlarının 41–60'ı birebir aynı sorular). Kitapçıkta bu kısım için başlık olmadığından
+sınır ölçülerek bulunur (`patentDisiKuyrukBasi`): patent soruları başta tek blok durduğu için
+her olası kesim noktasında "öncesi patent, sonrası patent dışı" uyumu sayılır, kuyruğa sızan
+patent sorusu ayrıca cezalanır. Tek soru tahmini (`patentSorusuMu`) güçlü patent ifadelerine
+bakar ("patent", "buluş", "istem", "faydalı model"…; "TÜRKPATENT" ve "Patent ve Marka
+Vekilleri" sayılmaz). Üç yılda da sınır tam 41'de bulunuyor.
+
+Bu sorularda konu ataması da kitapçıktaki yere göre daraltılır: 41–46 yalnızca tasarım ve
+uluslararası mevzuat, 47–48 vekillik / ortak hükümler / uluslararası, 49–60 yalnızca genel hukuk
+konularına düşebilir (`tools/konu-duzeltmeleri.json` → `alanKurallari`).
+
 | Yıl | Bölüm | Soru | Sonuç |
 |---|---|---|---|
 | 2015 | PATENT | 25 | elendi |
 | 2015 | MARKA · ORTAK | 25 · 25 | alındı |
-| 2017 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
-| 2019 | 1. kitapçık · 2. kitapçık | 59 · 40 | elendi · alındı |
-| 2021 | 1. kitapçık · 2. kitapçık | 60 · 40 | elendi · alındı |
-| 2024 | Patent Vekilliği · Marka Vekilliği | 60 · 60 | elendi · alındı |
+| 2017 | 1. kitapçık · 2. kitapçık | 40 + 20 · 40 | 1–40 elendi, 41–60 alındı · alındı |
+| 2019 | 1. kitapçık · 2. kitapçık | 39 + 20 · 40 | 1–40 elendi, 41–60 alındı · alındı |
+| 2021 | 1. kitapçık · 2. kitapçık | 40 + 20 · 40 | 1–40 elendi, 41–60 alındı · alındı |
+| 2024 | Patent Vekilliği · Marka Vekilliği | 60 · 60 | elendi (41–60'ı marka sınavıyla aynı) · alındı |
 
 Hepsini yine de istersen: içe aktarma ekranındaki onay kutusunu kapat ya da
-`node tools/pdf-to-json.mjs … --kapsam hepsi`. Bankaya patent sorusu girdiyse Soru Bankası
+`node tools/pdf-to-json.mjs … --kapsam hepsi`. Patent kitapçığının ortak bölümünü de istemiyorsan
+(ör. 2024'te, aynı sorular marka sınavında da olduğu için): `--patent-kuyrugu alma`. Bankaya patent sorusu girdiyse Soru Bankası
 ekranındaki “Patent sorularını sil” düğmesiyle temizleyebilirsin.
 
 ## Karışık deneme neden rastgele değil

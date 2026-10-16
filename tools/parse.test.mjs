@@ -11,7 +11,7 @@ import assert from 'node:assert/strict';
 import {
   sorulariAyristir, cevapAnahtariAyristir, iptalEdilenler, birlestir,
   metniTemizle, belgeyiAyristir, katla, beyanEdilenSoruSayisi, bolumKapsamlari,
-  cozumluBankaAyristir,
+  cozumluBankaAyristir, patentDisiKuyrukBasi, patentSorusuMu,
 } from '../src/lib/parse.mjs';
 
 const KITAPCIK = `
@@ -451,4 +451,28 @@ E) 4 ve 5
 test('numaradan sonra boşluksuz büyük harf ("67.Bir başvuru…") soru başıdır', () => {
   const metin = `66. Birinci?\nA) a\nB) b\nC) c\nD) d\nE) e\n67.Bir başvuru sahibi?\nA) a\nB) b\nC) c\nD) d\nE) e\n`;
   assert.deepEqual(sorulariAyristir(metin).sorular.map((s) => s.no), [66, 67]);
+});
+
+test('patent sorusu tahmini: TÜRKPATENT, vekil kurum adları ve "istemek" fiili sayılmaz', () => {
+  const soru = (metin) => ({ metin, secenekler: [{ harf: 'A', metin: 'x' }] });
+  assert.equal(patentSorusuMu(soru('Bir patent başvurusunun istemleri aşağıdadır.')), true);
+  assert.equal(patentSorusuMu(soru('Faydalı model başvurusu için araştırma raporu')), true);
+  assert.equal(patentSorusuMu(soru('TÜRKPATENT’e çoklu tasarım başvurusu yapılmıştır.')), false);
+  assert.equal(patentSorusuMu(soru('Patent ve Marka Vekilleri Disiplin Kuruluna şikâyet')), false);
+  assert.equal(patentSorusuMu(soru('Tasarımcı koruma elde etmek istemektedir.')), false);
+});
+
+test('patent kitapçığının sonundaki ortak bölüm bulunur (2017–2021: 41–60)', () => {
+  // 1–40 patent; 41–60 tasarım/vekillik/genel hukuk — ama tahmin kusursuz değil:
+  // 38 ve 39 yanlışlıkla "patent değil", 47, 48 ve 58 yanlışlıkla "patent".
+  const sorular = Array.from({ length: 60 }, (_, i) => ({ no: i + 1 }));
+  const yanlis = new Set([38, 39, 47, 48, 58]);
+  const patentMi = (s) => (s.no <= 40) !== yanlis.has(s.no);
+  assert.equal(sorular[patentDisiKuyrukBasi(sorular, patentMi)].no, 41);
+});
+
+test('baştan sona patent olan kitapçıkta kuyruk yoktur', () => {
+  const sorular = Array.from({ length: 25 }, (_, i) => ({ no: i + 1 }));
+  // Bir iki yanlış sınıflanmış soru tek başına kuyruk sayılmaz.
+  assert.equal(patentDisiKuyrukBasi(sorular, (s) => s.no !== 24), 25);
 });

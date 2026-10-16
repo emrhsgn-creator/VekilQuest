@@ -6,7 +6,9 @@ import { pdfMetniCikar, pdfMi } from '../lib/pdf';
 import { TOPICS, TOPIC_BY_ID } from '../data/topics';
 import { kisalt } from '../lib/metin';
 import type { Soru, Yedek } from '../types';
-import { belgeyiAyristir, bolumKapsamlari, type AyristirmaRaporu, type HamSoru } from '../lib/parse.mjs';
+import {
+  belgeyiAyristir, bolumKapsamlari, patentDisiKuyrukBasi, type AyristirmaRaporu, type HamSoru,
+} from '../lib/parse.mjs';
 
 type Adim = 'yukle' | 'onizle';
 
@@ -64,12 +66,16 @@ export default function IceAktar() {
       s.bolum ?? (s.kitapcikNo ? `${s.kitapcikNo}. kitapçık` : 'tümü');
     const kapsamlar = bolumKapsamlari(ayristirilan);
 
-    const uygun = ayristirilan
-      .filter((s) => s.metin && s.secenekler.length >= 2)
-      // Genel Yeterlik kitapçığının patent bölümü marka vekilliği kapsamı
-      // dışında; karar tek tek sorulara değil bölümün tamamına bakılarak
-      // verilir, böylece yanlış sınıflandırılan bir marka sorusu elenmez.
-      .filter((s) => !patentiAtla || kapsamlar.get(bolumAdi(s)) !== 'patent');
+    // Genel Yeterlik kitapçığının patent bölümü marka vekilliği kapsamı
+    // dışında; karar tek tek sorulara değil bölümün tamamına bakılarak
+    // verilir, böylece yanlış sınıflandırılan bir marka sorusu elenmez. Patent
+    // kitapçığının sonundaki tasarım, vekillik ve genel hukuk soruları
+    // (2017–2021: 41–60) ise kapsam içinde olduğu için alınır.
+    const gecerli = ayristirilan.filter((s) => s.metin && s.secenekler.length >= 2);
+    const uygun = !patentiAtla ? gecerli : [...new Set(gecerli.map(bolumAdi))].flatMap((ad) => {
+      const bolum = gecerli.filter((s) => bolumAdi(s) === ad);
+      return kapsamlar.get(ad) === 'patent' ? bolum.slice(patentDisiKuyrukBasi(bolum)) : bolum;
+    });
     const elenen = ayristirilan.length - uygun.length;
     const kimlikli = uygun.map((s) => ({
       id: String(s.sira),

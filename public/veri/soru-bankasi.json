@@ -1,6 +1,6 @@
 {
  "surum": 1,
- "damga": "2015-2017-2019-2021-2024-365-bd6b237610",
+ "damga": "2015-2017-2019-2021-2024-425-65c090664f",
  "kaynak": "TÜRKPATENT Patent ve Marka Vekilliği sınavları (marka bölümleri) ve Marka Kılavuzu çalışma seti",
  "aciklama": "TÜRKPATENT tarafından yayımlanan sınav kitapçıklarından ayrıştırılmıştır. Kişisel sınav hazırlığı amaçlıdır.",
  "yillar": [
@@ -81,7 +81,8 @@
    ],
    "cevap": "B",
    "eklenme": 1791877247162,
-   "topicGuven": 0,
+   "topicId": "vekil-vekaletname",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -450,7 +451,8 @@
    ],
    "cevap": "B",
    "eklenme": 1791877247162,
-   "topicGuven": 0,
+   "topicId": "marka-nispi-ret",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -856,7 +858,8 @@
    ],
    "cevap": "C",
    "eklenme": 1791877247162,
-   "topicGuven": 0,
+   "topicId": "marka-kullanim",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -1115,7 +1118,8 @@
    ],
    "cevap": "B",
    "eklenme": 1791877247162,
-   "topicGuven": 0,
+   "topicId": "ulus-ab",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -1224,7 +1228,8 @@
    ],
    "cevap": "D",
    "eklenme": 1791877247162,
-   "topicGuven": 0,
+   "topicId": "vekil-kurum",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -1407,7 +1412,8 @@
    ],
    "cevap": "C",
    "eklenme": 1791877247162,
-   "topicGuven": 0,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -1480,7 +1486,8 @@
    ],
    "cevap": "C",
    "eklenme": 1791877247162,
-   "topicGuven": 0,
+   "topicId": "temel-borclar",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -1845,6 +1852,755 @@
    "smkMaddeleri": []
   },
   {
+   "id": "tp-2017-A-k1-41",
+   "no": 41,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir tasarımcı, Locarno sınıflandırmasında yedinci sınıfta bulunan aşağıdaki bardak tasarımlarına ait 8x8 cm boyutundaki görsellerle TÜRKPATENT’e tasarım tescil başvurusu yapacaktır: K L M N Buna göre, başvurudaki tasarım ve ek görsellerin doğru numaralandırması ve buna bağlı olarak ödenecek toplam ücret aşağıdakilerin hangisinde verilmiştir? (Başvuru ücreti: 145 TL, İlave her bir tasarım için başvuru ücreti: 65 TL, Yayım ücreti (8x8 cm için): 40 TL’dir.) K L M N Toplam ücret",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1.1 1.2 1.3 1.4 305 TL"
+    },
+    {
+     "harf": "B",
+     "metin": "1.1 1.2 2.1 3.1 435 TL"
+    },
+    {
+     "harf": "C",
+     "metin": "1.1 1.2 2.1 2.2 370 TL"
+    },
+    {
+     "harf": "D",
+     "metin": "1.1 2.1 3.1 3.2 345 TL"
+    },
+    {
+     "harf": "E",
+     "metin": "1.1 1.2 2.1 2.2 395 TL"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153810060,
+   "gorsel": "veri/gorsel/tp-2017-A-k1-41.webp",
+   "topicId": "tasarim-inceleme-tescil",
+   "topicGuven": 0.35,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-42",
+   "no": 42,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir başvuru sahibi, 17.04.2017 tarihinde TÜRKPATENT’e çoklu tasarım tescil başvurusu yapmıştır. Başvuruda toplam üç tasarım bulunmaktadır. Yapılan incelemede başvuruda şekli eksiklik bulunmadığı görülmüştür. Yenilik araştırması sonucunda başvuru sahibinin, birinci tasarımını 25.08.2016, ikinci tasarımını ise 11.01.2016 tarihinde kendi internet sitesinde yayımladığı tespit edilmiştir. Bu yayımlar haricinde tasarımların aynılarına veya benzerlerine rastlanılmamıştır. Buna göre, başvurudaki tasarımlar için verilmesi gereken kararlar aşağıdakilerden hangisinde birlikte verilmiştir?\n1. Tasarım\n2. Tasarım\n3. Tasarım",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yayım Ret Yayım"
+    },
+    {
+     "harf": "B",
+     "metin": "Ret Ret Yayım"
+    },
+    {
+     "harf": "C",
+     "metin": "Yayım Yayım Ret"
+    },
+    {
+     "harf": "D",
+     "metin": "Yayım Yayım Yayım"
+    },
+    {
+     "harf": "E",
+     "metin": "Ret Ret Ret"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153810060,
+   "gorsel": "veri/gorsel/tp-2017-A-k1-42.webp",
+   "topicId": "tasarim-kamuya-sunma",
+   "topicGuven": 1,
+   "smkMaddeleri": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "tp-2017-A-k1-43",
+   "no": 43,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir başvuru sahibi 10.03.2017 tarihinde TÜRKPATENT’e rüçhanlı çoklu tasarım tescil başvurusu yapmıştır. Başvurunun incelenmesi sonucunda, başvurudaki tasarımların farklı Locarno sınıfında yer aldıkları tespit edilmiştir. Locarno sınıfı farklı tasarımlar için bölünmüş başvuru yapılması gerektiğinden Kurum, başvurunun çoklu başvuruya uygun olmadığını yazıyla bildirmiştir. Söz konusu yazı başvuru sahibine 29.03.2017 tarihinde ulaşmıştır. Başvuru sahibi bölünmüş başvuru yapmaya karar vermiştir. Buna göre, 6769 sayılı SMK ve Uygulama Yönetmeliği kapsamında yapılacak bölünmüş başvurunun özellikleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başvuru en geç 29.05.2017 tarihinde yapılmalıdır."
+    },
+    {
+     "harf": "B",
+     "metin": "İlk başvurudaki rüçhan hakkı bu başvuru için de tanınır."
+    },
+    {
+     "harf": "C",
+     "metin": "Başvurunun tarihi 10.03.2017 olarak kabul edilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Başvuruya, aynı sınıfta olması şartıyla yeni tasarım eklenebilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Başvuru için yeniden başvuru ücreti ödenir."
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153810060,
+   "topicId": "tasarim-basvuru",
+   "topicGuven": 0.45,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-44",
+   "no": 44,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir başvuru sahibi, 05.04.2017 tarihinde TÜRKPATENT’e tasarım tescil başvurusunda bulunmuştur. Başvuruya konu tasarım 24.05.2017 tarihinde Bültende yayımlanmıştır. Süresi içinde yayımına itiraz edilmeyen tasarım için tescil belgesi düzenlenmiş, başvuru sahibine gönderilmiştir. Buna göre, tasarımın koruma süresiyle ve yenilenmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tasarımın koruma süresi 24.05.2017 tarihinde başlar, yenilenerek beş yıllık süreyle korunur."
+    },
+    {
+     "harf": "B",
+     "metin": "Ek ücret ödenmesi şartıyla 05.04.2022 tarihinden itibaren altı ay içerisinde yenileme talebi yapılması halinde, tasarım 05.04.2027 tarihine kadar korunur."
+    },
+    {
+     "harf": "C",
+     "metin": "Tasarım beşer yıllık dönemler halinde beş kez yenilenerek en fazla otuz yıl korunur."
+    },
+    {
+     "harf": "D",
+     "metin": "Tasarım yalnızca iki kez yenilenebildiği için 05.04.2032 tarihine kadar korunur."
+    },
+    {
+     "harf": "E",
+     "metin": "Ek ücret ödenerek 10.07.2022 tarihinde yenileme talebi yapıldığında, tasarım 10.07.2027 tarihine kadar korunur."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153810060,
+   "topicId": "tasarim-sure-yenileme",
+   "topicGuven": 1,
+   "smkMaddeleri": [
+    5,
+    10,
+    24
+   ]
+  },
+  {
+   "id": "tp-2017-A-k1-45",
+   "no": 45,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Başvuru sahibi, TÜRKPATENT’e 10.03.2017 tarihinde çoklu tasarım tescil başvurusunda bulunmuştur. Yapılan incelemede başvuruya ait herhangi bir şekli eksiklik tespit edilmemiştir. Yenilik araştırması sonucunda ise birinci tasarımın, başvuru tarihinden önceki bir tarihte tescil edilmiş başka bir tasarımla aynı olduğu görülmüştür. Birinci tasarım yeni olmadığı gerekçesiyle reddedilmiş, diğer tasarımlar tescil edilerek 09.05.2017 tarihli Bültende yayımlanmıştır. 24.04.2017 tarihli söz konusu kararlar 28.04.2017 tarihinde başvuru sahibine bildirilmiştir. Buna göre, karara ve tescile itiraz edilebilecek son tarihler aşağıdakilerden hangisinde birlikte verilmiştir? Karara İtiraz Tescile İtiraz",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "09.07.2017 28.07.2017"
+    },
+    {
+     "harf": "B",
+     "metin": "24.07.2017 28.07.2017"
+    },
+    {
+     "harf": "C",
+     "metin": "28.06.2017 09.07.2017"
+    },
+    {
+     "harf": "D",
+     "metin": "28.06.2017 09.08.2017"
+    },
+    {
+     "harf": "E",
+     "metin": "09.07.2017 09.08.2017"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153810060,
+   "topicId": "tasarim-inceleme-tescil",
+   "topicGuven": 0.14,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-46",
+   "no": 46,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Tasarımların Uluslararası Tesciline İlişkin Lahey Anlaşması çerçevesinde, WIPO’ya yapılacak uluslararası tasarım başvurusuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yapılan başvuruda ülke seçimine gerek olmayıp, başvuruyla Lahey sistemine dâhil tüm ülkelerde tasarım koruması elde edilir."
+    },
+    {
+     "harf": "B",
+     "metin": "Uluslararası tasarım tescil başvuruları yalnızca ulusal ofisler aracılığıyla WIPO’ya yapılır."
+    },
+    {
+     "harf": "C",
+     "metin": "Bir uluslararası tasarım tescil başvurusunda yer alacak tasarıma ait görsel sayısı en fazla 100 adet olabilir."
+    },
+    {
+     "harf": "D",
+     "metin": "WIPO’nun ilgili birimi, uluslararası tasarım tescil başvurusunu tasarımın yeni olmadığı gerekçesiyle reddedebilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Uluslararası tesciller başlangıçta beş yıllık süre için korunurken, toplam koruma süresi anlaşmaya taraf ülkelerin ulusal mevzuatlarına göre değişebilmektedir."
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153810060,
+   "topicId": "ulus-siniflandirma",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-47",
+   "no": 47,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Aşağıdakilerden hangisi Türk Patent ve Marka Kurumu Patent Vekilleri ve Marka Vekilleri Meslek Kuralları ve Disiplin Yönetmeliği kapsamında, vekillik meslek kurallarına uymayan tutum ve davranışlarda bulunanlar ile vekilliğin gerektirdiği görevleri yapmayanlar hakkında uygulanacak disiplin cezalarından biri değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uyarma"
+    },
+    {
+     "harf": "B",
+     "metin": "Kınama"
+    },
+    {
+     "harf": "C",
+     "metin": "İdari para cezası verme"
+    },
+    {
+     "harf": "D",
+     "metin": "Geçici olarak vekillik faaliyetlerinden alıkoyma"
+    },
+    {
+     "harf": "E",
+     "metin": "Vekillikten çıkarma"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153810060,
+   "topicId": "vekil-disiplin",
+   "topicGuven": 0.36,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-48",
+   "no": 48,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "6769 sayılı SMK’ya göre, aşağıdaki sınai mülkiyet haklarından hangisi miras yoluyla intikal edemez?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Faydalı model"
+    },
+    {
+     "harf": "B",
+     "metin": "Tasarım"
+    },
+    {
+     "harf": "C",
+     "metin": "Patent"
+    },
+    {
+     "harf": "D",
+     "metin": "Coğrafi işaret"
+    },
+    {
+     "harf": "E",
+     "metin": "Marka"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153810060,
+   "topicId": "marka-lisans-devir",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-49",
+   "no": 49,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "6098 sayılı Türk Borçlar Kanunu’na göre, vekil özel olarak yetkili kılınmadıkça;\n1. Hakeme başvurma\n2. Kefil olma\n3. Kambiyo taahhüdünde bulunma\n4. Bir taşınırı devretme\n\nişlemlerinden hangilerini yapamaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 4"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "1, 2 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "1, 3 ve 4"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153810060,
+   "topicId": "temel-borclar",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-50",
+   "no": 50,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "6098 sayılı Türk Borçlar Kanunu’na göre, vekâlet sözleşmesi kapsamında vekilin borçlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İstisnai hallerde vekil, izin almadan vekâlet verenin talimatlarından ayrılabilir."
+    },
+    {
+     "harf": "B",
+     "metin": "Vekilin özen borcundan doğan sorumluluğunun belirlenmesinde objektif özen ölçütü esas alınır."
+    },
+    {
+     "harf": "C",
+     "metin": "Vekil başkasına vekâlet vermeye yetkili ise, bu kişinin fiilinden kendisi yapmış gibi sorumlu olur."
+    },
+    {
+     "harf": "D",
+     "metin": "Vekil, vekâlet verenin istemi üzerine yürüttüğü işin hesabını vermekle yükümlüdür."
+    },
+    {
+     "harf": "E",
+     "metin": "Vekil, vekâlet verene tesliminde geciktiği paranın faizini de ödemekle yükümlüdür."
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153810060,
+   "topicId": "temel-borclar",
+   "topicGuven": 0.89,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-51",
+   "no": 51,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Aşağıdakilerden hangisi 4721 sayılı Türk Medeni Kanunu’nun başlangıç hükümlerinde düzenlenen hukuki kavramlardan biri değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dürüst davranma"
+    },
+    {
+     "harf": "B",
+     "metin": "İyiniyet"
+    },
+    {
+     "harf": "C",
+     "metin": "İspat yükü"
+    },
+    {
+     "harf": "D",
+     "metin": "Hâkimin takdir yetkisi"
+    },
+    {
+     "harf": "E",
+     "metin": "Kişiliğin korunması"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153810060,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.93,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-52",
+   "no": 52,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’na göre, hâkimin somut uyuşmazlıklara hukuku uygulama sırası aşağıdakilerin hangisinde doğru olarak verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Örf ve adet hukuku, hâkimin yarattığı hukuk kuralı, kanun hükümleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Kanun hükümleri, örf ve adet hukuku, hâkimin yarattığı hukuk kuralı"
+    },
+    {
+     "harf": "C",
+     "metin": "Hâkimin yarattığı hukuk kuralı, kanun hükümleri, örf ve adet hukuku"
+    },
+    {
+     "harf": "D",
+     "metin": "Kanun hükümleri, hâkimin yarattığı hukuk kuralı, örf ve adet hukuku"
+    },
+    {
+     "harf": "E",
+     "metin": "Örf ve adet hukuku, kanun hükümleri, hâkimin yarattığı hukuk kuralı"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153810060,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-53",
+   "no": 53,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "15 yaşını dolduran ayırt etme gücüne sahip bir kişi mahkeme tarafından ergin kılınmıştır. Ancak daha sonra kötü yaşam tarzı sebebiyle başkalarının güvenliğini tehdit ettiği için hakkında kısıtlama kararı verilmiş ve bu karar kesinleştikten sonra ilan edilmiştir. 4721 sayılı Türk Medeni Kanunu’na göre, yasal temsilcisinin rızası olmadan bu kişinin yaptığı aşağıdaki işlemlerden hangisi geçerlidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kendisine yapılan bağışı kabul etmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Taşınmazını devretmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Poliçe düzenlemesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Ticari işletmesini rehin olarak vermesi"
+    },
+    {
+     "harf": "E",
+     "metin": "Bir taşınmazı kiralaması"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153810060,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.42,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-54",
+   "no": 54,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’na göre tüzel kişilerin ehliyetlerinin kapsamı, koşulları ve kullanılmasıyla ilgili;\n1. Tüzel kişinin iradesi organları aracılığıyla açıklanır.\n2. Tüzel kişinin kanuna ve kuruluş belgelerine göre gerekli organlara sahip olması, hak ehliyetini kazanmasının koşuludur.\n3. Sahip oldukları haklar ve borçlar bakımından tüzel kişilerle gerçek kişiler arasında fark yoktur. ifadelerinden yanlış olanlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "1, 2 ve 3"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153810060,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.98,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-55",
+   "no": 55,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’na göre aşağıdaki gerçek kişilerden hangisi, seçeneklerde verilen bilgiler kapsamında “tacir” olarak kabul edilmez?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki arkadaşı ile adi ortaklık şeklinde işlettikleri bir ticari işletmeyi açan gerçek kişi"
+    },
+    {
+     "harf": "B",
+     "metin": "Adına ticari işletme işletilen kısıtlı gerçek kişi"
+    },
+    {
+     "harf": "C",
+     "metin": "Miras kalan ticari işletmesi kendisi adına işletilen on dört yaşındaki gerçek kişi"
+    },
+    {
+     "harf": "D",
+     "metin": "Ticari işletmesini ticaret siciline tescil ettirerek durumu ilan etmiş olsa bile henüz fiilen işletmeye başlamayan gerçek kişi"
+    },
+    {
+     "harf": "E",
+     "metin": "Bir anonim şirketin yönetim kurul üyesi ve aynı zamanda esnaf olan gerçek kişi"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153810060,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.98,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-56",
+   "no": 56,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir tacir, üretip sattığı buzdolapları için kullandığı X markasını TÜRKPATENT nezdinde tescil ettirmiştir. 6102 sayılı Türk Ticaret Kanunu’na göre, tacir olmanın hükümleri dikkate alındığında, bu tacirle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "X markasının tescilinden bağımsız olarak, ticaret unvanını ticaret siciline tescil ettirmek zorundadır."
+    },
+    {
+     "harf": "B",
+     "metin": "Yürüttüğü ticari faaliyetlerine ilişkin gerekli ticari defterleri tutmakla yükümlüdür."
+    },
+    {
+     "harf": "C",
+     "metin": "Ticari işletmesiyle ilgili bir iş gördüğünde uygun bir ücret talep edebilmesi, bu hususun önceden kararlaştırılmış olmasına bağlıdır."
+    },
+    {
+     "harf": "D",
+     "metin": "Ticari faaliyetlerinde kullandığı X markasını lisans sözleşmesine konu ederken basiretli bir iş adamı gibi hareket etmelidir."
+    },
+    {
+     "harf": "E",
+     "metin": "Ticari işletmesiyle ilgili borçlarından dolayı iflasa tabidir."
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153810060,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-57",
+   "no": 57,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’na göre ticaret siciline tescil işlemiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ticaret siciline tescil kural olarak yetkili kurumun bildirimi üzerine yapılır."
+    },
+    {
+     "harf": "B",
+     "metin": "Bir hususun tescilini istemeye birden çok kimse zorunlu ve yetkili ise kural olarak birlikte talepte bulunmaları gerekir."
+    },
+    {
+     "harf": "C",
+     "metin": "Tescil edilmiş hususlarda meydana gelen her türlü değişiklik de tescil edilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Ticaret sicili müdürlüğünün yetki çevresi içinde oturanlar için tescil isteme süresi kural olarak bir aydır."
+    },
+    {
+     "harf": "E",
+     "metin": "Tescil işlemi talep sahibinin sözlü istemi üzerine yapılır."
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153810060,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-58",
+   "no": 58,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’na göre aşağıdakilerden hangisi bir işletme adıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Operam Hotel"
+    },
+    {
+     "harf": "B",
+     "metin": "Ali Bak Yapı Kooperatifi"
+    },
+    {
+     "harf": "C",
+     "metin": "Deniz Yıldızı Donatma İştiraki"
+    },
+    {
+     "harf": "D",
+     "metin": "Akarsu Turizm Limited Şirketi"
+    },
+    {
+     "harf": "E",
+     "metin": "Ayşe Can ve Ortakları Adi Komandit Şirketi"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153810060,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-59",
+   "no": 59,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "Aşağıdakilerden hangisi 6102 sayılı Türk Ticaret Kanunu’na göre Ahmet Doğru isimli tacirin kuracağı bir şirketin ticaret unvanı olamaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ahmet Doğru İthalat ve İhracat Anonim Şirketi"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahmet Doğru Turizm ve Ticaret A.Ş."
+    },
+    {
+     "harf": "C",
+     "metin": "Ahmet Doğru Mobilya Tuhafiye Limited Şirketi"
+    },
+    {
+     "harf": "D",
+     "metin": "Güvercin Kuyumculuk Ltd. Şti."
+    },
+    {
+     "harf": "E",
+     "metin": "Doğru İnşaat Otelcilik Limited Şirketi"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153810060,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2017-A-k1-60",
+   "no": 60,
+   "yil": 2017,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2017 Genel Yeterlik Sınavı (A)",
+   "metin": "İstanbul’da gıda sektöründe faaliyette bulunan, İstanbul Lokantacılar Esnaf Odasına kayıtlı esnaf A, verdiği yiyecek sağlama hizmeti için kullandığı X markasını henüz TÜRKPATENT’e başvurarak tescil ettirmemiştir. Aynı sektörde rakip olan esnaf B, itibarından yararlanmak kastıyla söz konusu markanın aynısını, A’nın bilgisi ve izni dışında, Ankara’daki lokantasında verdiği hizmet için kullanmaya başlamıştır. Markaya duydukları güven nedeniyle Ankara’da B’nin lokantasını tercih eden müşterilerin sağlık durumu yedikleri yemekler nedeniyle bozulmuş ve bunun üzerine X markası hakkında sosyal medyada olumsuz yorumlar yapılmaya başlanmıştır. Bu gelişmelerin sonucunda, İstanbul’da A’nın müşterilerinin sayısı da azalmıştır. Buna göre, 6102 sayılı Türk Ticaret Kanunu çerçevesinde, haksız rekabet gerekçesiyle ileri sürülebilecek istemlerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İstanbul Lokantacılar Esnaf Odası, haksız rekabetin men’ini isteyebilir."
+    },
+    {
+     "harf": "B",
+     "metin": "Sağlığı bozulan ve ekonomik çıkarları zarar gören müşteriler, maddi zararlarının tazminini talep edebilir."
+    },
+    {
+     "harf": "C",
+     "metin": "A, B’nin fiilinin haksız olup olmadığının tespitini isteyebilir."
+    },
+    {
+     "harf": "D",
+     "metin": "İstanbul Lokantacılar Esnaf Odası, A’nın maddi zararının tazminini talep edebilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Ticari itibarı zedelenen A, manevi tazminat talep edebilir."
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153810060,
+   "topicId": "temel-haksiz-rekabet",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
    "id": "tp-2017-A-k2-61",
    "no": 61,
    "yil": 2017,
@@ -1876,7 +2632,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-isaret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -1913,7 +2669,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -1950,7 +2706,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "gorsel": "veri/gorsel/tp-2017-A-k2-63.webp",
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.57,
@@ -1988,7 +2744,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2025,7 +2781,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-basvuru",
    "topicGuven": 0.35,
    "smkMaddeleri": []
@@ -2062,7 +2818,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -2099,7 +2855,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2136,7 +2892,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-isaret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2173,7 +2929,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2210,7 +2966,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -2246,7 +3002,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "ulus-paris",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -2283,7 +3039,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -2320,7 +3076,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -2357,7 +3113,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.94,
    "smkMaddeleri": []
@@ -2394,7 +3150,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.35,
    "smkMaddeleri": []
@@ -2431,7 +3187,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.86,
    "smkMaddeleri": [
@@ -2470,7 +3226,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2507,7 +3263,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "gorsel": "veri/gorsel/tp-2017-A-k2-78.webp",
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.34,
@@ -2545,7 +3301,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2582,7 +3338,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.36,
    "smkMaddeleri": []
@@ -2619,7 +3375,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.49,
    "smkMaddeleri": []
@@ -2656,7 +3412,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -2693,7 +3449,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -2730,7 +3486,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -2767,7 +3523,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-kullanim",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -2804,7 +3560,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -2840,7 +3596,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-ruchan",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -2877,7 +3633,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-sona-erme",
    "topicGuven": 0.29,
    "smkMaddeleri": []
@@ -2914,7 +3670,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -2951,7 +3707,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-kullanim",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -2988,7 +3744,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3025,7 +3781,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-madrid",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -3062,7 +3818,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-madrid",
    "topicGuven": 0.88,
    "smkMaddeleri": []
@@ -3099,7 +3855,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-madrid",
    "topicGuven": 0.79,
    "smkMaddeleri": []
@@ -3136,7 +3892,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3173,7 +3929,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "ci-basvuru",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -3210,7 +3966,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -3246,7 +4002,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "ci-basvuru",
    "topicGuven": 0.19,
    "smkMaddeleri": []
@@ -3283,7 +4039,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "ci-basvuru",
    "topicGuven": 0.66,
    "smkMaddeleri": []
@@ -3320,9 +4076,755 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879380959,
+   "eklenme": 1792153810060,
    "topicId": "ci-basvuru",
    "topicGuven": 0.75,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-41",
+   "no": 41,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "6769 sayılı SMK’ya göre, TÜRKPATENT’e yapılan aşağıdaki başvurulardan hangisi tasarım tescili ile koruma altına alınamaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ananas şeklinde aydınlatma"
+    },
+    {
+     "harf": "B",
+     "metin": "Pelüş oyuncak ayı"
+    },
+    {
+     "harf": "C",
+     "metin": "Kalp şeklinde elma"
+    },
+    {
+     "harf": "D",
+     "metin": "Giyim markasının logosu"
+    },
+    {
+     "harf": "E",
+     "metin": "Çiçek şeklinde pilav sunumu"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153811291,
+   "topicId": "tasarim-inceleme-tescil",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-42",
+   "no": 42,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "Ofis mobilyası sektöründe çalışan bir tasarımcı, daha önce tasarladığı ve tasarım tescili aldığı ofis sandalyesinin ayak ve kolçak kısmını değiştirmeden, yalnızca sırtlık kısmını geliştirdiği yeni bir tasarım yapmıştır. Üç boyutlu çizim programında hazırlayarak model (prototip) yaptırdığı ve koruma talep ettiği yeni sırtlık için TÜRKPATENT’e tasarım başvurusunda bulunacaktır. 6769 sayılı SMK’nın Uygulama Yönetmeliğine göre, tasarımcının başvuruya uygun görseller sunabilmesi için aşağıdakilerden hangisini yapması gerekir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Modelin fotoğraf görselinde sırtlık kısmını sınırlarından işaretlemeli, ek görsellerinde ayak ve kolçak kısımlarını kesikli çizgilerle işaretleyerek sınırlandırmalıdır."
+    },
+    {
+     "harf": "B",
+     "metin": "Çizgisel anlatımdaki görsellerde sırtlık kısmını devamlı çizgilerle, diğer kısımları noktalı veya kesikli çizgilerle belirtmelidir."
+    },
+    {
+     "harf": "C",
+     "metin": "Sırtlığın tek başına, farklı açı ve perspektiflerden olan görünümlerini tek görsel içerisinde bir arada sunmalıdır."
+    },
+    {
+     "harf": "D",
+     "metin": "Başvurudaki görsellerde sırtlık kısmını gölgelendirerek veya bulanıklaştırarak sunmalıdır."
+    },
+    {
+     "harf": "E",
+     "metin": "Önceki sırtlık ile yeni tasarladığı sırtlık arasındaki boyut, eğim gibi farklılıkları görsel anlatım üzerinde göstermelidir."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153811291,
+   "topicId": "tasarim-basvuru",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-43",
+   "no": 43,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "Deterjan kapsülü tasarımları için 16.08.2019 tarihinde TÜRKPATENT’e yapılan çoklu başvurudaki ilk tasarımın görselleri aşağıdaki gibi düzenlenmiştir. Tamamı 8x8 cm ölçülerinde yapılan bu başvuru için toplam 560 TL ücret ödenmiştir. Bu başvuruda yer alabilecek diğer görseller ve tasarım numaraları aşağıdakilerin hangisinde verilmiştir? (2019 yılı ücret tebliğine göre tasarım tescil başvuru ücreti 150 TL, ilave her tasarım için tasarım tescil başvuru ücreti 65 TL, yayım ücreti (her bir 8x8 cm alan için) 35 TL’dir.)",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "2.1 2.2 3.1 3.2"
+    },
+    {
+     "harf": "B",
+     "metin": "2.1 2.2 3.1 3.2 4.1"
+    },
+    {
+     "harf": "C",
+     "metin": "1.3 1.4 1.5 2.1 2.2 2.3"
+    },
+    {
+     "harf": "D",
+     "metin": "2.1 2.2 2.3 3.1 3.2 4.1"
+    },
+    {
+     "harf": "E",
+     "metin": "2.1 2.2 2.3 3.1 3.2 3.3"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153811291,
+   "gorsel": "veri/gorsel/tp-2019-A-k1-43.webp",
+   "topicId": "tasarim-basvuru",
+   "topicGuven": 0.14,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-44",
+   "no": 44,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "27.09.2017 tarihinde TÜRKPATENT’e yapılan çoklu tasarım başvurusunda yer alan tasarımların rüçhan hakkı bilgileri aşağıda verilmiştir: Tasarım No Rüçhan Tarihi 1 05.04.2017 2 Rüçhan yok 3 20.06.2017 Kurumun yaptığı yenilik araştırmasında bu üç tasarımın daha önce internette yayımlandığı görülmüştür. Kurum tarafından\n1. tasarıma yayın,\n2. ve\n3. tasarıma ret kararı verilmiştir.\n\nBu tasarımlardan yalnızca ikincisi başvuru sahibi tarafından yayınlandığına göre, tasarımların, internet sitelerinde bulunan yayım tarihleri aşağıdakilerin hangisinde birlikte verilmektedir? 1.Tasarım 2.Tasarım 3.Tasarım",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "18.03.2017 04.10.2016 02.09.2016"
+    },
+    {
+     "harf": "B",
+     "metin": "01.04.2017 05.05.2016 18.02.2016"
+    },
+    {
+     "harf": "C",
+     "metin": "10.06.2017 16.05.2016 23.08.2017"
+    },
+    {
+     "harf": "D",
+     "metin": "20.05.2017 09.07.2016 02.01.2017"
+    },
+    {
+     "harf": "E",
+     "metin": "11.07.2017 08.01.2017 17.02.2017"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153811291,
+   "gorsel": "veri/gorsel/tp-2019-A-k1-44.webp",
+   "topicId": "tasarim-kamuya-sunma",
+   "topicGuven": 1,
+   "smkMaddeleri": [
+    2,
+    3,
+    18
+   ]
+  },
+  {
+   "id": "tp-2019-A-k1-45",
+   "no": 45,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "03.07.2017 tarihinde başvurusu yapılan, 09.08.2017 tarihli Bültende yayımlanan ve 05.01.2018 tarihinde tescil belgesi düzenlenen bir tasarımın ilk yenileme talebi yapılacaktır. 6769 sayılı SMK’ya göre, TÜRKPATENT’e yapılacak bu talep için en erken ve en geç tarihler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "03.01.2022 – 03.01.2023"
+    },
+    {
+     "harf": "B",
+     "metin": "09.02.2022 – 09.02.2023"
+    },
+    {
+     "harf": "C",
+     "metin": "05.01.2023 – 05.07.2023"
+    },
+    {
+     "harf": "D",
+     "metin": "03.07.2022 – 03.01.2023"
+    },
+    {
+     "harf": "E",
+     "metin": "09.08.2022 – 09.02.2023"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153811291,
+   "topicId": "tasarim-sure-yenileme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-46",
+   "no": 46,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "Aşağıdakilerden hangisi Tasarımların Uluslararası Tesciline İlişkin Lahey Anlaşması ile ilgili olarak, uluslararası büronun gerçekleştirdiği işlemlerden biri değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Doğrudan uluslararası tasarım tescil başvurusu alma"
+    },
+    {
+     "harf": "B",
+     "metin": "Hak sahipliği değişiklik kaydını eski ve yeni sahibe bildirme"
+    },
+    {
+     "harf": "C",
+     "metin": "Tasarımları yenilik ve ayırt edicilik yönünden inceleme"
+    },
+    {
+     "harf": "D",
+     "metin": "Ulusal ofislerden gelen ret kararı bildirimini başvuru sahibine iletme"
+    },
+    {
+     "harf": "E",
+     "metin": "Yenileme talebi için, süre bitiminden önce hak sahibine koruma süresinin biteceğini bildirme"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153811291,
+   "topicId": "ulus-siniflandirma",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-47",
+   "no": 47,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "TÜRKPATENT tarafından 2006 yılında başlatılmış, KOBİ’lerde yenilikçi kültürün artırılmasına katkı sağlamak ve bu yenilikleri korumak için KOBİ’lerde fikri mülkiyet stratejisi oluşturmayı amaçlayan çalışma aşağıdakilerden hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hezarfen Projesi"
+    },
+    {
+     "harf": "B",
+     "metin": "İstanbul Uluslararası Buluş Fuarı (ISIF)"
+    },
+    {
+     "harf": "C",
+     "metin": "Patentle Türkiye Yarışması"
+    },
+    {
+     "harf": "D",
+     "metin": "Yöresel Ürünler Fuarı (YÖREX)"
+    },
+    {
+     "harf": "E",
+     "metin": "Patent Atölyesi Projesi"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153811291,
+   "topicId": "vekil-kurum",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-48",
+   "no": 48,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "Türk Patent ve Marka Kurumu Patent Vekilleri ve Marka Vekilleri Meslek Kurallar ve Disiplin Yönetmeliğine göre, aşağıdaki fiillerden hangisini işleyen vekil hakkında kınama cezası uygulanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salt kendine iş sağlamak amacıyla, muhtemel müvekkillere saldırgan bir pazarlama yöntemiyle yaklaşmak"
+    },
+    {
+     "harf": "B",
+     "metin": "Yazışmalarda kamuyu yanıltacak bilgilere yer vermek"
+    },
+    {
+     "harf": "C",
+     "metin": "Kurum nezdinde yürütülen bir işlemde menfaati zıt olan taraflara vekillik etmek"
+    },
+    {
+     "harf": "D",
+     "metin": "Kurum adına yazılı veya sözlü açıklamada bulunmak"
+    },
+    {
+     "harf": "E",
+     "metin": "Meslektaşı hakkında küçük düşürücü açıklama yapmak"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153811291,
+   "topicId": "vekil-kurum",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-49",
+   "no": 49,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’na göre, ticaret sicil müdürlüğündeki kayıtların açık olması özelliğine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Saklanan tüm senet ve belgelerin onaylı suretlerini sadece ilgilileri alır."
+    },
+    {
+     "harf": "B",
+     "metin": "Tescil edilen hususlar, aksi kanun veya ilgili yönetmelikte yer almadığı sürece ilan olunur."
+    },
+    {
+     "harf": "C",
+     "metin": "Sicil kayıtları, Türkiye Ticaret Sicili Gazetesi’nde ilan edilir."
+    },
+    {
+     "harf": "D",
+     "metin": "Tescile dayanak senet, beyanname ve dilekçeler sicil müdürlüğünce saklanır."
+    },
+    {
+     "harf": "E",
+     "metin": "Ticaret sicilinin içeriğini herkes inceleyebilir."
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153811291,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-50",
+   "no": 50,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "6098 sayılı Türk Borçlar Kanunu’na göre, bir marka vekili ile marka başvurusu yapacak kişi arasında yapılan sözleşme kapsamında aşağıdakilerden hangisi marka vekilinin yükümlülükleri arasında yer almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İşi talimatlara uygun ifa etme"
+    },
+    {
+     "harf": "B",
+     "metin": "Borcu bizzat ifa etme"
+    },
+    {
+     "harf": "C",
+     "metin": "İşi özenle yürütme"
+    },
+    {
+     "harf": "D",
+     "metin": "Tescili garanti etme"
+    },
+    {
+     "harf": "E",
+     "metin": "İşin hesabını verme"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153811291,
+   "topicId": "temel-borclar",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-51",
+   "no": 51,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "6098 sayılı Türk Borçlar Kanunu’na göre aşağıda, vekâlet sözleşmesinin sona erme halleriyle ilgili;\n1. sözleşme her zaman tek taraflı sona erdirilebilir,\n2. vekilin ölümü veya iflasıyla kural olarak sona erer,\n3. vekâlet verenin ehliyetini kaybetmesi halinde kural olarak sona erer. doğru ifadeler aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "1, 2 ve 3"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153811291,
+   "topicId": "temel-borclar",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-52",
+   "no": 52,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "A firması, tasarım tescil işlemlerinde uzun süredir çalışan, deneyimlerine güvendiği Vekil B ile vekâlet sözleşmesi yapmıştır. Vekil B tarafından yapılan başvuru Bültende yayımlanmış ancak ilana üçüncü kişi tarafından itirazda bulunulmuştur. Vekil B, sözleşmede yer almamasına rağmen itiraza karşı görüş sunması için Vekil C ile alt vekâlet sözleşmesi yapmıştır. Vekil C karşı görüş bildiriminde, itirazın bir bölümüne görüş sunmuş, diğer bölümlerine görüş sunmamıştır. Görüş sunduğu bölüm için itiraz incelenmiş, bu bölüm için tescil işlemlerinin devamına karar verilmiştir. Tescil ücreti Vekil B tarafından ödenerek tasarım tescil edilmiştir. A firması, itirazdan önce sözleşmeyi tek taraflı sona erdirmiş ancak iradesi, Vekil B’ye tasarım tescilinden sonra ulaşmıştır. A firması tasarım tescil ücretini Vekil B’ye ödememiştir. Buna göre, 6098 sayılı Türk Borçlar Kanunu’nun vekâlet sözleşmesi hükümleri göz önüne alındığında bu olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vekil B, Vekil C’nin eksik görüş sunmasından sorumludur."
+    },
+    {
+     "harf": "B",
+     "metin": "Sözleşme sona erdiğinden ödenen tescil ücreti Vekil B’nin üzerinde kalır."
+    },
+    {
+     "harf": "C",
+     "metin": "A firması, Vekil B’ye karşı sahip olduğu hakları Vekil C’ye karşı ileri sürebilir."
+    },
+    {
+     "harf": "D",
+     "metin": "A firması, ödemediği tescil ücretinden ve bunun faizinden sorumludur."
+    },
+    {
+     "harf": "E",
+     "metin": "Vekil B’nin vekâlet borcunu bizzat ifa yükümlülüğü vardır."
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153811291,
+   "topicId": "temel-borclar",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-53",
+   "no": 53,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’na göre, hukukun uygulanmasıyla ilgili kurallar aşağıda verilmiştir:\n1. Kanun, özüyle ve sözüyle değindiği tüm konulara uygulanır.\n2. Bilimsel görüşlerden ve yargı kararlarından yararlanılır.\n3. Kanunda uygulanabilir hüküm yoksa hâkim kanun koyucu olsaydı nasıl bir kural koyacaksa ona göre karar verir.\n4. Kanun ile örf ve âdet hukukunun çelişmesi halinde örf ve âdet hukuku uygulanır.\n\nBuna göre, doğru kurallar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 4"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 4"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153811291,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-54",
+   "no": 54,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’na göre, fiil ehliyeti olan bir kişinin bazı özellikleri aşağıda verilmiştir:\n1. Kendi fiilleriyle hak edinmesi\n2. Yasal temsilcisinin rızasıyla borç altına girmesi\n3. Haksız fiillerinden sorumlu olması\n\nBuna göre, doğru özelikler aşağıdakilerin hangisinde verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "1, 2 ve 3"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153811291,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.84,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-55",
+   "no": 55,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’na göre bazı durumlar kişilik haklarına yapılan saldırıların hukuka aykırılığını ortadan kaldırır. Buna göre, aşağıdakilerden hangisi bu durumlardan biri değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kişilik hakkı zedelenenin rızasının bulunması"
+    },
+    {
+     "harf": "B",
+     "metin": "Daha üstün nitelikte kamusal yararın bulunması"
+    },
+    {
+     "harf": "C",
+     "metin": "Daha üstün nitelikte özel yararın bulunması"
+    },
+    {
+     "harf": "D",
+     "metin": "Kanunun verdiği yetkinin kullanılması"
+    },
+    {
+     "harf": "E",
+     "metin": "Dürüstlük kurallarına uygun davranılması"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153811291,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.84,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-56",
+   "no": 56,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’na göre, aşağıdakilerden hangisi tüzel kişi organlarının bir özelliği değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hukuki işlemleriyle tüzel kişiyi borçlandırması"
+    },
+    {
+     "harf": "B",
+     "metin": "Tüzel kişiliğin iradesini açıklamaya yetkili olması"
+    },
+    {
+     "harf": "C",
+     "metin": "Fiil ehliyetine sahip olması"
+    },
+    {
+     "harf": "D",
+     "metin": "Kusurlarından dolayı kişisel sorumlu olması"
+    },
+    {
+     "harf": "E",
+     "metin": "Tüzel kişilik sona erdiğinde mal varlığının geçeceği yeri belirlemesi"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153811291,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.98,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-57",
+   "no": 57,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’na göre, ticari işletmenin devri sözleşmesinin hukuki özelliklerine ilişkin;\n1. Fikri mülkiyet hakları açıkça belirtilmedikçe devredilmiş sayılmaz.\n2. Devir sözleşmesi yazılı olarak yapılır.\n3. Ticaret unvanı devredilmeyecekse devre konu olmayacağı açıkça belirtilir.\n\nifadelerinden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "E",
+     "metin": "1 ve 3"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153811291,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.98,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-58",
+   "no": 58,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’na göre aşağıdakilerden hangisi, “ticaret unvanına tecavüz” edilen kişinin hakları arasında yer almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tecavüzün tespitini isteme"
+    },
+    {
+     "harf": "B",
+     "metin": "Unvan kullanımının yasaklanmasını isteme"
+    },
+    {
+     "harf": "C",
+     "metin": "Haksız kullanılan unvanın değiştirilmesini isteme"
+    },
+    {
+     "harf": "D",
+     "metin": "İlgili malların kendisine devrini isteme"
+    },
+    {
+     "harf": "E",
+     "metin": "Maddi ve manevi tazminat isteme"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153811291,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-59",
+   "no": 59,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "A firması, işletme adının ticaret siciline tescili talebiyle İzmir Ticaret Sicili Müdürlüğüne başvurmuştur. İzmir Ticaret Sicili Müdürlüğü yaptığı inceleme sonucunda, aynı işletme adının Doğubayazıt Ticaret Sicili Müdürlüğüne tescil ettirildiğini belirterek talebi reddetmiş ve bunu A firmasına bildirmiştir. 6102 sayılı Türk Ticaret Kanunu’na göre A firması işletme adını tescil ettirebilmek için;\n1. her sicil müdürlüğü ayrı sicil kaydı tuttuğundan karara itiraz eder,\n2. işletme adına ek yaparak yeniden tescil talebinde bulunur,\n3. TÜRKPATENT’e başvurur\n\nişlemlerinden hangisini yapmalıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153811291,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.84,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2019-A-k1-60",
+   "no": 60,
+   "yil": 2019,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2019 Genel Yeterlik Sınavı (A)",
+   "metin": "A ve B ayakkabı satıcısı olarak aynı şehirde faaliyet göstermektedir. İşlerini canlandırmak isteyen A, düzenlediği ufak çaplı kampanyalar sayesinde satışlarını arttırır. Bu kampanya nedeniyle satışları düşen B, A’nın sattığı ayakkabılarda kanserojen madde olduğu dedikodusunu yaymaya başlar. Bu nedenle A’nın satışları düşmeye başlar. Bir avukat bu olayla ilgili aşağıdaki yorumları yapar.\n1. A’nın kampanya yapması dürüstlük kuralına aykırıdır.\n2. B’nin, A’nın malları hakkında söyledikleri haksız rekabet oluşturur.\n3. B’nin, A’dan kampanyasını durdurmasını isteme hakkı vardır.\n4. A’nın zararını B’den tazmin etme hakkı vardır.\n\n6102 sayılı Türk Ticaret Kanunu’na göre doğru yorumlar aşağıdakilerin hangisinde birlikte verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "3 ve 4"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153811291,
+   "topicId": "temel-haksiz-rekabet",
+   "topicGuven": 1,
    "smkMaddeleri": []
   },
   {
@@ -3357,7 +4859,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-isaret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3394,7 +4896,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3431,7 +4933,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3468,7 +4970,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "gorsel": "veri/gorsel/tp-2019-A-k2-64.webp",
    "topicId": "marka-basvuru",
    "topicGuven": 0.69,
@@ -3506,7 +5008,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -3543,7 +5045,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3580,7 +5082,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -3617,7 +5119,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "gorsel": "veri/gorsel/tp-2019-A-k2-68.webp",
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.69,
@@ -3655,7 +5157,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "gorsel": "veri/gorsel/tp-2019-A-k2-69.webp",
    "topicId": "marka-mutlak-ret",
    "topicGuven": 1,
@@ -3693,7 +5195,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -3732,7 +5234,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "gorsel": "veri/gorsel/tp-2019-A-k2-71.webp",
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.69,
@@ -3770,7 +5272,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3807,7 +5309,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3844,7 +5346,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -3881,7 +5383,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-kullanim",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3918,7 +5420,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3955,7 +5457,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -3992,7 +5494,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-karara-itiraz",
    "topicGuven": 0.52,
    "smkMaddeleri": []
@@ -4029,7 +5531,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4066,7 +5568,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.49,
    "smkMaddeleri": [
@@ -4106,7 +5608,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -4143,7 +5645,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.89,
    "smkMaddeleri": []
@@ -4180,7 +5682,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -4216,7 +5718,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -4252,7 +5754,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-sona-erme",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -4289,7 +5791,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4326,7 +5828,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4363,7 +5865,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "ortak-dava-mahkeme",
    "topicGuven": 0.68,
    "smkMaddeleri": []
@@ -4400,7 +5902,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -4436,7 +5938,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-madrid",
    "topicGuven": 0.85,
    "smkMaddeleri": []
@@ -4473,7 +5975,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-ruchan",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -4510,7 +6012,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-madrid",
    "topicGuven": 0.51,
    "smkMaddeleri": []
@@ -4547,7 +6049,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-madrid",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4584,7 +6086,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-madrid",
    "topicGuven": 0.28,
    "smkMaddeleri": []
@@ -4621,7 +6123,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-madrid",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -4658,7 +6160,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "ci-turler",
    "topicGuven": 1,
    "smkMaddeleri": []
@@ -4695,7 +6197,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -4732,7 +6234,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "gorsel": "veri/gorsel/tp-2019-A-k2-98.webp",
    "topicId": "marka-tescil-yenileme",
    "topicGuven": 0.14,
@@ -4770,7 +6272,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "ci-tescil-degisiklik",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -4807,9 +6309,756 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879537282,
+   "eklenme": 1792153811291,
    "topicId": "ortak-talepler-tazminat",
    "topicGuven": 0.75,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-41",
+   "no": 41,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir tasarımcı, kendi yaptığı buzdolabı tasarımını 10.08.2021 tarihinde Berlin’deki uluslararası resmi bir sergide ilk kez kamuya sunmuş, 23.09.2021 tarihinde ise Türkiye’de ilk kez satışa çıkarmıştır. Bu tasarımcı tasarımı için Türkiye’de koruma elde etmek istemektedir. Buna göre; yararlanabileceği haklardan bazıları şunlardır:\n1. Yeni ve ayırt edici olması durumunda tescilsiz korumadan yararlanma\n2. Türkiye’de tescil talebini uluslararası tasarım başvurusu ile yapma\n3. Yapılacak tasarım başvurusunda rüçhan hakkından yararlanma Tasarımcı 10.12.2021 tarihinde yukarıda verilen tasarım koruma\n\nhaklarından hangisini kullanabilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153812411,
+   "topicId": "tasarim-kamuya-sunma",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-42",
+   "no": 42,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Aşağıdaki tabloda 20.08.2021 tarihinde TÜRKPATENT’e yapılan çoklu tasarım başvurusunda yer alan tasarımların adları, görsel sayıları ve Locarno sınıfı bilgileri verilmiştir: Tasarım Numarası Tasarım Adı Görsel Sayısı (Her Biri 8x8 cm) Locarno Sınıfı 1 Kapı 2 25-02 2 Kapı kolu 1 08-06 3 Tel kafes 2 08-99 Bahçe havuzu 2 25-99 Başvuruda yayım erteleme talebi ve rüçhan hakkı talebi bulunmamaktadır. Kurumun yaptığı inceleme sonucunda, başvurunun çoklu başvuruya uygun olmadığı ve bölünmüş başvuru yapılması gerektiği başvuru sahibine bildirilmiştir. Başvuru sahibi bölünmüş başvuru yapmaya karar vermiştir. Buna göre, başvurunun çoklu başvuruya uygun olması için başvurudan çıkarılacak tasarım numaraları ile buna bağlı olarak talep üzerine iade edilecek ücret aşağıdakilerin hangisinde verilmiştir? (İlave tasarım, ilave her tasarım için tasarım tescil başvuru ücretini; yayım ise her bir 8x8 cm alan için yayım ücretini ifade etmektedir.) Başvurudan Çıkarılacak Tasarım Numaraları Talep Üzerine İade Edilecek Ücret",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 4 4 adet ilave tasarım, 2 adet yayım"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 4 4 adet ilave tasarım"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3 2 adet ilave tasarım, 3 adet yayım"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 3 3 adet ilave tasarım"
+    },
+    {
+     "harf": "E",
+     "metin": "3 ve 4 2 adet ilave tasarım, 4 adet yayım"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153812411,
+   "gorsel": "veri/gorsel/tp-2021-A-k1-42.webp",
+   "topicId": "tasarim-basvuru",
+   "topicGuven": 0.45,
+   "smkMaddeleri": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "tp-2021-A-k1-43",
+   "no": 43,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "TÜRKPATENT’e yapılan aşağıdaki tasarım başvurularından hangisinde ikinci görsel, birinci görselde yer alan tasarımın ek resmi olarak kabul edilmez? (Her bir görselin boyutları 8x8 cm olarak kabul edilecektir.) Birinci Görsel İkinci Görsel",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lastik"
+    },
+    {
+     "harf": "B",
+     "metin": "Saat"
+    },
+    {
+     "harf": "C",
+     "metin": "Sandalye"
+    },
+    {
+     "harf": "D",
+     "metin": "Aplik"
+    },
+    {
+     "harf": "E",
+     "metin": "Tipografik Karakter"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153812411,
+   "gorsel": "veri/gorsel/tp-2021-A-k1-43.webp",
+   "topicId": "tasarim-basvuru",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-44",
+   "no": 44,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir başvuru sahibi, 10.07.2021 tarihinde TÜRKPATENT’e, rüçhanlı çoklu tasarım başvurusu yapmıştır. Kurumun yaptığı yenilik araştırması sonucunda, başvurudaki tasarımların başvuru sahibi tarafından internette yayımlandığı tespit edilmiştir. Başvuruda yer alan tasarımların; rüçhan tarihi, rüçhan hakkı belgesinin Kuruma teslim tarihi ve internetteki yayım tarihi aşağıda verilmiştir. Tasarım Numarası Rüçhan Tarihi Rüçhan Hakkı Belgesi Teslim Tarihi İnternetteki Yayım Tarihi 1 05.01.2021 10.07.2021 21.01.2020 2 01.02.2021 05.10.2021 12.03.2020 3 05.04.2021 15.10.2021 23.05.2020 4 20.05.2021 10.07.2021 05.07.2020 Buna göre Kurum, yeni olmadığı gerekçesiyle tasarımlardan hangisini reddeder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 4"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "3 ve 4"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153812411,
+   "gorsel": "veri/gorsel/tp-2021-A-k1-44.webp",
+   "topicId": "tasarim-kamuya-sunma",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-45",
+   "no": 45,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "6769 sayılı SMK’ya göre, aşağıdakilerden hangisi tasarımın tescil kararına yapılacak itiraz gerekçelerinden biri değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kültürel değerler bakımından halka mal olmuş bir işaretin uygunsuz kullanımını içermesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Ürünün teknik fonksiyonunun zorunlu kıldığı görünüm özelliklerinde olması"
+    },
+    {
+     "harf": "C",
+     "metin": "Birleşik bir ürünün normal kullanımında görünmeyen parçası olması"
+    },
+    {
+     "harf": "D",
+     "metin": "Sanayinin herhangi bir dalında üretilemeyen veya kullanılamayan nitelikte olması"
+    },
+    {
+     "harf": "E",
+     "metin": "Başka bir ürüne mekanik olarak bağlanması için belirli biçim ve boyutlarda üretilmesinin zorunlu olması"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153812411,
+   "topicId": "tasarim-itiraz",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-46",
+   "no": 46,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Bir başvuru sahibi, 07.05.2021 tarihinde WIPO’ya uluslararası tasarım başvurusunda bulunmuş ve koruma talep edilen ülkeler arasında Türkiye’yi de seçmiştir. WIPO tarafından yapılan inceleme sonrasında başvuru, 18.06.2021 tarihli uluslararası tasarımlar bülteninde yayımlanmış ve aynı gün TÜRKPATENT veri tabanına aktarılmıştır. Kurum tarafından yapılan incelemeden sonra başvuru için 28.06.2021 tarihinde tescil kararı verilmiş ve başvuru 09.07.2021 tarihinde TÜRKPATENT tarafından Bültende yayımlanmıştır. Tescil için WIPO’ya herhangi bir iptal kararı bildirilmemiş ve 18.06.2022 tarihinde tescil kararı kesinleşmiştir. Buna göre Türkiye’de, başvurunun koruma süresi hangi tarihte başlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "07.05.2021"
+    },
+    {
+     "harf": "B",
+     "metin": "18.06.2021"
+    },
+    {
+     "harf": "C",
+     "metin": "28.06.2021"
+    },
+    {
+     "harf": "D",
+     "metin": "09.07.2021"
+    },
+    {
+     "harf": "E",
+     "metin": "18.06.2022"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153812411,
+   "topicId": "ulus-siniflandirma",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-47",
+   "no": 47,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "K vekili, Patent ve Marka Vekilleri Disiplin Kuruluna L vekilini şikâyet etmiştir. Patent Vekilliği ve Marka Vekilliği Sınav, Sicil ve Disiplin Yönetmeliğine göre L vekili, K vekilinin şikâyetine bağlı olarak aşağıdaki fiillerinden hangisi nedeniyle disiplin cezası almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "L’nin müvekkiline marka başvurusunun yayımına yapılmış olan itirazı karşı görüş süresi geçtikten sonra bildirmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "L’nin basın toplantısında K hakkında küçük düşürücü açıklama yapması"
+    },
+    {
+     "harf": "C",
+     "metin": "L’nin K tarafından takip edilen patent başvuru işlemlerini yürütme konusunda başvuru sahibine teklif sunması"
+    },
+    {
+     "harf": "D",
+     "metin": "L’nin tasarım başvurularına kesin olarak tescil belgesi alacağını belirten gazete ilanı vermesi"
+    },
+    {
+     "harf": "E",
+     "metin": "L’nin sınai mülkiyet verileri hakkında Kurum adına açıklama yapması"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153812411,
+   "topicId": "vekil-disiplin",
+   "topicGuven": 0.84,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-48",
+   "no": 48,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Patent Vekilliği ve Marka Vekilliği Sınav, Sicil ve Disiplin Yönetmeliğine göre, Patent ve aday, sınav sorularına ilişkin itirazını soruların ilan edilmesinden itibaren Kuruma en geç kaç gün içinde yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "5"
+    },
+    {
+     "harf": "B",
+     "metin": "7"
+    },
+    {
+     "harf": "C",
+     "metin": "10"
+    },
+    {
+     "harf": "D",
+     "metin": "15"
+    },
+    {
+     "harf": "E",
+     "metin": "30"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153812411,
+   "topicId": "vekil-sinav-sicil",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-49",
+   "no": 49,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "1. Her insanın hak ehliyeti vardır.\n2. Bütün insanlar haklara ve borçlara ehil olmada eşittir.\n3. Hak ehliyetine sahip her kişi kendi fiilleriyle borç altına girebilir.\n\n4721 sayılı Türk Medeni Kanunu’na göre, yukarıdakilerden hangisi hak ehliyetiyle ilgili doğru bir ifade değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 3"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153812411,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.84,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-50",
+   "no": 50,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Ankara’da yerleşik ve evlilik birliği devam eden K ve L’nin, M ve N isimli iki çocuğu bulunmaktadır. Çocuklardan M, 12; N ise 14 yaşındadır. Her iki çocuk da ayırt etme gücüne sahiptir. 4721 sayılı Türk Medeni Kanunu’nun kişiliğe ilişkin hükümlerine göre, aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "N’nin kendi isteği ve K ve L’nin rızası ile mahkemece ergin kılınması mümkündür."
+    },
+    {
+     "harf": "B",
+     "metin": "M, K’nın ve L’nin rızası olmadan isim değişikliği için dava açamaz."
+    },
+    {
+     "harf": "C",
+     "metin": "M’nin hak ehliyeti, tam ve sağ doğduğu anda başlamıştır."
+    },
+    {
+     "harf": "D",
+     "metin": "M ve N arasında altsoy-üstsoy hısımlığı bulunmaktadır."
+    },
+    {
+     "harf": "E",
+     "metin": "N’nin Manisa’da yatılı okula başlaması, yeni bir yerleşim yeri edinmesi sonucunu doğurmaz."
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153812411,
+   "topicId": "temel-medeni",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-51",
+   "no": 51,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Beş avukat ve hukuk hizmetlerinde faaliyet gösteren bir tüzel kişi, sınai mülkiyet alanında eğitim faaliyetleri düzenlemek amacıyla dernek kurmaya karar vermişlerdir. Bu kişiler kuruluş bildirimini, dernek tüzüğünü ve gerekli belgeleri yetkili mülki amire vermişlerdir. 4721 sayılı Türk Medeni Kanunu’na göre,\n1. Kurucu sayısının yetersizliği\n2. Kuruluş izni alınmamış olması\n3. Üyeler arasında tüzel kişinin yer alması\n\nnedenlerinden hangisi derneğin tüzel kişilik kazanmasına engel olur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız 1"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 2"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "E",
+     "metin": "2 ve 3"
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153812411,
+   "topicId": "temel-medeni",
+   "topicGuven": 0.93,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-52",
+   "no": 52,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "4721 sayılı Türk Medeni Kanunu’ndaki vakıfların kuruluşuyla ilgili hükümlere göre, aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vakıflar, ortak bir amacı gerçekleştirmek için oluşturulan kişi topluluklarıdır."
+    },
+    {
+     "harf": "B",
+     "metin": "Bir malvarlığının gerçekleşeceği anlaşılan her türlü geliri vakfedilebilir."
+    },
+    {
+     "harf": "C",
+     "metin": "Vakıf kurma iradesi, resmi senetle veya ölüme bağlı tasarrufla açıklanır."
+    },
+    {
+     "harf": "D",
+     "metin": "Vakıf, yerleşim yeri mahkemesi nezdinde tutulan sicile tescil ile tüzel kişilik kazanır."
+    },
+    {
+     "harf": "E",
+     "metin": "Vakıf kurma işleminin temsilci aracılığı ile yapılması mümkündür."
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153812411,
+   "topicId": "temel-medeni",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-53",
+   "no": 53,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "6098 sayılı Türk Borçlar Kanunu’nun vekâletin kapsamı hükmüne göre, aşağıdaki işlemlerden hangisinde vekilin özel olarak yetkilendirilmiş olması gerekli değildir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sulh olunması"
+    },
+    {
+     "harf": "B",
+     "metin": "Bağışlama yapılması"
+    },
+    {
+     "harf": "C",
+     "metin": "Taşınırın devredilmesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Kefil olunması"
+    },
+    {
+     "harf": "E",
+     "metin": "İflasın ertelenmesi"
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153812411,
+   "topicId": "temel-borclar",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-54",
+   "no": 54,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "K firması, piyasada kullandığı markasını tescil ettirmek için marka vekili avukat L ile bir vekâlet sözleşmesi imzalamıştır. Vekâlet sözleşmesi ile vekil L’ye alt vekâlet verme yetkisi de tanınmıştır. Bunun üzerine vekil L, marka vekili avukat M’ye alt vekâlet vermiş ve marka başvurusu vekil M tarafından yapılmıştır. Bültende yayımlanan başvuruya üçüncü kişilerce itiraz edilmiş ve M tarafından, K ve L’nin haberi olmadan itiraza karşı görüş sunulmuştur. Marka başvurusunun Kurul tarafından reddedilmesi üzerine vekil M, Kurul kararının iptali için dava açmıştır. 6098 sayılı Türk Borçlar Kanunu’na göre, bu olayda belirtilen vekâlet ve alt vekâlet sözleşmeleri kapsamında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vekil L, vekil M’nin yapmış olduğu işlemlerden kendisi yapmış gibi sorumludur."
+    },
+    {
+     "harf": "B",
+     "metin": "Vekil M’nin dava açabilmesi için vekil L’nin bu konuda özel olarak yetkili kılınması gerekir."
+    },
+    {
+     "harf": "C",
+     "metin": "Vekil L, vekil M’yi seçerken ve ona talimat verirken gerekli özeni göstermekle yükümlüdür."
+    },
+    {
+     "harf": "D",
+     "metin": "K, vekil L’ye karşı sahip olduğu hakları vekil M’ye karşı ileri sürebilir."
+    },
+    {
+     "harf": "E",
+     "metin": "Sözleşmede kararlaştırılmamış olsa bile konuyla ilgili bir teamül varsa vekil L, vekil M’ye alt vekâlet verebilir."
+    }
+   ],
+   "cevap": "A",
+   "eklenme": 1792153812411,
+   "topicId": "temel-borclar",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-55",
+   "no": 55,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "K, marka başvuru işlemleri için genel vekâletname verme niyetini marka vekili avukat L’ye beyan etmiştir. L ise marka tescil süreci ve işlem ücretleri hakkında K’ya bilgi vermiştir. Bunun üzerine L, K adına marka başvurusu yapmıştır. TÜRKPATENT, mutlak ret nedenleri kapsamında yaptığı incelemede başvuru hakkında ret kararı vermiştir. L, K’nın bilgisi olmadan karara itiraz etmiş ve Kurul, itirazı reddetmiştir. Bunun üzerine L, Kurum kararına karşı dava açmıştır. 6098 sayılı Türk Borçlar Kanunu’nun vekâlet sözleşmesinin kurulması ve kapsamı hükümlerine göre aşağıdaki ifadelerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "L, sözleşmeyi kabul beyanını ifade etmediği için vekâlet sözleşmesi kurulmamış sayılır."
+    },
+    {
+     "harf": "B",
+     "metin": "L, K’nın bilgisi olmadan Kurum kararına itiraz edemez."
+    },
+    {
+     "harf": "C",
+     "metin": "Sözleşmede ücret belirlenmemiş olsa da L ücrete hak kazanır."
+    },
+    {
+     "harf": "D",
+     "metin": "Vekâlet sözleşmesi kapsamında L, Kurum kararına karşı dava açabilir."
+    },
+    {
+     "harf": "E",
+     "metin": "L’nin ölümü durumunda vekâlet borcu L’nin mirasçılarına geçer."
+    }
+   ],
+   "cevap": "C",
+   "eklenme": 1792153812411,
+   "topicId": "temel-borclar",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-56",
+   "no": 56,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’na göre aşağıdakilerden hangisi tacir olmanın hükümleri arasında yer almaz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İflasa tabi olma"
+    },
+    {
+     "harf": "B",
+     "metin": "Ticari işletmeyi sicile tescil ettirme"
+    },
+    {
+     "harf": "C",
+     "metin": "Ticaret unvanı seçme"
+    },
+    {
+     "harf": "D",
+     "metin": "İşletme adı kullanma"
+    },
+    {
+     "harf": "E",
+     "metin": "Ticari defter tutma"
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153812411,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 1,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-57",
+   "no": 57,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "1. K, kozmetik ürünleri satacağı bir ticari işletme açtığını ulusal çapta yayın yapan bir radyo kanalında duyurmuş, ancak ticari işletmeyi fiilen işletmeye başlamamıştır.\n2. K, yasal temsilcisi olduğu L’ye ait ticari işletmeyi, L adına işletmektedir.\n3. K, devlet memuru olmasına rağmen cep telefonu satan bir ticari işletme işletmektedir.\n4. K, gerçekte var olmayan bir limited şirketin temsil yetkisine sahip ortağı gibi davranarak iyiniyetli M ile bir sözleşme imzalamıştır.\n\n6102 sayılı Türk Ticaret Kanunu’na göre K’nın tacir sayıldığı durumlar hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "B",
+     "metin": "1 ve 3"
+    },
+    {
+     "harf": "C",
+     "metin": "2 ve 3"
+    },
+    {
+     "harf": "D",
+     "metin": "2 ve 4"
+    },
+    {
+     "harf": "E",
+     "metin": "3 ve 4"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153812411,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.66,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-58",
+   "no": 58,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "6102 sayılı Türk Ticaret Kanunu’nun ticaret unvanına ilişkin hükümleri göz önünde bulundurulduğunda aşağıdakilerden hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ticaret unvanında “Milli” kelimesinin ek olarak kullanabilmesi için İçişleri Bakanlığı’nın kararı gerekir."
+    },
+    {
+     "harf": "B",
+     "metin": "Ticaret unvanı şirketten bağımsız olarak başkasına devredilebilir."
+    },
+    {
+     "harf": "C",
+     "metin": "Ticaret unvanında yer alan gerçek kişinin isminde tescilden sonra bir değişiklik olursa ticaret unvanının buna uygun değiştirilmesi gerekir."
+    },
+    {
+     "harf": "D",
+     "metin": "TÜRKPATENT ticaret unvanının kanun hükümlerine aykırı şekilde kullanıldığını tespit ederse durumu yetkili makamlara bildirmek zorundadır."
+    },
+    {
+     "harf": "E",
+     "metin": "Ticaret unvanının tescili için herhangi bir ticaret sicil müdürlüğüne başvurulabilir."
+    }
+   ],
+   "cevap": "D",
+   "eklenme": 1792153812411,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-59",
+   "no": 59,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Haksız rekabete ilişkin fiil hakkında 5237 sayılı Türk Ceza Kanunu’nda daha uzun bir dava zamanaşımı süresi öngörülmediği durumda, 6102 sayılı Türk Ticaret Kanunu’na göre haksız rekabetin tespiti davası, fiilin işlenmesinden itibaren en geç kaç yıl içinde açılmalıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1"
+    },
+    {
+     "harf": "B",
+     "metin": "3"
+    },
+    {
+     "harf": "C",
+     "metin": "5"
+    },
+    {
+     "harf": "D",
+     "metin": "10"
+    },
+    {
+     "harf": "E",
+     "metin": "20"
+    }
+   ],
+   "cevap": "B",
+   "eklenme": 1792153812411,
+   "topicId": "temel-haksiz-rekabet",
+   "topicGuven": 0.69,
+   "smkMaddeleri": []
+  },
+  {
+   "id": "tp-2021-A-k1-60",
+   "no": 60,
+   "yil": 2021,
+   "kitapcik": "A",
+   "bolum": "1. kitapçık",
+   "tur": "cikmis",
+   "kaynak": "TÜRKPATENT 2021 Genel Yeterlik Sınavı (A)",
+   "metin": "Tacir K, ticaret unvanının tescili için Ankara Ticaret Sicili Müdürlüğü’ne talepte bulunmuştur. Sicil Müdürlüğü 25.05.2021 tarihinde talebi reddetmiş ve ret kararını K’ya 01.06.2021 tarihinde tebliğ etmiştir. Buna göre, ret kararına itiraz için K’nın başvurabileceği merci ve son tarih aşağıdakilerin hangisinde birlikte verilmiştir? İtiraz Merci Tarih",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ankara Ticaret Sicili Müdürlüğü 09.06.2021"
+    },
+    {
+     "harf": "B",
+     "metin": "Ankara Ticaret Sicili Müdürlüğü 16.06.2021"
+    },
+    {
+     "harf": "C",
+     "metin": "Ankara Asliye Hukuk Mahkemesi 16.06.2021"
+    },
+    {
+     "harf": "D",
+     "metin": "Ankara Asliye Ticaret Mahkemesi 16.06.2021"
+    },
+    {
+     "harf": "E",
+     "metin": "Ankara Asliye Ticaret Mahkemesi 09.06.2021"
+    }
+   ],
+   "cevap": "E",
+   "eklenme": 1792153812411,
+   "topicId": "temel-ticari-isletme",
+   "topicGuven": 0.84,
    "smkMaddeleri": []
   },
   {
@@ -4844,7 +7093,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-basvuru",
    "topicGuven": 0.28,
    "smkMaddeleri": []
@@ -4881,7 +7130,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -4918,7 +7167,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-isaret",
    "topicGuven": 0.28,
    "smkMaddeleri": []
@@ -4955,7 +7204,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-ruchan",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -4992,7 +7241,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-garanti-ortak",
    "topicGuven": 0.56,
    "smkMaddeleri": []
@@ -5029,7 +7278,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5066,7 +7315,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "gorsel": "veri/gorsel/tp-2021-A-k2-67.webp",
    "topicId": "uyg-kilavuz",
    "topicGuven": 0.69,
@@ -5104,7 +7353,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-basvuru",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5141,7 +7390,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5178,7 +7427,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.85,
    "smkMaddeleri": [
@@ -5217,7 +7466,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.69,
    "smkMaddeleri": []
@@ -5254,7 +7503,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "gorsel": "veri/gorsel/tp-2021-A-k2-72.webp",
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.36,
@@ -5292,7 +7541,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5329,7 +7578,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.77,
    "smkMaddeleri": [
@@ -5368,7 +7617,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.86,
    "smkMaddeleri": [
@@ -5407,7 +7656,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -5446,7 +7695,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-sekli-inceleme",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5483,7 +7732,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5520,7 +7769,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-madrid",
    "topicGuven": 0.45,
    "smkMaddeleri": []
@@ -5557,7 +7806,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-madrid",
    "topicGuven": 0.76,
    "smkMaddeleri": []
@@ -5594,7 +7843,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -5631,7 +7880,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.62,
    "smkMaddeleri": [
@@ -5670,7 +7919,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.37,
    "smkMaddeleri": [
@@ -5709,7 +7958,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.63,
    "smkMaddeleri": [
@@ -5749,7 +7998,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.7,
    "smkMaddeleri": [
@@ -5788,7 +8037,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -5827,7 +8076,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-mutlak-ret",
    "topicGuven": 0.43,
    "smkMaddeleri": [
@@ -5866,7 +8115,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "gorsel": "veri/gorsel/tp-2021-A-k2-88.webp",
    "topicId": "marka-gorus-itiraz",
    "topicGuven": 0.66,
@@ -5907,7 +8156,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.58,
    "smkMaddeleri": [
@@ -5947,7 +8196,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -5983,7 +8232,7 @@
     }
    ],
    "cevap": "A",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-nispi-ret",
    "topicGuven": 0.14,
    "smkMaddeleri": []
@@ -6020,7 +8269,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "gorsel": "veri/gorsel/tp-2021-A-k2-92.webp",
    "topicId": "marka-tescil-yenileme",
    "topicGuven": 0.56,
@@ -6058,7 +8307,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-lisans-devir",
    "topicGuven": 0.39,
    "smkMaddeleri": []
@@ -6095,7 +8344,7 @@
     }
    ],
    "cevap": "E",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-lisans-devir",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -6132,7 +8381,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicGuven": 0,
    "smkMaddeleri": []
   },
@@ -6168,7 +8417,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "ci-turler",
    "topicGuven": 0.84,
    "smkMaddeleri": []
@@ -6205,7 +8454,7 @@
     }
    ],
    "cevap": "C",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "ci-kullanim-denetim",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -6242,7 +8491,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "ci-basvuru",
    "topicGuven": 0.34,
    "smkMaddeleri": []
@@ -6279,7 +8528,7 @@
     }
    ],
    "cevap": "D",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "ci-tescil-degisiklik",
    "topicGuven": 0.75,
    "smkMaddeleri": []
@@ -6316,7 +8565,7 @@
     }
    ],
    "cevap": "B",
-   "eklenme": 1791879383146,
+   "eklenme": 1792153812411,
    "topicId": "marka-ruchan",
    "topicGuven": 0.34,
    "smkMaddeleri": []

@@ -62,3 +62,6 @@ export function birlestir(
 export function bolumKapsamlari(
   sorular: { bolum?: string; kitapcikNo?: number; metin: string; secenekler: { metin: string }[] }[],
 ): Map<string, 'patent' | 'marka' | 'karma'>;
+
+export function patentDisiKuyrukBasi<T>(sorular: T[], patentMi?: (soru: T) => boolean): number;
+export function patentSorusuMu(soru: { metin: string; secenekler: { metin: string }[] }): boolean;

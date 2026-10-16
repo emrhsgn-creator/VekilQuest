@@ -681,6 +681,71 @@ function izSayisi(metin, izler) {
 }
 
 /**
+ * Patent bölümü sayılan bir kitapçığın sonundaki patent dışı soruların
+ * başladığı yeri bulur.
+ *
+ * 2017–2021 Genel Yeterlik sınavlarının 1. kitapçığı yalnızca patent değil:
+ * 1–40 patent ve faydalı model, 41–46 tasarım, 47–48 vekillik mevzuatı,
+ * 49–60 genel hukuk (Medeni, Borçlar, Ticaret). Kitapçıkta bunlar için başlık
+ * yok; ama düzen her yıl aynı ve 2024'ten itibaren ayrı yapılan Marka
+ * Vekilliği Sınavı'nın düzeniyle örtüşüyor. Tasarım, vekillik ve genel hukuk
+ * marka vekilliği kapsamında olduğu için kitapçığı bütün olarak elemek bu
+ * soruları da götürüyordu.
+ *
+ * Tek tek soru tahmini (bkz. patentSorusuMu) yanılabiliyor, ama patent soruları
+ * başta tek blok hâlinde duruyor. Bu yüzden her olası kesim noktası için
+ * "öncesinde patent + sonrasında patent dışı" soru sayısı ölçülüp en iyi
+ * uyuşan nokta seçiliyor. Kuyruk kısa ya da karışıksa kitapçık tümüyle
+ * patent sayılır.
+ *
+ * @template T
+ * @param {T[]} sorular kitapçık sırasıyla
+ * @param {(soru: T) => boolean} patentMi tek soru için tahmin
+ * @returns {number} kuyruğun ilk sorusunun indeksi; kuyruk yoksa sorular.length
+ */
+export function patentDisiKuyrukBasi(sorular, patentMi = patentSorusuMu) {
+  const n = sorular.length;
+  const patent = sorular.map((s) => !!patentMi(s));
+  let enIyi = n;
+  let enIyiPuan = -Infinity;
+  let oncekiPatent = 0;
+  let sonrakiDisi = patent.filter((p) => !p).length;
+  let sonrakiPatent = n - sonrakiDisi;
+  for (let k = 0; k <= n; k++) {
+    // Kuyruğa sızan patent sorusu ayrıca cezalanır: kapsam dışı bir sorunun
+    // içeri girmesi, sınırdaki bir ortak sorunun dışarıda kalmasından kötü.
+    const puan = oncekiPatent + sonrakiDisi - sonrakiPatent;
+    // Eşitlikte daha geç kesim: emin olunmayan soru patent tarafında kalsın.
+    if (puan >= enIyiPuan) { enIyiPuan = puan; enIyi = k; }
+    if (k < n) {
+      if (patent[k]) { oncekiPatent += 1; sonrakiPatent -= 1; } else sonrakiDisi -= 1;
+    }
+  }
+  const kuyruk = patent.slice(enIyi);
+  const disiOrani = kuyruk.length ? kuyruk.filter((p) => !p).length / kuyruk.length : 0;
+  // Kuyruk en az beş soru ve büyük çoğunluğu patent dışı olmalı; aksi hâlde
+  // tek tük yanlış sınıflanmış patent sorusu kapsam içine sızmasın.
+  return kuyruk.length >= 5 && disiOrani >= 0.75 ? enIyi : n;
+}
+
+// Katlanmış metinde patent sorusunu ele veren ifadeler. "\b" sayesinde
+// "TÜRKPATENT" sayılmaz; vekillik mevzuatındaki "Patent ve Marka Vekilleri"
+// gibi kurum adları önceden çıkarılır.
+// "istem" yalnızca terim olarak ("istem 1", "istemleri"): "istemektedir" sayılmaz.
+const PATENT_IFADESI = /\b(patent|faydali model|bulus|istem(?:ler|leri|lerin|lerinin|in|i|e|de|den)?\b|tarifname|pct|ipc|cpc)/;
+const KURUM_ADLARI = /patent ve marka|patent vekil\w*( ve marka vekil\w*)?|patent vekilligi ve marka vekilligi/g;
+
+/**
+ * Tek bir sorunun patent sorusu olup olmadığına dair kaba tahmin.
+ * 2017, 2019 ve 2021 1. kitapçıklarının 1–40 arasındaki her sorusunda en az
+ * bir eşleşme var; 41–60 arasındakilerin çoğunda hiç yok.
+ */
+export function patentSorusuMu(soru) {
+  const metin = katla(`${soru.metin} ${soru.secenekler.map((o) => o.metin).join(' ')}`).replace(KURUM_ADLARI, ' ');
+  return PATENT_IFADESI.test(metin);
+}
+
+/**
  * Soruları bölümlerine göre gruplayıp her bölümün kapsamını belirler.
  * @param {{bolum?: string, kitapcikNo?: number, metin: string, secenekler: {metin:string}[]}[]} sorular
  * @returns {Map<string, 'patent'|'marka'|'karma'>} bölüm adı -> kapsam

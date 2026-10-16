@@ -53,12 +53,16 @@ export type Siniflandirma = {
  * Aday konuları belirli bir alan kümesiyle sınırlar.
  * `patent`  : yalnızca patent konuları
  * `markaVb` : patent dışındaki tüm konular
+ * `{ alanlar }`: yalnızca verilen alanların konuları
  */
-export type AlanKisiti = 'patent' | 'markaVb' | undefined;
+export type AlanKisiti = 'patent' | 'markaVb' | { alanlar: string[] } | undefined;
 
 function kisitliMi(topicId: string, kisit: AlanKisiti): boolean {
   if (!kisit) return true;
   const konu = TOPICS.find((t) => t.id === topicId);
+  // Sorunun kitapçıktaki yerinden alanı biliniyorsa (ör. ortak bölümün
+  // 49–60'ı genel hukuk) yalnızca o alanların konuları aday olur.
+  if (typeof kisit === 'object') return !!konu && kisit.alanlar.includes(konu.areaId);
   const patentMi = konu?.areaId === 'patent';
   return kisit === 'patent' ? patentMi : !patentMi;
 }
