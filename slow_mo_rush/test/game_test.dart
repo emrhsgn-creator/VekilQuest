@@ -1,0 +1,116 @@
+import 'package:flame/components.dart';
+import 'package:flame/game.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:slow_mo_rush/game/components/obstacle_manager.dart';
+import 'package:slow_mo_rush/game/slow_mo_game.dart';
+import 'package:slow_mo_rush/overlays/game_over_dialog.dart';
+
+/// Gerçek kare döngüsünü ~60 FPS adımlarla ilerletir.
+Future<void> advance(WidgetTester tester, double seconds) async {
+  final frames = (seconds * 60).round();
+  for (var i = 0; i < frames; i++) {
+    await tester.pump(const Duration(microseconds: 16667));
+  }
+}
+
+Future<SlowMoGame> pumpGame(WidgetTester tester) async {
+  final game = SlowMoGame();
+  await tester.pumpWidget(
+    MaterialApp(
+      home: GameWidget<SlowMoGame>(
+        game: game,
+        overlayBuilderMap: {
+          SlowMoGame.gameOverOverlay: (context, g) => GameOverDialog(game: g),
+        },
+      ),
+    ),
+  );
+  await advance(tester, 0.2);
+  return game;
+}
+
+void main() {
+  setUp(() => SharedPreferences.setMockInitialValues({}));
+
+  testWidgets('başlangıçta dünya donuk; basılı tutmak slow-mo açar', (
+    tester,
+  ) async {
+    final game = await pumpGame(tester);
+    expect(game.state, GameState.ready);
+    expect(game.world.timeScale, 0);
+
+    final finger = await tester.startGesture(const Offset(400, 300));
+    await advance(tester, 0.6);
+    expect(game.state, GameState.playing);
+    expect(game.world.timeScale, closeTo(SlowMoGame.worldSlowScale, 0.01));
+    expect(game.stamina, lessThan(SlowMoGame.maxStamina - 0.5));
+    // Oyuncu dünyadan daha az yavaşlar: ileri hareket çarpanı > 1.
+    expect(game.player.forwardTimeFactor, greaterThan(3));
+
+    await finger.up();
+    await advance(tester, 0.6);
+    expect(game.world.timeScale, closeTo(1, 0.01));
+  });
+
+  testWidgets('enerji 2.5 sn’de biter, zaman zorla hızlanır, parmak '
+      'kalkmadan dolmaz', (tester) async {
+    final game = await pumpGame(tester);
+    // Engelleri devre dışı bırak: test yalnızca zamanı ölçsün.
+    game.obstacles.removeFromParent();
+
+    final finger = await tester.startGesture(const Offset(400, 300));
+    await advance(tester, 2.7);
+    expect(game.isExhausted, isTrue);
+    expect(game.stamina, 0);
+
+    await advance(tester, 0.5);
+    expect(game.world.timeScale, closeTo(1, 0.02));
+    expect(game.stamina, 0, reason: 'basılıyken dolmamalı');
+
+    await finger.up();
+    await advance(tester, 1);
+    expect(game.stamina, greaterThan(0.4));
+    expect(game.isExhausted, isFalse);
+  });
+
+  testWidgets('engele çarpınca Game Over, Yeniden Başla sıfırlar', (
+    tester,
+  ) async {
+    final game = await pumpGame(tester);
+    // Oyuncunun hemen önüne öldürücü bir duvar koy.
+    await game.world.add(
+      LethalBar(
+        color: const Color(0xFFFF0000),
+        size: Vector2(20, 300),
+        position: Vector2(120, 0),
+        anchor: Anchor.center,
+      ),
+    );
+
+    final finger = await tester.startGesture(const Offset(400, 300));
+    await finger.up();
+    await advance(tester, 1);
+
+    expect(game.state, GameState.gameOver);
+    expect(game.player.isDead, isTrue);
+    expect(game.overlays.isActive(SlowMoGame.gameOverOverlay), isTrue);
+    expect(find.text('YANDIN'), findsOneWidget);
+    // Reklam desteklenmeyen platformda devam teklifi gösterilmez.
+    expect(find.textContaining('İZLE & DEVAM ET'), findsNothing);
+
+    await tester.tap(find.text('YENİDEN BAŞLA'));
+    await advance(tester, 0.3);
+    expect(game.state, GameState.ready);
+    expect(game.player.isDead, isFalse);
+    expect(game.score.value, 0);
+    expect(game.overlays.isActive(SlowMoGame.gameOverOverlay), isFalse);
+  });
+
+  test('en yüksek skor yalnızca aşılınca güncellenir', () async {
+    expect(await HighScoreStore.submit(5), (best: 5, isNewRecord: true));
+    expect(await HighScoreStore.submit(3), (best: 5, isNewRecord: false));
+    expect(await HighScoreStore.submit(9), (best: 9, isNewRecord: true));
+  });
+}

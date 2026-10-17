@@ -68,6 +68,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
 
   bool get isHolding => _pointers.isNotEmpty;
   bool get isExhausted => _exhausted;
+  bool get reviveUsed => _reviveUsed;
   double get staminaRatio => (stamina / maxStamina).clamp(0.0, 1.0);
 
   /// "İzle & Devam Et" yalnızca turda bir kez ve reklam hazırsa.

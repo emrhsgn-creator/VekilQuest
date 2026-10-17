@@ -88,6 +88,18 @@ class ObstacleManager extends Component {
     _despawn();
   }
 
+  // Engeller tünel duvarlarının dışına taşmasın (bıçak kolları duvarın içine
+  // "girer" gibi görünür). Yalnızca çizimi kırpar; hitbox'lar etkilenmez.
+  @override
+  void renderTree(Canvas canvas) {
+    canvas.save();
+    canvas.clipRect(
+      const Rect.fromLTRB(-1e9, -kTunnelHalfHeight, 1e9, kTunnelHalfHeight),
+    );
+    super.renderTree(canvas);
+    canvas.restore();
+  }
+
   // -------------------------------------------------------------------------
   // Üretim
   // -------------------------------------------------------------------------
