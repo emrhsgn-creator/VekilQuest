@@ -51,6 +51,12 @@ class Player extends PositionComponent with CollisionCallbacks {
   /// yumuşatarak ayarlar; Player yalnızca renk/iz/şekil için okur.
   double slowMoAmount = 0;
 
+  /// İleri hareketin dünya zaman ölçeğine göre çarpanı. Dünya 0.15'e
+  /// yavaşlarken oyuncu yalnızca ~0.5'e yavaşlar; böylece basılı tutmak
+  /// engellere göre gerçek bir avantaj sağlar (aksi hâlde her şey aynı oranda
+  /// yavaşlar ve sonuç değişmezdi). Oyun her karede ayarlar.
+  double forwardTimeFactor = 1;
+
   double _invulnerableTime = 0;
   double _sparkTimer = 0;
   double _pulse = 0;
@@ -75,7 +81,11 @@ class Player extends PositionComponent with CollisionCallbacks {
   @override
   Future<void> onLoad() async {
     add(CircleHitbox(radius: radius * 0.85, position: Vector2.all(radius * 0.15)));
-    _hasVibrator ??= await Vibration.hasVibrator();
+    try {
+      _hasVibrator ??= await Vibration.hasVibrator();
+    } catch (_) {
+      _hasVibrator = false; // Eklentisi olmayan platform (web/masaüstü).
+    }
   }
 
   // -------------------------------------------------------------------------
@@ -89,8 +99,9 @@ class Player extends PositionComponent with CollisionCallbacks {
     if (_invulnerableTime > 0) _invulnerableTime -= dt;
     if (isDead) return;
 
-    speed = math.min(maxSpeed, speed + acceleration * dt);
-    final dx = speed * dt;
+    final moveDt = dt * forwardTimeFactor;
+    speed = math.min(maxSpeed, speed + acceleration * moveDt);
+    final dx = speed * moveDt;
     position.x += dx;
     distanceTravelled += dx;
 
@@ -188,6 +199,7 @@ class Player extends PositionComponent with CollisionCallbacks {
     distanceTravelled = 0;
     isDead = false;
     slowMoAmount = 0;
+    forwardTimeFactor = 1;
     _invulnerableTime = 0;
     _sparkTimer = 0;
     _trail.clear();
