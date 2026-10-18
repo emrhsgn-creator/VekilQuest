@@ -75,6 +75,20 @@ jobs:
           sudo udevadm trigger --name-match=kvm
 
       - name: Emülatörde aç
+        id: ilk
+        continue-on-error: true
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api-level }}
+          target: google_apis
+          arch: x86_64
+          disable-animations: true
+          script: bash slow_mo_rush/tool/emulator_smoke.sh slow-mo-rush.apk
+
+      # Emülatör bazen uygulama kurulmadan açılışta çöküyor (adb "Broken
+      # pipe"). Bir kez yeniden dene; uygulama gerçekten çöküyorsa bu da düşer.
+      - name: Emülatörde aç (yeniden dene)
+        if: steps.ilk.outcome == 'failure'
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: ${{ matrix.api-level }}
