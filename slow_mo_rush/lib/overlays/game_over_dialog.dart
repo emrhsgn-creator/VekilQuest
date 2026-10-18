@@ -171,7 +171,7 @@ class _GameOverDialogState extends State<GameOverDialog>
     return Column(
       children: [
         const Text(
-          'Reklam izle, kaldığın yerden tam enerjiyle devam et\n'
+          'Reklam izle, kaldığın yerden devam et\n'
           '(1 turda sadece 1 kez)',
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.white70, height: 1.4),

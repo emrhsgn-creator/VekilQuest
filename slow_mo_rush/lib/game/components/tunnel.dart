@@ -6,13 +6,12 @@ import 'obstacle_manager.dart';
 
 /// Sonsuz neon tünel: yalnızca kameranın gördüğü aralığı çizer, bu yüzden
 /// mesafe ne olursa olsun maliyeti sabittir. Dikey "kaburga" çizgileri hız
-/// hissini verir; slow-mo'da renk pembeye kayar.
+/// hissini verir.
 class Tunnel extends Component with HasGameReference<SlowMoGame> {
   Tunnel() : super(priority: -10);
 
   static const double _ribSpacing = 120;
   static const Color _wallColor = Color(0xFF00F0FF);
-  static const Color _slowColor = Color(0xFFFF2BD6);
 
   final Paint _wallGlow = Paint()
     ..strokeWidth = 10
@@ -25,7 +24,7 @@ class Tunnel extends Component with HasGameReference<SlowMoGame> {
   void render(Canvas canvas) {
     final view = game.camera.visibleWorldRect;
     const h = kTunnelHalfHeight;
-    final color = Color.lerp(_wallColor, _slowColor, game.slowMoAmount)!;
+    const color = _wallColor;
 
     // Tünel içi zemin: hafif koyu bant.
     _floorPaint.color = color.withValues(alpha: 0.05);

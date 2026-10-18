@@ -34,24 +34,19 @@ Future<SlowMoGame> pumpGame(WidgetTester tester) async {
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  testWidgets('başlangıçta dünya donuk; basılı tutmak slow-mo açar', (
-    tester,
-  ) async {
+  testWidgets('başlangıçta dünya donuk; ilk dokunuş oyunu normal hızda başlatır',
+      (tester) async {
     final game = await pumpGame(tester);
     expect(game.state, GameState.ready);
     expect(game.world.timeScale, 0);
 
     final finger = await tester.startGesture(const Offset(400, 300));
-    await advance(tester, 0.6);
+    await advance(tester, 0.5);
     expect(game.state, GameState.playing);
-    expect(game.world.timeScale, closeTo(SlowMoGame.worldSlowScale, 0.01));
-    expect(game.stamina, lessThan(SlowMoGame.maxStamina - 0.5));
-    // Oyuncu dünyadan daha az yavaşlar: ileri hareket çarpanı > 1.
-    expect(game.player.forwardTimeFactor, greaterThan(3));
-
+    // Yavaşlatma yok: parmak ekrandayken de dünya tam hızda akar.
+    expect(game.world.timeScale, 1);
+    expect(game.player.position.x, greaterThan(150));
     await finger.up();
-    await advance(tester, 0.6);
-    expect(game.world.timeScale, closeTo(1, 0.01));
   });
 
   testWidgets('sürüklemek topu yukarı-aşağı yönlendirir, tünelden çıkamaz', (
@@ -86,27 +81,6 @@ void main() {
     await finger.up();
     await advance(tester, 0.5);
     expect(game.player.position.y, y);
-  });
-
-  testWidgets('enerji 2.5 sn’de biter, zaman zorla hızlanır, parmak '
-      'kalkmadan dolmaz', (tester) async {
-    final game = await pumpGame(tester);
-    // Engelleri devre dışı bırak: test yalnızca zamanı ölçsün.
-    game.obstacles.removeFromParent();
-
-    final finger = await tester.startGesture(const Offset(400, 300));
-    await advance(tester, 2.7);
-    expect(game.isExhausted, isTrue);
-    expect(game.stamina, 0);
-
-    await advance(tester, 0.5);
-    expect(game.world.timeScale, closeTo(1, 0.02));
-    expect(game.stamina, 0, reason: 'basılıyken dolmamalı');
-
-    await finger.up();
-    await advance(tester, 1);
-    expect(game.stamina, greaterThan(0.4));
-    expect(game.isExhausted, isFalse);
   });
 
   testWidgets('engele çarpınca Game Over, Yeniden Başla sıfırlar', (

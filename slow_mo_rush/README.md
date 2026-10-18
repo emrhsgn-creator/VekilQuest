@@ -1,7 +1,7 @@
 # Slow-Mo Rush
 
 Tek parmakla oynanan hypercasual refleks oyunu (Flutter + Flame).
-Ekrana dokun: zaman yavaşlar. Sürükle: top parmağını izler. Bırak: ultra hız. Enerji barı 2,5 saniyelik yavaşlatma hakkı verir.
+Dokun ve başla, parmağını yukarı-aşağı sürükleyerek topu engellerin arasından geçir. Tur uzadıkça hız artar.
 
 ## Çalıştırma
 
@@ -17,11 +17,11 @@ flutter test         # oyun mantığı testleri
 | Dosya | İşlev |
 |---|---|
 | `lib/main.dart` | Uygulama girişi, dikey yön kilidi, AdMob ön yükleme, overlay kaydı |
-| `lib/game/slow_mo_game.dart` | Ana `FlameGame`: dokunma, zaman ölçeği, enerji, kamera, ölüm/diriliş |
-| `lib/game/components/player.dart` | Neon küre: hareket, iz, parçacıklar, kıl payı ve ölüm efektleri |
+| `lib/game/slow_mo_game.dart` | Ana `FlameGame`: sürükleyerek yönlendirme, kamera, ölüm/diriliş |
+| `lib/game/components/player.dart` | Neon küre: ileri hareket, iz, parçacıklar, kıl payı ve ölüm efektleri |
 | `lib/game/components/obstacle_manager.dart` | Prosedürel engeller, hitbox'lar, kıl payı tespiti |
 | `lib/game/components/tunnel.dart` | Sonsuz neon tünel |
-| `lib/game/components/hud.dart` | Enerji barı, skor, slow-mo vinyeti, kırmızı parlama |
+| `lib/game/components/hud.dart` | Skor, başlangıç ipucu, kırmızı parlama |
 | `lib/overlays/game_over_dialog.dart` | Skor, en yüksek skor, "İzle & Devam Et", "Yeniden Başla" |
 | `lib/services/ad_service.dart` | AdMob ödüllü + geçiş reklamları (ön yüklemeli) |
 

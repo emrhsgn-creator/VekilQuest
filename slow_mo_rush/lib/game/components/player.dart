@@ -12,12 +12,8 @@ import 'package:vibration/vibration.dart';
 /// ileride eklenecek toplanabilir/sensör hitbox'ları ölüm tetiklemez.
 mixin Lethal on PositionComponent {}
 
-/// Tünel içinde sağa doğru otomatik ilerleyen neon küre.
-///
-/// Zaman yavaşlatma oyunun kendisinde değil, Player'ın bağlı olduğu `World`
-/// bileşeninin `timeScale`'inde yapılır (Adım 4). Bu yüzden buradaki `dt`
-/// zaten ölçeklenmiş gelir: hareket, iz ve parçacıklar otomatik yavaşlar.
-/// Player yalnızca slow-mo'ya *görsel* tepki verir ([slowMoAmount]).
+/// Tünel içinde sağa doğru otomatik ilerleyen neon küre. Dikey konumunu
+/// oyun sınıfı (parmak sürüklemesine göre) ayarlar.
 class Player extends PositionComponent with CollisionCallbacks {
   Player({this.onHit})
       : super(
@@ -28,15 +24,15 @@ class Player extends PositionComponent with CollisionCallbacks {
 
   // --- Ayarlar -------------------------------------------------------------
   static const double radius = 13;
-  static const double baseSpeed = 640; // px/sn — "ultra hızlı" akış
-  static const double maxSpeed = 1150;
-  static const double acceleration = 7; // px/sn² — tur uzadıkça hızlanır
+  static const double baseSpeed = 430; // px/sn
+  static const double maxSpeed = 950;
+  static const double acceleration = 9; // px/sn² — tur uzadıkça hızlanır
   static const int _trailLength = 22;
   static const double _sparkInterval = 0.018;
 
   static const Color _coreColor = Color(0xFFFFFFFF);
   static const Color _normalGlow = Color(0xFF00F0FF); // neon camgöbeği
-  static const Color _slowGlow = Color(0xFFFF2BD6); // neon pembe (slow-mo)
+  static const Color _accentGlow = Color(0xFFFF2BD6); // neon pembe
   static const Color _deathColor = Color(0xFFFF2240);
 
   /// Lethal bir engele çarpıldığında bir kez çağrılır.
@@ -46,16 +42,6 @@ class Player extends PositionComponent with CollisionCallbacks {
   double speed = baseSpeed;
   double distanceTravelled = 0;
   bool isDead = false;
-
-  /// 0 = normal akış, 1 = tam slow-mo. Oyun her karede GERÇEK zamanla
-  /// yumuşatarak ayarlar; Player yalnızca renk/iz/şekil için okur.
-  double slowMoAmount = 0;
-
-  /// İleri hareketin dünya zaman ölçeğine göre çarpanı. Dünya 0.15'e
-  /// yavaşlarken oyuncu yalnızca ~0.5'e yavaşlar; böylece basılı tutmak
-  /// engellere göre gerçek bir avantaj sağlar (aksi hâlde her şey aynı oranda
-  /// yavaşlar ve sonuç değişmezdi). Oyun her karede ayarlar.
-  double forwardTimeFactor = 1;
 
   double _invulnerableTime = 0;
   double _sparkTimer = 0;
@@ -99,9 +85,8 @@ class Player extends PositionComponent with CollisionCallbacks {
     if (_invulnerableTime > 0) _invulnerableTime -= dt;
     if (isDead) return;
 
-    final moveDt = dt * forwardTimeFactor;
-    speed = math.min(maxSpeed, speed + acceleration * moveDt);
-    final dx = speed * moveDt;
+    speed = math.min(maxSpeed, speed + acceleration * dt);
+    final dx = speed * dt;
     position.x += dx;
     distanceTravelled += dx;
 
@@ -151,7 +136,7 @@ class Player extends PositionComponent with CollisionCallbacks {
           speedRange: (160, 420),
           spread: math.pi * 0.7,
           direction: away.isZero() ? Vector2(0, -1) : away,
-          colors: const [_normalGlow, _slowGlow, Color(0xFFFFF35C)],
+          colors: const [_normalGlow, _accentGlow, Color(0xFFFFF35C)],
           size: 2.6,
         ),
       ),
@@ -198,8 +183,6 @@ class Player extends PositionComponent with CollisionCallbacks {
     speed = baseSpeed;
     distanceTravelled = 0;
     isDead = false;
-    slowMoAmount = 0;
-    forwardTimeFactor = 1;
     _invulnerableTime = 0;
     _sparkTimer = 0;
     _trail.clear();
@@ -218,7 +201,7 @@ class Player extends PositionComponent with CollisionCallbacks {
   // -------------------------------------------------------------------------
 
   void _emitThrusterSpark() {
-    final color = Color.lerp(_normalGlow, _slowGlow, slowMoAmount)!;
+    const color = _normalGlow;
     final jitter = (_rng.nextDouble() - 0.5) * radius;
     parent?.add(
       ParticleSystemComponent(
@@ -289,13 +272,13 @@ class Player extends PositionComponent with CollisionCallbacks {
     // Dokunulmazken yanıp sön (gerçek değil oyun zamanıyla, ~8 Hz).
     if (isInvulnerable && (_pulse * 16).floor().isEven) return;
 
-    final glow = Color.lerp(_normalGlow, _slowGlow, slowMoAmount)!;
+    const glow = _normalGlow;
     final center = Offset(size.x / 2, size.y / 2);
 
     _renderTrail(canvas, glow);
 
-    // Hız hissi: normal akışta yatay uzama, slow-mo'da kusursuz küre.
-    final stretch = (1 - slowMoAmount) * (speed / maxSpeed) * 0.55;
+    // Hız hissi: hızlandıkça yatay uzama.
+    final stretch = (speed / maxSpeed) * 0.55;
     final breathe = 1 + math.sin(_pulse * 10) * 0.06;
 
     canvas.save();
@@ -308,16 +291,6 @@ class Player extends PositionComponent with CollisionCallbacks {
     _ringPaint.color = glow;
     canvas.drawCircle(Offset.zero, radius, _ringPaint);
     canvas.drawCircle(Offset.zero, radius * 0.55, _corePaint);
-
-    // Slow-mo'da küreyi çevreleyen ikinci "zaman halkası".
-    if (slowMoAmount > 0.05) {
-      _ringPaint.color = _slowGlow.withValues(alpha: slowMoAmount * 0.6);
-      canvas.drawCircle(
-        Offset.zero,
-        radius * (1.6 + math.sin(_pulse * 4) * 0.15),
-        _ringPaint,
-      );
-    }
     canvas.restore();
   }
 

@@ -14,8 +14,8 @@ import 'components/tunnel.dart';
 
 enum GameState { ready, playing, gameOver }
 
-/// Bütün oyun dünyası bu bileşenin altında yaşar; `timeScale` slow-mo'yu
-/// tüm alt ağaca (oyuncu, engeller, parçacıklar) tek noktadan uygular.
+/// Bütün oyun dünyası bu bileşenin altında yaşar; `timeScale` başlangıçta
+/// (ilk dokunuşa kadar) tüm alt ağacı tek noktadan dondurur.
 class SlowMoWorld extends World with HasTimeScale {}
 
 class SlowMoGame extends FlameGame<SlowMoWorld>
@@ -24,21 +24,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
 
   static const String gameOverOverlay = 'gameOver';
 
-  // --- Zaman ayarları ------------------------------------------------------
-  /// Basılı tutarken dünyanın (engellerin) hızı: %85 yavaşlama.
-  static const double worldSlowScale = 0.15;
-
-  /// Basılı tutarken oyuncunun kendi ileri hareketinin hızı. Dünyadan daha az
-  /// yavaşladığı için slow-mo, engellere göre gerçek bir zamanlama avantajı.
-  static const double playerSlowScale = 0.5;
-
-  static const double maxStamina = 2.5; // sn (gerçek zaman)
-  static const double staminaRegenPerSecond = 0.55;
-  static const double _exhaustRecoverMin = 0.25;
-
-  static const double _slowInRate = 14; // yumuşatma hızları (1/sn)
-  static const double _slowOutRate = 9;
-  static const double _slowZoomBoost = 0.14; // slow-mo'da %14 yakınlaşma
+  // --- Ayarlar -------------------------------------------------------------
   static const double _visibleWorldWidth = 760;
   static const double _visibleWorldHeight = 520;
   static const Duration _gameOverDelay = Duration(milliseconds: 100);
@@ -53,9 +39,6 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   final ValueNotifier<int> score = ValueNotifier(0);
   int nearMissCount = 0;
 
-  double stamina = maxStamina;
-  bool _exhausted = false;
-  double slowMoAmount = 0; // 0..1, gerçek zamanla yumuşatılmış
   bool _reviveUsed = false;
   final Set<int> _pointers = {};
 
@@ -66,7 +49,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   /// Parmak 1 piksel kayınca top dünyada kaç birim kayar (ekran ölçeğine göre).
   static const double steerSensitivity = 1.25;
 
-  /// Topun dikey hareket hız sınırı (dünya birimi / gerçek saniye). Çok hızlı
+  /// Topun dikey hareket hız sınırı (dünya birimi / saniye). Çok hızlı
   /// bir kaydırmada topun ince bir engelin içinden "ışınlanmasını" önler.
   static const double maxSteerSpeed = 1600;
   static const double _steerMargin = 3;
@@ -79,9 +62,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   final math.Random _rng = math.Random();
 
   bool get isHolding => _pointers.isNotEmpty;
-  bool get isExhausted => _exhausted;
   bool get reviveUsed => _reviveUsed;
-  double get staminaRatio => (stamina / maxStamina).clamp(0.0, 1.0);
 
   /// "İzle & Devam Et" yalnızca turda bir kez ve reklam hazırsa.
   bool get canRevive =>
@@ -122,7 +103,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   }
 
   // -------------------------------------------------------------------------
-  // Girdi: tek parmak — ekrana değ = slow-mo, sürükle = topu yönlendir
+  // Girdi: tek parmak — sürükle = topu yukarı-aşağı yönlendir
   // -------------------------------------------------------------------------
 
   @override
@@ -166,9 +147,6 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
       _steerPointer = _pointers.isEmpty ? null : _pointers.first;
       _targetY = player.position.y;
     }
-    if (_pointers.isEmpty && _exhausted && stamina >= _exhaustRecoverMin) {
-      _exhausted = false;
-    }
   }
 
   @override
@@ -184,24 +162,8 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
 
   @override
   void update(double dt) {
-    final slowRequested = state == GameState.playing && _updateStamina(dt);
+    world.timeScale = state == GameState.ready ? 0 : 1;
 
-    final target = slowRequested ? 1.0 : 0.0;
-    final rate = target > slowMoAmount ? _slowInRate : _slowOutRate;
-    slowMoAmount += (target - slowMoAmount) * (1 - math.exp(-rate * dt));
-    if ((target - slowMoAmount).abs() < 0.001) slowMoAmount = target;
-
-    final worldScale = state == GameState.ready
-        ? 0.0
-        : _lerp(1, worldSlowScale, slowMoAmount);
-    world.timeScale = worldScale;
-    player
-      ..slowMoAmount = slowMoAmount
-      ..forwardTimeFactor = worldScale > 0
-          ? _lerp(1, playerSlowScale, slowMoAmount) / worldScale
-          : 1;
-
-    // Yönlendirme gerçek zamanla: slow-mo'da da top parmağı anında izler.
     if (state == GameState.playing && !player.isDead) {
       final y = player.position.y;
       final step = maxSteerSpeed * dt;
@@ -214,29 +176,9 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
     _followPlayer();
   }
 
-  /// Enerjiyi gerçek zamanla tüketir/doldurur. Slow-mo aktifse `true`.
-  bool _updateStamina(double dt) {
-    if (isHolding && !_exhausted) {
-      stamina -= dt;
-      if (stamina <= 0) {
-        stamina = 0;
-        _exhausted = true; // Zaman mecburen hızlanır; parmak kaldırılmalı.
-        return false;
-      }
-      return true;
-    }
-    // Bar yalnızca parmak kaldırıldığında dolar.
-    if (isHolding) return false;
-    stamina = math.min(maxStamina, stamina + staminaRegenPerSecond * dt);
-    if (_exhausted && stamina >= _exhaustRecoverMin) {
-      _exhausted = false;
-    }
-    return false;
-  }
-
   void _followPlayer() {
     final vf = camera.viewfinder;
-    vf.zoom = _baseZoom * (1 + _slowZoomBoost * slowMoAmount);
+    vf.zoom = _baseZoom;
     // Not: Viewfinder.position bir kopya döndürür; yerinde değiştirilemez.
     var shakeX = 0.0;
     var shakeY = 0.0;
@@ -263,8 +205,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
     });
   }
 
-  /// Ödüllü reklamı gösterir; ödül kazanıldıysa kaldığı yerden tam enerjiyle
-  /// devam eder. Turda yalnızca bir kez kullanılabilir.
+  /// Ödüllü reklamı gösterir; ödül kazanıldıysa kaldığı yerden devam eder. Turda yalnızca bir kez kullanılabilir.
   Future<bool> watchAdAndRevive() async {
     if (!canRevive) return false;
 
@@ -277,9 +218,6 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
     overlays.remove(gameOverOverlay);
     obstacles.clearAhead();
     player.revive();
-    stamina = maxStamina;
-    _exhausted = false;
-    slowMoAmount = 0;
     _clearPointers();
     // Oyuncu hazır olunca dokunarak başlasın.
     state = GameState.ready;
@@ -298,10 +236,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
     obstacles.reset();
     score.value = 0;
     nearMissCount = 0;
-    stamina = maxStamina;
-    _exhausted = false;
     _reviveUsed = false;
-    slowMoAmount = 0;
     _shakeTime = 0;
     _clearPointers();
     state = GameState.ready;
@@ -314,5 +249,4 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
     _targetY = player.position.y;
   }
 
-  static double _lerp(double a, double b, double t) => a + (b - a) * t;
 }
