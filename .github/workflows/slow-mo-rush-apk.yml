@@ -1,0 +1,64 @@
+name: Slow-Mo Rush APK
+
+# Oyunun test APK'sını derler ve telefondan indirilebilsin diye
+# "slow-mo-rush-test" adlı ön sürüme (pre-release) yükler.
+on:
+  push:
+    branches: [slow-mo-rush]
+    paths:
+      - 'slow_mo_rush/**'
+      - '.github/workflows/slow-mo-rush-apk.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: slow-mo-rush-apk
+  cancel-in-progress: true
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: slow_mo_rush
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.47.7
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+
+      - name: APK derle
+        run: |
+          flutter build apk --release
+          cp build/app/outputs/flutter-apk/app-release.apk slow-mo-rush.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: slow-mo-rush-apk
+          path: slow_mo_rush/slow-mo-rush.apk
+
+      - name: Ön sürüme yükle
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: slow-mo-rush-test
+          name: Slow-Mo Rush (test sürümü)
+          target_commitish: ${{ github.sha }}
+          prerelease: true
+          body: |
+            Telefona doğrudan kurulabilen test APK'sı (Google test reklamlarıyla).
+            Commit: ${{ github.sha }}
+          files: slow_mo_rush/slow-mo-rush.apk
