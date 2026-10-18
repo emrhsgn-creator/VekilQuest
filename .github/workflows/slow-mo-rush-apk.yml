@@ -44,7 +44,8 @@ jobs:
 
       - name: APK derle
         run: |
-          flutter build apk --release
+          # Her derleme ayrı sürüm numarası alır (Ayarlar → Uygulamalar'da görünür).
+          flutter build apk --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
           cp build/app/outputs/flutter-apk/app-release.apk slow-mo-rush.apk
 
       - uses: actions/upload-artifact@v4
@@ -55,6 +56,11 @@ jobs:
   emulator:
     needs: derle
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Android 7 (minSdk), 10 ve 14.
+        api-level: [24, 29, 34]
     steps:
       - uses: actions/checkout@v4
 
@@ -71,7 +77,7 @@ jobs:
       - name: Emülatörde aç
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 34
+          api-level: ${{ matrix.api-level }}
           target: google_apis
           arch: x86_64
           disable-animations: true
@@ -80,7 +86,7 @@ jobs:
       - if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: emulator-smoke
+          name: emulator-smoke-api${{ matrix.api-level }}
           path: smoke/
 
   yayinla:
@@ -97,11 +103,12 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: slow-mo-rush-test
-          name: Slow-Mo Rush (test sürümü)
+          name: Slow-Mo Rush 1.0.${{ github.run_number }} (test)
           target_commitish: ${{ github.sha }}
           prerelease: true
           body: |
             Telefona doğrudan kurulabilen test APK'sı (Google test reklamlarıyla).
-            Android emülatöründe açılış testi geçti.
+            Sürüm: 1.0.${{ github.run_number }}
+            Android 7, 10 ve 14 emülatörlerinde açılış testi geçti.
             Commit: ${{ github.sha }}
           files: slow-mo-rush.apk
