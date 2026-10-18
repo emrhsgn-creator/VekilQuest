@@ -28,6 +28,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- Impeller (Vulkan) bazı Adreno GPU'lu cihazlarda (ör. Honor Pad,
+             Snapdragon 6 Gen 1) açılışta çöküyor; kararlı Skia/OpenGL
+             çizicisini kullan. -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="false"/>
         <!-- AdMob uygulama kimliği. Şu an Google'ın TEST App ID'si; yayından
              önce AdMob panelindeki kendi App ID'nle değiştir. -->
         <meta-data
