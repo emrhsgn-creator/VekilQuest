@@ -1,6 +1,7 @@
 name: Slow-Mo Rush APK
 
-# Oyunun test APK'sını derler ve telefondan indirilebilsin diye
+# Oyunun test APK'sını derler, Android emülatöründe açılıp açılmadığını
+# denetler ve ancak açılıyorsa telefondan indirilebilsin diye
 # "slow-mo-rush-test" adlı ön sürüme (pre-release) yükler.
 on:
   push:
@@ -11,14 +12,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: slow-mo-rush-apk
   cancel-in-progress: true
 
 jobs:
-  apk:
+  derle:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -51,6 +52,47 @@ jobs:
           name: slow-mo-rush-apk
           path: slow_mo_rush/slow-mo-rush.apk
 
+  emulator:
+    needs: derle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: slow-mo-rush-apk
+
+      - name: KVM'yi etkinleştir
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Emülatörde aç
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          disable-animations: true
+          script: bash slow_mo_rush/tool/emulator_smoke.sh slow-mo-rush.apk
+
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: emulator-smoke
+          path: smoke/
+
+  yayinla:
+    needs: emulator
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: slow-mo-rush-apk
+
       - name: Ön sürüme yükle
         uses: softprops/action-gh-release@v2
         with:
@@ -60,5 +102,6 @@ jobs:
           prerelease: true
           body: |
             Telefona doğrudan kurulabilen test APK'sı (Google test reklamlarıyla).
+            Android emülatöründe açılış testi geçti.
             Commit: ${{ github.sha }}
-          files: slow_mo_rush/slow-mo-rush.apk
+          files: slow-mo-rush.apk
