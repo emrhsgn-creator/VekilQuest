@@ -117,32 +117,67 @@ class ObstacleManager extends Component {
   }
 
   Obstacle _createObstacle(double x, double d) {
-    // Başlangıçta okunması kolay kapı/blok; zorluk arttıkça dönen bıçaklar.
-    final bladeWeight = _lerp(0.15, 0.45, d);
-    final doorWeight = 0.35;
-    final roll = _rng.nextDouble() * (bladeWeight + doorWeight + 0.35);
+    // Başlangıçta okunması kolay duvar/kapı; zorluk arttıkça dönen bıçaklar.
+    final weights = <double>[
+      0.35, // GapWall
+      0.30, // HydraulicDoor
+      0.20, // RhythmBlock
+      _lerp(0.10, 0.40, d), // LaserBlade
+    ];
+    var roll = _rng.nextDouble() * weights.reduce((a, b) => a + b);
+    var kind = 0;
+    while (roll > weights[kind]) {
+      roll -= weights[kind];
+      kind++;
+    }
     // Fazı vuruşun sekizde birlerine oturt: engeller birbiriyle senkron.
     final phase = _rng.nextInt(8) / 8;
 
-    if (roll < bladeWeight) {
-      final beats = d < 0.5 ? 4 : (d < 0.8 ? 3 : 2);
-      final armLength = _lerp(178, 205, _rng.nextDouble());
-      return LaserBlade(
-        x: x + armLength,
-        fromTop: _rng.nextBool(),
-        clockwise: _rng.nextBool(),
-        armLength: armLength,
-        period: beats * kBeat * 2,
-        phase: phase,
-      );
+    switch (kind) {
+      case 0:
+        final gapHalf = _lerp(78, 50, d);
+        final amplitude = _lerp(0, 75, d);
+        final maxCenter = kTunnelHalfHeight - gapHalf - amplitude - 8;
+        return GapWall(
+          x: x + GapWall.wallWidth / 2,
+          period: (d < 0.5 ? 8 : 6) * kBeat,
+          phase: phase,
+          gapHalf: gapHalf,
+          gapCenter: _randomRange(-maxCenter, maxCenter),
+          amplitude: amplitude,
+        );
+      case 1:
+        final openHalf = _lerp(85, 58, d);
+        final maxCenter = kTunnelHalfHeight - openHalf - 10;
+        return HydraulicDoor(
+          x: x + HydraulicDoor.doorWidth / 2,
+          period: (d < 0.4 ? 4 : 3) * kBeat,
+          phase: phase,
+          openHalf: openHalf,
+          gapCenter: _randomRange(-maxCenter, maxCenter),
+        );
+      case 2:
+        return RhythmBlock(
+          x: x + RhythmBlock.blockWidth / 2,
+          period: (d < 0.6 ? 8 : 6) * kBeat,
+          phase: phase,
+        );
+      default:
+        final beats = d < 0.5 ? 4 : (d < 0.8 ? 3 : 2);
+        final armLength = _lerp(178, 205, _rng.nextDouble());
+        return LaserBlade(
+          x: x + armLength,
+          fromTop: _rng.nextBool(),
+          clockwise: _rng.nextBool(),
+          armLength: armLength,
+          period: beats * kBeat * 2,
+          phase: phase,
+        );
     }
-    if (roll < bladeWeight + doorWeight) {
-      final beats = d < 0.4 ? 4 : 3;
-      return HydraulicDoor(x: x + 20, period: beats * kBeat, phase: phase);
-    }
-    final beats = d < 0.6 ? 8 : 6;
-    return RhythmBlock(x: x + 30, period: beats * kBeat, phase: phase);
   }
+
+  double _randomRange(double a, double b) =>
+      b <= a ? (a + b) / 2 : a + _rng.nextDouble() * (b - a);
 
   void _despawn() {
     final limit = player.position.x - _despawnBehind;
@@ -294,7 +329,13 @@ class HydraulicDoor extends Obstacle {
     required super.x,
     required super.period,
     required super.phase,
+    required this.openHalf,
+    this.gapCenter = 0,
   });
+
+  /// Açıkken boşluğun yarı yüksekliği ve boşluğun ortasının y'si.
+  final double openHalf;
+  final double gapCenter;
 
   static const double doorWidth = 40;
   static const double _minHeight = 8;
@@ -327,7 +368,7 @@ class HydraulicDoor extends Obstacle {
 
   /// Döngü: açık bekle → sert kapan → kapalı bekle → yavaşça açıl.
   double _gapHalf(double c) {
-    const h = kTunnelHalfHeight;
+    final h = openHalf;
     if (c < 0.40) return h;
     if (c < 0.50) {
       final t = (c - 0.40) / 0.10;
@@ -340,15 +381,69 @@ class HydraulicDoor extends Obstacle {
 
   @override
   void animate(double cycle) {
-    final barHeight =
-        math.max(_minHeight, kTunnelHalfHeight - _gapHalf(cycle));
-    _top.size.y = barHeight;
-    _bottom.size.y = barHeight;
+    final gapHalf = _gapHalf(cycle);
+    _top.size.y =
+        math.max(_minHeight, kTunnelHalfHeight + gapCenter - gapHalf);
+    _bottom.size.y =
+        math.max(_minHeight, kTunnelHalfHeight - gapCenter - gapHalf);
     // Kapanmadan önceki %15'lik dilimde uyarı parlaması.
     final warn = cycle >= 0.25 && cycle < 0.40
         ? 0.5 + 0.5 * math.sin((cycle - 0.25) * 90)
         : 0.0;
     _top.intensity = _bottom.intensity = 0.65 + 0.35 * warn;
+  }
+}
+
+/// Tüneli boydan boya kapatan, tek bir boşluğu olan duvar. Zorluk arttıkça
+/// boşluk daralır ve yukarı-aşağı salınmaya başlar; top boşluğa
+/// yönlendirilerek geçilir.
+class GapWall extends Obstacle {
+  GapWall({
+    required super.x,
+    required super.period,
+    required super.phase,
+    required this.gapHalf,
+    required this.gapCenter,
+    this.amplitude = 0,
+  });
+
+  static const double wallWidth = 34;
+  static const Color color = Color(0xFF39FF88);
+
+  final double gapHalf;
+  final double gapCenter;
+  final double amplitude;
+
+  late final LethalBar _top;
+  late final LethalBar _bottom;
+
+  @override
+  double get halfExtentX => wallWidth / 2;
+
+  @override
+  Future<void> onLoad() async {
+    _top = LethalBar(
+      color: color,
+      size: Vector2(wallWidth, 1),
+      position: Vector2(0, -kTunnelHalfHeight),
+      anchor: Anchor.topCenter,
+    );
+    _bottom = LethalBar(
+      color: color,
+      size: Vector2(wallWidth, 1),
+      position: Vector2(0, kTunnelHalfHeight),
+      anchor: Anchor.bottomCenter,
+    );
+    parts.addAll([_top, _bottom]);
+    await addAll(parts);
+    await super.onLoad();
+  }
+
+  @override
+  void animate(double cycle) {
+    final center = gapCenter + amplitude * math.sin(cycle * math.pi * 2);
+    _top.size.y = math.max(1, kTunnelHalfHeight + center - gapHalf);
+    _bottom.size.y = math.max(1, kTunnelHalfHeight - center - gapHalf);
   }
 }
 

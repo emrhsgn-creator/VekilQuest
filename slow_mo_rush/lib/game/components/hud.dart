@@ -110,14 +110,20 @@ class Hud extends PositionComponent with HasGameReference<SlowMoGame> {
     );
 
     if (game.state == GameState.ready) {
-      final pulse = 0.75 + 0.25 * math.sin(_time * 5);
+      final pulse = 0.9 + 0.1 * math.sin(_time * 5);
       canvas.save();
       canvas.translate(size.x / 2, size.y * 0.72);
       canvas.scale(pulse);
       _hintPaint.render(
         canvas,
-        'YAVAŞLATMAK İÇİN BASILI TUT',
-        Vector2.zero(),
+        'DOKUN → ZAMAN YAVAŞLAR',
+        Vector2(0, -16),
+        anchor: Anchor.center,
+      );
+      _hintPaint.render(
+        canvas,
+        'SÜRÜKLE → TOPU YÖNLENDİR',
+        Vector2(0, 16),
         anchor: Anchor.center,
       );
       canvas.restore();

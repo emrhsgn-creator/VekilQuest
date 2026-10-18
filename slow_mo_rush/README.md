@@ -1,7 +1,7 @@
 # Slow-Mo Rush
 
 Tek parmakla oynanan hypercasual refleks oyunu (Flutter + Flame).
-Basılı tut: zaman yavaşlar. Bırak: ultra hız. Enerji barı 2,5 saniyelik yavaşlatma hakkı verir.
+Ekrana dokun: zaman yavaşlar. Sürükle: top parmağını izler. Bırak: ultra hız. Enerji barı 2,5 saniyelik yavaşlatma hakkı verir.
 
 ## Çalıştırma
 

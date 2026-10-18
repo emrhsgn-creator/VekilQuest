@@ -19,7 +19,7 @@ enum GameState { ready, playing, gameOver }
 class SlowMoWorld extends World with HasTimeScale {}
 
 class SlowMoGame extends FlameGame<SlowMoWorld>
-    with HasCollisionDetection, TapCallbacks {
+    with HasCollisionDetection, DragCallbacks {
   SlowMoGame() : super(world: SlowMoWorld());
 
   static const String gameOverOverlay = 'gameOver';
@@ -58,6 +58,18 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   double slowMoAmount = 0; // 0..1, gerçek zamanla yumuşatılmış
   bool _reviveUsed = false;
   final Set<int> _pointers = {};
+
+  /// Topu yönlendiren parmak (ilk değen) ve topun gitmek istediği y.
+  int? _steerPointer;
+  double _targetY = 0;
+
+  /// Parmak 1 piksel kayınca top dünyada kaç birim kayar (ekran ölçeğine göre).
+  static const double steerSensitivity = 1.25;
+
+  /// Topun dikey hareket hız sınırı (dünya birimi / gerçek saniye). Çok hızlı
+  /// bir kaydırmada topun ince bir engelin içinden "ışınlanmasını" önler.
+  static const double maxSteerSpeed = 1600;
+  static const double _steerMargin = 3;
 
   /// Çentik/Dynamic Island altına bar çizmemek için (main.dart ayarlar).
   double safeTopInset = 0;
@@ -110,23 +122,50 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   }
 
   // -------------------------------------------------------------------------
-  // Girdi: tek parmak — basılı tut = slow-mo
+  // Girdi: tek parmak — ekrana değ = slow-mo, sürükle = topu yönlendir
   // -------------------------------------------------------------------------
 
   @override
-  void onTapDown(TapDownEvent event) {
+  void onDragStart(DragStartEvent event) {
+    super.onDragStart(event);
     _pointers.add(event.pointerId);
+    if (_steerPointer == null) {
+      _steerPointer = event.pointerId;
+      _targetY = player.position.y;
+    }
     if (state == GameState.ready) state = GameState.playing;
   }
 
   @override
-  void onTapUp(TapUpEvent event) => _release(event.pointerId);
+  void onDragUpdate(DragUpdateEvent event) {
+    super.onDragUpdate(event);
+    if (event.pointerId != _steerPointer || state != GameState.playing) return;
+    // Göreli kontrol: parmağın ekrandaki kayması kadar top da kayar; parmağı
+    // ekranın neresine koyduğun önemli değil.
+    final dy = event.deviceDelta.y / camera.viewfinder.zoom * steerSensitivity;
+    final limit = kTunnelHalfHeight - Player.radius - _steerMargin;
+    _targetY = (_targetY + dy).clamp(-limit, limit);
+  }
 
   @override
-  void onTapCancel(TapCancelEvent event) => _release(event.pointerId);
+  void onDragEnd(DragEndEvent event) {
+    super.onDragEnd(event);
+    _release(event.pointerId);
+  }
+
+  @override
+  void onDragCancel(DragCancelEvent event) {
+    super.onDragCancel(event);
+    _release(event.pointerId);
+  }
 
   void _release(int pointerId) {
     _pointers.remove(pointerId);
+    if (pointerId == _steerPointer) {
+      // Başka parmak hâlâ ekrandaysa yönlendirmeyi o devralır.
+      _steerPointer = _pointers.isEmpty ? null : _pointers.first;
+      _targetY = player.position.y;
+    }
     if (_pointers.isEmpty && _exhausted && stamina >= _exhaustRecoverMin) {
       _exhausted = false;
     }
@@ -136,7 +175,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   void lifecycleStateChange(AppLifecycleState state) {
     super.lifecycleStateChange(state);
     // Arka plana geçerken "tap up" kaybolabilir; parmak takılı kalmasın.
-    if (state != AppLifecycleState.resumed) _pointers.clear();
+    if (state != AppLifecycleState.resumed && isLoaded) _clearPointers();
   }
 
   // -------------------------------------------------------------------------
@@ -161,6 +200,13 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
       ..forwardTimeFactor = worldScale > 0
           ? _lerp(1, playerSlowScale, slowMoAmount) / worldScale
           : 1;
+
+    // Yönlendirme gerçek zamanla: slow-mo'da da top parmağı anında izler.
+    if (state == GameState.playing && !player.isDead) {
+      final y = player.position.y;
+      final step = maxSteerSpeed * dt;
+      player.position.y = y + (_targetY - y).clamp(-step, step);
+    }
 
     super.update(dt);
 
@@ -209,7 +255,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
   void _onPlayerHit() {
     if (state != GameState.playing) return;
     state = GameState.gameOver;
-    _pointers.clear();
+    _clearPointers();
     hud.flashRed(); // 100 ms kırmızı parlama (titreşim Player.die içinde)
     _shakeTime = 0.3;
     Future.delayed(_gameOverDelay, () {
@@ -234,7 +280,7 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
     stamina = maxStamina;
     _exhausted = false;
     slowMoAmount = 0;
-    _pointers.clear();
+    _clearPointers();
     // Oyuncu hazır olunca dokunarak başlasın.
     state = GameState.ready;
     return true;
@@ -257,9 +303,15 @@ class SlowMoGame extends FlameGame<SlowMoWorld>
     _reviveUsed = false;
     slowMoAmount = 0;
     _shakeTime = 0;
-    _pointers.clear();
+    _clearPointers();
     state = GameState.ready;
     _followPlayer();
+  }
+
+  void _clearPointers() {
+    _pointers.clear();
+    _steerPointer = null;
+    _targetY = player.position.y;
   }
 
   static double _lerp(double a, double b, double t) => a + (b - a) * t;

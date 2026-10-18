@@ -54,6 +54,40 @@ void main() {
     expect(game.world.timeScale, closeTo(1, 0.01));
   });
 
+  testWidgets('sürüklemek topu yukarı-aşağı yönlendirir, tünelden çıkamaz', (
+    tester,
+  ) async {
+    final game = await pumpGame(tester);
+    game.obstacles.removeFromParent();
+    expect(game.player.position.y, 0);
+
+    final finger = await tester.startGesture(const Offset(400, 300));
+    for (var i = 0; i < 10; i++) {
+      await finger.moveBy(const Offset(0, -10));
+      await advance(tester, 1 / 60);
+    }
+    await advance(tester, 0.2);
+    expect(game.player.position.y, lessThan(-50), reason: 'yukarı gitmeli');
+
+    // Çok aşağı sürükle: tünel duvarında durmalı.
+    for (var i = 0; i < 40; i++) {
+      await finger.moveBy(const Offset(0, 40));
+      await advance(tester, 1 / 60);
+    }
+    await advance(tester, 0.3);
+    expect(game.player.position.y, greaterThan(100));
+    expect(
+      game.player.position.y,
+      lessThanOrEqualTo(kTunnelHalfHeight - 13),
+    );
+
+    // Parmak kalkınca top olduğu yerde kalır.
+    final y = game.player.position.y;
+    await finger.up();
+    await advance(tester, 0.5);
+    expect(game.player.position.y, y);
+  });
+
   testWidgets('enerji 2.5 sn’de biter, zaman zorla hızlanır, parmak '
       'kalkmadan dolmaz', (tester) async {
     final game = await pumpGame(tester);
